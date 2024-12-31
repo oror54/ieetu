@@ -1,0 +1,55 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+
+<!-- 아이디찾기 - 번호인증 -->
+<header id="header">
+    <div class="title line">
+        <button class="prev"><span
+                class="skip">이전페이지</span></button>
+        <h3>아이디 찾기</h3>
+        <div class="none"></div>
+    </div>
+</header>
+<main class="join">
+    <section class="join-wrap">
+        <section class="info">
+            <div class="wrap">
+                <div class="title">휴대폰 번호 인증</div>
+                <fieldset>
+                    <!-- 휴대폰번호 -->
+                    <div class="box">
+                        <div class="tit">휴대폰 번호</div>
+                        <div class="inner">
+                            <div class="input">
+                                <input type="text" class="ipt" placeholder="휴대폰 번호를 입력해주세요.">
+                            </div>
+                            <button class="bt bt-send request" data-confirm="이미 가입된 휴대폰 번호 입니다.">
+                                <p class="request">인증요청</p>
+                                <p class="re-request">재요청</p>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- 인증번호 -->
+                    <div class="box">
+                        <div class="tit">인증번호</div>
+                        <div class="inner">
+                            <div class="input">
+                                <input type="text" class="ipt" placeholder="인증번호를 입력해주세요.">
+                                <em>03:00</em>
+                            </div>
+                            <button class="bt bt-confirm request"  data-confirm="입력 시간이 초과하였습니다.">확인</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+    </section>
+</main>
+<footer id="footer">
+    <section class="footer">
+        <div class="button">
+            <button type="submit" class="bt bt-next"
+                onclick="location.href='id-find-step2.html'"><span> 아이디 찾기</span></button>
+        </div>
+    </section>
+</footer>
+<!--#include virtual="/layout/mobile/inc/f.html"-->

@@ -1,0 +1,82 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<script>
+    $(function () {
+        $('.bnb ul > li:nth-child(4) > a').addClass('act');
+    });
+</script>
+
+<main class="user-wrap mainflex">
+    <section class="header">
+        <h2>내정보</h2>
+    </section>
+    <section class="user-info">
+        <div class="inner">
+            <div class="inn">
+                <div class="profile">
+                    <div class="img">
+                        <img src="/img/moblie/image/profile.jpg" alt="프로필">
+                    </div>
+                </div>
+                <b class="nickname">guest1</b>
+            </div>
+            <div class="button">
+                <button class="edit-btn" onclick="location.href='/mobile/user/profile-edit.html'"> 프로필 수정</button>
+            </div>
+        </div>
+    </section>
+    <!-- 구분선 -->
+    <div class="divide"></div>
+    <!-- 사용자설정 -->
+    <section class="list">
+        <div class="wrap">
+            <div class="tit"><b>사용자 설정</b></div>
+            <div class="lsts">
+                <ul>
+                    <li><a href="/mobile/user/change-password.html">
+                            <div class="inner">
+                                <div class="inn">
+                                    <p>비밀번호 변경</p>
+                                </div>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 구분선 -->
+    <div class="divide"></div>
+    <!-- 기타 -->
+    <section class="list">
+        <div class="wrap">
+            <div class="tit"><b>기타</b></div>
+            <div class="lsts">
+                <ul>
+                    <li><a href="/terms/terms-use.html">
+                            <div class="inner">
+                                <div class="inn">
+                                    <p>이용약관</p>
+                                </div>
+                            </div>
+                        </a></li>
+                    <li><a href="/terms/privacy-policy.html">
+                            <div class="inner">
+                                <div class="inn">
+                                    <p>개인정보처리방침</p>
+                                </div>
+                            </div>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- 구분선 -->
+    <div class="divide"></div>
+    <section class="log-wrap">
+        <div class="button">
+            <button class="logout check" data-confirm="로그아웃 하시겠습니까?" data-title="로그아웃"
+                onclick="location.href='/auth/login/'">로그아웃</button>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/inc/bnb.html"-->
+<!--#include virtual="/layout/mobile/inc/f.html"-->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="8px" viewBox="0 0 5 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>8E722D35-348E-414A-B1D4-912557436DD3</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="PC" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-Common_Layout(view)" transform="translate(-282.000000, -80.000000)" fill="#767A83" fill-rule="nonzero">
+            <g id="side/btn_gnb_hidden" transform="translate(274.000000, 54.000000)">
+                <g id="btn_gnb">
+                    <g id="icon_arrow_open" transform="translate(10.500000, 30.000000) scale(-1, 1) translate(-10.500000, -30.000000) translate(8.000000, 26.000000)">
+                        <g id="icon_arrow" transform="translate(2.500000, 4.000000) scale(-1, 1) translate(-2.500000, -4.000000) ">
+                            <polygon id="arrow" points="3.76943245 0.646446609 4.47653923 1.35355339 1.707 4.123 4.47653923 6.89241829 3.76943245 7.59952507 0.292893219 4.12298584"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

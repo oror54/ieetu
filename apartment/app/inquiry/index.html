@@ -1,0 +1,170 @@
+<!--#include virtual="/apartment/app/inc/h.html"-->
+<header id="header">
+    <div class="title">
+        <button class="prev" onclick="location.href='../main/'"><span class="skip">이전페이지</span></button>
+        <h2 class="tit">장애조회</h2>
+    </div>
+</header>
+<main id="inquiry">
+    <div class="wrap">
+        <div class="contain">
+            <div class="tit">
+                <h3>검색</h3>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table>
+                        <colgroup>
+                            <col class="w30p">
+                            <col class="w70p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="tal">현장명</th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="검색항목" class="sel">
+                                            <option>선택</option>
+                                            <option>선택</option>
+                                            <option>선택</option>
+                                            <option>선택</option>
+                                            <option>선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal">동/호</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt">
+                                            <input type="text" class="ip-txt">
+                                            <span>동</span>
+                                        </div>
+                                        <div class="ipt">
+                                            <input type="text" class="ip-txt">
+                                            <span>호</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal">연락처</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="연락처를 입력해주세요">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="button">
+                <button class="bt bt-search">검색</button>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list-wrap">
+                <div class="title-wrap">
+                    <div class="title">
+                        <h4>검색내역</h4>
+                        <p>[조회건수 : 총 <b>210</b>건]</p>
+                    </div>
+                    <div class="button">
+                        <button class="bt bt-add" onclick="location.href='../register/'">접수등록</button>
+                    </div>
+                </div>
+                <button class="content" onclick="location.href='confirm.html'">
+                    <div class="cons">
+                        <div class="con">
+                            <div class="text">
+                                <span class="badge rgst">접수</span>
+                                <div class="txt name">
+                                    우리아파트
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="txt unit">
+                                    201동 202호
+                                </div>
+                                <div class="txt num">
+                                    010-1234-5678
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="txt">
+                                    의뢰내용의뢰내용의뢰내용의뢰내용의뢰내용의뢰내용의뢰내용
+                                </div>
+                            </div>
+                        </div>
+                        <i class="view"></i>
+                    </div>
+                </button>
+                <button class="content" onclick="location.href='confirm.html'">
+                    <div class="cons">
+                        <div class="con">
+                            <div class="text">
+                                <span class="badge wait">대기</span>
+                                <div class="txt name">
+                                    우리아파트
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="txt unit">
+                                    201동 202호
+                                </div>
+                                <div class="txt num">
+                                    010-1234-5678
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="txt">
+                                    의뢰내용의뢰내용의뢰내용의뢰내용의뢰내용의뢰내용의뢰내용
+                                </div>
+                            </div>
+                        </div>
+                        <i class="view"></i>
+                    </div>
+                </button>
+                <button class="content" onclick="location.href='confirm.html'">
+                    <div class="cons">
+                        <div class="con">
+                            <div class="text">
+                                <span class="badge cmpl">완료</span>
+                                <div class="txt name">
+                                    우리아파트
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="txt unit">
+                                    201동 202호
+                                </div>
+                                <div class="txt num">
+                                    010-1234-5678
+                                </div>
+                            </div>
+                            <div class="text">
+                                <div class="txt">
+                                    의뢰내용의뢰내용의뢰내용의뢰내용의뢰내용의뢰내용의뢰내용
+                                </div>
+                            </div>
+                        </div>
+                        <i class="view"></i>
+                    </div>
+                </button>
+                <!-- paging -->
+                <!--#include virtual="/apartment/app/inc/paging.html"-->
+            </div>
+            <div class="nocontent"><i class="ico"></i><span>검색된 내용이 없습니다.</span></div>
+        </div>
+    </div>
+</main>
+</div>
+</div>
+<!--#include virtual="/apartment/app/inc/modal.html"-->
+</body>
+
+</html>

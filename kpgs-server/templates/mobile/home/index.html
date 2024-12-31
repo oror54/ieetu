@@ -1,0 +1,72 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<script>
+    $(function () {
+        $('.bnb ul > li:nth-child(1) > a').addClass('act');
+    });
+</script>
+<main class="home-wrap mainflex">
+    <section class="header">
+        <h1 class="logo"></h1>
+    </section>
+    <!-- 게임입장 -->
+    <section class="play">
+        <div class="title">
+            <p><b>guest1</b>님</p>
+            <p>방문을 환영합니다!</p>
+        </div>
+        <div class="buttons">
+            <div class="button">
+                <button class="btn play-cancel-btn request" data-confirm="게임참여가 취소되었습니다." data-title="게임참여 취소">
+                    <p class="w100p">게임참여 취소하기</p></i>
+                </button>
+            </div>
+        <div class="button">
+            <button class="btn play-btn" onclick="location.href='/mobile/home/play.html'">
+                <p>게임 입장하기</p> <i class="view-ico"></i>
+            </button>
+        </div>
+        </div>
+    </section>
+    <!-- 활동정보 -->
+    <section class="active-info">
+        <div class="wrap">
+            <div class="inner">
+                <div class="tit"><i class="ico-active"></i>
+                    <p>활동 정보</p>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="inf">
+                            <div class="txt">
+                                <b>0</b> <span>레벨</span>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="txt">
+                                <b>8</b> <span>게임수</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="inf">
+                            <div class="txt">
+                                <b>342.0</b> <span>최대점수</span>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="txt">
+                                <b>235.63</b> <span>평균점수</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 광고배너 -->
+    <section class="advertise">
+        <div class="advrt"></div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/inc/bnb.html"-->
+<!--#include virtual="/layout/mobile/inc/f.html"-->

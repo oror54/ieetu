@@ -1,0 +1,151 @@
+<!--#include virtual="/apartment/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(3)").addClass('act');
+        $(".dp1:nth-child(3) .depth2").show();
+        $(".dp1:nth-child(3) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>사용자관리</h2>
+            <b>사용자등록</b>
+        </div>
+    </section>
+    <!-- 검색내역 -->
+    <section class="contain">
+        <div class="titlewrap">
+            <div class="title">
+                <h3>사용자 기본정보</h3>
+            </div>
+            <div class="buttons">
+                <div class="button">
+                    <button type="button" class="bt bt-add" onclick="openModal('register1')">사용자등록</button>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <div class="tbl">
+                <table class="row">
+                    <colgroup>
+                        <col class="w15p">
+                        <col class="w35p">
+                        <col class="w15p">
+                        <col class="w35p">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="tal"><strong class="bullet">아이디</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="아이디를 입력해주세요.">
+                                    </div>
+                                    <button class="bt bt-check" onclick="openModal('check1')">중복체크</button>
+                                </div>
+                            </td>
+                            <th class="tal"><strong class="bullet">이름</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="이름을 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal">비밀번호</th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w70p">
+                                        <input type="text" class="ip-txt w100p" placeholder="비밀번호를 입력해주세요.">
+                                    </div>
+                                    <div class="ipt w30p">
+                                        <input type="checkbox" id="no" name="check" class="skip">
+                                        <label for="no"> <span>비밀번호 변경</span></label>
+                                    </div>
+                                </div>
+                            </td>
+                            <th class="tal">비밀번호 확인</th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="비밀번호를 한번 더 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal"><strong class="bullet">소속회사</strong></th>
+                            <td>
+                                <div class="inner">
+                                    <select name="select" title="소속회사" class="sel">
+                                        <option>선택</option>
+                                        <option>소속회사</option>
+                                        <option>소속회사</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <th class="tal"><strong class="bullet">핸드폰번호</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="핸드폰번호를 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal"><strong class="bullet">사용권한</strong></th>
+                            <td>
+                                <div class="inner">
+                                    <select name="select" title="사용권한" class="sel">
+                                        <option>선택</option>
+                                        <option>관리자</option>
+                                        <option>상황</option>
+                                        <option>설치기사</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <th class="tal">사용여부</th>
+                            <td>
+                                <div class="inner">
+                                    <select name="select" title="사용여부" class="sel">
+                                        <option>선택</option>
+                                        <option>사용</option>
+                                        <option>미사용</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal">추가사업장권한</th>
+                            <td colspan="3">
+                                <div class="inn">
+                                    <div class="ipt">
+                                        <input type="checkbox" id="place1" name="check" class="skip">
+                                        <label for="place1"> <span>DRCTS</span></label>
+                                    </div>
+                                    <div class="ipt">
+                                        <input type="checkbox" id="place2" name="check" class="skip">
+                                        <label for="place2"> <span>삼성하나넷</span></label>
+                                    </div>
+                                    <div class="ipt">
+                                        <input type="checkbox" id="place3" name="check" class="skip">
+                                        <label for="place3"> <span>minhyun</span></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+<!-- footer -->
+<!--#include virtual="/apartment/admin/inc/f.html"-->

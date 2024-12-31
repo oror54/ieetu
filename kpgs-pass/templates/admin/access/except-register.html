@@ -1,0 +1,84 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(5)").addClass('act');
+        $(".dp1:nth-child(5) .depth2").show();
+        $(".dp1:nth-child(5) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+
+<main id="admin">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>예외출입관리 등록 </h3>
+    </section>
+    <!-- 예외출입리스트 -->
+    <section class="contain">
+        <div class="content short">
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w300">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>선택일자</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p datepick ipt-date"
+                                                placeholder="날짜를 선택해주세요.">
+                                            <i class="ico-date"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이름</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p modal-open"
+                                                data-modal-id="search-all" placeholder="이름을 입력해주세요." readonly
+                                                placeholder="이름을 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>핸드폰 번호</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="핸드폰 번호를 입력해주세요."
+                                                readonly="">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>회원구분</th>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">클럽회원 - <b>골드</b></p><span class="grp">짝B</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="button-wrap">
+                    <div class="button">
+                        <button class="bt bt-rgstr" onclick="location.href='index.html'">등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

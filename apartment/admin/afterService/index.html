@@ -1,0 +1,307 @@
+<!--#include virtual="/apartment/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>장애 처리 관리</h2>
+        </div>
+    </section>
+    <!-- 검색 -->
+    <section class="search">
+        <div class="title">
+            <div class="tit"> 검색</div>
+        </div>
+        <div class="table">
+            <div class="tbl">
+                <table>
+                    <colgroup>
+                        <col class="w10p">
+                        <col class="w20p">
+                        <col class="w10p">
+                        <col class="w10p">
+                        <col class="w10p">
+                        <col class="w10p">
+                        <col class="w10p">
+                        <col class="w20p">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>현장명 </th>
+                            <td>
+                                <div class="inner">
+                                    <select name="select" title="검색항목" class="sel">
+                                        <option>전체</option>
+                                        <option>선택</option>
+                                        <option>선택 </option>
+                                    </select>
+                                </div>
+                            </td>
+                            <th>동/호</th>
+                            <td colspan="3">
+                                <div class="form">
+                                    <div class="ipt">
+                                        <input type="text" class="ip-txt">
+                                        <span>동</span>
+                                    </div>
+                                    <div class="ipt">
+                                        <input type="text" class="ip-txt">
+                                        <span>호</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <th>휴대폰</th>
+                            <td colspan="3">
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="휴대폰번호를 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="button-wrap">
+            <div class="button">
+                <button type="submit" class="bt bt-srh">검색</button>
+            </div>
+        </div>
+    </section>
+    <!-- 검색내역 -->
+    <section class="contain">
+        <div class="titlewrap">
+            <div class="title">
+                <h4>검색내역</h4>
+                <p>[조회수건수 : 총 <b>210</b>건]</p>
+            </div>
+            <div class="buttons">
+                <div class="check">
+                    <input type="checkbox" id="delayList" name="delayList" class="skip" data-label="delayList">
+                    <label for="delayList"> <span>미처리내역만보기</span></label>
+                </div>
+                <div class="button">
+                    <button type="button" class="bt bt-excell">엑셀다운</button>
+                </div>
+                <div class="button">
+                    <button type="button" class="bt bt-upload">엑셀업로드</button>
+                </div>
+                <div class="button">
+                    <button type="button" class="bt bt-add"
+                        onclick="location.href='write.html'">접수등록</button>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+                <div class="tbl wrll">
+                    <table class="col nowrap">
+                        <colgroup>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>접수번호</th>
+                                <th>접수일자 </th>
+                                <th>A/S 유형</th>
+                                <th>상태</th>
+                                <th>현장명</th>
+                                <th>A/S 요청자</th>
+                                <th>동</th>
+                                <th>호</th>
+                                <th>연락처</th>
+                                <th>방문일자</th>
+                                <th>설치자</th>
+                                <th>확인서</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td class="pointer" onclick="location.href='write.html'">20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td class="tal">우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
+                                <td>010-1234-5678</td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"
+                                        onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td class="tal">우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
+                                <td>010-1234-5678</td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"
+                                        onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
+                                </td>
+                            </tr>
+                            <tr class="delay">
+                                <td>3</td>
+                                <td>20231124-001</td>
+                                <td class="delay">2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td class="tal">우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
+                                <td>010-1234-5678</td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"
+                                        onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td class="tal">우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
+                                <td>010-1234-5678</td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"
+                                        onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td class="tal">우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
+                                <td>010-1234-5678</td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"
+                                        onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td class="tal">우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
+                                <td>010-1234-5678</td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"
+                                        onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td class="tal">우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
+                                <td>010-1234-5678</td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"
+                                        onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td class="tal">우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
+                                <td>010-1234-5678</td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"
+                                        onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td class="tal">우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
+                                <td>010-1234-5678</td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"
+                                        onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>20231124-001</td>
+                                <td>2023-11-24</td>
+                                <td>유상</td>
+                                <td>접수</td>
+                                <td class="tal">우리현대아파트</td>
+                                <td>세대</td>
+                                <td>101</td>
+                                <td>202</td>
+                                <td>010-1234-5678</td>
+                                <td>2023-11-27</td>
+                                <td>김관리</td>
+                                <td><button class="bt bt-cnf"
+                                        onclick="window.open('confirm.html', 'A/S처리확인서','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">보기</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            <!-- paging -->
+            <!--#include virtual="/apartment/admin/inc/paging.html"-->
+        </div>
+        <div class="nocontent"><i class="ico"></i><span>검색된 내용이 없습니다.</span></div>
+    </section>
+</main>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+<!-- footer -->
+<!--#include virtual="/apartment/admin/inc/f.html"-->

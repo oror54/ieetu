@@ -1,0 +1,118 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(6)").addClass('act');
+        $(".dp1:nth-child(6) .depth2").show();
+        $(".dp1:nth-child(6) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+
+<!-- main -->
+<main id="admin">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>일반회원 - 예약 등록</h3>
+    </section>
+    <section class="contain">
+        <div class="content short">
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w200">
+                            <col>
+                            <col class="w200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <!-- 이름 -->
+                                <th class="tac">이름</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p modal-open" data-modal-id="search"
+                                                placeholder="이름을 입력해주세요." readonly>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- 생년월일 -->
+                                <th class="tac">생년월일</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="주민등록 생년월일 8자리를 입력해주세요."
+                                                readonly>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- 핸드폰번호 -->
+                                <th class="tac">핸드폰 번호</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="핸드폰 번호를 입력해주세요."
+                                                readonly>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- 아이디 -->
+                                <th class="tac">아이디</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="아이디를 입력해주세요." readonly>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tac">예약일</th>
+                                <td colspan="3">
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p date rsrv-date"
+                                                placeholder="날짜를 선택해주세요.">
+                                                <i class="ico-date"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tac">구장</th>
+                                <td colspan="3">
+                                    <div class="inner"><select name="select" title="구장" class="sel">
+                                            <option>수성구장</option>
+                                            <option>팔현구장</option>
+                                        </select></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tac">시간</th>
+                                <td colspan="3">
+                                    <div class="inner"><select name="select" title="시간" class="sel">
+                                            <option>선택</option>
+                                            <option>새벽　일출 ~ 08:30</option>
+                                            <option>오전　일출 ~ 08:30</option>
+                                            <option>오후　14:00 ~ 17:00 </option>
+                                            <option>자유입장　17:00 ~ 18:00</option>
+                                        </select></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="button-wrap">
+                    <div class="button">
+                        <button class="bt bt-rgstr" onclick="location.href='index.html'">예약등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

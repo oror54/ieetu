@@ -1,0 +1,120 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+
+<!-- 예약내역 -->
+<header id="header">
+    <div class="title line">
+        <button class="back"><span class="skip">이전페이지</span></button>
+        <h3>예약내역</h3>
+        <div class="none"></div>
+    </div>
+</header>
+<main class="main">
+    <!-- 탭메뉴 -->
+    <section class="tabs-nav">
+        <nav class="nav">
+            <div class="nav-item act" data-tab="tab1">다가오는 예약</div>
+            <div class="nav-item" data-tab="tab2">지난예약</div>
+        </nav>
+    </section>
+    <!-- 탭 내용 -->
+    <section class="tabs-box">
+        <div class="tabs-content" data-tab-act="tab1">
+            <!--다가오는예약 -->
+            <div class="tabs-section">
+                <div class="reservation">
+                    <!-- 회원정보 -->
+                    <div class="user-info">
+                        <div class="wrap">
+                            <div class="text">
+                                <p class="id-wrap"><b class="mem-id">abcd1234</b>님은</p>
+                                <p class="sort"><b>일반회원</b>입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 예약리스트 -->
+                    <div class="list-wrap">
+                        <div class="list">
+                            <div class="tit">예약</div>
+                            <div class="content">
+                                <div class="when">
+                                    <div class="date">24. 03. 18 월요일</div>
+                                    <span class="today">(오늘)</span>
+                                </div>
+                                <div class="where">수성구장</div>
+                                <div class="time">오후 14:00 ~ 17:00</div>
+                            </div>
+                            <div class="buttons">
+                                <a class="bt bt-change rsrv-change" href="/member/reserve/apply.html">예약변경</a>
+                                <button class="bt bt-cancel rsrv-cancel">예약취소</button>
+                            </div>
+                        </div>
+                        <div class="list-none">
+                            <p> 다가오는 예약 내역이 없습니다.</p>
+                            <p>예약을 신청해주세요.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer class 추가 - 240604 -->
+                <footer id="footer" class="footer-wrap">
+                    <section class="footer">
+                        <div class="button">
+                            <button type="submit" class="bt bt-rsrv"
+                                onClick="location.href='/member/reserve/apply.html'"><span>예약
+                                    신청하기</span></button>
+                        </div>
+                    </section>
+                </footer>
+            </div>
+            <!-- 지난예약 -->
+            <div class="tabs-section">
+                <div class="reservation">
+                    <!-- 회원정보 -->
+                    <div class="user-info">
+                        <div class="wrap">
+                            <div class="text">
+                                <p class="id-wrap"><b class="id">abcd1234</b>님은</p>
+                                <p class="sort"><b>일반회원</b>입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 지난예약 내역 -->
+                    <div class="last-list">
+                        <div class="list">
+                            <div class="title">
+                                <div class="when">
+                                    24. 03. 16 일요일
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h4>예약</h4>
+                                <div class="con">
+                                    <div class="where">수성구장</div>
+                                    <div class="time">오후 14:00 ~ 17:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="title">
+                                <div class="when">
+                                    24. 03. 14 목요일
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h4>예약</h4>
+                                <div class="con">
+                                    <div class="where">수성구장</div>
+                                    <div class="time">오후 14:00 ~ 17:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-none">
+                            <p> 지난 예약 내역이 없습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--#include virtual="/layout/mobile/inc/f.html"-->

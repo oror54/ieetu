@@ -1,0 +1,129 @@
+<!--#include virtual="/inc/h.html"-->
+<script>
+    $(function () {
+        $(".header").addClass('fixed');
+        $('.nav .depth1 > li:nth-child(2) > a').addClass('on');
+        $('.nav .depth1 > li:nth-child(2) > a').addClass('active');
+        $('.nav .depth1 > li:nth-child(2) > .depth2:nth-child(2) > li:nth-child(7) > a').addClass('act');
+    });
+</script>
+<!-- 메인 -->
+<main id="page">
+    <!-- 페이지 위치 -->
+    <section id="visual" class="subVisual rnd">
+        <div class="areaBox">
+            <div class="area">
+                <div class="location">
+                    <ul>
+                        <li> <a href="/company/index.html"> <i class="home"></i></a></li>
+                        <li>사업분야</li>
+                    </ul>
+                </div>
+                <h2 class="visualTitle">R&D <small>(연구개발)</small></h2>
+            </div>
+        </div>
+    </section>
+    <!-- section01 -->
+    <section id="contain1" class="contain1">
+        <div class="wrap">
+            <div class="flex">
+                <div class="subTitle">
+                    <div class="tit upper">R&D PORTFOLIO</div>
+                    <h3 class="title">R&D 포트폴리오</h3>
+                </div>
+                <div class="list-wrap">
+                    <div class="list-tit">
+                        <p>대화 성능 향상을 위한 프롬프트 엔지니어링
+                            및 RAG를 활용한 AI 대화 시스템 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="prtfl port2">
+                <div class="title">
+                    <div class="tit" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="prtf"></i>
+                        <h3>대화 성능 향상을 위한 프롬프트 엔지니어링
+                            및 RAG를 활용한 AI 대화 시스템 </h3>
+                    </div>
+                    <div class="txt" data-aos="fade-up" data-aos-duration="1000">
+                        <p>챗봇 서비스 운영 시 고비용이 소요되는 문제점을 해결하기 위해
+                            ㈜이튜에서는 데이터베이스 및 캐시 우선 접근을 통해
+                            LLM(Large Language Model) 사용 빈도를
+                            낮추고 결과적으로 GPU의 사용량을 저하함으로써
+                            챗봇 서비스 운영 비용을 절감하는 솔루션을 개발</p>
+                    </div>
+                </div>
+                <!-- 핵심기능 -->
+                <div class="content1">
+                    <div class="con">
+                        <div class="tit" data-aos="fade-up" data-aos-duration="1000">
+                            <i class="core"></i>
+                            <h3>핵심기능</h3>
+                        </div>
+                        <div class="box-wrap black">
+                            <div class="black-box" data-aos="fade-up" data-aos-duration="1000">
+                                <p>사용자 입력 프롬프트, 사용자 입력 문장, 사용자 입력 문장에 대한 데이터베이스 검색 결과를
+                                    기반으로 LLM에 질의를 수행하는 RAG(Retrieval-Augmented Generation)
+                                    기법을 활용하여 사용자 맞춤형 대화를 제공</p>
+                            </div>
+                            <div class="black-box" data-aos="fade-up" data-aos-duration="1000">
+                                <p>사용자 맞춤형 단계별 프롬프트 엔지니어링 제공</p>
+                            </div>
+                            <div class="black-box" data-aos="fade-up" data-aos-duration="1000">
+                                <p>Rest API 기반의 외부 연동 지원</p>
+                            </div>
+                            <div class="black-box" data-aos="fade-up" data-aos-duration="1000">
+                                <p>다양한 LLM 모델
+                                    (GPT-3.5, GPT-4, GPT-4o, Llama, Alpaca 등) 연동 가능</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 장점 -->
+                <div class="content2">
+                    <div class="tit" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="strh"></i>
+                        <h3>장점</h3>
+                    </div>
+                    <div class="inner">
+                        <div class="img" data-aos="fade-up" data-aos-duration="1000">
+                            <i class="txt-ico"></i>
+                            <img src="/img/business/port2-strth.png" alt="LLM모델 장점">
+                        </div>
+                        <div class="text" data-aos="fade-up" data-aos-duration="1500">
+                            <ul>
+                                <li>
+                                    <p>RAG(Retrieval-Augmented Generation) 기법을
+                                        활용하여 도메인별 최신 데이터가 반영된 도메인
+                                        의존적 LLM 답변을 제공받을 수 있으므로
+                                        사용자 목적 더욱 부합한 답변을 제공받을 수 있음</p>
+                                </li>
+                                <li>
+                                    <p>여러 단계의 프롬프트 엔지니어링
+                                        적용을 통한 대화 성능 개선</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 시스템개요 -->
+                <div class="content3">
+                    <div class="tit" data-aos="fade-up" data-aos-duration="1000">
+                        <i class="ovrv"></i>
+                        <h3>시스템 개요</h3>
+                    </div>
+                    <div class="con" data-aos="fade-up" data-aos-duration="1500">
+                        <img src="/img/business/port02-overview.png" alt="시스템개요">
+                    </div>
+                </div>
+            </div>
+            <div class="button center">
+                <button class="bt bt-view" onclick="location.href='/business/rnd/index.html'">목록보기</button>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    AOS.init();
+</script>
+<!--#include virtual="/inc/f.html"-->

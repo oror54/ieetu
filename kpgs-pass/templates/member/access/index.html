@@ -1,0 +1,124 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+
+<!--춣입증 -일반회원 -->
+<header id="header">
+    <div class="title line">
+        <button class="back"><span class="skip">이전페이지</span></button>
+        <h3>골프장 출입증</h3>
+        <div class="none"></div>
+    </div>
+</header>
+<main class="main">
+    <div class="gray">
+        <!-- 회원정보 -->
+        <section class="user-info">
+            <div class="wrap">
+                <div class="inner">
+                    <div class="profile"></div>
+                    <div class="inn">
+                        <div class="mem">
+                            <p>일반회원</p>
+                        </div>
+                        <div class="text">
+                            <p class="id-wrap"><b class="id">abcd1234</b>님의</p>
+                            <p class="hello">골프장 출입증</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 출입코드 -->
+        <section class="access">
+            <div class="choice">
+                <button class="chc act">QR 입장</button>
+                <button class="chc">블루투스 입장</button>
+            </div>
+            <!-- 출입완료 후 -->
+            <div class="complete">
+                <div class="cmpl">
+                    <div class="img"></div>
+                    <p class="time">2024. 06. 20 01:12:12</p>
+                    <p class="field"><b>팔현구장</b> 에</p>
+                    <b>입장하셨습니다.</b>
+                </div>
+            </div>
+            <div class="code-wrap">
+                <!-- QR코드 -->
+                <div class="box act">
+                    <div class="code end">
+                        <div src="" alt="qr-code" class="qrcode">
+                            <div class="qr"></div>
+                            <button class="refresh">
+                                <div class="icon"></div>
+                            </button>
+                        </div>
+                        <div class="timer end">
+                            <p class="ing">남은시간 <b>15초</b></p>
+                            <p class="end">인증시간만료</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 블루투스 -->
+                <div class="box">
+                    <div class="code end">
+                        <div src="" alt="bluetooth" class="bluetooth">
+                            <p class="search">블루투스 연결 디바이스를 찾고 있습니다. </p>
+                            <p class="restart">블루투스 연결을 다시 시도해주세요. </p>
+                            <div class="radar">
+                                <div class="bltt"></div>
+                            </div>
+                            <button class="refresh">
+                                <div class="icon"></div>
+                            </button>
+                        </div>
+                        <div class="timer end">
+                            <p class="ing">남은시간 <b>15초</b></p>
+                            <p class="end">인증시간만료</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 출입내역 -->
+        <section class="pass-list">
+            <div class="box">
+                <div class="inner">
+                    <div class="title">최근 입장 내역</div>
+                    <button class="view" onClick="location.href='/member/access/list.html'">더보기</button>
+                </div>
+                <div class="list">
+                    <div class="content">
+                        <div class="when">2024. 03. 18 월 13:00</div>
+                        <div class="who">홍길동</div>
+                        <div class="where">파크골프 수성구장</div>
+                    </div>
+                    <div class="content">
+                        <div class="when">2024. 03. 18 월 13:00</div>
+                        <div class="who">홍길동</div>
+                        <div class="where">파크골프 수성구장</div>
+                    </div>
+                    <div class="content">
+                        <div class="when">2024. 03. 18 월 13:00</div>
+                        <div class="who">홍길동</div>
+                        <div class="where">파크골프 수성구장</div>
+                    </div>
+                    <div class="content">
+                        <div class="when">2024. 03. 18 월 13:00</div>
+                        <div class="who">홍길동</div>
+                        <div class="where">파크골프 수성구장</div>
+                    </div>
+                    <div class="content">
+                        <div class="when">2024. 03. 18 월 13:00</div>
+                        <div class="who">홍길동</div>
+                        <div class="where">파크골프 수성구장</div>
+                    </div>
+                    <!-- 최근 입장 내역이 없을 경우 -->
+                    <div class="content-none">
+                        <p> 최근 입장 내역이 없습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<!--#include virtual="/layout/mobile/inc/f.html"-->

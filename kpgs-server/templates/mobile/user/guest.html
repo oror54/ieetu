@@ -1,0 +1,28 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<script>
+    $(function () {
+        $('.bnb ul > li:nth-child(4) > a').addClass('act');
+    });
+</script>
+
+<main class="user-wrap mainflex guest">
+    <section class="header">
+        <h2>내정보</h2>
+    </section>
+    <section class="login-inform">
+        <div class="box">
+            <div class="content">
+                <i class="danger-icon"></i>
+                <div class="text">
+                    <p>로그인이 필요한 서비스 입니다.</p>
+                    <p>로그인 후 다시 시도해 주세요.</p>
+                </div>
+                <div class="button">
+                    <button class="bt login-btn" onclick="location.href='/auth/login/'">로그인 하기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/inc/bnb.html"-->
+<!--#include virtual="/layout/mobile/inc/f.html"-->

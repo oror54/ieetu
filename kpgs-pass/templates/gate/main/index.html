@@ -1,0 +1,41 @@
+<!--#include virtual="/layout/gate/inc/h.html"-->
+<main class="app">
+    <div class="app-wrap gray">
+        <div class="home-title">
+            <div class="today">
+                <p class="date"></p>
+            </div>
+            <div class="title-box">
+                <div class="title">
+                    <p class="hello">안녕하세요!</p>
+                    <div class="text">
+                        <p>파크골프</p>
+                        <p class="name">수성구장</p>
+                        <p>에</p>
+                    </div>
+                    <p>오신것을 환영합니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="button" onClick="location.href='/gate/qr/'">
+                <div class="inn">
+                    <i class="icon qr"></i>
+                    <p>QR 코드<br>입장</p>
+                </div>
+            </button>
+            <button class="button" onClick="location.href='/gate/bluetooth/'">
+                <div class="inn">
+                    <i class="icon blt"></i>
+                    <p>블루투스<br>입장</p>
+                </div>
+            </button>
+        </div>
+        <div class="logout">
+            <button class="button" onClick="location.href='/auth/login/'">
+                <p>로그아웃</p>
+            </button>
+        </div>
+    </div>
+</main>
+<!--#include virtual="/layout/gate/inc/f.html"-->

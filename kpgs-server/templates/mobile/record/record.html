@@ -1,0 +1,265 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<script>
+    $(function () {
+        $('.bnb ul > li:nth-child(2) > a').addClass('act');
+    });
+</script>
+<main class="record-wrap mainflex">
+    <section class="header">
+        <h2>내 기록</h2>
+    </section>
+    <!-- 통계정보 -->
+    <section class="info-wrap">
+        <div class="wrap">
+            <div class="inner">
+                <div class="title">
+                    <div class="tit">
+                        <div class="icon">
+                            <i class="ico ico-stats"></i>
+                        </div>
+                        <p>통계 정보</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="inf">
+                            <div class="txt">
+                                <b>107.75</b> <span>최대비거리</span>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="txt">
+                                <b>3</b> <span>게임플레이수</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="inf">
+                            <div class="txt">
+                                <b>8.53</b> <span>최대퍼팅거리</span>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="txt">
+                                <b>2.13</b> <span>평균타수</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 최근경기정보 -->
+    <section class="info-wrap">
+        <div class="wrap">
+            <div class="inner">
+                <div class="title">
+                    <div class="tit">
+                        <div class="icon">
+                            <i class="ico ico-recent"></i>
+                        </div>
+                        <p>최근 경기 정보</p>
+                    </div>
+                    <button class="view" onclick="location.href='/mobile/record/match-list.html'"><span>더 보기</span> <i
+                            class="ico-arrow"></i></button>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">가맹정</div>
+                            <div class="txt">시지</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">코스</div>
+                            <div class="txt">서재</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">최대비거리</div>
+                            <div class="txt">107.75</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">최대퍼팅거리</div>
+                            <div class="txt">8.53</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">최저 타수</div>
+                            <div class="txt">1</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">평균 타수</div>
+                            <div class="txt">2.13</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-wrap">
+                    <div class="box">
+                        <div class="tit">
+                            <h2>스코어카드</h2>
+                            <i class="view-ico"></i>
+                        </div>
+                        <div class="scoreinf">
+                            <div class="inner-wrap">
+                                <div class="content">
+                                    <div class="table">
+                                        <div class="tit">A코스</div>
+                                        <div class="tbl">
+                                            <table class="col">
+                                                <colgroup>
+                                                    <col>
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                </colgroup>
+                                                <thead class="line">
+                                                    <tr>
+                                                        <th>HOLE</th>
+                                                        <th>1</th>
+                                                        <th>2</th>
+                                                        <th>3</th>
+                                                        <th>4</th>
+                                                        <th>5</th>
+                                                        <th>6</th>
+                                                        <th>7</th>
+                                                        <th>8</th>
+                                                        <th>9</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="line">
+                                                    <tr>
+                                                        <td><b>PAR</b></td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>3</td>
+                                                        <td>3</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>타수</b></td>
+                                                        <td>
+                                                            <p class="red">6</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="red">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="red">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="blue">3</p>
+                                                        </td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>
+                                                            <p class="red">4</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="red">5</p>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="table">
+                                        <div class="tit">B코스</div>
+                                        <div class="tbl">
+                                            <table class="col">
+                                                <colgroup>
+                                                    <col>
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                    <col class="w9p">
+                                                </colgroup>
+                                                <thead class="line">
+                                                    <tr>
+                                                        <th>HOLE</th>
+                                                        <th>1</th>
+                                                        <th>2</th>
+                                                        <th>3</th>
+                                                        <th>4</th>
+                                                        <th>5</th>
+                                                        <th>6</th>
+                                                        <th>7</th>
+                                                        <th>8</th>
+                                                        <th>9</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="line">
+                                                    <tr>
+                                                        <td><b>PAR</b></td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>3</td>
+                                                        <td>3</td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>타수</b></td>
+                                                        <td>
+                                                            <p class="red">6</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="red">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="red">5</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="blue">3</p>
+                                                        </td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>
+                                                            <p class="red">4</p>
+                                                        </td>
+                                                        <td>
+                                                            <p class="red">5</p>
+                                                        </td>
+                                                        <td>5</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/inc/bnb.html"-->
+<!--#include virtual="/layout/mobile/inc/f.html"-->

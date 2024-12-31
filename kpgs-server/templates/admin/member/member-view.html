@@ -1,0 +1,90 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(4)").addClass('act');
+        $(".dp1:nth-child(4) .depth2").show();
+        $(".dp1:nth-child(4) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>회원정보</h3>
+            <p>회원정보</p>
+        </div>
+    </section>
+    <section class="contain col">
+        <div class="content">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>회원정보</h4>
+                    </div>
+                    <div class="buttons">
+                        <button class="bt bt-mdf" onclick="location.href='/admin/member/member-add.html'">수정</button>
+                        <button class="bt bt-del check" data-confirm="삭제하시겠습니까?" data-title="삭제">삭제</button>
+                        <button class="bt bt-list" onclick="location.href='/admin/member/'">목록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <div class="profile-wrap">
+                    <div class="profile">
+                        <div class="img" style="background: url(/img/admin/img/profile.jpg) 50% 50% no-repeat;">
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="tbl">
+                        <table class="row">
+                            <colgroup>
+                                <col class="w200">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>이름</th>
+                                    <td>
+                                        <p>김철수</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>아이디</th>
+                                    <td>
+                                        <p>abcd123</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>닉네임</th>
+                                    <td>
+                                        <p>abcd12</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이메일</th>
+                                    <td>
+                                        <p>abcd123@gmail.com</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>휴대폰 번호</th>
+                                    <td>
+                                        <p class="number">010-1234-5678</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>등록일</th>
+                                    <td>
+                                        <p class="date">24-08-29</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

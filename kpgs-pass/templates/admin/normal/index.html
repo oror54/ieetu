@@ -1,0 +1,195 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(3)").addClass('act');
+        $(".dp1:nth-child(3) .depth2").show();
+        $(".dp1:nth-child(3) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+
+<!-- main -->
+<main id="admin">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>일반회원</h3>
+    </section>
+    <section class="contain">
+        <div class="content list">
+            <div class="title">
+                <div class="search w400">
+                    <div class="input">
+                        <input type="text" placeholder="회원명, 아이디를 검색해주세요.">
+                        <button class="bt-srch"></button>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-del modal-open" data-modal-id="delete-normal-mem">
+                        <p>일반회원삭제</p>
+                    </button>
+                    <button class="bt bt-add" onclick="location.href='register.html'">
+                        <p>일반회원등록</p>
+                    </button>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col fixed">
+                        <colgroup>
+                            <col class="w80">
+                            <col class="w80">
+                            <col class="w200">
+                            <col>
+                            <col class="w150">
+                            <col class="w150">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+                                        onclick="selectAll(this)"> <label for="allcheck"><span
+                                            class="skip">전체선택</span></label>
+                                </th>
+                                <th>No.</th>
+                                <th>회원명</th>
+                                <th>아이디</th>
+                                <th>핸드폰번호</th>
+                                <th>생년월일</th>
+                                <th>메모</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" id="check68" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check68"><span
+                                            class="skip">68</span></label>
+                                </td>
+                                <td>68</td>
+                                <td>김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>57.03.18</td>
+                                <td class="tal">메모메모메모 </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check67" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check67"><span
+                                            class="skip">67</span></label>
+                                </td>
+                                <td>67</td>
+                                <td>김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>57.03.18</td>
+                                <td class="tal">메모메모메모 </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check66" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check66"><span
+                                            class="skip">66</span></label>
+                                </td>
+                                <td>66</td>
+                                <td>김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>57.03.18</td>
+                                <td class="tal">메모메모메모 </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check65" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check65"><span
+                                            class="skip">65</span></label>
+                                </td>
+                                <td>65</td>
+                                <td>김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>57.03.18</td>
+                                <td class="tal">메모메모메모 </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check64" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check64"><span
+                                            class="skip">64</span></label>
+                                </td>
+                                <td>64</td>
+                                <td>김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>57.03.18</td>
+                                <td class="tal">메모메모메모 </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check63" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check63"><span
+                                            class="skip">63</span></label>
+                                </td>
+                                <td>63</td>
+                                <td>김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>57.03.18</td>
+                                <td class="tal">메모메모메모 </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check62" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check62"><span
+                                            class="skip">62</span></label>
+                                </td>
+                                <td>62</td>
+                                <td>김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>57.03.18</td>
+                                <td class="tal">메모메모메모 </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check61" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check61"><span
+                                            class="skip">61</span></label>
+                                </td>
+                                <td>61</td>
+                                <td>김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>57.03.18</td>
+                                <td class="tal">메모메모메모 </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check60" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check60"><span
+                                            class="skip">60</span></label>
+                                </td>
+                                <td>60</td>
+                                <td>김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>57.03.18</td>
+                                <td class="tal">메모메모메모 </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check59" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check59"><span
+                                            class="skip">59</span></label>
+                                </td>
+                                <td>59</td>
+                                <td>김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>57.03.18</td>
+                                <td class="tal">메모메모메모 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="non-content">
+                <i class="ico"></i>
+                <span>검색된 내용이 없습니다.</span>
+            </div>
+            <!--#include virtual="/layout/paging/paging.html"-->
+        </div>
+    </section>
+    <!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

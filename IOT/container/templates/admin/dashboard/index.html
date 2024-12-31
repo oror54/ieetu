@@ -1,0 +1,201 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<!--#include virtual="/layout/admin/inc/header.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(1)").addClass('act');
+        $(".dp1:nth-child(1) .depth2").show();
+        $(".dp1:nth-child(1) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin" class="dashboard">
+    <section class="title">
+        <div class="tit">
+            <div class="txt">
+                <h3>대시보드</h3>
+            </div>
+            <button class="bt rfrsh">
+                <span>새로고침</span>
+                <i class="rfrsh-icon"></i>
+            </button>
+        </div>
+    </section>
+    <section class="dash">
+        <div class="contain col">
+            <div class="containers">
+                <div class="container">
+                    <div class="top">
+                        <div class="titl col">
+                            <div class="name">
+                                <p>컨테이너 명</p>
+                            </div>
+                            <div class="time">
+                                <small>2024.11.13 AM 10:40</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="state off"><span>수동</span></div>
+                        </div>
+                    </div>
+                    <div class="cntnr off">
+                        <div class="state"><b>종료</b></div>
+                    </div>
+                    <div class="bottom">
+                        <div class="info-wrap">
+                            <!-- 온도 -->
+                            <div class="info">
+                                <i class="ico tmp"></i>
+                                <div class="inf">
+                                    <p class="check"><b>23</b><span>˚</span></p>
+                                    <p class="tit">온도</p>
+                                </div>
+                            </div>
+                            <!-- 습도 -->
+                            <div class="info">
+                                <i class="ico hmd"></i>
+                                <div class="inf">
+                                    <p class="check"><b>23</b><span>%</span></p>
+                                    <p class="tit">습도</p>
+                                </div>
+                            </div>
+                            <!-- 형광등 -->
+                            <div class="info">
+                                <i class="ico lgh"></i>
+                                <div class="inf">
+                                    <p class="check"><b>OFF</b></p>
+                                    <p class="tit">형광등</p>
+                                </div>
+                            </div>
+                            <!-- 플러그-->
+                            <div class="info">
+                                <i class="ico elc"></i>
+                                <div class="inf">
+                                    <p class="check"><b>OFF</b></p>
+                                    <p class="tit">플러그</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="bt view-bt" onclick="location.href='/admin/dashboard/detail.html'">상세보기</button>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="top">
+                        <div class="titl col">
+                            <div class="name">
+                                <p>컨테이너 명</p>
+                            </div>
+                            <div class="time">
+                                <small>2024.11.13 AM 10:40</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="state on"><span>자동</span></div>
+                        </div>
+                    </div>
+                    <div class="cntnr">
+                        <div class="state"><b>사용</b></div>
+                    </div>
+                    <div class="bottom">
+                        <div class="info-wrap">
+                            <!-- 온도 -->
+                            <div class="info">
+                                <i class="ico tmp"></i>
+                                <div class="inf">
+                                    <p class="check"><b>23</b><span>˚</span></p>
+                                    <p class="tit">온도</p>
+                                </div>
+                            </div>
+                            <!-- 습도 -->
+                            <div class="info">
+                                <i class="ico hmd"></i>
+                                <div class="inf">
+                                    <p class="check"><b>23</b><span>%</span></p>
+                                    <p class="tit">습도</p>
+                                </div>
+                            </div>
+                            <!-- 형광등 -->
+                            <div class="info">
+                                <i class="ico lgh"></i>
+                                <div class="inf">
+                                    <p class="check"><b>OFF</b></p>
+                                    <p class="tit">형광등</p>
+                                </div>
+                            </div>
+                            <!-- 전류 -->
+                            <div class="info">
+                                <i class="ico elc"></i>
+                                <div class="inf">
+                                    <p class="check"><b>0</b><span>A</span></p>
+                                    <p class="tit">전류</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="bt view-bt" onclick="location.href='/admin/dashboard/detail.html'">상세보기</button>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="top">
+                        <div class="titl col">
+                            <div class="name">
+                                <p>컨테이너 명</p>
+                            </div>
+                            <div class="time">
+                                <small>2024.11.13 AM 10:40</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="state off"><span>수동</span></div>
+                        </div>
+                    </div>
+                    <div class="cntnr">
+                        <div class="state"><b>사용</b></div>
+                    </div>
+                    <div class="bottom">
+                        <div class="info-wrap">
+                            <!-- 온도 -->
+                            <div class="info">
+                                <i class="ico tmp"></i>
+                                <div class="inf">
+                                    <p class="check error"><b></b><span>˚</span></p>
+                                    <p class="tit">온도</p>
+                                </div>
+                            </div>
+                            <!-- 습도 -->
+                            <div class="info">
+                                <i class="ico hmd"></i>
+                                <div class="inf">
+                                    <p class="check"><b>23</b><span>%</span></p>
+                                    <p class="tit">습도</p>
+                                </div>
+                            </div>
+                            <!-- 형광등 -->
+                            <div class="info">
+                                <i class="ico lmp"></i>
+                                <div class="inf">
+                                    <p class="check"><b>ON</b></p>
+                                    <p class="tit">무드등</p>
+                                </div>
+                            </div>
+                            <!-- 전류 -->
+                            <div class="info">
+                                <i class="ico elc"></i>
+                                <div class="inf">
+                                    <p class="check"><b>0</b><span>A</span></p>
+                                    <p class="tit">전류</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="bt view-bt" onclick="location.href='/admin/dashboard/detail.html'">상세보기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

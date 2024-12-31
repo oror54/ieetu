@@ -1,0 +1,39 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+
+<!-- 프로필변경 -->
+<header id="header">
+    <div class="title line">
+        <button class="prev"><span class="skip">이전페이지</span></button>
+        <h3>프로필 변경</h3>
+        <div class="none"></div>
+    </div>
+</header>
+<!-- main class 추가 - 240604 -->
+<main class="mobile">
+    <section class="modify">
+        <div class="title">
+            <h3>프로필 이미지</h3>
+        </div>
+        <!-- 이미지 수정 -->
+        <div class="wrap">
+            <div class="user">
+                <div class="img">
+                    <div class="profile"></div>
+                    <div class="upload">
+                        <input type="file" name="files" id="upload" class="imgupload" accept="image/jpeg,image/png">
+                        <label for="upload"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 이미지 저장 버튼 - 240604 -->
+        <div class="footer">
+            <div class="wrap">
+                <div class="button">
+                    <a href="/member/setting/" class="bt bt-save act"><span>저장</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/inc/f.html"-->

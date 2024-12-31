@@ -1,0 +1,347 @@
+<!--#include virtual="/apartment/app/inc/h.html"-->
+<header id="header">
+    <div class="title">
+        <button class="prev" onclick="location.href='../main/'"><span class="skip">이전페이지</span></button>
+        <h2 class="tit">접수등록</h2>
+        <button class="logout" onclick="openModal('logout')"><span class="skip">로그아웃</span></button>
+    </div>
+</header>
+<main id="register">
+    <div class="wrap">
+        <div class="contain">
+            <div class="tit">
+                <h3>접수정보</h3>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table>
+                        <colgroup>
+                            <col class="w30p">
+                            <col class="w70p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th class="tal"><strong class="bullet">접수번호</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="접수번호를 입력해주세요">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">접수일자</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="input">
+                                            <input type="date" class="ip-dat">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">현장명</strong></th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="검색항목" class="sel">
+                                            <option>선택</option>
+                                            <option>선택</option>
+                                            <option>선택</option>
+                                            <option>선택</option>
+                                            <option>선택</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">방문일자</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="input">
+                                            <input type="date" class="ip-dat">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">동/호</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt">
+                                            <input type="text" class="ip-txt">
+                                            <span>동</span>
+                                        </div>
+                                        <div class="ipt">
+                                            <input type="text" class="ip-txt">
+                                            <span>호</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">입주자구분</strong></th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="검색항목" class="sel">
+                                            <option>전체</option>
+                                            <option>회장</option>
+                                            <option>전임회장</option>
+                                            <option>동대표</option>
+                                            <option>입주자</option>
+                                            <option>기타</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal">자택 연락처</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="연락처를 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">휴대폰</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="휴대폰번호를 입력해주세요">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal">의뢰내용</th>
+                                <td>
+                                    <div class="textarea">
+                                        <textarea placeholder="의뢰내용을 입력해주세요."></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal">고장원인</th>
+                                <td>
+                                    <div class="textarea">
+                                        <textarea placeholder="고장원인을 입력해주세요."></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal">A/S내용</th>
+                                <td>
+                                    <div class="textarea">
+                                        <textarea placeholder="A/S내용을 입력해주세요."></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal">A/S유형</th>
+                                <td>
+                                    <div class="inn">
+                                        <div class="ipt">
+                                            <input type="radio" id="no" name="check" class="skip">
+                                            <label for="no"> <span>무상</span></label>
+                                        </div>
+                                        <div class="ipt">
+                                            <input type="radio" id="yes" name="check" class="skip">
+                                            <label for="yes"> <span>유상</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">상태</strong></th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="검색항목" class="sel">
+                                            <option>선택</option>
+                                            <option>접수</option>
+                                            <option>완료</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">접수업체</strong></th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="접수업체" class="sel">
+                                            <option>선택</option>
+                                            <option>접수업체</option>
+                                            <option>접수업체</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">결제구분</strong></th>
+                                <td>
+                                    <div class="inn">
+                                        <div class="ipt">
+                                            <input type="radio" id="cash" name="check" class="skip">
+                                            <label for="cash"> <span>현금</span></label>
+                                        </div>
+                                        <div class="ipt">
+                                            <input type="radio" id="transfer" name="check" class="skip">
+                                            <label for="transfer"> <span>이체</span></label>
+                                        </div>
+                                        <div class="ipt">
+                                            <input type="radio" id="card" name="check" class="skip">
+                                            <label for="card"> <span>카드</span></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="tal"><strong class="bullet">비용</strong></th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="비용을 입력해주세요">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="tit">
+                <h3>부품 및 기술료</h3>
+                <button class="bt-add" onclick="location.href='./cost.html'">추가</button>
+            </div>
+            <div class="table">
+                <div class="tbl col">
+                    <table>
+                        <colgroup>
+                            <col class="w45">
+                            <col>
+                            <col class="w45">
+                            <col class="w45">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <th>번호</th>
+                            <th>항목(부품코드)</th>
+                            <th>수량</th>
+                            <th colspan="2">금액</th>
+                        </thead>
+                        <tbody>
+                            <!-- 부품및 기술료1 -->
+                            <tr onclick="location.href='./cost.html'" class="view">
+                                <td class="tac non" rowspan="3">1</td>
+                                <td class="tal category" rowspan="3">
+                                    교체부품
+                                </td>
+                                <td class="tac" rowspan="3">
+                                    1
+                                </td>
+                                <td class="tal">단가</td>
+                                <td class="tar">
+                                    100,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tal">기술료</td>
+                                <td class="tar">
+                                    30,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>총금액</td>
+                                <td class="tar">130,000</td>
+                            </tr>
+                            <!-- 부품및 기술료2 -->
+                            <tr onclick="location.href='./cost.html'" class="view">
+                                <td class="tac non" rowspan="3">2</td>
+                                <td class="tal category" rowspan="3">
+                                    메인보드교체메인보드교체메인보드교체
+                                </td>
+                                <td class="tac" rowspan="3">
+                                    2
+                                </td>
+                                <td class="tal">단가</td>
+                                <td class="tar">
+                                    100,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tal">기술료</td>
+                                <td class="tar">
+                                    60,000
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>총금액</td>
+                                <td class="tar">260,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="sum">
+                <div class="tit">합계 :</div>
+                <div class="money"><b>390,000</b>원 <small>(VAT포함)</small></div>
+            </div>
+        </div>
+        <div class="contain">
+            <div class="sign-wrap">
+                <div class="text">
+                    <b>A/S 부품비 및 기술료는 금액 산출 후, 거래명세표를 청구합니다.</b>
+                </div>
+                <div class="txt-wrap">
+                    <div class="txt">
+                        <span class="tit">방문일자 :</span>
+                        <p class="date">2022년 11월 23일</p>
+                    </div>
+                    <div class="txt">
+                        <span class="tit">방문기사 :</span>
+                        <div class="name">
+                            홍길동
+                        </div>
+                        <div class="sign">
+                            <button class="bt-sign">(서명)</button>
+                            <img src="../../img/app/signImg.png" alt="sign">
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <span class="tit">고객확인 :</span>
+                        <div class="name">
+                            <div class="inner">
+                                <input type="text" class="ip-txt">
+                            </div>
+                        </div>
+                        <div class="sign">
+                            <button class="bt-sign" onclick="location.href='./sign.html'">(서명) </button>
+                            <img src="" alt="sign" onError="this.style.visibility='hidden'">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logo">
+        <div class="img"><img src="../../img/app/logo/1.svg" alt="ieetu"></div>
+    </div>
+</main>
+<footer id="footer">
+    <div class="footer">
+        <div class="buttons">
+            <button class="bt bt-del" onclick="openModal('del')">삭제</button>
+            <button class="bt bt-list">목록</button>
+            <button class="bt bt-save" onclick="openModal('save')">저장</button>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+<!--#include virtual="/apartment/app/inc/modal.html"-->
+</body>
+
+</html>

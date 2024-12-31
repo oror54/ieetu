@@ -1,0 +1,107 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(5)").addClass('act');
+        $(".dp1:nth-child(5) .depth2").show();
+        $(".dp1:nth-child(5) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>체인점관리</h3>
+            <p>체인점목록</p>
+        </div>
+    </section>
+    <section class="contain col">
+        <div class="content">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>체인점정보</h4>
+                    </div>
+                    <div class="buttons">
+                        <button class="bt bt-mdf" onclick="location.href='/admin/chain/chain-add.html'">수정</button>
+                        <button class="bt bt-del check" data-confirm="삭제하시겠습니까?" data-title="삭제">삭제</button>
+                        <button class="bt bt-list" onclick="location.href='/admin/chain/'">목록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <div class="chain-image">
+                    <div class="chain">
+                        <div class="img open-image" style="background: url(/img/admin/img/chain2.jpg) 50% 50% no-repeat;" data-url="/img/admin/img/chain2.jpg"></div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="tbl">
+                        <table class="row">
+                            <colgroup>
+                                <col class="w200">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>체인점명</th>
+                                    <td>
+                                        <p>시지점</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>체인점타입</th>
+                                    <td>
+                                        <p>0</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>체인점코드</th>
+                                    <td>
+                                        <p>001</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td>
+                                        <div class="inn">
+                                            <p class="number">41500</p> <p>대구 수성고 고산로 123</p>
+                                            </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>주소상세</th>
+                                    <td>
+                                        <p>하나타운 제 1-13동</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전화번호</th>
+                                    <td>
+                                        <p class="number">010-1234-5678</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>광고그룹명</th>
+                                    <td>
+                                        <div class="inn">
+                                        <p class="chip"><small class="dvs">시지점광고</small></p>
+                                    </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>메모</th>
+                                    <td>
+                                        <div class="inn">
+                                        <textarea name="comment" id="comment" readonly>시지 직영점 입니다</textarea>
+                                    </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

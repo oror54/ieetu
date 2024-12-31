@@ -1,0 +1,64 @@
+<!-- 로그아웃 확인 -->
+<section class="modal-boxed" id="logout">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> <b>로그아웃 하시겠습니까? </b>
+                <p>작성중인 내용은 저장되지 않습니다.</p>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-no" onclick="closeModal('logout')">취소</button>
+                <button type="button" class="bt bt-okay" onclick="location.href='../login/'">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 저장 확인 -->
+<section class="modal-boxed" id="save">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> <b>저장하시겠습니까? </b>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-no" onclick="closeModal('save')">취소</button>
+                <button type="button" class="bt bt-okay" onclick="location.href='../register/'">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 삭제확인 -->
+<section class="modal-boxed" id="del">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> <b>삭제하시겠습니까? </b>
+                <p>작성된 내용이 삭제됩니다.</p>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-no" onclick="closeModal('del')">취소</button>
+                <button type="button" class="bt bt-okay" onclick="location.href='../register/'">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+
+<!-- 닫기확인 -->
+<section class="modal-boxed" id="close">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con"> <b>닫으시겠습니까? </b>
+                <p>작성된 내용이 저장되지 않습니다.</p>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-no" onclick="closeModal('close')">취소</button>
+                <button type="button" class="bt bt-okay"  onclick="location.href='./'">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>

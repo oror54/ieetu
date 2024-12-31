@@ -1,0 +1,105 @@
+@charset "utf-8"; /* 모바일 모달 */
+.jBox-wrapper.modal-cofirm { display: flex !important; flex-direction: column; align-items: center; justify-content: center; width: 100%; } 
+.modal-cofirm .jBox-container { max-width: 320px; width: 100%; display: flex; flex-direction: column; align-items: center; } 
+.modal-cofirm .jBox-content { padding: 40px 0 !important; display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 15px; font-weight: 500; letter-spacing: -0.75px; color: #555; width: 100% !important; } 
+.modal-cofirm .jBox-content .con { display: flex; flex-direction: column; align-items: center; gap: 10px; font-size:15px; color:#222; text-align:center; white-space:pre-line; } 
+.modal-cofirm .jBox-content .con b { font-size: 16px; letter-spacing: -0.75px; font-weight: 500; } 
+.modal-cofirm .jBox-content .con p { font-size: 14px; font-weight: 500; letter-spacing: -0.5px; color: #555; } 
+.modal-cofirm .jBox-Confirm-footer { display: flex; flex-direction: row; align-items: center; height: 50px; width: 100%; border-radius: 0 0 4px 4px; overflow: hidden; } 
+.modal-cofirm .jBox-Confirm-footer .btn { width: 100%; font-size: 16px; font-weight: 600; border-top: 1px solid #ddd; display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%; } 
+.modal-cofirm .jBox-Confirm-footer .btn + .btn { border-left: 1px solid #ddd } 
+.modal-cofirm .jBox-Confirm-footer .btn.bt-okay { color: #055c53 !important;; background: #fff !important; } 
+.modal-cofirm .jBox-Confirm-footer .btn.bt-no { color: #9496a1 !important;; background: #fff !important; } 
+
+
+
+
+
+/* 관리자페이지 모달 */
+/* .jBox-container{overflow: hidden;} */
+.jBox-wrapper-admin.modal-cofirm { display: flex !important; flex-direction: column; align-items: center; justify-content: center; width: 100%; } 
+.jBox-overlay { max-width: 100%; background-color: rgba(0, 0, 0, 0.70) !important; } 
+.jBox-overlay-admin { max-width: 100%; background-color: rgba(0, 0, 0, 0.70) !important; } 
+
+.jBox-wrapper-admin .jBox-content .con b { font-size: 16px; letter-spacing: -0.75px; font-weight: 600; } 
+.jBox-wrapper-admin .jBox-title { width: 100%; background-color: #fff; font-weight: 600; letter-spacing: -0.75px; font-size: 16px; } 
+.jBox-wrapper-admin .jBox-title .tit { font-size: 16px; letter-spacing: -0.75px; font-weight: 600; } 
+
+
+.jBox-wrapper-admin .boxed { display: flex; flex-direction: column; gap: 20px; height: 100%; } 
+.jBox-wrapper-admin .boxed .table { height: 100%; } 
+.jBox-wrapper-admin .search + .table { padding-top: 20px; border-top: 1px solid #ddd; } 
+.jBox-wrapper-admin .search { width: 100%; display: flex; flex-direction: row; align-items: center; gap: 10px; } 
+.jBox-wrapper-admin .search label { font-size: 14px; font-weight: 500; letter-spacing: -0.5px; color: #555; } 
+.jBox-wrapper-admin .search .ipt { width: calc(100% - 70px); display: flex; flex-direction: row; align-items: center; } 
+
+.jBox-wrapper-admin .search .ipt .ipt-txt { width: calc(100% - 40px); padding: 10px; border-radius: 5px 0 0 5px; height: 40px; } 
+.jBox-wrapper-admin .search .ipt .bt-sch { width: 40px; height: 40px; border-radius: 0 5px 5px 0; transition: all 0.3s; background-color: #ccc; padding: 9px; } 
+.jBox-wrapper-admin .search .ipt .bt-sch:hover { box-shadow: none; } 
+
+.jBox-wrapper-admin.modal-cofirm-add .tbl .inner { display: flex; align-items: center; gap: 10px; } 
+.jBox-wrapper-admin.modal-cofirm-add .tbl .inner .sel { padding: 10px; min-width: 100px; width: 100%; font-size: 14px; border: 1px solid #ddd; background: #fff; border-radius: 5px; } 
+.jBox-wrapper-admin.modal-cofirm-add .tbl .inner .sel option { font-size: 14px; } 
+.jBox-wrapper-admin.modal-cofirm-add .non-content { height: 100%; } 
+
+.jBox-wrapper-admin.modal-cofirm-add .input-wrap { width: 100%; display: flex; flex-direction: row; align-items: center; height: 60px; } 
+.jBox-wrapper-admin.modal-cofirm-add .input-wrap .title { width: 150px; height: 100%; background-color: #e9e9e9; display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 0 !important; margin-left: 0 !important; font-size: 14px; letter-spacing: -0.75px; color: #333; font-weight: 600; } 
+.jBox-wrapper-admin.modal-cofirm-add .input-wrap .input { width: calc(100% - 150px); height: 100%; display: flex; flex-direction: row; justify-content: center; align-items: center; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #d9d9d9; padding: 10px; } 
+.jBox-wrapper-admin.modal-cofirm-add .input-wrap .input .ipt-txt { width: 100%; height: 100%; padding: 10px; } 
+
+
+
+.jBox-wrapper-admin.jBox-Default .search { display: flex; flex-direction: row; gap: 10px; padding: 20px 0; align-items: center; } 
+.jBox-wrapper-admin.jBox-Default .search label { width: 65px; font-size: 16px; letter-spacing: -0.75px; } 
+.jBox-wrapper-admin.jBox-Default .search .ipt { width: calc(100% - 65px); height: 42px; display: flex; position: relative; flex-direction: row; align-items: center; } 
+.jBox-wrapper-admin.jBox-Default .search .ipt input { padding: 8px 10px; width: 100%; height: 100%; background-color: #fff; border-radius: 5px; } 
+.jBox-wrapper-admin.jBox-Default .search .ipt input:focus { border: 1px solid #555; } 
+.jBox-wrapper-admin.jBox-Default .search .ipt .bt-sch { width: 24px; height: 24px; display: block; background: url(../../img/admin/icon/search-icon.svg) 50% 50% no-repeat; background-size: contain; position: absolute; right: 0; top: 50%; transform: translate(-10px, -50%); } 
+.jBox-wrapper-admin.jBox-wrapper-admin.jBox-Default .inner { width: 100%; } 
+.jBox-wrapper-admin.jBox-Default .inner select { width: 100%; padding: 10px; border: 1px solid #eee; border-radius: 8px; } 
+.jBox-wrapper-admin.jBox-Default .inner select:focus { border: 1px solid #555; } 
+
+.jBox-wrapper-admin.jBox-Default .jBox-content { width: 100%; height: 100%; flex-direction: column; justify-content: center; align-items: center; } 
+.jBox-wrapper-admin.jBox-Default .jBox-content .boxed { width: 100%; height: 100%;; } 
+.jBox-wrapper-admin.jBox-Default .jBox-content .boxed .con { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; } 
+.jBox-wrapper-admin.jBox-Default .input-wrap { display: flex; flex-direction: row; align-items: center; width: 100%; border-top: 1px solid #e9e9e9; border-bottom: 1px solid #e9e9e9; } 
+.jBox-wrapper-admin.jBox-Default .input-wrap .title { padding: 10px 0 !important; width: 150px; margin-left: 0 !important; background-color: #e9e9e9; height: 60px; display: flex; flex-direction: row; align-items: center; justify-content: center; } 
+.jBox-wrapper-admin.jBox-Default .input-wrap .input { width: 100%; height: 60px; padding: 10px; background-color: #fff; display: flex; flex-direction: row; align-items: center; justify-content: center; } 
+.jBox-wrapper-admin.jBox-Default .input-wrap .input input { width: 100%; padding: 10px; } 
+
+
+
+.jBox-Confirm-footer { display: flex !important; flex-direction: row !important; align-items: center!important; height: 50px !important; width: 100% !important; overflow: hidden !important; } 
+.jBox-Confirm-footer .btn { width: 100%; font-size: 16px; font-weight: 600; border-top: 1px solid #ddd; display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%; } 
+.jBox-Confirm-footer .btn + .btn { border-left: 1px solid #ddd } 
+.jBox-Confirm-footer .btn.bt-okay { background-color: #055c53; color: #fff; transition: all 0.3s; } 
+.jBox-Confirm-footer .btn.bt-okay:hover { background-color: #013630; color: #fff; } 
+.jBox-Confirm-footer .btn.bt-no { color: #fff; background: #9496a1; transition: all 0.3s; } 
+.jBox-Confirm-footer .btn.bt-no:hover { color: #fff; background: #727272; } 
+.confirm { display: flex !important; flex-direction: row !important; align-items: center!important; height: 50px !important; width: 100% !important; overflow: hidden !important; } 
+.confirm .btn { width: 100%; font-size: 16px; font-weight: 600; border-top: 1px solid #ddd; display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%; } 
+.confirm .btn + .btn { border-left: 1px solid #ddd } 
+.confirm .btn.bt-okay { background-color: #055c53; color: #fff; transition: all 0.3s; } 
+.modal-confirm-delete { width: 350px; } 
+.modal-confirm-delete .jBox-content { padding: 40px 20px; } 
+.modal-confirm-delete .btn.bt-okay { background-color: #fff; color: #055C53; transition: all 0.3s; } 
+.modal-confirm-delete .btn.bt-okay:hover { background-color: #f9f9f9; color: #055C53; } 
+.modal-confirm-delete .btn.bt-no { background-color: #fff; color: #9496A1; transition: all 0.3s; } 
+.modal-confirm-delete .btn.bt-no:hover { background-color: #f9f9f9; color: #9496A1; } 
+.btn.bt-okay { background-color: #055c53; color: #fff; transition: all 0.3s; } 
+
+
+.jBox-wrapper-admin .jBox-Confirm-footer{border-radius: 0 0 4px 4px;}
+
+
+
+
+
+
+
+@media only screen and (min-width:1024px){
+ .jBox-overlay { display: block; opacity: 1; z-index: 9999; margin: 0 0 0 calc(50vw - 1px) !important; width: 100%; max-width: 422px !important; } 
+ .jBox-overlay-admin { display: block; opacity: 1; z-index: 9999; width: 100%; max-width: 100% !important; } 
+ .jBox-wrapper.modal-cofirm { max-width: 422px; inset: 50% 50% !important; } 
+ .jBox-wrapper-admin.modal-cofirm { max-width:100%; min-width: 1600px; inset: 50% 5% !important; } 
+ }

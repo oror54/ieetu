@@ -1,0 +1,437 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<!--#include virtual="/layout/admin/inc/header.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(5)").addClass('act');
+        $(".dp1:nth-child(5) .depth2").show();
+        $(".dp1:nth-child(5) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<main id="admin">
+    <section class="title">
+        <div class="tit">
+            <div class="txt">
+                <h3>제어</h3>
+            </div>
+        </div>
+    </section>
+    <section class="contain row">
+        <!-- 컨테이너 선택 -->
+        <div class="content col w400">
+            <div class="titles">
+                <h4>컨테이너</h4>
+            </div>
+            <div class="title-wrap">
+                <fieldset class="w100p">
+                    <div class="search w100p">
+                        <div class="inn">
+                            <div class="input">
+                                <input type="text" placeholder="검색어를 입력해주세요." class="ipt-txt">
+                                <button class="bt-srch">
+                                    <i class="ico-src"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="list container-list">
+                <div class="srll h660">
+                    <div class="inner-wrap">
+                        <button class="inner act">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                        <button class="inner">
+                            <p>컨테이너 1 </p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 장비  -->
+        <div class="content-wrap">
+            <div class="tit-box">
+                <div class="titl">
+                    <div class="tit col">
+                        <div class="name">
+                            <p>컨테이너 명</p>
+                        </div>
+                    </div>
+                    <div class="row skip">
+                        <div class="state off"><span>수동</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls-wrap">
+                <div class="content col w300">
+                    <div class="titles">
+                        <h4>서비스리스트</h4>
+                    </div>
+                    <div class="list container-list">
+                        <div class="srll h630">
+                            <div class="inner-wrap">
+                                <button class="inn">
+                                    <div class="service">
+                                        <i class="ico tmp"></i>
+                                        <p class="tit">온도</p>
+                                        <p class="check"><b>23</b><span>˚</span></p>
+                                    </div>
+                                </button>
+                                <button class="inn">
+                                    <div class="service">
+                                        <i class="ico hmd"></i>
+                                        <p class="tit">습도</p>
+                                        <p class="check"><b>40</b><span>%</span></p>
+                                    </div>
+                                </button>
+                                <button class="inn">
+                                    <div class="service">
+                                        <i class="ico lgh"></i>
+                                        <p class="tit">형광등</p>
+                                        <p class="check"><b>0</b><span>%</span></p>
+                                    </div>
+                                </button>
+                                <button class="inn">
+                                    <div class="service">
+                                        <i class="ico bel"></i>
+                                        <p class="tit">도어벨</p>
+                                        <p class="check"><b>0</b><span>%</span></p>
+                                    </div>
+                                </button>
+                                <button class="inn">
+                                    <div class="service">
+                                        <i class="ico lmp"></i>
+                                        <p class="tit">무드등</p>
+                                        <p class="check"><b>0</b><span>%</span></p>
+                                    </div>
+                                </button>
+                                <button class="inn">
+                                    <div class="service">
+                                        <i class="ico plg"></i>
+                                        <p class="tit">플러그</p>
+                                        <p class="check"><b>0</b><span>%</span></p>
+                                    </div>
+                                </button>
+                                <button class="inn">
+                                    <div class="service">
+                                        <i class="ico swt"></i>
+                                        <p class="tit">벽 스위치 2번</p>
+                                        <p class="check"><b>OFF</b></p>
+                                    </div>
+                                </button>
+                                <button class="inn">
+                                    <div class="service">
+                                        <i class="ico pc"></i>
+                                        <p class="tit">PC</p>
+                                        <p class="check"><b>OFF</b></p>
+                                    </div>
+                                </button>
+                                <button class="inn">
+                                    <div class="service">
+                                        <i class="ico cnd"></i>
+                                        <p class="tit">에어컨 끄기</p>
+                                        <p class="check"></p>
+                                    </div>
+                                </button>
+                                <button class="inn act">
+                                    <div class="service">
+                                        <i class="ico cnd"></i>
+                                        <p class="tit">에어컨 켜기</p>
+                                        <p class="check"></p>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <div class="content service-content">
+                        <div class="titles">
+                            <h4>제어</h4>
+                        </div>
+                        <!-- 기기제어 -->
+                        <div class="control-wrap">
+                            <!-- 서비스 기기 정보 -->
+                            <div class="box infrm">
+                                <div class="tit">
+                                    <h5>벽 스위치</h5>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>장비명</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>스위치</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>모델명</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>SLEH-00448</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>시리얼번호</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>32b1h25273</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>브랜드</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>SONY</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>프로토콜</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>usb2.0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 기기 제어  -->
+                            <div class="box cntrl w350">
+                                <div class="space">
+                                    <div class="ttl">
+                                        <h4>제어</h4>
+                                    </div>
+                                    <div class="switch">
+                                        <label class="swtch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 기기제어 -->
+                        <div class="control-wrap">
+                            <!-- 서비스 기기 정보 -->
+                            <div class="box infrm">
+                                <div class="tit">
+                                    <h5>에어컨 끄기</h5>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>장비명</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>스마트 리모컨 허브</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>모델명</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>GKW-IR021</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>시리얼번호</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>8809656200206</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>브랜드</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>고콘</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>프로토콜</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>Wi-Fi(2.4GHz), IR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 기기 제어  -->
+                            <div class="box cntrl w350">
+                                <div class="space">
+                                    <div class="ttl">
+                                        <h4>제어</h4>
+                                    </div>
+                                    <div class="button">
+                                        <button class="bt bttn"> 끄기</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 기기제어 -->
+                        <div class="control-wrap">
+                            <!-- 서비스 기기 정보 -->
+                            <div class="box infrm">
+                                <div class="tit">
+                                    <h5>에어컨 켜기</h5>
+                                </div>
+                                <div class="info-wrap">
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>장비명</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>스마트 리모컨 허브</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>모델명</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>GKW-IR021</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>시리얼번호</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>8809656200206</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>브랜드</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>고콘</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="ttl">
+                                            <b>프로토콜</b>
+                                        </div>
+                                        <div class="inf">
+                                            <p>Wi-Fi(2.4GHz), IR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 기기 제어  -->
+                            <div class="box-wrap w350">
+                                <div class="box cntrl">
+                                    <div class="space">
+                                        <div class="ttl">
+                                            <h4>제어</h4>
+                                        </div>
+                                        <div class="button">
+                                            <button class="bt bttn">켜기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box cntrl">
+                                    <div class="space">
+                                        <div class="ttl">
+                                            <h4>모드</h4>
+                                        </div>
+                                        <div class="buttons row">
+                                            <div class="radio">
+                                                <input type="radio" id="wind" type="AC" name="AC" class="skip rdo">
+                                                <label for="wind">
+                                                    <div class="icon">
+                                                        <i class="ico wind"></i>
+                                                    </div>
+                                                    <span>송풍</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="cool" type="AC" name="AC" class="skip rdo">
+                                                <label for="cool">
+                                                    <div class="icon">
+                                                        <i class="ico cool"></i>
+                                                    </div>
+                                                    <span>냉방</span>
+                                                </label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" id="heat" type="AC" name="AC" class="skip rdo">
+                                                <label for="heat">
+                                                    <div class="icon">
+                                                        <i class="ico heat"></i>
+                                                    </div>
+                                                    <span>난방</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box cntrl">
+                                    <div class="space">
+                                        <div class="ttl">
+                                            <h4>온도</h4>
+                                        </div>
+                                        <div class="select">
+                                            <select name="select" title="그룹" class="sel">
+                                                <option hidden selected>선택</option>
+                                                <option>18˚</option>
+                                                <option>20˚</option>
+                                                <option>24˚</option>
+                                                <option>26˚</option>
+                                                <option>28˚</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--#include virtual="/layout/admin/modal/modal.html"-->
+<!--#include virtual="/layout/admin/inc/f.html"-->

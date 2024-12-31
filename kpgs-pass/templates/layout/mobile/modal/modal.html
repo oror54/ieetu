@@ -1,0 +1,142 @@
+<!-- 모달 -->
+<!-- 휴대폰 번호 중복확인 -->
+<section class="modal-boxed" id="phone-overlap">
+    <div class="modal-alert w350">
+        <article class="article">
+            <div class="con">
+                <b>이미 가입된 휴대폰 번호 입니다.</b>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="btn bt-okay" onclick="closeModal('phone-overlap')">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 휴대폰 번호 인증 시간 만료 -->
+<section class="modal-boxed" id="complete">
+    <div class="modal-alert w350">
+        <article class="article">
+            <div class="con">
+                <b>입력 시간이 초과하였습니다.</b>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="btn bt-okay" onclick="closeModal('complete')">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 휴대폰 번호 인증 완료 -->
+<section class="modal-boxed" id="complete">
+    <div class="modal-alert w350">
+        <article class="article">
+            <div class="con">
+                <b>휴대폰 번호 인증이 완료되었습니다.</b>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="btn bt-okay" onclick="closeModal('complete')">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 이전화면 이동 -->
+<section class="modal-boxed" id="previous1">
+    <div class="modal-alert w350">
+        <article class="article">
+            <div class="con">
+                <b>입력된 내용이 사라집니다.</b>
+                <p>이전 화면으로 이동하시겠습니까?</p>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="btn bt-no" onclick="closeModal('previous1')">아니오</button>
+                <button type="button" class="btn bt-okay" onclick="location.href='/auth/login/'">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+ <!-- 이전화면 이동 -->
+ <section class="modal-boxed" id="previous">
+    <div class="modal-alert w350">
+        <article class="article">
+            <div class="con">
+                <b>입력된 내용이 사라집니다.</b>
+                <p>이전 화면으로 이동하시겠습니까?</p>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="btn bt-no" onclick="closeModal('previous')">아니오</button>
+                <button type="button" class="btn bt-okay" onclick="location.href='login.html'">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 아이디 중복 -->
+<section class="modal-boxed" id="id-overlap">
+    <div class="modal-alert w350">
+        <article class="article">
+            <div class="con">
+                <b>이미 가입된 아이디 입니다.</b>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="btn bt-okay" onclick="closeModal('id-overlap')">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 아이디 사용가능 -->
+<section class="modal-boxed" id="id-use">
+    <div class="modal-alert w350">
+        <article class="article">
+            <div class="con">
+                <b>사용 가능한 아이디입니다.</b>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="btn bt-okay" onclick="closeModal('id-use')">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 회원가입 -->
+<section class="modal-boxed" id="membership">
+    <div class="modal-alert w350">
+        <article class="article">
+            <div class="con">
+                <b>회원 가입 완료</b>
+                <p>회원가입이 완료되었습니다.</p>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="btn bt-okay" onclick="location.href='/auth/login/'">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 비밀번호변경완료 -->
+<section class="modal-boxed" id="change">
+    <div class="modal-alert w350">
+        <article class="article">
+            <div class="con">
+                <b>비밀번호 변경 완료</b>
+                <p>비밀번호가 성공적으로 변경되었습니다.</p>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="btn bt-okay" onclick="location.href='/auth/login/'">확인</button>
+            </div>
+        </footer>
+    </div>
+</section>

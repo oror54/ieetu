@@ -1,0 +1,206 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(3)").addClass('act');
+        $(".dp1:nth-child(3) .depth2").show();
+        $(".dp1:nth-child(3) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>코스정보</h3>
+            <p>코스맵정보</p>
+        </div>
+    </section>
+    <section class="contain">
+        <div class="content list">
+            <div class="titles">
+                <h4>코스정보</h4>
+                <div class="title-wrap">
+                    <fieldset>
+                        <div class="search">
+                            <div class="inn">
+                                <div class="input">
+                                    <input type="text" placeholder="검색어를 입력해주세요." class="ipt-txt w200">
+                                    <button class="bt-srch">
+                                        <i class="ico-src"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="buttons">
+                        <button class="bt bt-del check" data-confirm="삭제하시겠습니까?" data-title="삭제">삭제</button>
+                        <button class="bt bt-add" onclick="location.href='/admin/course/course-add.html'">코스 등록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="course-wrap">
+                <div class="course">
+                    <div class="img">
+                    </div>
+                    <div class="cons">
+                        <div class="name">
+                            <p>코스명</p>
+                            <h4 class="tit">
+                                <p class="elpss">서재</p>
+                            </h4>
+                        </div>
+                        <div class="con">
+                            <div class="inn"><i class="ico blc"> 코드값</i>
+                                <p>KPGS999</p>
+                            </div>
+                            <div class="inn"><i class="ico grn"> 주소</i>
+                                <p class="elpss">711811 대구 달성군 다사읍 방천리 142 서재파크골프장</p>
+                            </div>
+                            <div class="inn"><i class="ico orn"> 등록일</i>
+                                <p>2024-08-29</p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="bt bt-view"
+                                onclick="location.href='/admin/course/course-view.html'">상세보기</button>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="check999" class="checknum unitcheck" name="check"
+                            onclick="checkSelectAll()">
+                        <label for="check999"><span class="skip">999</span></label>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="img" style="background: url(/img/admin/img/course.jpg) 50% 50% no-repeat;">
+                    </div>
+                    <div class="cons">
+                        <div class="name">
+                            <p>코스명</p>
+                            <h4 class="tit">
+                                <p class="elpss">서재</p>
+                            </h4>
+                        </div>
+                        <div class="con">
+                            <div class="inn"><i class="ico blc"> 코드값</i>
+                                <p>KPGS999</p>
+                            </div>
+                            <div class="inn"><i class="ico grn"> 주소</i>
+                                <p class="elpss">711811 대구 달성군 다사읍 방천리 142 서재파크골프장</p>
+                            </div>
+                            <div class="inn"><i class="ico orn"> 등록일</i>
+                                <p>2024-08-29</p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="bt bt-view"
+                                onclick="location.href='/admin/course/course-view.html'">상세보기</button>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="check998" class="checknum unitcheck" name="check">
+                        <label for="check998"><span class="skip">998</span></label>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="img" style="background: url(/img/admin/img/course.jpg) 50% 50% no-repeat;">
+                    </div>
+                    <div class="cons">
+                        <div class="name">
+                            <p>코스명</p>
+                            <h4 class="tit">
+                                <p class="elpss">서재</p>
+                            </h4>
+                        </div>
+                        <div class="con">
+                            <div class="inn"><i class="ico blc"> 코드값</i>
+                                <p>KPGS999</p>
+                            </div>
+                            <div class="inn"><i class="ico grn"> 주소</i>
+                                <p class="elpss">711811 대구 달성군 다사읍 방천리 142 서재파크골프장</p>
+                            </div>
+                            <div class="inn"><i class="ico orn"> 등록일</i>
+                                <p>2024-08-29</p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="bt bt-view"
+                                onclick="location.href='/admin/course/course-view.html'">상세보기</button>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="check997" class="checknum unitcheck" name="check">
+                        <label for="check997"><span class="skip">997</span></label>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="img" style="background: url(/img/admin/img/course.jpg) 50% 50% no-repeat;">
+                    </div>
+                    <div class="cons">
+                        <div class="name">
+                            <p>코스명</p>
+                            <h4 class="tit">
+                                <p class="elpss">서재</p>
+                            </h4>
+                        </div>
+                        <div class="con">
+                            <div class="inn"><i class="ico blc"> 코드값</i>
+                                <p>KPGS999</p>
+                            </div>
+                            <div class="inn"><i class="ico grn"> 주소</i>
+                                <p class="elpss">711811 대구 달성군 다사읍 방천리 142 서재파크골프장</p>
+                            </div>
+                            <div class="inn"><i class="ico orn"> 등록일</i>
+                                <p>2024-08-29</p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="bt bt-view"
+                                onclick="location.href='/admin/course/course-view.html'">상세보기</button>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="check996" class="checknum unitcheck" name="check">
+                        <label for="check996"><span class="skip">996</span></label>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="img" style="background: url(/img/admin/img/course.jpg) 50% 50% no-repeat;">
+                    </div>
+                    <div class="cons">
+                        <div class="name">
+                            <p>코스명</p>
+                            <h4 class="tit">
+                                <p class="elpss">서재</p>
+                            </h4>
+                        </div>
+                        <div class="con">
+                            <div class="inn"><i class="ico blc"> 코드값</i>
+                                <p>KPGS999</p>
+                            </div>
+                            <div class="inn"><i class="ico grn"> 주소</i>
+                                <p class="elpss">711811 대구 달성군 다사읍 방천리 142 서재파크골프장</p>
+                            </div>
+                            <div class="inn"><i class="ico orn"> 등록일</i>
+                                <p>2024-08-29</p>
+                            </div>
+                        </div>
+                        <div class="button">
+                            <button class="bt bt-view"
+                                onclick="location.href='/admin/course/course-view.html'">상세보기</button>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="check995" class="checknum unitcheck" name="check">
+                        <label for="check995"><span class="skip">995</span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="non-content">
+                <i class="ico"></i>
+                <span>내용이 없습니다.</span>
+            </div>
+            <!--#include virtual="/layout/paging/paging.html"-->
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

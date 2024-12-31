@@ -1,0 +1,175 @@
+<!--#include virtual="/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(1)").addClass('act');
+        $(".dp1:nth-child(1) .depth2").show();
+        $(".dp1:nth-child(1) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>대시보드</h2>
+        </div>
+    </section>
+    <section class="contents control">
+        <div class="title">
+            <h2>엔진 제어</h2>
+        </div>
+        <div class="content">
+            <div class="cons">
+                <div class="con">
+                    <button class="ctl start">
+                        <i class="xi-play"></i>
+                    </button>
+                    <span>시작</span>
+                </div>
+                <div class="con">
+                    <button class="ctl stop">
+                        <i class="xi-pause"></i>
+                    </button>
+                    <span>중지</span>
+                </div>
+                <div class="con">
+                    <button class="ctl restart">
+                        <i class="xi-rotate-right"></i>
+                    </button>
+                    <span>재시작</span>
+                </div>
+            </div>
+            <!-- 상태확인 class= "on" or "off" 구분 -->
+            <div class="check on">
+                <div class="tit">상태확인</div>
+                <div class="checkbox">
+                    <i class="state"></i>
+                </div>
+                <span class="chck off">작동중지</span>
+                <span class="chck on">작동중</span>
+            </div>
+        </div>
+    </section>
+    <section class="contents chart">
+        <div class="title">
+            <h2>엔진 상태</h2>
+        </div>
+        <div class="cons">
+            <!-- Load Status -->
+            <div class="item">
+                <div class="tit">Load Status</div>
+                <div class="con">
+                    <div class="ctstats"><strong class="num1">31%</strong></div>
+                    <canvas id="ctstats1"></canvas>
+                </div>
+                <div class="pin">
+                    <div class="ico pn1">
+                        <p>running bllocked</p>
+                    </div>
+                </div>
+            </div>
+            <!-- GPU Usage -->
+            <div class="item">
+                <div class="tit">GPU Usage</div>
+                <div class="con">
+                    <div class="ctstats"><strong class="num1">87%</strong></div>
+                    <canvas id="ctstats2"></canvas>
+                </div>
+                <div class="pin">
+                    <div class="ico pn2">
+                        <p>4 core</p>
+                    </div>
+                </div>
+            </div>
+            <!-- RAM Usage -->
+            <div class="item">
+                <div class="tit">RAM Usage</div>
+                <div class="con">
+                    <div class="ctstats"><strong class="num1">23.9%</strong></div>
+                    <canvas id="ctstats3"></canvas>
+                </div>
+                <div class="pin">
+                    <div class="ico pn3">
+                        <p class="usg">1781</p>
+                        <p class="slash">/</p>
+                        <p class="all">7821</p>
+                        <b class="unit">(MB)</b>
+                    </div>
+                </div>
+            </div>
+            <!-- / -->
+            <div class="item">
+                <div class="tit">/</div>
+                <div class="con">
+                    <div class="ctstats"><strong class="num1">61%</strong></div>
+                    <canvas id="ctstats4"></canvas>
+                </div>
+                <div class="pin">
+                    <div class="ico pn4">
+                        <p class="usg">112</p>
+                        <p class="slash">/</p>
+                        <p class="all">196</p>
+                        <b class="unit">(GB)</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    Chart.defaults.elements.arc.borderWidth = 3;
+    Chart.defaults.datasets.doughnut.cutout = '80%';
+
+    const chartInstance1 = new Chart(document.getElementById("ctstats1"), {
+        type: 'doughnut',
+        data: {
+            labels: [/*'Load Status'*/],
+            datasets: [{
+                label: ' ',
+                data: [69, 31],
+                borderRadius: 60,
+                backgroundColor: ['#DDDDDD', '#FFC362']
+            }]
+        }
+    });
+
+    const chartInstance2 = new Chart(document.getElementById("ctstats2"), {
+        type: 'doughnut',
+        data: {
+            labels: [/*'GPU Usage'*/],
+            datasets: [{
+                label: ' ',
+                data: [13, 87],
+                borderRadius: 60,
+                backgroundColor: ['#DDDDDD', '#FF8A00']
+            }]
+        }
+    });
+
+    const chartInstance3 = new Chart(document.getElementById("ctstats3"), {
+        type: 'doughnut',
+        data: {
+            labels: [/*'RAM Usage'*/],
+            datasets: [{
+                label: ' ',
+                data: [76.1, 23.9],
+                borderRadius: 60,
+                backgroundColor: ['#DDDDDD', '#395996']
+            }]
+        }
+    });
+
+    const chartInstance4 = new Chart(document.getElementById("ctstats4"), {
+        type: 'doughnut',
+        data: {
+            labels: [/*'/'*/],
+            datasets: [{
+                label: ' ',
+                data: [39, 61],
+                borderRadius: 60,
+                backgroundColor: ['#DDDDDD', '#333333']
+            }]
+        }
+    });
+</script>
+<!--#include virtual="/inc/f.html"-->

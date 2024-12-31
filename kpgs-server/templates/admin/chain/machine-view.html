@@ -1,0 +1,72 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(5)").addClass('act');
+        $(".dp1:nth-child(5) .depth2").show();
+        $(".dp1:nth-child(5) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>체인점관리</h3>
+            <p>장비목록</p>
+        </div>
+    </section>
+    <section class="contain col">
+        <div class="content">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>장비목록</h4>
+                    </div>
+                    <div class="buttons">
+                        <button class="bt bt-mdf" onclick="location.href='/admin/chain/machine-add.html'">수정</button>
+                        <button class="bt bt-del check" data-confirm="삭제하시겠습니까?" data-title="삭제">삭제</button>
+                        <button class="bt bt-list" onclick="location.href='/admin/chain/machine.html'">목록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>체인점명</th>
+                                <td>
+                                    <p>시지점</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>코드</th>
+                                <td>
+                                    <p>001</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>장비번호</th>
+                                <td>
+                                    <p>0001</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>메모</th>
+                                <td>
+                                    <div class="inn">
+                                        <textarea name="comment" id="comment" readonly>메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모메모</textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

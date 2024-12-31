@@ -1,0 +1,283 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>게시판</h3>
+            <p>공지사항</p>
+        </div>
+    </section>
+    <section class="contain">
+        <div class="content list">
+            <div class="titles">
+                <h4>공지사항</h4>
+                <div class="title-wrap">
+                    <fieldset>
+                        <div class="search">
+                            <div class="inn">
+                                <input type="date" class="ip-dat">
+                                <em>~</em>
+                                <input type="date" class="ip-dat">
+                            </div>
+                            <div class="inn">
+                                <select name="select" title="그룹" class="sel">
+                                    <option>전체</option>
+                                    <option>미삭제건</option>
+                                    <option>삭제건</option>
+                                </select>
+                            </div>
+                            <div class="inn">
+                                <div class="input">
+                                    <input type="text" placeholder="검색어를 입력해주세요." class="ipt-txt w200">
+                                    <button class="bt-srch">
+                                        <i class="ico-src"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="buttons">
+                        <button class="bt bt-del check" data-confirm="삭제하시겠습니까?" data-title="삭제">삭제</button>
+                        <button class="bt bt-add" onclick="location.href='/admin/board/notice-add.html'">공지사항 등록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col fixed">
+                        <colgroup>
+                            <col class="w60">
+                            <col class="w100">
+                            <col>
+                            <col class="w100">
+                            <col class="w100">
+                            <col class="w100">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+                                        onclick="selectAll(this)"> <label for="allcheck"><span
+                                            class="skip">전체선택</span></label>
+                                </th>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>작성자</th>
+                                <th>작성일</th>
+                                <th>조회수</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" id="check999" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check999"><span
+                                            class="skip">999</span></label>
+                                </td>
+                                <td>
+                                    <p class="chip"><small class="imp">중요</small></p>
+                                </td>
+                                <td class="tal">
+                                    <a href="/admin/board/notice-view.html" class="pointer">
+                                        <p class="elpss">공지사항 알려드립니다.</p>
+                                    </a>
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <p class="date">2024-08-29</p>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check998" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check998"><span
+                                            class="skip">998</span></label>
+                                </td>
+                                <td>
+                                    <p>998</p>
+                                </td>
+                                <td class="tal">
+                                    <a href="" class="pointer">
+                                        <p class="elpss">공지사항 알려드립니다.</p>
+                                    </a>
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <p class="date">2024-08-29</p>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check997" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check997"><span
+                                            class="skip">997</span></label>
+                                </td>
+                                <td>
+                                    <p>997</p>
+                                </td>
+                                <td class="tal">
+                                    <a href="" class="pointer">
+                                        <p class="elpss">개인정보처리방침 개정 안내 개인정보처리방침 개정 안내 개인정보처리방침 개정 안내 개인정보처리방침
+                                            개정
+                                            안내 개인정보처리방침 개정 안내 개인정보처리방침 개정 안내 개인정보처리방침 개정 안내 개인정보처리방침 개정 안내 개인정보처리방침 개정
+                                            안내
+                                            개인정보처리방침 개정 안내 개인정보처리방침 개정 안내 개인정보처리방침 개정 안내</p>
+                                    </a>
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <p class="date">2024-08-29</p>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check996" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check996"><span
+                                            class="skip">996</span></label>
+                                </td>
+                                <td>
+                                    <p>996</p>
+                                </td>
+                                <td class="tal">
+                                    <a href="" class="pointer">
+                                        <p class="elpss">개인정보처리방침 개정 안내</p>
+                                    </a>
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <p class="date">2024-08-29</p>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check995" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check995"><span
+                                            class="skip">995</span></label>
+                                </td>
+                                <td>
+                                    <p>995</p>
+                                </td>
+                                <td class="tal">
+                                    <a href="" class="pointer">
+                                        <p class="elpss">개인정보처리방침 개정 안내</p>
+                                    </a>
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <p class="date">2024-08-29</p>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check994" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check994"><span
+                                            class="skip">994</span></label>
+                                </td>
+                                <td>
+                                    <p>994</p>
+                                </td>
+                                <td class="tal">
+                                    <a href="" class="pointer">
+                                        <p class="elpss">개인정보처리방침 개정 안내</p>
+                                    </a>
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <p class="date">2024-08-29</p>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check993" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check993"><span
+                                            class="skip">993</span></label>
+                                </td>
+                                <td>
+                                    <p>993</p>
+                                </td>
+                                <td class="tal">
+                                    <a href="" class="pointer">
+                                        <p class="elpss">개인정보처리방침 개정 안내</p>
+                                    </a>
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <p class="date">2024-08-29</p>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check992" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check992"><span
+                                            class="skip">992</span></label>
+                                </td>
+                                <td>
+                                    <p>992</p>
+                                </td>
+                                <td class="tal">
+                                    <a href="" class="pointer">
+                                        <p class="elpss">개인정보처리방침 개정 안내</p>
+                                    </a>
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <p class="date">2024-08-29</p>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check991" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check991"><span
+                                            class="skip">991</span></label>
+                                </td>
+                                <td>
+                                    <p>991</p>
+                                </td>
+                                <td class="tal">
+                                    <a href="" class="pointer">
+                                        <p class="elpss">개인정보처리방침 개정 안내</p>
+                                    </a>
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <p class="date">2024-08-29</p>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check990" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check990"><span
+                                            class="skip">991</span></label>
+                                </td>
+                                <td>
+                                    <p>990</p>
+                                </td>
+                                <td class="tal">
+                                    <a href="" class="pointer">
+                                        <p class="elpss">개인정보처리방침 개정 안내</p>
+                                    </a>
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <p class="date">2024-08-29</p>
+                                </td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="non-content">
+                <i class="ico"></i>
+                <span>내용이 없습니다.</span>
+            </div>
+            <!--#include virtual="/layout/paging/paging.html"-->
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

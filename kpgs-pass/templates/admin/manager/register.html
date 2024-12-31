@@ -1,0 +1,96 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+
+<main id="admin">
+     <!-- 페이지 위치 -->
+     <section class="title">
+        <h3>관리자 등록</h3>
+    </section>
+    <!-- 관리자 등록 페이지 -->
+    <section class="contain">
+        <div class="content short">
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <!-- 이름 -->
+                                <th>이름</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="이름을 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- 핸드폰번호 -->
+                                <th>핸드폰 번호</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="핸드폰 번호를 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                                </tr>
+                                <tr>
+                                <!-- 아이디 -->
+                                <th>아이디</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="아이디를 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- 비밀번호 -->
+                                <th>비밀번호</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="핸드폰 번호를 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <!-- 비밀번호확인 -->
+                                <th>비밀번호 확인</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="아이디를 입력해주세요.">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="button-wrap">
+                    <div class="button">
+                        <button class="bt bt-rgstr" onclick="location.href='index.html'">관리자 등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

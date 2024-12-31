@@ -1,0 +1,82 @@
+<!--#include virtual="/KPGS/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>공지사항</h2>
+        </div>
+    </section>
+    <section class="contain">
+        <article class="detail">
+            <div class="buttons">
+                <div class="button">
+                    <button type="button" class="bt bt-del" onclick="openModal('cal001')">삭제</button>
+                </div>
+                <div class="button"> <button type="button" class="bt bt-save" onclick="openModal('save1')">저장</button>
+                </div>
+            </div>
+            <div class="tbl">
+                <table>
+                    <colgroup>
+                        <col class="w10p">
+                        <col class="w90p">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th><strong class="bullet">제목</strong></th>
+                            <td>
+                                <div class="inp">
+                                    <input type="text" placeholder="제목을 입력해 주세요.(2자 이상 50자 이하)" class="w100p">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><strong class="bullet">내용</strong></th>
+                            <td>
+                                <div class="write">
+                                    <div class="inp">
+                                        <textarea placeholder="내용을 입력해 주세요.(500자 이하 텍스트만 입력 가능)"
+                                            class="ip-txt w100p summernote"></textarea>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+</main>
+<link rel="stylesheet" href="/summernote/summernote-lite.css">
+<script type="text/javascript" src="/summernote/summernote-lite.js"></script>
+<script type="text/javascript" src="/summernote/lang/summernote-ko-KR.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.summernote').summernote({
+            height: 450,
+            lang: "ko-KR",
+            focus: true,
+            toolbar: [
+                // [groupName, [list of button]]
+                ['fontname', ['fontname']],
+                ['fontsize', ['fontsize']],
+                ['style', ['bold', 'italic', 'underline', 'strikethrough', 'clear']],
+                ['color', ['forecolor', 'color']],
+                ['table', ['table']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['insert', ['picture', 'link', 'video']],
+                ['view', ['fullscreen']]
+            ],
+            fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', '맑은 고딕', '궁서', '굴림체', '굴림', '돋움체', '바탕체'],
+            fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '28', '30', '36', '50', '72']
+        });
+    });
+</script>
+<!--#include virtual="/KPGS/admin/inc/f.html"-->

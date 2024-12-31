@@ -1,0 +1,67 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<script>
+    $(function () {
+        $('.bnb ul > li:nth-child(1) > a').addClass('act');
+    });
+</script>
+<main class="home-wrap mainflex guest">
+    <section class="header">
+        <h1 class="logo"></h1>
+    </section>
+    <!-- 게임입장 -->
+    <section class="play">
+        <div class="title">
+            <p>로그인 하시면 더 많은</p>
+            <p>서비스를 이용하실 수 있습니다.</p>
+        </div>
+        <div class="buttons">
+            <div class="button">
+                <button class="btn play-btn" onclick="location.href='/auth/login/'">
+                    <p>로그인 하기</p> <i class="view-ico"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- 활동정보 -->
+    <section class="active-info">
+        <div class="wrap">
+            <div class="inner">
+                <div class="tit"><i class="ico-active"></i>
+                    <p>활동 정보</p>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="inf">
+                            <div class="txt">
+                                <b>0</b> <span>레벨</span>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="txt">
+                                <b>0</b> <span>게임수</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="inf">
+                            <div class="txt">
+                                <b>0</b> <span>최대점수</span>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="txt">
+                                <b>0</b> <span>평균점수</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 광고배너 -->
+    <section class="advertise">
+        <div class="advrt"></div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/inc/bnb.html"-->
+<!--#include virtual="/layout/mobile/inc/f.html"-->

@@ -1,0 +1,237 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(8)").addClass('act');
+        $(".dp1:nth-child(8) .depth2").show();
+        $(".dp1:nth-child(8) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+
+<!-- main -->
+<main id="admin">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>휴무일관리</h3>
+    </section>
+    <section class="contain">
+        <div class="content list">
+            <div class="view-buttons">
+                <button class="bt-view all act">전체</button>
+                <button class="bt-view field1">수성구장</button>
+                <button class="bt-view field2">팔현구장</button>
+            </div>
+            <div class="title">
+                <div class="tit"></div>
+                <div class="buttons">
+                    <button class="bt bt-del modal-open" data-modal-id="delete-close">
+                        <p>휴무일삭제</p>
+                    </button>
+                    <button class="bt bt-add" onclick="location.href='close-register.html'">
+                        <p>휴무일등록</p>
+                        <i class="icon-add"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col fixed">
+                        <colgroup>
+                            <col class="w80">
+                            <col class="w80">
+                            <col class="w150">
+                            <col class="w200">
+                            <col class="w200">
+                            <col>
+                            <col class="w100">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+                                        onclick="selectAll(this)"> <label for="allcheck"><span
+                                            class="skip">전체선택</span></label>
+                                </th>
+                                <th>No.</th>
+                                <th>구장명</th>
+                                <th>휴일 일자</th>
+                                <th>휴일 구분</th>
+                                <th>비고</th>
+                                <th>수정</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" id="check68" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check68"><span
+                                            class="skip">68</span></label>
+                                </td>
+                                <td>68</td>
+                                <td>수성구장</td>
+                                <td>매주 월요일</td>
+                                <td>정기휴무</td>
+                                <td class="tal">내용내용</td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check67" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check67"><span
+                                            class="skip">67</span></label>
+                                </td>
+                                <td>67</td>
+                                <td>팔현구장</td>
+                                <td>매주 월요일</td>
+                                <td>정기휴무</td>
+                                <td class="tal">내용내용</td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check66" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check66"><span
+                                            class="skip">66</span></label>
+                                </td>
+                                <td>66</td>
+                                <td>수성구장</td>
+                                <td>2024.04.15</td>
+                                <td>임시휴무</td>
+                                <td class="tal">내용내용</td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check65" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check65"><span
+                                            class="skip">65</span></label>
+                                </td>
+                                <td>65</td>
+                                <td>수성구장</td>
+                                <td>2024.04.11</td>
+                                <td>임시휴무</td>
+                                <td class="tal">날씨로인한 임시휴무</td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check64" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check64"><span
+                                            class="skip">64</span></label>
+                                </td>
+                                <td>64</td>
+                                <td>팔현구장</td>
+                                <td>2024.04.08</td>
+                                <td>임시휴무</td>
+                                <td class="tal">내용내용</td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check63" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check63"><span
+                                            class="skip">63</span></label>
+                                </td>
+                                <td>63</td>
+                                <td>팔현구장</td>
+                                <td>2024.04.01</td>
+                                <td>임시휴무</td>
+                                <td class="tal">내용내용</td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check62" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check62"><span
+                                            class="skip">62</span></label>
+                                </td>
+                                <td>62</td>
+                                <td>수성구장</td>
+                                <td>2024.03.25</td>
+                                <td>임시휴무</td>
+                                <td class="tal">내용내용</td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check61" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check61"><span
+                                            class="skip">61</span></label>
+                                </td>
+                                <td>61</td>
+                                <td>수성구장</td>
+                                <td>2024.03.18</td>
+                                <td>임시휴무</td>
+                                <td class="tal">내용내용</td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check60" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check60"><span
+                                            class="skip">60</span></label>
+                                </td>
+                                <td>60</td>
+                                <td>수성구장</td>
+                                <td>2024.03.11</td>
+                                <td>임시휴무</td>
+                                <td class="tal">내용내용</td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check59" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check59"><span
+                                            class="skip">59</span></label>
+                                </td>
+                                <td>59</td>
+                                <td>팔현구장</td>
+                                <td>2024.03.04</td>
+                                <td>임시휴무</td>
+                                <td class="tal">내용내용</td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="non-content">
+                <i class="ico"></i>
+                <span>검색된 내용이 없습니다.</span>
+            </div>
+            <!--#include virtual="/layout/paging/paging.html"-->
+        </div>
+    </section>
+    <!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

@@ -1,0 +1,552 @@
+<!--#include virtual="/inc/h.html"-->
+
+<script>
+    $(function () {
+        $(".dp1:nth-child(4)").addClass('act');
+        $(".dp1:nth-child(4) .depth2").show();
+        $(".dp1:nth-child(4) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>학습 데이터 관리</h2>
+        </div>
+    </section>
+    <section class="contain">
+        <div class="search">
+            <div class="srch">
+                <form>
+                    <fieldset>
+                        <select name="where" title="검색항목" class="sel">
+                            <option>학습데이터</option>
+                            <option>학습데이터</option>
+                            <option>학습데이터</option>
+                            <option>학습데이터</option>
+                        </select>
+                        <input type="text" name="q" placeholder="검색어를 입력하세요." class="ip-txt">
+                        <button type="submit" class="bt bt-srh"><i class="fas fa-search"></i></button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="buttons">
+                <div class="button">
+                    <button class="bt bt-add" onclick="openModal('add101')">입력</button>
+                </div>
+            </div>
+        </div>
+        <div class="tbl">
+            <table class="col fixed">
+                <colgroup>
+                    <col class="w80">
+                    <col class="w100">
+                    <col class="w150">
+                    <col class="w150">
+                    <col class="w400">
+                    <col class="w400">
+                    <col class="w100">
+                    <col class="w100">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+                                onclick='selectAll(this)'> <label for="allcheck"><span
+                                    class="skip">전체선택</span></label></th>
+                        <th>NO.</th>
+                        <th>대분류</th>
+                        <th>소분류</th>
+                        <th>질문</th>
+                        <th>답변</th>
+                        <th>수정</th>
+                        <th>삭제</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" id="check1000" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check1000"><span
+                                    class="skip">1000번</span></label></td>
+                        <td>1000</td>
+                        <td>식당</td>
+                        <td>메뉴</td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check999" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check999"><span
+                                    class="skip">999번</span></label></td>
+                        <td>999</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check998" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check998"><span
+                                    class="skip">998번</span></label></td>
+                        <td>998</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check997" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check997"><span
+                                    class="skip">997번</span></label></td>
+                        <td>997</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check996" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check996"><span
+                                    class="skip">996번</span></label></td>
+                        <td>996</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check995" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check995"><span
+                                    class="skip">995번</span></label></td>
+                        <td>995</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check994" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check994"><span
+                                    class="skip">994번</span></label></td>
+                        <td>994</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check993" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check993"><span
+                                    class="skip">993번</span></label></td>
+                        <td>993</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check992" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check992"><span
+                                    class="skip">992번</span></label></td>
+                        <td>992</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check991" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check991"><span
+                                    class="skip">991번</span></label></td>
+                        <td>991</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check990" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check990"><span
+                                    class="skip">990번</span></label></td>
+                        <td>990</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check989" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check989"><span
+                                    class="skip">989번</span></label></td>
+                        <td>989</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check988" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check988"><span
+                                    class="skip">988번</span></label></td>
+                        <td>988</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check987" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check987"><span
+                                    class="skip">987번</span></label></td>
+                        <td>987</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check986" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check986"><span
+                                    class="skip">986번</span></label></td>
+                        <td>986</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check985" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check985"><span
+                                    class="skip">985번</span></label></td>
+                        <td>985</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check984" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check984"><span
+                                    class="skip">984번</span></label></td>
+                        <td>984</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check983" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check983"><span
+                                    class="skip">983번</span></label></td>
+                        <td>983</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check982" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check982"><span
+                                    class="skip">982번</span></label></td>
+                        <td>982</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check981" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check981"><span
+                                    class="skip">981번</span></label></td>
+                        <td>981</td>
+                        <td>
+                            <p>식당</p>
+                        </td>
+                        <td>
+                            <p>메뉴</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">뭐 먹을까?</p>
+                        </td>
+                        <td>
+                            <p class="textwrap">소고기</p>
+                        </td>
+                        <td>
+                            <button class="bt bt-mdfy" onclick="openModal('mdf101')">수정</button>
+                        </td>
+                        <td>
+                            <button class="bt bt-del" onclick="openModal('del101')">삭제</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- 데이터없을경우 -->
+        <div class="nocontent"><i class="ico"></i><span>등록된 데이터가 없습니다. </span></div>
+
+        <!--#include virtual="/inc/paging.html"-->
+    </section>
+</main>
+
+<!--#include virtual="/inc/f.html"-->

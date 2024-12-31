@@ -1,0 +1,49 @@
+<!--#include virtual="/layout/mobile/inc/h.html"--><!-- header -->
+<header id="header">
+    <div class="title wht line">
+        <button class="prev" onclick="location.href='/auth/login/login.html'"><span class="skip">이전페이지</span></button>
+        <h3>아이디 찾기</h3>
+        <div class="item hidden"></div>
+    </div>
+</header>
+<!--아이디찾기-->
+<main class="join">
+    <section class="join-wrap">
+        <fieldset>
+            <!-- 입력내용 -->
+            <div class="wrap">
+                <div class="field">
+                    <!-- 이름 -->
+                    <div class="box">
+                        <div class="tit">이름</div>
+                        <div class="inner">
+                            <div class="input">
+                                <input type="text" class="ipt" placeholder="이름을 입력해주세요.">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 이메일 -->
+                    <div class="box">
+                        <div class="tit">이메일</div>
+                        <div class="inner">
+                            <div class="input">
+                                <input type="text" class="ipt error" placeholder="이메일을 입력해주세요.">
+                                <p class="ipt-error" role="alert">이메일을 정확하게 입력해주세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </section>
+</main>
+<!-- footer -->
+<footer id="footer">
+    <section class="footer">
+        <div class="button">
+            <button type="submit" class="bt bt-next"
+                onclick="location.href='/auth/find/id-find-step2.html'"><span>다음</span></button>
+        </div>
+    </section>
+</footer>
+<!--#include virtual="/layout/mobile/inc/f.html"-->

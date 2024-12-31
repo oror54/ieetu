@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장비판매결제정보</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+
+<body class="mw700">
+    <main id="popup">
+        <div class="wrap">
+            <section class="top">
+                <div class="title">
+                    <h2>결제정보</h2>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-save" onclick="openModal('save1')">저장</button>
+                    <button class="bt bt-close" onclick="window.close()">닫기</button>
+                </div>
+            </section>
+            <section class="contain">
+                <div class="tbl">
+                    <table class="col">
+                        <colgroup>
+                            <col class="w15p">
+                            <col class="w30p">
+                            <col>
+                            <col class="w20p">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>일자</th>
+                                <th>금액</th>
+                                <th>방법</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="구분" class="sel">
+                                            <option>선택</option>
+                                            <option>결제</option>
+                                            <option>환불</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form">
+                                        <div class="input">
+                                            <input type="date" class="ip-dat">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="결제금액">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="방법" class="sel">
+                                            <option>선택</option>
+                                            <option>현금</option>
+                                            <option>카드</option>
+                                            <option>무통장</option>
+                                            <option>통신사지원금</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="button">
+                    <button class="bt btn-add" onclick="openModal('add1')">추가</button>
+                </div>
+            </section>
+            <section class="contain">
+                <div class="tbl">
+                    <table class="col">
+                        <colgroup>
+                            <col class="w15p">
+                            <col class="w20p">
+                            <col>
+                            <col class="w15p">
+                            <col class="w20p">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>일자</th>
+                                <th>금액</th>
+                                <th>방법</th>
+                                <th>환불</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>결제</td>
+                                <td>2022-08-04</td>
+                                <td>
+                                    <p class="money">175,000</p>
+                                </td>
+                                <td>현금</td>
+                                <td><button class="bt bt-refund" onclick="openModal('refund1')">환불</button></td>
+                            </tr>
+                            <tr>
+                                <td>결제</td>
+                                <td>2022-08-03</td>
+                                <td>
+                                    <p class="money"><s>175,000</s></p>
+                                </td>
+                                <td>현금</td>
+                                <td>
+                                    <p class="rfd">환불완료</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- modal -->
+    <!--#include virtual="/apartment/admin/inc/modal.html"-->
+</body>
+
+</html>

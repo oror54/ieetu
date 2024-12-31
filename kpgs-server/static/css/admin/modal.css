@@ -1,0 +1,102 @@
+@charset "utf-8"; .jBox-overlay-admin { display: block; opacity: 1; z-index: 9999; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.70); } 
+.jBox-wrapper-admin .jBox-container { width: 350px; display: flex; flex-direction: column; align-items: center; border-radius: 5px; padding: 16px; } 
+.jBox-wrapper-admin .jBox-container .jBox-title { width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center; border-radius: 10px 10px 0 0; border: none; background-color:#ffffff } 
+.jBox-wrapper-admin .jBox-container .jBox-title div { font-size: 16px; letter-spacing: -0.75px; font-weight: 700; } 
+.jBox-wrapper-admin .jBox-content { width: 100% !important; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 0 30px 0; font-size: 15px; letter-spacing: -0.5px; line-height: 1.4; color: #333; font-weight: 500; } 
+.jBox-wrapper-admin .jBox-Confirm-footer { display: flex; flex-direction: row; align-items: center; width: 100%; overflow: hidden; gap: 10px; height: auto; } 
+.jBox-wrapper-admin .jBox-Confirm-footer .btn { width: 100%; font-size: 15px; font-weight: 600; display: flex; flex-direction: row; justify-content: center; align-items: center; border-radius: 2px; padding: 16px 0; overflow: hidden; } 
+.jBox-wrapper-admin .jBox-Confirm-footer .btn + .btn { border-left: 1px solid #ddd } 
+.jBox-wrapper-admin .jBox-Confirm-footer .btn.bt-okay { color: #fff;; background: #178F5E; transition: all 0.3s; } 
+.jBox-wrapper-admin .jBox-Confirm-footer .btn.bt-no { color: #727272; background: #efefef; transition: all 0.3s; } 
+.jBox-wrapper-admin .jBox-Confirm-footer .btn.bt-okay:hover { color: #fff;; background: #196848; } 
+.jBox-wrapper-admin .jBox-Confirm-footer .btn.bt-no:hover { color: #333333; background: #e0e0e0 } 
+.jBox-wrapper-admin .jBox-container .title-wrap .search .inn .input .bt-srch { width: 50px; } 
+.jBox-wrapper-admin .jBox-container .list-wrap { width:100%; } 
+.jBox-wrapper-admin .jBox-container .title-wrap { width: 100%; display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 10px 16px; background-color: #ffffff; } 
+.jBox-wrapper-admin .jBox-container .title-wrap fieldset { width: 100%; } 
+.jBox-wrapper-admin .jBox-container .title-wrap .search { display: flex; flex-direction: row; align-items: center; gap: 10px; } 
+.jBox-wrapper-admin .jBox-container .title-wrap .search .inn { width:100%; display: flex; flex-direction: row; align-items: center; } 
+.jBox-wrapper-admin .jBox-container .title-wrap .search .inn .input { display: flex; flex-direction: row; position: relative; width:100%; height: 40px; } 
+.jBox-wrapper-admin .jBox-container .title-wrap .search .inn .input .ipt-txt { width: 100%; padding: 10px; font-size: 14px; border-radius: 3px 0 0 3px; background-color: #ffffff; } 
+
+.jBox-wrapper-admin .jBox-container .list { display: flex; flex-direction: column; align-items: center; gap: 20px; padding: 20px; width: 100%; } 
+.jBox-wrapper-admin .jBox-container .list .item { padding: 20px; background-color: #ffffff; border-radius: 20px; box-shadow: 0 8px 28px -6px #55555520, 0 18px 88px -4px #55555514; width: 100%; } 
+.jBox-wrapper-admin .jBox-container .list .item .row { display: flex; flex-direction: row; align-items: center; width: 100%; justify-content: space-between; } 
+.jBox-wrapper-admin .jBox-container .list .item.adv .row { gap: 10px; } 
+.jBox-wrapper-admin .jBox-container .list .non-content { width: 100%; height: calc(100vh / 2); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; } 
+.jBox-wrapper-admin .jBox-container .list .ico { width: 150px; height: 150px; display: block; background: url(/img/admin/icon/no-results.svg) 50% 50% no-repeat; background-size: contain; } 
+.jBox-wrapper-admin .jBox-container .list span { font-size: 14px; letter-spacing: -0.75px; font-weight: 700; color: #c9c9c9; font-family: "SUITE"; } 
+
+.jBox-wrapper-admin .jBox-container .checknum { display: none; } 
+.jBox-wrapper-admin .jBox-container .checknum + label { position: relative; display: flex; align-items: center; justify-content: center; cursor: pointer; gap: 5px; } 
+.jBox-wrapper-admin .jBox-container .checknum + label:before { content: ""; display: block; width: 18px; height: 18px; border: 1px solid #ddd; background-size: 100% auto !important; border-radius: 3px; background: #ffffff url(/img/admin/icon/check1.svg) no-repeat 50% 50%; background-size: contain; } 
+.jBox-wrapper-admin .jBox-container .checknum:checked + label:before { content: ""; background: #178F5E url(/img/admin/icon/check2.svg) no-repeat 50% 50%; border-color: #178F5E; } 
+.jBox-wrapper-admin .jBox-container .list .item .row .item-image { width: 100px; height: 100px; border-radius: 5px; overflow: hidden; } 
+.jBox-wrapper-admin .jBox-container .list .item .row .item-video { width: 100px; height: 100px; border-radius: 5px; overflow: hidden; } 
+.jBox-wrapper-admin .jBox-container .list .item .row .item-image.ads { background: url("/img/admin/icon/ad-noImage.svg") no-repeat 50% 50%; background-size: cover; } 
+.jBox-wrapper-admin .jBox-container .list .item .row .item-video.ads { background: url("/img/admin/icon/ad-noImage.svg") no-repeat 50% 50%; background-size: cover; background-color: #efefef; } 
+.jBox-wrapper-admin .jBox-container .list .item .row .item-image img { width: 100%; height: 100%; object-fit: cover; } 
+.jBox-wrapper-admin .jBox-container .list .item .row .item-video.ads video { width: 100%; height: 100%; object-fit: cover; } 
+.jBox-wrapper-admin .jBox-container .item .row .input { width: 30px;; } 
+.jBox-wrapper-admin .jBox-container .item .row .num { width: 40px; } 
+.jBox-wrapper-admin .jBox-container .item .row .type { width: 50px; } 
+.jBox-wrapper-admin .jBox-container .item.adv .row .type { width: 70px; } 
+.jBox-wrapper-admin .jBox-container .item .row .name { width: 100px; } 
+.jBox-wrapper-admin .jBox-container .item.adv .row .name { width: 120px; } 
+.jBox-wrapper-admin .jBox-container .item .row p { font-size: 14px; letter-spacing: -0.75px; } 
+.jBox-wrapper-admin .jBox-container .item .row .name p { font-weight: 700; color: #005331; letter-spacing: -0.5px; } 
+.jBox-wrapper-admin .jBox-container .item .row .name.ads p { font-weight: 700; color: #000; letter-spacing: -0.5px; } 
+
+
+
+
+
+.modal { display: none; } 
+.map-add .jBox-container { width: 100%; display: flex; flex-direction: column; align-items: center; border-radius: 10px; gap: 10px; padding: 0; background-color: #ffffff; } 
+.map-add .jBox-container .jBox-title { justify-content: space-between; padding: 20px; box-shadow: 0 10px 20px #72727220; } 
+.map-add .jBox-container .jBox-title > div { font-size: 18px; } 
+.map-add .jBox-container .jBox-title .jBox-closeButton svg { width: 17px; height: 17px; } 
+.map-add .jBox-container .jBox-content { width: 100%; justify-content:flex-start; padding: 0; } 
+
+.map-add .jBox-container .jBox-content .table { padding: 20px; } 
+.map-add .jBox-container .jBox-content table.map tbody th { font-size: 14px; } 
+.map-add .jBox-container .jBox-content table { border-color: #dfdfdf; } 
+.map-add .jBox-container .jBox-content table .td { padding: 10px; } 
+.map-add .jBox-Confirm-footer { box-shadow: 0 -4px 20px #72727220; background-color: #ffffff; padding: 10px; border-radius: 0 0 10px 10px; } 
+
+
+.acn-mdf.jBox-Modal { background-color: #f5f5f5; border-radius: 10px; } 
+.acn-mdf .jBox-container { width:400px; background-color: #f5f5f5; padding: 0; } 
+.acn-mdf .jBox-container .jBox-title { justify-content: space-between; padding: 20px; box-shadow: 0 10px 20px #72727220; } 
+.acn-mdf .jBox-container .jBox-title > div { font-size: 18px; } 
+.acn-mdf .jBox-container .jBox-content { justify-content: flex-start } 
+.acn-mdf.jBox-Modal .jBox-Confirm-footer { box-shadow: 0 -4px 20px #72727220; background-color: #ffffff; padding: 10px; border-radius: 0 0 10px 10px; } 
+
+
+.adv-add.jBox-Modal { background-color: #f5f5f5; border-radius: 10px; } 
+.adv-add .jBox-container { width:600px; background-color: #f5f5f5; padding: 0; } 
+.adv-add .jBox-container .jBox-title { justify-content: space-between; padding: 20px; box-shadow: 0 10px 20px #72727220; } 
+.adv-add .jBox-container .jBox-title > div { font-size: 18px; } 
+.adv-add .jBox-container .jBox-content { justify-content: flex-start } 
+.adv-add .jBox-container .list-wrap { width:100%; } 
+.adv-add .jBox-Confirm-footer { box-shadow: 0 -4px 20px #72727220; background-color: #ffffff; padding: 10px; border-radius: 0 0 10px 10px; } 
+
+
+.adv-slc.jBox-Modal { background-color: #f5f5f5; border-radius: 10px; } 
+.adv-slc  .jBox-container { width:600px; background-color: #f5f5f5; padding: 0; } 
+.adv-slc .jBox-container .jBox-title { justify-content: space-between; z-index: 1; box-shadow: 0 1px 10px 0 #dddddd70; } 
+.adv-slc .jBox-container .jBox-title > div { font-size: 18px; }
+.adv-slc .jBox-content{justify-content: flex-start;}
+.adv-slc .jBox-content .table{background-color: #fff;}
+.adv-slc .jBox-Confirm-footer { box-shadow: 0 -4px 20px #72727220; background-color: #ffffff; padding: 10px; border-radius: 0 0 10px 10px; } 
+
+.image-modal{ inset: 25% auto auto 30%; }
+.image-modal .jBox-container { width: 100%; max-width: 1000px; max-height: calc(100vh - 100px); display: flex; flex-direction: column; align-items: center; border-radius: 10px; padding: 0; background-color: #ffffff; overflow: hidden; } 
+.image-modal.jBox-wrapper-admin .jBox-content { padding: 0; } 
+.image-modal .jBox-container .jBox-title{justify-content: space-between;  box-shadow: 0 1px 10px 0 #0000001f; z-index: 1;}
+.image-modal .jBox-container .jBox-title .jBox-closeButton svg { width: 17px; height: 17px; } 
+.search .inn .input .bt-srch { width: 38px; height: 100%; display: flex; background-color: #ffffff; flex-direction: row; justify-content: center; align-items: center; border-radius: 0 3px 3px 0; transition: all 0.3s; border: 1px solid #ddd; border-left: 0; } 
+.search .inn .input .bt-srch .ico-src { width: 24px; height: 24px; background: url(/img/admin/icon/search-icon.svg) 50% 50% no-repeat; background-size: contain; transition: all 0.1s; filter: opacity(0.5); } 
+.search .inn .input .ipt-txt:focus { border-color: #555555; } 
+.search .inn .input .bt-srch:hover { background-color: #555555; border-color: #555555; } 
+.search .inn .input .bt-srch:hover .ico-src { filter: opacity(1) invert(1); } 

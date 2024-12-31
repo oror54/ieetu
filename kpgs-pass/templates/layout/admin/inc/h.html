@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0 minimum-scale=0,maximum-scale=1.0,user-scalable=no">
+    <title>파크골프 출입시스템</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/admin/image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/admin/image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/admin/image/favicon-16x16.png">
+    <link rel="manifest" href="/img/admin/image/site.webmanifest">
+    <link rel="mask-icon" href="/img/admin/image/safari-pinned-tab.svg" color="#055c53">
+    <meta name="msapplication-TileColor" content="#055c53">
+    <meta name="theme-color" content="#055c53">
+    <!-- css -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/admin/admin.css">
+    <!-- jquery  -->
+    <script src="/js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery/jquery-ui.min.js"></script>
+    <!-- jBox -->
+    <script src="/js/jBox/jBox.all.js"></script>
+    <link rel="stylesheet" href="/js/jBox/jBox.all.css">
+    </link>
+    <link rel="stylesheet" href="/css/modal.css">
+    <!-- 관리자 js -->
+    <script src="/js/admin/admin.js"></script>
+    <script src="/js/admin/modal.js"></script>
+    <!-- datepicker -->
+    <script src="/js/datepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" href="/js/datepicker/daterangepicker.css">
+    <!-- timepicker -->
+    <script src="/js/timepicker/jquery.timepicker.js"></script>
+    <link rel="stylesheet" href="/js/timepicker/jquery.timepicker.css">
+    </link>
+    <!-- swiper -->
+    <script src="/js/swiper/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="/js/swiper/swiper-bundle.css">
+    </link>
+    <!-- chart -->
+    <script src="/js/chart/chart.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <section class="header">
+            <h1><strong></strong> <span>출입관리 시스템</span></h1>
+            <div class="lnb">
+                <span class="hello">
+                    <div class="ico"><a href="#"><img src="" alt=""></a></div>
+                    <div class="name"><strong>Hello,</strong> <span>Administator</span></div>
+                </span>
+                <span class="logout">
+                    <div class="skip"><strong>관리자님</strong> <span>접속하셨습니다.</span></div>
+                    <a href="javascript:;" onclick="openModal('lout11')"><i class="out-icon"></i><span>로그아웃</span></a>
+                </span>
+            </div>
+            <aside id="gnb">
+                <button class="gnb-btn"></button>
+                <nav class="gnb">
+                    <div class="depth1">
+                        <div class="dp1"> <a href="/admin/dashboard/" class="da1">
+                                <i><img src="/img/admin/icon/dash01.svg" alt="대시보드"></i>
+                                <span>대시보드</span></a>
+                            <ul class="depth2">
+                                <li><a href="/admin/dashboard/">대시보드</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/admin/manager/" class="da1"><i><img src="/img/admin/icon/dash02.svg"
+                                        alt="관리자"></i>
+                                <span>관리자</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/manager/">관리자</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/admin/normal/" class="da1"><i><img src="/img/admin/icon/dash03.svg"
+                                        alt="일반회원"></i>
+                                <span>일반회원</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/normal/">일반회원</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/admin/course/" class="da1"><i><img src="/img/admin/icon/dash04.svg"
+                                        alt="구장정보"></i>
+                                <span>구장정보</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/course/">구장관리</a></li>
+                                <li><a href="/admin/course/course-view.html">코스관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/admin/access/" class="da1"><i><img src="/img/admin/icon/dash05.svg"
+                                        alt="출입관리"></i>
+                                <span>출입관리</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/access/">출입관리</a></li>
+                                <li><a href="/admin/access/except.html">예외출입</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/admin/schedule/" class="da1"><i><img
+                                        src="/img/admin/icon/dash06.svg" alt="스케줄"></i>
+                                <span>스케줄관리</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/schedule/">일반회원</a></li>
+                                <li><a href="/admin/schedule/club.html">클럽회원</a></li>
+                                <li><a href="/admin/schedule/time.html">시간관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/admin/group/" class="da1"><i><img src="/img/admin/icon/dash07.svg"
+                                        alt="그룹관리"></i>
+                                <span>그룹관리</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/group/">그룹관리</a></li>
+                                <li><a href="/admin/group/club.html">클럽관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/admin/holiday/" class="da1"><i><img src="/img/admin/icon/dash08.svg"
+                                        alt="공휴일관리"></i>
+                                <span>공휴일관리</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/holiday/">공휴일관리</a></li>
+                                <li><a href="/admin/holiday/close.html">휴무일관리</a></li>
+                            </ul>
+                        </div>
+                </nav>
+            </aside>
+        </section>
+    </header>

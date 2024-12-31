@@ -1,0 +1,442 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(1)").addClass('act');
+        $(".dp1:nth-child(1) .depth2").show();
+        $(".dp1:nth-child(1) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin" class="dashboard">
+    <section class="title">
+        <div class="titl">
+            <h3>대시보드</h3>
+        </div>
+    </section>
+    <section class="dash">
+        <div class="contain col">
+            <div class="contents two">
+                <!-- 공지사항 -->
+                <div class="cnt">
+                    <div class="titles">
+                        <h4>공지사항</h4>
+                        <div class="button">
+                            <button class="bt view-bt" onclick="location.href='/admin/board/notice.html'">더 보기</button>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="tbl">
+                            <table class="col fixed">
+                                <colgroup>
+                                    <col class="w60">
+                                    <col>
+                                    <col class="w100">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th class="tal">제목</th>
+                                        <th>작성일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <p class="chip"><small class="imp">중요</small></p>
+                                        </td>
+                                        <td class="tal">
+                                            <a href="/admin/board/notice-view.html" class="pointer">
+                                                <p class="elpss">개인정보처리방침 개정 안내</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="tal">
+                                            <a href="/admin/board/notice-view.html" class="pointer">
+                                                <p class="elpss">개인정보처리방침 개정 안내</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="tal">
+                                            <a href="/admin/board/notice-view.html" class="pointer">
+                                                <p class="elpss">개인정보처리방침 개정 안내</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="tal">
+                                            <a href="/admin/board/notice-view.html" class="pointer">
+                                                <p class="elpss">개인정보처리방침 개정 안내</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="tal">
+                                            <a href="/admin/board/notice-view.html" class="pointer">
+                                                <p class="elpss">개인정보처리방침 개정 안내</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="non-content skip">
+                        <i class="ico"></i>
+                        <span>내용이 없습니다.</span>
+                    </div>
+                </div>
+                <!-- 자주묻는질문 -->
+                <div class="cnt">
+                    <div class="titles">
+                        <h4>자주묻는질문</h4>
+                        <div class="button">
+                            <button class="bt view-bt" onclick="location.href='/admin/board/faq.html'">더 보기</button>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="tbl">
+                            <table class="col fixed">
+                                <colgroup>
+                                    <col class="w60">
+                                    <col class="w100">
+                                    <col>
+                                    <col class="w100">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>카테고리</th>
+                                        <th class="tal">제목</th>
+                                        <th>작성일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <p class="chip"><small class="dvs">스크린 이용</small></p>
+                                        </td>
+                                        <td class="tal">
+                                            <a href="/admin/board/faq-view.html" class="pointer">
+                                                <p class="elpss">멀리건이 사용되지 않는데, 이유가 무엇인가요?</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <p class="chip"><small class="dvs">스크린 이용</small></p>
+                                        </td>
+                                        <td class="tal">
+                                            <a href="/admin/board/faq-view.html" class="pointer">
+                                                <p class="elpss">멀리건이 사용되지 않는데, 이유가 무엇인가요?</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <p class="chip"><small class="dvs">웹, 앱이용</small></p>
+                                        </td>
+                                        <td class="tal">
+                                            <a href="/admin/board/faq-view.html" class="pointer">
+                                                <p class="elpss">멀리건이 사용되지 않는데, 이유가 무엇인가요?</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <p class="chip"><small class="dvs">스크린 이용</small></p>
+                                        </td>
+                                        <td class="tal">
+                                            <a href="/admin/board/faq-view.html" class="pointer">
+                                                <p class="elpss">멀리건이 사용되지 않는데, 이유가 무엇인가요?</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>
+                                            <p class="chip"><small class="dvs">스크린 이용</small></p>
+                                        </td>
+                                        <td class="tal">
+                                            <a href="/admin/board/faq-view.html" class="pointer">
+                                                <p class="elpss">멀리건이 사용되지 않는데, 이유가 무엇인가요?</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="non-content skip">
+                        <i class="ico"></i>
+                        <span>내용이 없습니다.</span>
+                    </div>
+                </div>
+                <!-- 최근가입회원 -->
+                <div class="cnt">
+                    <div class="titles">
+                        <h4>최근 등록 회원</h4>
+                        <div class="button">
+                            <button class="bt view-bt" onclick="location.href='/admin/member/'">더 보기</button>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="tbl">
+                            <table class="col fixed">
+                                <colgroup>
+                                    <col class="w60">
+                                    <col>
+                                    <col>
+                                    <col class="w100">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th class="tal">아이디</th>
+                                        <th class="tal">이메일</th>
+                                        <th>등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="tal">
+                                            <a href="/admin/member/member-view.html" class="pointer">
+                                                <p class="elpss">abcd123</p>
+                                            </a>
+                                        </td>
+                                        <td class="tal">
+                                            <p class="elpss">abcd123@gmail.com</p>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="tal">
+                                            <a href="/admin/member/member-view.html" class="pointer">
+                                                <p class="elpss">abcd123</p>
+                                            </a>
+                                        </td>
+                                        <td class="tal">
+                                            <p class="elpss">abcd123@gmail.com</p>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="tal">
+                                            <a href="/admin/member/member-view.html" class="pointer">
+                                                <p class="elpss">abcd123</p>
+                                            </a>
+                                        </td>
+                                        <td class="tal">
+                                            <p class="elpss">abcd123@gmail.com</p>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="tal">
+                                            <a href="/admin/member/member-view.html" class="pointer">
+                                                <p class="elpss">abcd123</p>
+                                            </a>
+                                        </td>
+                                        <td class="tal">
+                                            <p class="elpss">abcd123@gmail.com</p>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="tal">
+                                            <a href="/admin/member/member-view.html" class="pointer">
+                                                <p class="elpss">abcd123</p>
+                                            </a>
+                                        </td>
+                                        <td class="tal">
+                                            <p class="elpss">abcd123@gmail.com</p>
+                                        </td>
+                                        <td>
+                                            <p class="date">2024-08-29</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="non-content skip">
+                        <i class="ico"></i>
+                        <span>내용이 없습니다.</span>
+                    </div>
+                </div>
+                <!-- 체인점 -->
+                <div class="cnt">
+                    <div class="titles">
+                        <h4>체인점</h4>
+                        <div class="button">
+                            <button class="bt view-bt" onclick="location.href='/admin/chain/'"'>더 보기</button>
+                        </div>
+                    </div>
+                    <div class="table skip">
+                        <div class="tbl">
+                            <table class="col fixed">
+                                <colgroup>
+                                    <col class="w60">
+                                    <col class="w80">
+                                    <col class="w80">
+                                    <col>
+                                    <col class="w100">
+                                    <col class="w100">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>번호</th>
+                                        <th>체인점 명</th>
+                                        <th>코드</th>
+                                        <th class="tal">주소</th>
+                                        <th>광고그룹명</th>
+                                        <th>등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <a href="" class="pointer">
+                                                <p>시지점</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p>001</p>
+                                        </td>
+                                        <td class="tal">
+                                            <p class="elpss">대구 수성구 고산로 123 하나타운 제 1-13동</p>
+                                        </td>
+                                        <td>
+                                            <p class="elpss">시지점 광고</p>
+                                        </td>
+                                        <td>
+                                            <p class="date">2023-12-20</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <a href="" class="pointer">
+                                                <p>죽전점</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p>004</p>
+                                        </td>
+                                        <td class="tal">
+                                            <p class="elpss">대구 달서구 죽전길 14 123123</p>
+                                        </td>
+                                        <td>
+                                            <p class="elpss">죽전점 광고</p>
+                                        </td>
+                                        <td>
+                                            <p class="date">2023-12-21</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <a href="" class="pointer">
+                                                <p>침산점</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p>003</p>
+                                        </td>
+                                        <td class="tal">
+                                            <p class="elpss">대구 북구 노원로 179 123123</p>
+                                        </td>
+                                        <td>
+                                            <p class="elpss">C</p>
+                                        </td>
+                                        <td>
+                                            <p class="date">2023-12-21</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <a href="" class="pointer">
+                                                <p>노원동</p>
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <p>002</p>
+                                        </td>
+                                        <td class="tal">
+                                            <p class="elpss">대구 북구 노원동로 2 1313</p>
+                                        </td>
+                                        <td>
+                                            <p class="elpss">C</p>
+                                        </td>
+                                        <td>
+                                            <p class="date">2023-12-28</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="non-content">
+                        <i class="ico"></i>
+                        <span>내용이 없습니다.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

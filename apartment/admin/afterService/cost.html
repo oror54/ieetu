@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장애처리결제정보</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+
+<body class="mw700">
+    <main id="popup">
+        <div class="wrap">
+            <section class="top">
+                <div class="title">
+                    <h2>부품비 및 기술료</h2>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-save" onclick="openModal('save1')">저장</button>
+                    <button class="bt bt-close" onclick="window.close()">닫기</button>
+                </div>
+            </section>
+            <section class="contain">
+                <div class="table">
+                    <div class="tbl">
+                        <table>
+                            <colgroup>
+                                <col class="w30p">
+                                <col class="w70p">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="tal">항목(부품코드)</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="항목을 조회해주세요."  onclick="window.open('materialSearch.html', '자재보기','width=1000, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">수량</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="수량을 입력해주세요.">
+                                            </div>
+                                            <div class="ipt">
+                                                <input type="checkbox" id="ref" name="check" class="skip">
+                                                <label for="ref"> <span>재고현황 반영</span></label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">단가</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="단가를 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">기술료</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="기술료를 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">금액</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="금액을 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+
+</html>

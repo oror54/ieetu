@@ -1,0 +1,158 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+	$(function () {
+		$(".dp1:nth-child(6)").addClass('act');
+		$(".dp1:nth-child(6) .depth2").show();
+		$(".dp1:nth-child(6) .depth2 li:nth-child(2)").addClass('act');
+	});
+</script>
+
+<!-- main -->
+<main id="admin">
+	<!-- 페이지 위치 -->
+	<section class="title">
+		<h3>클럽회원 - 스케줄관리</h3>
+	</section>
+	<!-- 클럽회원 스케줄 -->
+	<section class="contain">
+		<div class="content list">
+			<div class="title">
+				<div class="tit"></div>
+				<div class="buttons">
+					<button class="bt bt-del modal-open" data-modal-id="delete-schedule">
+						<p>스케줄삭제</p>
+					</button>
+					<button class="bt bt-add" onclick="location.href='club-modify.html'">
+						<p>스케줄등록</p>
+					</button>
+				</div>
+			</div>
+			<div class="table">
+				<div class="tbl">
+					<table class="col">
+						<colgroup>
+							<col class="w80">
+							<col class="w80">
+							<col class="w150">
+							<col class="w200">
+							<col class="w250">
+							<col>
+							<col class="w150">
+						</colgroup>
+						<thead>
+							<tr>
+								<th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+										onclick="selectAll(this)"> <label for="allcheck"><span
+											class="skip">전체선택</span></label>
+								</th>
+								<th>No.</th>
+								<th>출입그룹</th>
+								<th>출입구장</th>
+								<th>출입일</th>
+								<th>출입시간</th>
+								<th>수정</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="checkbox" id="check1" class="checknum unitcheck" name="check"
+										onclick="checkSelectAll()"> <label for="check1"><span
+											class="skip">1</span></label>
+								</td>
+								<td>1</td>
+								<td>홀A</td>
+								<td>수성구장</td>
+								<td>홀수일</td>
+								<td>
+									<div class="time-wrap">
+										<span class="tit">새벽</span>
+										<p class="time">06:00 ~ 08:30</p>
+									</div>
+								</td>
+								<td>
+									<div class="button">
+										<button class="bt bt-view"
+											onclick="location.href='club-modify.html'">수정</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="check2" class="checknum unitcheck" name="check"
+										onclick="checkSelectAll()"> <label for="check2"><span
+											class="skip">2</span></label>
+								</td>
+								<td>2</td>
+								<td>홀B</td>
+								<td>팔현구장</td>
+								<td>짝수일</td>
+								<td>
+									<div class="time-wrap">
+										<span class="tit">새벽</span>
+										<p class="time">06:00 ~ 08:30</p>
+									</div>
+								</td>
+								<td>
+									<div class="button">
+										<button class="bt bt-view">수정</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="check3" class="checknum unitcheck" name="check"
+										onclick="checkSelectAll()"> <label for="check3"><span
+											class="skip">3</span></label>
+								</td>
+								<td>3</td>
+								<td>짝A</td>
+								<td>수성구장</td>
+								<td>홀수일</td>
+								<td>
+									<div class="time-wrap">
+										<span class="tit">새벽</span>
+										<p class="time">06:00 ~ 08:30</p>
+									</div>
+								</td>
+								<td>
+									<div class="button">
+										<button class="bt bt-view">수정</button>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td><input type="checkbox" id="check4" class="checknum unitcheck" name="check"
+										onclick="checkSelectAll()"> <label for="check4"><span
+											class="skip">4</span></label>
+								</td>
+								<td>4</td>
+								<td>짝B</td>
+								<td>팔현구장</td>
+								<td>홀수일</td>
+								<td>
+									<div class="time-wrap">
+										<span class="tit">새벽</span>
+										<p class="time">06:00 ~ 08:30</p>
+									</div>
+								</td>
+								<td>
+									<div class="button">
+										<button class="bt bt-view">수정</button>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="non-content">
+					<i class="ico"></i>
+					<span>내용이 없습니다.</span>
+				</div>
+			</div>
+			<!--#include virtual="/layout/paging/paging.html"-->
+		</div>
+	</section>
+	<!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

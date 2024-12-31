@@ -1,0 +1,99 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<script>
+    $(function () {
+        $('.bnb ul > li:nth-child(1) > a').addClass('act');
+    });
+</script>
+<main class="home-wrpp mainflex">
+    <section class="header">
+        <h1 class="logo"></h1>
+    </section>
+    <!-- 게임입장 -->
+    <section class="play">
+        <div class="title">
+            <p><b>guest1</b>님</p>
+            <p>방문을 환영합니다!</p>
+        </div>
+        <div class="buttons">
+            <div class="button">
+                <button class="btn play-btn" onclick="location.href='/mobile/home/play.html'">
+                    <p>게임 입장하기</p> <i class="view-ico"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- 최근참여경기 -->
+    <section class="active-info">
+        <div class="wrap">
+            <div class="inner">
+                <div class="tit">
+                    <div class="icon">
+                        <i class="ico ico-recent"></i>
+                    </div>
+                    <p>최근 참여 경기</p>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">일시</div>
+                            <div class="txt">2024.02.08</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">가맹정</div>
+                            <div class="txt">시지</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">코스</div>
+                            <div class="txt">서재</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 통계정보 -->
+    <section class="active-info">
+        <div class="wrap">
+            <div class="inner">
+                <div class="tit">
+                    <div class="icon">
+                        <i class="ico ico-stats"></i>
+                    </div>
+                    <p>통계 정보</p>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="inf">
+                            <div class="txt">
+                                <b>107.75</b> <span>최대비거리</span>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="txt">
+                                <b>3</b> <span>게임플레이수</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="inf">
+                            <div class="txt">
+                                <b>8.53</b> <span>최대퍼팅거리</span>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="txt">
+                                <b>2.13</b> <span>평균타수</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/inc/bnb.html"-->
+<!--#include virtual="/layout/mobile/inc/f.html"-->

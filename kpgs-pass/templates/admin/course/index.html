@@ -1,0 +1,141 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(4)").addClass('act');
+        $(".dp1:nth-child(4) .depth2").show();
+        $(".dp1:nth-child(4) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+
+<!-- main -->
+<main id="admin">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>구장관리</h3>
+    </section>
+    <section class="contain">
+        <div class="card-wrap">
+            <div class="title">
+                <div class="tit"></div>
+                <div class="buttons">
+                    <button class="bt bt-del modal-open" data-modal-id="delete-field">
+                        <p>구장삭제</p>
+                    </button>
+                    <button class="bt bt-add" onclick="location.href='field-register.html'">
+                        <p>구장등록</p>
+                    </button>
+                </div>
+            </div>
+            <!-- 구장리스트 -->
+            <div class="card-list">
+                <!-- 수성구장 -->
+                <div class="card">
+                    <div class="ttl">
+                        <div class="checkbox">
+                            <input type="checkbox" id="field1" class="checknum" name="check">
+                            <label for="field1"><span>수성구장</span></label>
+                        </div>
+                        <div class="button">
+                            <button class="bt-view" onclick="location.href='field-register.html'"><i
+                                    class="arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>수성파크골프장</h3>
+                        <div class="table">
+                            <div class="tbl">
+                                <table>
+                                    <colgroup>
+                                        <col class="w100">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>주소</th>
+                                            <td>대구시 수성구 고모동 6 - 2</td>
+                                        </tr>
+                                        <tr>
+                                            <th>부지</th>
+                                            <td>약 8,800평</td>
+                                        </tr>
+                                        <tr>
+                                            <th>주요 시설</th>
+                                            <td>잔디구장, 화장실, 사무실</td>
+                                        </tr>
+                                        <tr>
+                                            <th>휴장일</th>
+                                            <td>매주 월요일</td>
+                                        </tr>
+                                        <tr>
+                                            <th>브레이크 타임</th>
+                                            <td>12:30 ~ 14:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>문의</th>
+                                            <td>053 - 666 - 2192 ~ 2194</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 팔현구장 -->
+                <div class="card">
+                    <div class="ttl">
+                        <div class="checkbox">
+                            <input type="checkbox" id="field2" class="checknum" name="check">
+                            <label for="field2"><span>팔현구장</span></label>
+                        </div>
+                        <div class="button">
+                            <button class="bt-view" onclick="location.href='field-register.html'"><i
+                                    class="arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <h3>팔현파크골프장</h3>
+                        <div class="table">
+                            <div class="tbl">
+                                <table>
+                                    <colgroup>
+                                        <col class="w100">
+                                        <col>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th>주소</th>
+                                            <td>대구시 수성구 고모동 20 - 3</td>
+                                        </tr>
+                                        <tr>
+                                            <th>부지</th>
+                                            <td>약 14,140평</td>
+                                        </tr>
+                                        <tr>
+                                            <th>주요 시설</th>
+                                            <td>잔디구장, 화장실, 사무실</td>
+                                        </tr>
+                                        <tr>
+                                            <th>휴장일</th>
+                                            <td>매주 월요일</td>
+                                        </tr>
+                                        <tr>
+                                            <th>브레이크 타임</th>
+                                            <td>12:30 ~ 14:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>문의</th>
+                                            <td>053 - 666 - 2192 ~ 2194</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

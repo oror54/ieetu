@@ -1,0 +1,80 @@
+@charset "utf-8"; * { margin: 0; padding: 0; font-size: 0; letter-spacing: -0.75px; } 
+
+#main { width: 100%; background: #eeeeee; } 
+
+@media only screen and (min-width: 1024px){
+ #mobile { position: relative; z-index: 2; margin: 0 0 0 calc(50vw - 1px) !important; width: 100%; max-width: 422px; min-height: calc(100vh - env(safe-area-inset-top)); border-right: 1px solid #e1e1e1; border-left: 1px solid #e1e1e1; background: #fff; box-shadow: 0 0.4rem 2rem rgb(0 0 0 / 10%); display: flex; flex-direction: column; } 
+ #footer { position: fixed; bottom: 0; width: 100%; max-width: 422px; background-color: #fff; } 
+ .modal-boxed { max-width: 422px; min-height: 100vh; margin: 0 0 0 calc(50vw - 1px) !important; } 
+ .ui-datepicker { max-width: 422px; } 
+ }
+
+#mobile { width: 100%; border: none; margin: 0; z-index: 2; background-color: #fff; } 
+#mobile main { min-height: calc(
+ 100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top)
+ ); width: 100%; margin-bottom: env(safe-area-inset-bottom); } 
+
+.app-wrap { display: flex; flex-direction: column; width: 100%; min-height: calc(
+ 100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top));; } 
+.gray { background-color: #f8f8f8 } 
+.app-wrap .home-title { padding: 24px 16px; width: 100%; } 
+.app-wrap .home-title .today { padding: 5px 0; } 
+.app-wrap .home-title .date { font-size: 14px; font-weight: 500; font-family: "SUITE"; } 
+.app-wrap .home-title .title-box { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow:0 0px 30px -4px #00000025, 0 4px 4px -4px #00000015 } 
+.app-wrap .home-title .title-box .title { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; width: 100%; } 
+.app-wrap .home-title .title-box .title p { font-size: 18px; letter-spacing: -0.75px; font-family: "Paperlogy"; font-weight: 600; line-height: 100%; color: #333; } 
+.app-wrap .home-title .title-box .title .hello { font-weight: 600; font-size: 20px; color: #000; } 
+.app-wrap .home-title .title-box .text { display: flex; flex-direction: row; align-items: center; flex-wrap: wrap; gap: 2px; } 
+.app-wrap .home-title .title-box .text .name { display: flex; flex-direction: row; align-items: center; justify-content: center; padding: 3px 8px; font-weight: 600; background-color: #00423A; border-radius: 3px; color: #fff; } 
+.app-wrap .buttons { width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: flex-start; padding: 24px 16px; gap: 16px; } 
+.app-wrap .buttons .button { width: calc((100% / 2) - 8px); height: 160px; background-color: #fff; box-shadow: 0 0 20px 0px #dddddd; border-radius: 15px; transition: all 0.3s; } 
+.app-wrap .buttons .button:hover { box-shadow: 0 0 10px 0 #00423a57; background-color: #EDF5F6; } 
+.app-wrap .buttons .button .inn { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 100%; } 
+.app-wrap .buttons .button .inn p { font-size: 16px; font-family: "Paperlogy"; font-weight: 600; color: #00423A; transition: all 0.3s; } 
+.app-wrap .buttons .button .icon { width:60px; height: 60px; transition: all 0.3s; } 
+.app-wrap .buttons .button .qr { background: url(/img/gate/icon/qr.svg) 50% 50% no-repeat; background-size: contain; filter: drop-shadow(0px 2px 2px #00000040); } 
+.app-wrap .buttons .button .blt { background: url(/img/gate/icon/bluetooth.svg) 50% 50% no-repeat; background-size: contain; filter: drop-shadow(0px 2px 2px #00000040); } 
+.app-wrap .logout { width: 100%; padding: 16px; } 
+.app-wrap .logout .button { width: 100%; height: 54px; display: flex; flex-direction: row; align-items: center; justify-content: center; border-radius: 5px; border: 1px solid #ddd; background-color: #fff; box-shadow: 0 1px 4px 0 #0c0c0d1f; transition: all 0.3s; } 
+.app-wrap .logout .button p { font-family: "Paperlogy"; font-weight: 600; color: #bababa; font-size: 16px; transition: all 0.3s; } 
+.app-wrap .logout .button:hover { background-color: #fff; box-shadow: 0 0 10px 0 #00423a57; border-color: #00423A; } 
+.app-wrap .logout .button:hover p { color: #00423A; } 
+
+
+/* qr */
+.qr-code { padding: 40px 16px; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 40px; } 
+.qr-code .scan { width: 100%; height: 450px; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 4px 0 #00000025; background-color: #0000001a; } 
+.qr-code .scan canvas { width: 100%; height: 100%; } 
+.qr-code .btns { width: 100%; display: flex; flex-direction: row; align-items: center; gap: 16px; } 
+.btns .btn { width: calc((100% / 2) - 8px); height: 50px; background-color: #fff; box-shadow: 0 0 20px 0px #dddddd; border-radius: 10px; transition: all 0.3s; } 
+.btns .btn .inn { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 5px; width: 100%; height: 100%; } 
+.btns .btn .inn .icon { width:24px; height: 24px; } 
+.btns .btn .inn .icon.home { background: url(/img/gate/icon/home.svg) 50% 50% no-repeat; background-size: contain; filter: drop-shadow(0px 2px 2px #00000040); } 
+.btns .btn .inn .icon.blt { background: url(/img/gate/icon/bluetooth.svg) 50% 50% no-repeat; background-size: contain; filter: drop-shadow(0px 2px 2px #00000040); } 
+.btns .btn .inn .icon.qr { background: url(/img/gate/icon/qr.svg) 50% 50% no-repeat; background-size: contain; filter: drop-shadow(0px 2px 2px #00000040); } 
+.btns .btn .inn .icon.refresh { background: url(/img/gate/icon/refresh.svg) 50% 50% no-repeat; background-size: contain; filter: drop-shadow(0px 2px 2px #00000040); } 
+.btns .btn .inn p { font-size: 16px; font-family: "Paperlogy"; font-weight: 600; color: #00423A; } 
+.btns .btn:hover { background-color: #EDF5F6; box-shadow: 0 0 10px 0 #00423a57; } 
+
+.cols { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 16px; } 
+
+
+
+
+/* bluetooth */
+.bluetooth { padding: 40px 16px; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 40px; } 
+.bluetooth .btns { width: 100%; display: flex; flex-direction: row; align-items: center; gap: 16px; } 
+.bluetooth .find { width: 100%; height: 450px; display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden; border-radius: 10px; background-color: #fff; box-shadow: #30303012 0px 6px 8px -6px, #30303008 0px 8px 16px -6px; gap: 80px; } 
+.bluetooth .find .radar { width: 150px; height: 150px; background: #d9efec; border-radius: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center; animation: radar-animation 1s ease-out infinite; } 
+.bluetooth .find .radar .bltt { width: 100px; height: 100px; background-color: #000; border-radius: 100px; box-shadow: 0 4px 4px 0 #00000025; position: relative; } 
+.bluetooth .find .radar .bltt::after { content: ''; background: url(/img/gate/icon/bltt.svg) 50% 50% no-repeat; display: block; width: 100px; height: 100px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); } 
+.bluetooth .find .search { padding: 10px 20px; background-color: #00000080; display: flex; flex-direction: column; align-items: center; gap: 5px; border-radius: 10px; } 
+.bluetooth .find .search p { font-size: 14px; color: #fff; } 
+
+
+
+@keyframes radar-animation { 
+ 0% { box-shadow: 0 0 0 0 #85e4c660; } 
+ 100% { box-shadow: 0 0 0 50px #85e4c61e; } 
+ }
+ 

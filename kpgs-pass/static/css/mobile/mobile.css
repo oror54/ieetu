@@ -1,0 +1,435 @@
+:root { --vh: 100%; } 
+html,
+body { height: 100vh; height: var(--vh); } 
+body { position: relative; left: 0; overflow-x: hidden; transition: 0.8s; font-family: Pretendard; } 
+.bt { width: 100%; padding: 18px 0; font-size: 16px; font-weight: 700; letter-spacing: -0.5px; background-color: #e5e5e5; color: #727272; border: 1px solid #e5e5e5; border-radius: 5px; transition: all 0.3s; display: flex; flex-direction: row; justify-content: center; align-items: center; } 
+.ipt { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #dbdbdb; color: #202020; transition: all 0.3s; } 
+.ipt:focus { border: 1px solid #333; border-radius: 5px; } 
+.ipt.error { border: 1px solid #ff3d00; border-radius: 5px; } 
+.ipt.inform { border: 1px solid #ff3d00; border-radius: 5px; } 
+.ipt-error { font-size: 0.875rem; letter-spacing: -0.5px; color: #ff3d00; } 
+.ipt-inform { font-size: 0.875rem; letter-spacing: -0.5px; color: #ff3d00; } 
+.center { align-items: center !important; text-align: center; } 
+
+#main { width: 100%; background: #eeeeee; } 
+
+/* #main:after { content: ""; position: fixed; top: 0; right: 0; left: 0; display: block; height: calc(100vh - 30rem); min-height: 60rem; background: #fdfffe; } */
+
+/* #mobile { position: relative; z-index: 1; width: 100%; max-width: 435px; min-height: 100vh; margin:0 0 0 calc(50vw - 1px); background: #fff; border-left: 1px solid #e0e0e0; border-right: 1px solid #e0e0e0; box-shadow: 0 0.4rem 2rem rgb(0 0 0 / 10%); } 
+
+
+@media (max-width: 930px){
+ #mobile { max-width: 100%; margin:0; border: none; } 
+ }*/
+
+@media only screen and (min-width: 1024px){
+ #mobile { position: relative; z-index: 2; margin: 0 0 0 calc(50vw - 1px) !important; width: 100%; max-width: 422px; min-height: calc(100vh - env(safe-area-inset-top)); border-right: 1px solid #e1e1e1; border-left: 1px solid #e1e1e1; background: #fff; box-shadow: 0 0.4rem 2rem rgb(0 0 0 / 10%); display: flex; flex-direction: column; } 
+ #footer { position: fixed; bottom: 0; width: 100%; max-width: 422px; background-color: #fff; } 
+ .modal-boxed { max-width: 422px; min-height: 100vh; margin: 0 0 0 calc(50vw - 1px) !important; } 
+ .ui-datepicker { max-width: 422px; } 
+ }
+
+#mobile { width: 100%; border: none; margin: 0; z-index: 2; background-color: #fff; } 
+#mobile main { min-height: calc(
+ 100vh - 57px - 90px - env(safe-area-inset-bottom) - env(safe-area-inset-top)
+ ); width: 100%; margin-bottom: env(safe-area-inset-bottom); } 
+
+/* 스플래시 */
+#mobile .splash { display: flex; width: 100%; height: 100vh; background: url(/img/mobile/image/splash.jpg) 50% 50% no-repeat; background-size: cover; flex-direction: column; justify-content: center; align-items: center; } 
+#mobile .splash .logo { width: 11.25rem; height: 11.25rem; } 
+#mobile .splash .logo img { width: 100%; height: 100%; object-fit: contain; } 
+
+/* 로그인 */
+#mobile .login { display: flex; flex-direction: column; align-items: center; width: 100%; height: 100%; min-height: 100vh; justify-content: center; gap: 50px; padding: 20px 0; } 
+#mobile .login .logo { width: 9.375rem; height: 9.375rem; display: block; } 
+#mobile .login .logo img { width: 100%; height: 100%; object-fit: contain; } 
+#mobile .login .login-form { display: flex; flex-direction: column; width: 100%; gap: 10px; } 
+#mobile .login .login-form .wrap { display: flex; flex-direction: column; width: 100%; gap: 10px; } 
+#mobile .login .login-form .wrap .input { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; } 
+#mobile .login .login-form .wrap .input label { font-size: 1rem; font-weight: 600; color: #202020; letter-spacing: -0.75px; } 
+#mobile .login .login-form .wrap .input .ipt { width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #dbdbdb; color: #202020; transition: all 0.3s; } 
+#mobile .login .login-form .wrap .input .ipt:focus { border: 1px solid #333; } 
+#mobile .login .login-form .wrap .input .ipt.error { border: 1px solid #ff3d00; } 
+#mobile .login .login-form .wrap .input .ipt.inform { border: 1px solid #ff3d00; } 
+#mobile .login .login-form .wrap .input .ipt-error { font-size: 0.875rem; letter-spacing: -0.5px; color: #ff3d00; } 
+#mobile .login .login-form .wrap .input .ipt-inform { font-size: 0.875rem; letter-spacing: -0.5px; color: #ff3d00; } 
+#mobile .login .buttons { display: flex; } 
+#mobile .login .buttons.col { flex-direction: column; gap: 16px; padding: 16px 0; } 
+#mobile .login .buttons.row { flex-direction: row; width: 100%; justify-content: center; gap: 16px; } 
+#mobile .login .buttons .bt { width: 100%; padding: 18px 0; font-size: 16px; font-weight: 700; letter-spacing: -0.5px; background-color: #e5e5e5; color: #727272; border: 1px solid #e5e5e5; border-radius: 5px; transition: all 0.3s; } 
+#mobile .login .buttons .login-btn.act { background-color: #055c53; color: #fff; border: 1px solid #055c53; } 
+#mobile .login .buttons .join-btn { background-color: #fff; border: 1px solid #055c53; color: #055c53; } 
+#mobile .login .buttons.row .find-btn { display: flex; flex-direction: row; align-items: center; gap: 16px; font-size: 14px; letter-spacing: -0.5px; color: #727272; } 
+#mobile .login .buttons.row .find-btn + .find-btn::before { content: ""; display: block; width: 2px; height: 15px; background-color: #ddd; } 
+
+/* 회원가입 */
+#mobile .join { display: flex; flex-direction: column; width: 100%; height: 100%; justify-content: space-between; } 
+#mobile .join .join-wrap { display: flex; flex-direction: column; width: 100%; padding-bottom: 120px; } 
+#mobile .join .join-wrap .info { padding-top: 16px; } 
+#mobile .join .join-wrap .info .title { padding-bottom: 16px; font-size: 1.25rem; font-weight: 700; letter-spacing: -0.75px; } 
+#mobile .join .join-wrap fieldset { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; } 
+#mobile .join .join-wrap .info .box { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; width: 100%; } 
+#mobile .join .join-wrap .info .box > .tit { font-size: 16px; letter-spacing: -0.75px; font-weight: 600; color: #202020; position: relative; display: flex; flex-direction: row; gap: 2px; } 
+#mobile .join .join-wrap .info .box > .tit.esnt::after { content: ""; width: 5px; height: 5px; border-radius: 5px; display: block; background-color: #ff3d00; } 
+#mobile .join .join-wrap .info .box .inner { width: 100%; display: flex; flex-direction: row; align-items: center; gap: 4px; } 
+#mobile .join .join-wrap .info .box .inner .input { width: calc(100% - 84px); height: 100%; position: relative; } 
+#mobile .join .join-wrap .box .inner .input .ipt { padding: 10px; } 
+#mobile .join .join-wrap .box .inner .input em { font-size: 12px; position: absolute; top: 12px; right: 10px; color: #ff3d00; letter-spacing: -0.5px; } 
+#mobile .join .join-wrap .box .inner .bt-send { width: 80px; padding: 10px; font-size: 14px; transition: all 0.3s; font-weight: 500; } 
+#mobile .join .join-wrap .box .inner .bt-send .request { display: block; } 
+#mobile .join .join-wrap .box .inner .bt-send .re-request { display: none; } 
+#mobile .join .join-wrap .box .inner .bt-send.act { background-color: #055c53; color: #fff; border: 1px solid #055c53; } 
+#mobile .join .join-wrap .box .inner .bt-confirm { width: 80px; padding: 10px; font-size: 14px; transition: all 0.3s; font-weight: 500; } 
+#mobile .join .join-wrap .box .inner .bt-confirm.act { background-color: #055c53; color: #fff; border: 1px solid #055c53; } 
+
+#mobile .join .join-wrap .terms { padding-top: 30px; } 
+#mobile .join .join-wrap .terms .box { width: 100%; display: flex; flex-direction: column; align-items: flex-start; } 
+#mobile .join .join-wrap .terms .box .inner { width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-between; padding: 13px 0; } 
+#mobile .join .join-wrap .terms .box .inner .input { display: flex; flex-direction: row; align-items: center; } 
+#mobile .join .join-wrap .terms .box .inner .checkbox + label { display: flex; flex-direction: row; align-items: center; gap: 5px; font-size: 15px; color: #202020; letter-spacing: -0.75px; } 
+#mobile .join .join-wrap .terms .box .inner .checkbox + label small { font-size: 14px; color: #727272; letter-spacing: -0.75px; } 
+#mobile .join .join-wrap .terms .box .inner .checkbox + label::before { content: ""; width: 16px; height: 16px; border: 2px solid #dddddd; background: url(/img/mobile/icon/check.svg) no-repeat 50% 50%; border-radius: 2px; } 
+#mobile .join .join-wrap .terms .box .inner .checkbox:checked + label::before { content: ""; background-color: #055c53; border: 2px solid #055c53; border-radius: 2px; } 
+#mobile .join .join-wrap .terms .box .inner .view { background: url(/img/mobile/icon/arrow-right.svg) no-repeat 50% 50%; width: 24px; height: 24px; } 
+
+#mobile .join .join-wrap .find { height: calc(100vh - 150px); width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; } 
+#mobile .join .join-wrap .find .wrap { width: 100%; } 
+#mobile .join .join-wrap .find .wrap .text-wrap { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px; } 
+#mobile .join .join-wrap .find .wrap .text-wrap p { width: 100%; text-align: center; font-size: 20px; letter-spacing: -0.75px; } 
+#mobile .join .join-wrap .find .wrap .text-wrap .id-box { display: flex; padding: 15px; width: 100%; text-align: center; background-color: #f5f5f5; border-radius: 5px; } 
+#mobile .join .join-wrap .find .wrap .text-wrap .id-box p { font-size: 16px; letter-spacing: 0; color: #000; font-weight: 600; } 
+
+#header { position: sticky; z-index: 99; top: 0; background: #fff; transition: all 0.3s; width: 100%; } 
+#header .title { display: flex; align-items: center; justify-content: flex-start; position: relative; background: #fff; padding: 8px 16px; } 
+#header .title.line { border-bottom: 1px solid #efefef; box-shadow: 0 1px 20px 0px #72727220; } 
+#header .title * { letter-spacing: -0.5px; } 
+#header .title h3 { display: block; font-size: 18px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: calc(100% - 120px); font-weight: 500; } 
+#header .title .none { display: flex; width: 40px; height: 40px; } 
+#header .title .prev { display: flex; width: 40px; height: 40px; background: url("/img/mobile/icon/arrow-left.svg") no-repeat 50% 50%; background-size: contain; } 
+#header .title .back { display: flex; width: 40px; height: 40px; background: url("/img/mobile/icon/arrow-left.svg") no-repeat 50% 50%; background-size: contain; } 
+
+/* footer */
+#footer { width: 100%; background-color: #fff; box-shadow: 0 -1px 10px 0 #72727220; position: fixed; bottom: 0; } 
+#footer .footer { width: 100%; padding: 16px; } 
+#footer .footer.line { width: 100%; background-color: #fff; padding: 16px; border-top: 1px solid #ddd; box-shadow: 0px -10px 20px #33333310; } 
+#footer .footer .bt-next.act { background-color: #055c53; color: #fff; border: 1px solid #055c53; } 
+#footer .footer .bt-rsrv.act { background-color: #055c53; color: #fff; } 
+#footer .footer .bt-save.act { background-color: #055c53; color: #fff; } 
+
+/* 홈 */
+#mobile .app .gray { display: flex; flex-direction: column; width: 100%; min-height: calc(
+ 100vh - env(safe-area-inset-bottom) - env(safe-area-inset-top)
+ ); background-color: #f5f5f5; } 
+#mobile .main .gray { display: flex; flex-direction: column; width: 100%; min-height: calc(
+ 100vh - 57px - env(safe-area-inset-bottom) - env(safe-area-inset-top)
+ ); background-color: #f5f5f5; } 
+#mobile .user-info { padding: 30px 0; background-color: #fff; border-bottom: 1px solid #ddd; } 
+#mobile .user-info .inner { display: flex; flex-direction: row; align-items: center; gap: 10px; } 
+#mobile .profile { width: 80px; height: 80px; border-radius: 100px; background: url(/img/mobile/image/profile-placeholder.jpg) no-repeat; background-size: cover; background-position: 50% 50%; } 
+#mobile .gray .user-info .inn { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; } 
+#mobile .gray .user-info .inn .mem { padding: 6px 10px; border-radius: 50px; background-color: #055c53; } 
+#mobile .gray .user-info .inn .mem p { font-size: 13px; letter-spacing: -0.5px; font-weight: 500; color: #fff; } 
+#mobile .gray .user-info .inn .text { display: flex; flex-direction: column; align-items: flex-start; } 
+#mobile .gray .user-info .inn .text p { display: flex; flex-direction: row; align-items: center; font-size: 16px; letter-spacing: -0.75px; font-weight: 500; color: #202020; } 
+#mobile .gray .user-info .inn .text p .id { font-size: 18px; letter-spacing: 0; font-weight: 700; color: #000; } 
+#mobile .gray .user-info .inn .text p.hello { font-size: 20px; font-weight: 600; letter-spacing: -0.75px; color: #202020; } 
+
+#mobile .gray .menu-wrap { display: flex; width: 100%; flex-direction: column; padding: 24px 0; } 
+#mobile .gray .menu-wrap .inner { display: flex; flex-direction: row; align-items: center; padding: 10px 8px; gap: 20px; } 
+#mobile .gray .menu-wrap .inner .menu { width: 100%; height: 250px; background-color: #fff; box-shadow: #67676712 0px 8px 12px -6px, #67676712 0px 14px 34px -4px; border-radius: 30px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; } 
+#mobile .gray .menu-wrap .inner .menu .mn { width: 80px; height: 80px; } 
+#mobile .gray .menu-wrap .inner .menu .mn.icon1 { background: url(/img/mobile/icon/home-pass-icon.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .gray .menu-wrap .inner .menu .mn.icon2 { background: url(/img/mobile/icon/home-reserve-icon.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .gray .menu-wrap .inner .menu .mn.icon3 { background: url(/img/mobile/icon/home-course-icon.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .gray .menu-wrap .inner .menu .mn.icon4 { background: url(/img/mobile/icon/home-setting-icon.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .gray .menu-wrap .inner .menu p { font-size: 0.9375rem; letter-spacing: -0.8px; font-weight: 600; color: #00423a; } 
+
+/* 출입 */
+#mobile .main { display: flex; flex-direction: column; width: 100%; min-height: calc(
+ 100vh - 57px - env(safe-area-inset-bottom) - env(safe-area-inset-top)
+ ); justify-content: space-between; } 
+#mobile .main .code-wrap { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 30px 20px; } 
+#mobile .main .code-wrap .box { width: 100%; height: 360px; padding: 30px; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background-color: #fff; border-radius: 30px; box-shadow: #30303012 0px 6px 8px -6px, #30303008 0px 8px 16px -6px; display: none; } 
+#mobile .main .code-wrap .box.act { display: flex; } 
+#mobile .main .code-wrap .box .code { width: 100%; height: 300px; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px; } 
+#mobile .main .code-wrap .box .code .qrcode { width: 100%; height: 100%; object-fit: contain; } 
+#mobile .main .code-wrap .box .code .qrcode .qr { width: 100%; height: 100%; background: url(/img/mobile/image/qr-code.png) 50% 50% no-repeat; background-size: contain; } 
+#mobile .main .code-wrap .box .code .bluetooth { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 30px; } 
+#mobile .main .code-wrap .box .code .bluetooth p { font-size: 14px; letter-spacing: -0.75px; color: #555; font-weight: 500; } 
+#mobile .main .code-wrap .box .code .bluetooth p.search { display: block; } 
+#mobile .main .code-wrap .box .code .bluetooth p.restart { display: none; } 
+#mobile .main .code-wrap .box .code .bluetooth .radar { width: 180px; height: 180px; background: #c3d8d1; border-radius: 100%; display: flex; flex-direction: row; align-items: center; justify-content: center; animation: radar-animation 1s ease-out infinite; } 
+
+#mobile .main .complete { margin: 30px 16px; height: 360px; display: flex; padding: 30px; flex-direction: column; align-items: center; justify-content: center; gap: 16px; background-color: #fff; border-radius: 30px; box-shadow: #30303012 0px 6px 8px -6px, #30303008 0px 8px 16px -6px; } 
+#mobile .main .cmpl { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; } 
+#mobile .main .cmpl .img { width: 100px; height: 100px; background: url(/img/mobile/icon/cmpl.svg) no-repeat 50% 50%; background-size: contain; margin-bottom: 10px; } 
+#mobile .main .cmpl b { font-size: 18px; font-weight: 600; letter-spacing: -0.75px; } 
+#mobile .main .cmpl .time { font-size: 14px; color: #727272; font-weight: 400; letter-spacing: -0.25px; } 
+#mobile .main .cmpl .field { font-size: 18px; } 
+#mobile .main .cmpl .field b { font-weight: 800; letter-spacing: -0.75px; color: #333; } 
+
+@keyframes radar-animation { 
+ 0% { box-shadow: 0 0 0 0 #85e4c660; } 
+ 100% { box-shadow: 0 0 0 20px #85e4c61e; } 
+ }
+
+#mobile .main .code-wrap .box .code .bluetooth .bltt { width: 150px; height: 150px; background: url(/img/mobile/icon/bluetooth.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .main .code-wrap .box .timer { display: flex; flex-direction: row; align-items: center; justify-content: center; padding: 5px 10px; border: 1px solid #ddd; border-radius: 5px; } 
+#mobile .main .code-wrap .box .timer p { font-size: 14px; } 
+#mobile .main .code-wrap .box .timer p b { font-size: 16px; font-weight: 500; color: #b90000; } 
+
+#mobile .main .code-wrap .box .timer .end { display: none; } 
+#mobile .main .code-wrap .box .code.end .qrcode .qr { filter: opacity(0.2) blur(0.5px); } 
+#mobile .main .code-wrap .box .code .refresh { display: none; } 
+#mobile .main .code-wrap .box .code.end .refresh { display: flex; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -60%); width: 100px; height: 100px; background-color: #00000090; border-radius: 50px; justify-content: center; align-items: center; } 
+#mobile .main .code-wrap .box .code.end .refresh .icon { width: 50px; height: 50px; background: url(/img/mobile/icon/refresh.svg) 50% 50% no-repeat; background-size: cover; } 
+#mobile .main .code-wrap .box .timer.end .ing { display: none; } 
+#mobile .main .code-wrap .box .timer.end .end { display: block; color: #909090; } 
+
+#mobile .main .code-wrap .box .code.end .bluetooth .bltt { filter: opacity(0.1) blur(0.5px); } 
+#mobile .main .code-wrap .box .code.end .bluetooth .radar { animation: none; background: none; } 
+#mobile .main .code-wrap .box .code.end .bluetooth p.search { display: none; } 
+#mobile .main .code-wrap .box .code.end .bluetooth p.restart { display: block; } 
+
+#mobile .main .access .choice { display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%; } 
+#mobile .main .access .choice .chc { width: 100%; display: flex; padding: 20px 16px; flex-direction: row; justify-content: center; align-items: center; background-color: #fff; border-bottom: 1px solid #ddd; font-size: 14px; letter-spacing: -0.75px; font-weight: 600; color: #555; } 
+#mobile .main .access .choice .chc + .chc { border-left: 1px solid #ddd; } 
+#mobile .main .access .choice .chc.act { background-color: #055c53; color: #fff; } 
+
+#mobile .main .access + .pass-list { padding-top: 0; } 
+/* 최근 출입내역 */
+#mobile .main .pass-list { display: flex; flex-direction: column; padding: 30px 20px; } 
+#mobile .main .pass-list .box { width: 100%; height: 100%; min-height: 540px; display: flex; flex-direction: column; background-color: #fff; border-radius: 30px; box-shadow: #30303012 0px 6px 8px -6px, #30303008 0px 8px 16px -6px; } 
+#mobile .main .pass-list .box .inner { display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%; height: 100%; padding: 24px 20px 10px; } 
+#mobile .main .pass-list .box .inner .title { font-size: 16px; font-weight: 600; color: #202020; letter-spacing: -0.75px; } 
+#mobile .main .pass-list .box .inner .view { font-size: 14px; color: #909090; font-weight: 600; letter-spacing: -0.75px; } 
+#mobile .main .pass-list .box .list { padding: 0 20px; width: 100%; height: 100%; } 
+#mobile .main .pass-list .box .list .content .when { font-size: 15px; font-weight: 600; letter-spacing: -0.75px; color: #055c53; } 
+#mobile .main .pass-list .box .list .content .who { font-size: 14px; font-weight: 600; letter-spacing: -0.5px; color: #000; } 
+#mobile .main .pass-list .box .list .content .where { font-size: 14px; font-weight: 400; letter-spacing: -0.75px; color: #727272; } 
+#mobile .main .pass-list .box .list .content-none { width: 100%; display: flex; justify-content: center; padding: 30px 0; } 
+#mobile .main .pass-list .box .list .content-none p { font-size: 15px; letter-spacing: -0.75px; color: #909090; font-weight: 500; } 
+
+#mobile .main { display: flex; flex-direction: column; width: 100%; } 
+
+/* 입장내역 */
+#mobile .main .list-wrap { padding-bottom: 50px; } 
+#mobile .main .list .content { width: 100%; padding: 16px 0; display: flex; flex-direction: column; align-items: flex-start; gap: 5px; border-bottom: 1px solid #ddd; } 
+#mobile .main .list .content:last-child { border-bottom: none; } 
+#mobile .main .list .content .when { font-size: 15px; font-weight: 600; letter-spacing: -0.75px; color: #055c53; } 
+#mobile .main .list .content .who { font-size: 14px; font-weight: 600; letter-spacing: -0.5px; color: #000; } 
+#mobile .main .list .content .where { font-size: 14px; font-weight: 400; letter-spacing: -0.75px; color: #727272; } 
+#mobile .main .list .content-none { width: 100%; display: flex; justify-content: center; padding: 30px 0; } 
+#mobile .main .list .content-none p { font-size: 15px; letter-spacing: -0.75px; color: #909090; font-weight: 500; } 
+
+/* 예약내역 */
+
+/* 탭메뉴 tab-menu*/
+.tabs-nav { display: flex; flex-direction: column; width: 100%; padding: 20px 16px 10px; } 
+.tabs-nav .nav { height: 57px; display: flex; flex-direction: row; align-items: center; width: 100%; padding: 7px; background-color: #e0e0e0; border-radius: 9px; box-shadow: #00000015 2px 2px 10px 1px inset; } 
+.tabs-nav .nav .nav-item { width: 50%; display: flex; flex-direction: row; justify-content: center; align-items: center; height: 100%; font-size: 15px; font-weight: 600; letter-spacing: -0.75px; color: #727272; cursor: pointer; } 
+.tabs-nav .nav .nav-item.act { background-color: #fff; border-radius: 7px; color: #00423a; font-weight: 800; box-shadow: #00000010 0px 2px 6px 0px, #00000008 0px 2px 1px 0px; } 
+
+/* 탭 내용 */
+.tabs-box { overflow: hidden; height: 100%; /* min-height: calc(100vh - 57px - 97px - env(safe-area-inset-bottom) - env(safe-area-inset-top)); */
+ position: relative; transition: all 0.2s; } 
+.tabs-content { position: relative; flex-grow: 1; display: flex; align-items: stretch; width: 200%; justify-content: space-between; transition: 0.3s; height: 100%; /* min-height: calc(100vh - 57px - 97px - env(safe-area-inset-bottom) - env(safe-area-inset-top)); */}
+.tabs-section { width: 100%; overflow: hidden; min-height: calc(
+ 100vh - 57px - 97px - env(safe-area-inset-bottom) - env(safe-area-inset-top)
+ ); height: 100%; display: flex; flex-direction: column; justify-content: space-between; transition: all 0.1s; position: relative; } 
+[data-tab-act="tab1"] { display: flex; left: 0; } 
+[data-tab-act="tab2"] { display: flex; left: -100%; } 
+[data-tab-act="tab2"] #footer { visibility: hidden; display: none; } 
+.tabs-content .user-info { display: flex; flex-direction: column; width: 100%; padding: 16px 0; } 
+.tabs-content .user-info .text { display: flex; flex-direction: column; width: 100%; align-items: flex-start; } 
+.tabs-content .user-info .text .id-wrap { font-size: 16px; letter-spacing: -0.75px; color: #202020; } 
+.tabs-content .user-info .text .id-wrap .mem-id { font-size: 18px; font-weight: 700; } 
+.tabs-content .user-info .text .sort { font-size: 18px; letter-spacing: -0.75px; color: #202020; } 
+.tabs-section .footer-wrap { position: fixed; bottom: 0; } 
+
+/* 예약리스트 */
+/* 다가오는 예약 */
+#mobile .main .reservation { display: flex; flex-direction: column; } 
+#mobile .main .reservation .list-wrap { width: 100%; padding: 16px 20px; display: flex; flex-direction: column; gap: 16px; } 
+#mobile .main .reservation .list-wrap .list { width: 100%; height: 100%; display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid #eeeeee; border-radius: 20px; min-height: 200px; box-shadow: #3030301a 0px 6px 12px -6px, #30303021 0px 8px 24px -6px; } 
+#mobile .main .reservation .list-wrap .list:last-child { margin-bottom: 7rem; } 
+#mobile .main .reservation .list-wrap .list .tit { font-size: 18px; letter-spacing: -0.75px; font-weight: 700; } 
+#mobile .main .reservation .list-wrap .list .content { width: 100%; display: flex; flex-direction: column; align-items: flex-start; gap: 5px; padding: 10px; border: none; } 
+#mobile .main .reservation .list-wrap .list .content .when { display: flex; flex-direction: row; align-items: center; gap: 5px; } 
+#mobile .main .reservation .list-wrap .list .content .date { font-size: 16px; font-weight: 600; } 
+#mobile .main .reservation .list-wrap .list .content .today { font-size: 14px; font-weight: 500; color: #000; } 
+#mobile .main .reservation .list-wrap .list .content .where { font-size: 16px; font-weight: 500; letter-spacing: -0.75px; color: #000; } 
+#mobile .main .reservation .list-wrap .list .content .time { font-size: 14px; font-weight: 500; color: #727272; letter-spacing: -0.75px; } 
+#mobile .main .reservation .buttons { display: flex; flex-direction: row; align-items: center; gap: 10px; width: 100%; } 
+#mobile .main .reservation .buttons .bt { display: flex; flex-direction: row; justify-content: center; align-items: center; padding: 10px; gap: 5px; font-size: 15px; } 
+#mobile .main .reservation .buttons .bt-change { background-color: #fff; border: 1px solid #555; color: #555; font-weight: 500; } 
+#mobile .main .reservation .buttons .bt-cancel { font-weight: 500; } 
+
+#mobile .main .reservation .list-none { display: flex; flex-direction: column; align-items: center; width: 100%; padding: 50px 0; gap: 5px; } 
+#mobile .main .reservation .list-none p { font-size: 14px; letter-spacing: -0.75px; font-weight: 500; color: #727272; } 
+
+/* 지난 예약 */
+#mobile .main .reservation .last-list { display: flex; flex-direction: column; gap: 20px; padding: 16px; } 
+#mobile .main .reservation .last-list .list { display: flex; flex-direction: column; gap: 5px; } 
+#mobile .main .reservation .last-list .list .title { padding: 5px; background-color: #e3f0ef; } 
+#mobile .main .reservation .last-list .list .title .when { font-size: 14px; color: #333; font-weight: 500; letter-spacing: -0.5px; } 
+#mobile .main .reservation .last-list .list .content { padding: 5px; display: flex; flex-direction: column; gap: 5px; } 
+#mobile .main .reservation .last-list .list .content h4 { font-size: 16px; color: #333; letter-spacing: -0.75px; display: flex; flex-direction: row; align-items: center; gap: 5px; } 
+#mobile .main .reservation .last-list .list .content h4::before { content: ""; width: 7px; height: 7px; border-radius: 7px; background-color: #00927e; } 
+#mobile .main .reservation .last-list .list .content .con { display: flex; flex-direction: column; gap: 5px; padding: 0 5px; } 
+#mobile .main .reservation .last-list .list .content .con .where { font-size: 15px; letter-spacing: -0.75px; color: #333; font-weight: 500; } 
+#mobile .main .reservation .last-list .list .content .con .time { font-size: 14px; color: #727272; letter-spacing: -0.75px; } 
+
+/* 예약하기 */
+.ui-datepicker { width: 100%; max-width: 100%; display: flex; flex-direction: column; align-items: center; font-family: "Pretendard"; } 
+.ui-datepicker .ui-datepicker-calendar { width: 100%; } 
+.ui-datepicker .ui-datepicker-calendar thead th { height: 45px; text-align: center; font-size: 15px; font-weight: 500; color: #555; } 
+.ui-datepicker .ui-datepicker-calendar tbody td { height: 45px; text-align: center; font-size: 15px; font-weight: 500; } 
+.ui-state-disabled { color: #999; } 
+.ui-datepicker-header { display: flex; align-items: center; position: relative; justify-content: center; flex-direction: row; margin: 0 auto; } 
+.ui-datepicker-header .ui-datepicker-prev { display: flex; flex-direction: row; align-items: center; position: absolute; top: 50%; left: 50%; transform: translate(-70px, -50%); } 
+.ui-datepicker-header .ui-datepicker-prev span { display: none; } 
+.ui-datepicker-header .ui-datepicker-prev::before { content: ""; width: 24px; height: 24px; background: url(/img/mobile/icon/arrow-left.svg) 50% 50% no-repeat; } 
+.ui-datepicker-header .ui-datepicker-next { display: flex; flex-direction: row; align-items: center; position: absolute; right: 50%; top: 50%; transform: translate(70px, -50%); } 
+.ui-datepicker-header .ui-datepicker-next span { display: none; } 
+.ui-datepicker-header .ui-datepicker-next::before { content: ""; width: 24px; height: 24px; background: url(/img/mobile/icon/arrow-right.svg) 50% 50% no-repeat; } 
+.ui-state-disabled { opacity: 0.5; } 
+.ui-datepicker-title { font-size: 18px; letter-spacing: -0.75px; font-weight: 800; } 
+.ui-state-highlight { color: #2daa9e; font-weight: 600; } 
+.ui-state-active { color: #fff; position: relative; z-index: 2; } 
+.ui-state-active::after { content: ""; display: block; width: 30px; height: 30px; border-radius: 5px; background-color: #055c53; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: -1; font-weight: 600; } 
+
+.info .rsrvinf { padding: 10px 0; display: flex; flex-direction: column; align-items: center; gap: 10px; cursor: pointer; border-bottom: 5px solid #f5f5f5; } 
+.info .rsrvinf .content { display: flex; width: 100%; padding: 10px; gap: 8px; flex-direction: row; align-items: center; justify-content: space-between; } 
+.info .rsrvinf .content .icon { width: 20px; height: 20px; } 
+.info .rsrvinf .content .icon.ico-date { background: url(/img/mobile/icon/reserve-calendar-icon.svg) 50% 50% no-repeat; } 
+.info .rsrvinf .content .icon.ico-course { background: url(/img/mobile/icon/reserve-course-icon.svg) 50% 50% no-repeat; } 
+.info .rsrvinf .content .icon.ico-time { background: url(/img/mobile/icon/reserve-time-icon.svg) 50% 50% no-repeat; } 
+.info .rsrvinf .content .icon.ico-view { background: url(/img/mobile/icon/arrow-down.svg) 50% 50% no-repeat; transition: all 0.3s; } 
+.info .rsrvinf .content p { font-size: 16px; letter-spacing: -0.75px; font-weight: 500; } 
+.info .rsrvinf .content .data { width: calc(100% - 100px); } 
+.info .rsrvinf .content .data input { border: none; width: 100%; font-size: 15px; letter-spacing: -0.5px; color: #000; font-weight: 500; } 
+.info .rsrvinf .con { padding: 20px 0; border-top: 1px solid #ddd; display: none; width: 100%; } 
+.info .rsrvinf .con .daterpicker { width: 100%; } 
+.info .rsrvinf .con .date-info { width: 100%; display: flex; flex-direction: row; justify-content: flex-end; align-items: center; gap: 10px; padding-top: 20px; } 
+.info .rsrvinf .con .date-info div { font-size: 13px; letter-spacing: -0.75px; font-weight: 500; display: flex; flex-direction: row; align-items: center; gap: 3px; } 
+.info .rsrvinf .con .date-info .choice::before { content: ""; width: 24px; height: 24px; background-color: #055c53; border-radius: 3px; } 
+.info .rsrvinf .con .date-info .unable::before { content: ""; width: 24px; height: 24px; background-color: #00000050; border-radius: 3px; } 
+.info .rsrvinf.act .icon.ico-view { transform: rotate(-180deg); } 
+.info .rsrvinf .con .select { display: flex; flex-direction: row; align-items: center; flex-wrap: wrap; padding: 0 10px; gap: 8px; } 
+.info .rsrvinf .con .select .slct input[type="radio"] { display: none; } 
+.info .rsrvinf .con .select .slct input[type="radio"] + label { display: inline-block; cursor: pointer; border: 1px solid #055c53; text-align: center; letter-spacing: -0.75px; transition: all 0.3s; } 
+.info .rsrvinf .con .select .course input[type="radio"] + label { border-radius: 30px; padding: 8px 10px; font-size: 14px; } 
+.info .rsrvinf .con .select .time input[type="radio"] + label { border-radius: 5px; padding: 8px 5px; } 
+.info .rsrvinf .con .select .time .detail { display: flex; flex-direction: column; align-items: center; gap: 5px; } 
+.info .rsrvinf .con .select .time .detail .tit { font-size: 14px; font-weight: 600; } 
+.info .rsrvinf .con .select .time .detail p { font-size: 12px; font-weight: 500; } 
+.info .rsrvinf .con .select .slct input[type="radio"] + label { background-color: #fff; color: #055c53; } 
+.info .rsrvinf .con .select .slct input[type="radio"]:checked + label { background-color: #055c53; color: #fff; } 
+.info .rsrvinf .con .select .slct input[type="radio"]:disabled + label { background-color: #f5f5f5; color: #909090; border-color: #909090; } 
+
+/* 스케줄 보기 */
+#mobile .schedule .user-info { display: flex; flex-direction: column; width: 100%; padding: 16px 0; } 
+#mobile .schedule .user-info .inner { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 30px 0; } 
+#mobile .schedule .user-info .text { display: flex; flex-direction: column; width: 100%; align-items: flex-start; gap: 5px; } 
+#mobile .schedule .user-info .text .id-wrap { font-size: 20px; letter-spacing: -0.75px; color: #202020; } 
+#mobile .schedule .user-info .text .id-wrap .mem-id { font-size: 20px; font-weight: 700; } 
+#mobile .schedule .user-info .text .sort { font-size: 20px; letter-spacing: -0.75px; color: #202020; } 
+#mobile .schedule .user-info .state { padding: 5px 10px; border: 1px solid #ddd; border-radius: 15px; display: block; color: #555; font-size: 14px; letter-spacing: -0.75px; font-weight: 600; background-color: #fff; box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 5px 1px; } 
+#mobile .schedule .group { display: flex; flex-direction: column; width: 100%; padding: 30px 0; } 
+#mobile .schedule .group .inner { display: flex; flex-direction: column; align-items: center; gap: 30px; } 
+#mobile .schedule .group .inner .tit { display: flex; flex-direction: row; align-items: center; gap: 5px; } 
+#mobile .schedule .group .inner .tit p { font-size: 18px; letter-spacing: -0.5px; font-weight: 600; } 
+#mobile .schedule .group .inner .tit .grp { font-size: 20px; letter-spacing: -0.5px; font-weight: 700; color: #055c53; } 
+#mobile .schedule .group .inner .text { gap: 10px; display: flex; flex-direction: column; align-items: flex-start; width: 100%; max-width: 280px; } 
+#mobile .schedule .group .inner .text .txt { display: flex; flex-direction: row; align-items: center; gap: 5px; } 
+#mobile .schedule .group .inner .text .txt p { font-size: 16px; letter-spacing: -0.5px; font-weight: 500; } 
+#mobile .schedule .group .inner .text .txt b { font-size: 16px; letter-spacing: -0.5px; font-weight: 700; } 
+
+#mobile .schedule .group > .wrap { display: flex; flex-direction: column; gap: 30px; } 
+#mobile .schedule .group .card { width: 100%; display: flex; padding: 20px 20px; background-color: #fff; border-radius: 20px; box-shadow: 0 2px 4px -2px #55555512, 0 4px 4px -2px #55555508; } 
+#mobile .schedule .group .card .grp { width: 100%; text-align: center; font-size: 20px; letter-spacing: -0.75px; padding: 10px 0; } 
+#mobile .schedule .group .card .grp .green { color: #055c53; } 
+#mobile .schedule .group .inn { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; } 
+#mobile .schedule .group .inn .tit { display: flex; flex-direction: row; align-items: center; gap: 5px; padding: 0 10px; font-size: 16px; font-weight: 500; color: #00423a; letter-spacing: -0.75px; } 
+#mobile .schedule .group .inn .tit::before { content: ""; display: block; width: 5px; height: 5px; border-radius: 5px; background-color: #00423a; } 
+#mobile .schedule .group .inn .card .schd { width: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-between; } 
+#mobile .schedule .group .inn .card .schd .time-wrap { display: flex; flex-direction: row; align-items: center; gap: 10px; line-height: -0.75px; } 
+#mobile .schedule .group .inn .card .schd .time-wrap b { font-weight: 800; } 
+#mobile .schedule .group .inn .card .schd .wrp { display: flex; flex-direction: row; align-items: center; gap: 10px; } 
+#mobile .schedule .group .inn .card .schd .wrp .day { font-size: 14px; letter-spacing: -0.75px; font-weight: 500; padding: 5px; background-color: #d8efd9; border-radius: 10px; color: #026200; } 
+#mobile .schedule .group .inn .card .schd .field { display: flex; flex-direction: row; align-items: center; gap: 5px; padding: 10px; border-radius: 10px; background-color: #e5f2f1; font-size: 14px; letter-spacing: -0.75px; font-weight: 600; color: #00423a; } 
+#mobile .schedule .group .inn .card .schd .field::before { content: ""; display: block; width: 14px; height: 14px; background: url(/img/mobile/icon/field.svg) no-repeat 50% 50%; background-size: contain; } 
+
+/* 골프장정보 */
+.button-nav { display: flex; padding: 16px; background-color: #f5f5f5; } 
+.button-nav .nav { display: flex; flex-direction: row; align-items: center; gap: 10px; } 
+.button-nav .nav .nav-item { padding: 8px 16px; border-radius: 30px; background-color: #fff; border: 1px solid #ddd; font-size: 16px; letter-spacing: -0.75px; font-weight: 500; box-shadow: 0px 1px 4px #00000010; color: #727272; transition: all 0.3s; cursor: pointer; } 
+.button-nav .nav .nav-item.act { background-color: #055c53; border: 1px solid #055c53; color: #fff; box-shadow: 0px 1px 4px #055c5320; } 
+
+.course .tabs-section { min-height: calc(
+ 100vh - 57px - 69px - env(safe-area-inset-bottom) - env(safe-area-inset-top)
+ ); } 
+.course-info { display: flex; flex-direction: column; width: 100%; gap: 20px; } 
+.course-info .info { padding: 20px 16px; display: flex; flex-direction: column; width: 100%; gap: 10px; } 
+.course-info .info:last-child { padding-bottom: 80px; } 
+.course-info .info + .info { border-top: 5px solid #f9f9f9; } 
+.course-info .info h3 { font-size: 20px; letter-spacing: -0.75px; font-weight: 800; } 
+
+.course-info .info .guide { width: 100%; min-height: 300px; position: relative; overflow: hidden; } 
+.course-info .info .guide img { width: 100%; height: 100%; object-fit: cover; } 
+
+.table { width: 100%; } 
+.table .tbl { width: 100%; } 
+.table .tbl table { width: 100%; border-collapse: collapse; } 
+.table .tbl tr { height: 100%; border-bottom: 1px solid #ddd; } 
+.table .tbl th { padding: 10px; text-align: left; font-size: 14px; letter-spacing: -0.75px; font-weight: 700; color: #000; } 
+.table .tbl td { padding: 10px; font-size: 14px; letter-spacing: -0.5px; color: #555; } 
+
+.table .tbl .col thead tr { height: 100%; } 
+.table .tbl .col thead th:first-child { border-left: 0; } 
+.table .tbl .col thead th:last-child { border-right: 0; } 
+.table .tbl .col tbody th:last-child { border-right: 0; } 
+.table .tbl .col tbody td:first-child { border-left: 0; } 
+.table .tbl .col tbody td:last-child { border-right: 0; } 
+.table .tbl .col thead th { font-size: 0.875rem; padding: 10px 0; font-weight: 600; text-align: center; letter-spacing: -1px; color: #333; border: 1px solid #eee; border-bottom: 1px solid #eee; background: #fafbfc; } 
+.table .tbl .col thead .crs1 { color: #f24f4f; font-weight: 700; font-size: 1rem; } 
+.table .tbl .col thead .crs2 { color: #0592c2; font-weight: 700; font-size: 1rem; } 
+.table .tbl .col thead .crs3 { color: #fa8e00; font-weight: 700; font-size: 1rem; } 
+.table .tbl .col tbody tr { border-bottom: 1px solid #eee; } 
+.table .tbl .col tbody th { font-size: 0.875rem; padding: 10px 0; font-weight: 500; text-align: center; letter-spacing: -1px; color: #333; } 
+.table .tbl .col tbody td { font-size: 0.875rem; padding: 10px 0; text-align: center; color: #555; word-break: keep-all; vertical-align: middle; } 
+.table .tbl .col tbody .sum td { font-weight: 600; } 
+.table .tbl .col tbody .sum { background-color: #f2f8e2; } 
+
+select { -moz-appearance: none; -webkit-appearance: none; appearance: none; font-size: 1rem; font-weight: 400; line-height: 1.5; padding: 0.6em 1.4em 0.5em 0.8em; margin: 0; } 
+
+/* 설정 */
+#mobile .user { display: flex; flex-direction: column; align-items: center; width: 100%; gap: 10px; } 
+#mobile .user .img { width: 100px; height: 100px; position: relative; } 
+#mobile .user .img .profile { width: 100%; height: 100%; } 
+#mobile .user .img input.imgupload { display: none; } 
+#mobile .user .img input.imgupload + label { display: block; width: 34px; height: 34px; background: url(/img/mobile/icon/camera-icon.svg) 50% 50% no-repeat; background-color: #00201c; border-radius: 34px; cursor: pointer; } 
+#mobile .user .img .upload { position: absolute; bottom: 0; right: 0; transform: translate(0%, 0%); } 
+
+#mobile .setting { display: flex; flex-direction: column; padding: 30px 16px; gap: 50px; align-items: center; } 
+#mobile .setting .list { display: flex; flex-direction: column; gap: 20px; width: 100%; } 
+#mobile .setting .list li { width: 100%; } 
+#mobile .setting .list li a { width: 100%; padding: 20px 16px; display: block; background-color: #fff; border-radius: 15px; box-shadow: 0 6px 12px -6px #30303012, 0 8px 24px -4px #30303008; } 
+#mobile .setting .list li .set { display: flex; flex-direction: row; width: 100%; justify-content: space-between; align-items: center; gap: 10px; } 
+#mobile .setting .list li .set i { width: 24px; height: 24px; } 
+#mobile .setting .list li .set .stt1 { background: url(/img/mobile/icon/setting-profile-icon.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .setting .list li .set .stt2 { background: url(/img/mobile/icon/setting-password-icon.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .setting .list li .set .stt3 { background: url(/img/mobile/icon/setting-personal-icon.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .setting .list li .set .stt4 { background: url(/img/mobile/icon/setting-utilize-icon.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .setting .list li .set .stt5 { background: url(/img/mobile/icon/setting-delete-icon.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .setting .list li .set .view { background: url(/img/mobile/icon/setting-arrow-rignt.svg) 50% 50% no-repeat; background-size: contain; } 
+#mobile .setting .list li .set p { width: calc(100% - 68px); font-size: 0.9375rem; letter-spacing: -0.75px; font-weight: 600; color: #303030; } 
+#mobile .setting .inner { display: flex; flex-direction: column; gap: 20px; align-items: center; } 
+#mobile .setting .inner .app-version p { font-size: 14px; color: #aaa; } 
+#mobile .setting .inner .logout { font-size: 15px; color: #ff6e4f; letter-spacing: -0.5px; font-weight: 500; } 
+#mobile .modify { display: flex; flex-direction: column; align-items: center; padding: 50px 0; gap: 50px; } 
+#mobile .modify .user .img { width: 200px; height: 200px; } 
+#mobile .modify .user .img input.imgupload + label { width: 50px; height: 50px; } 
+#mobile .modify .footer { width: 100%; } 
+#mobile .modify .footer .bt-save.act { background-color: #055c53; color: #fff; } 

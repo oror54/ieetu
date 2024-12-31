@@ -1,0 +1,40 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+
+<!--로그인-->
+<main class="login">
+    <section class="logo">
+        <h1></h1>
+    </section>
+    <section class="form">
+        <div class="wrap">
+            <fieldset class="login-form">
+                <div class="input-wrap">
+                    <div class="input">
+                        <label for="id" class="skip">아이디</label>
+                        <input type="text" id="id" placeholder="아이디를 입력해주세요." class="ipt">
+                        <p class="ipt-error none" role="alert">아이디가 일치하지 않습니다.</p>
+                    </div>
+                    <div class="input">
+                        <label for="password" class="skip">비밀번호</label>
+                        <input type="text" id="password" placeholder="비밀번호를 입력해주세요." class="ipt error">
+                        <p class="ipt-error none" role="alert">비밀번호가 일치하지 않습니다.</p>
+                        <p class="ipt-inform" role="alert">영문, 숫자, 특수문자를 조합하여 2~12자로 입력해 주세요.</p>
+                    </div>
+                </div>
+                <div class="flex col">
+                    <div class="buttons col">
+                        <button class="bt login-btn act" onclick="location.href='/mobile/home/home.html'">로그인</button>
+                        <button class="bt join-btn" onclick="location.href='/auth/join/'">회원가입</button>
+                    </div>
+                    <div class="buttons row">
+                        <button class="find-btn" onclick="location.href='/auth/find/id-find-step1.html'">아이디찾기</button>
+                        <button class="find-btn"
+                            onclick="location.href='/auth/find/password-find-step1.html'">비밀번호찾기</button>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+</main>
+
+<!--#include virtual="/layout/mobile/inc/f.html"-->

@@ -1,0 +1,104 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<header id="header">
+    <div class="title wht line">
+        <button class="prev" onclick="location.href='/mobile/board/'"><span class="skip">이전페이지</span></button>
+        <h3>자주 묻는 질문</h3>
+        <div class="item hidden"></div>
+    </div>
+</header>
+<!-- 자주 묻는 질문 리스트 -->
+<main class="board-wrap mainflex">
+    <!-- 리스트 -->
+    <section class="faq-list">
+        <div class="wrap">
+            <div class="search-wrap">
+                <div class="search">
+                    <form class="form">
+                        <i class="search-icon"></i>
+                        <input type="search" class="ipt" placeholder="검색어를 입력해주세요.">
+                        <span class="delete">
+                            <i class="delete-icon"></i>
+                        </span>
+                    </form>
+                </div>
+                <div class="often-content">
+                    <button class="con act">
+                        <p>서비스 전체</p>
+                    </button>
+                    <button class="con">
+                        <p>스크린 이용</p>
+                    </button>
+                    <button class="con">
+                        <p>웹, 앱 이용</p>
+                    </button>
+                    <button class="con">
+                        <p>주변 시설 문의</p>
+                    </button>
+                    <button class="con">
+                        <p>매장 문의</p>
+                    </button>
+                    <button class="con">
+                        <p>창업 문의</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- 구분선 -->
+        <div class="divide"></div>
+        <!-- 리스트 -->
+        <div class="board">
+            <div class="wrap">
+                <div class="inner">
+                    <div class="list faq-list">
+                        <ul>
+                            <li><a href="/mobile/board/faq-detail.html">
+                                    <div class="lst">
+                                        <div class="icon"><i class="faq-ico"></i></div>
+                                        <p class="tit">멀리건이 사용되지 않는데, 이유가 무엇인가요?</p>
+                                        <div class="icon"><i class="right-ico"></i></div>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="lst">
+                                        <div class="icon"><i class="faq-ico"></i></div>
+                                        <p class="tit">멀리건 단축키는 어떻게 되나요?</p>
+                                        <div class="icon"><i class="right-ico"></i></div>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="lst">
+                                        <div class="icon"><i class="faq-ico"></i></div>
+                                        <p class="tit">로그인하고 들어갔는데 제 닉네임을 불러주지 않아요.로그인하고 들어갔는데 제 닉네임을 불러주지 않아요</p>
+                                        <div class="icon"><i class="right-ico"></i></div>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="lst">
+                                        <div class="icon"><i class="faq-ico"></i></div>
+                                        <p class="tit">그린에서 안내멘트가 나오지 않아요.</p>
+                                        <div class="icon"><i class="right-ico"></i></div>
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="lst">
+                                        <div class="icon"><i class="faq-ico"></i></div>
+                                        <p class="tit">게임 중 사운드 볼륨을 조절하고 싶어요.</p>
+                                        <div class="icon"><i class="right-ico"></i></div>
+                                    </div>
+                                </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    $(function () {
+        $('.often-content').on('click', '.con', function () {
+            $('.con').removeClass('act');
+            $(this).addClass('act');
+        });
+    });
+</script>
+<!--#include virtual="/layout/mobile/inc/f.html"-->

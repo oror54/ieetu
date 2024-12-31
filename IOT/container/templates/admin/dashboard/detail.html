@@ -1,0 +1,189 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<!--#include virtual="/layout/admin/inc/header.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(1)").addClass('act');
+        $(".dp1:nth-child(1) .depth2").show();
+        $(".dp1:nth-child(1) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin" class="dashboard">
+    <section class="title">
+        <div class="tit">
+            <div class="txt">
+                <h3>대시보드</h3>
+                <p>상세보기</p>
+            </div>
+            <button class="bt rfrsh">
+                <span>새로고침</span>
+                <i class="rfrsh-icon"></i>
+            </button>
+        </div>
+    </section>
+    <section class="dash">
+        <div class="contain">
+            <div class="tit-box">
+                <div class="titl">
+                    <div class="tit col">
+                        <div class="name">
+                            <p>컨테이너 명</p>
+                        </div>
+                        <div class="time">
+                            <small>2024.11.13 AM 10:40</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="state off"><span>수동</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="wrap">
+                    <div class="info">
+                        <div class="box">
+                            <div class="inner">
+                                <div class="inn">
+                                    <div class="item">
+                                        <i class="ico ctv"></i>
+                                        <p class="name">CCTV</p>
+                                    </div>
+                                    <div class="switch skip">
+                                        <label class="swtch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-wrap">
+                            <div class="view-list">
+                                <div class="item">
+                                    <button class="play-btn open-image" data-url="/img/admin/cctv-view2.jpg"
+                                        data-title="CCTV 위치01">
+                                    </button>
+                                    <img src="/img/admin/cctv-view.jpg" alt="">
+                                    <div class="tit">
+                                        <p>CCTV 위치 01</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <button class="play-btn open-image" data-url="/img/admin/cctv-default.jpg"
+                                        data-title="CCTV 위치01">
+                                    </button>
+                                    <img src="/img/admin/cctv-default.jpg" alt="">
+                                    <div class="tit">
+                                        <p>CCTV 위치 01</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infos">
+                        <!-- 온도 -->
+                        <div class="info">
+                            <div class="box">
+                                <div class="inner">
+                                    <div class="inn">
+                                        <div class="item">
+                                            <i class="ico tmp"></i>
+                                        </div>
+                                    </div>
+                                    <div class="inn">
+                                        <p class="tit">온도</p>
+                                        <p class="check"><b>23</b><span>˚</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 습도 -->
+                        <div class="info">
+                            <div class="box">
+                                <div class="inner">
+                                    <div class="inn">
+                                        <div class="item">
+                                            <i class="ico hmd"></i>
+                                        </div>
+                                    </div>
+                                    <div class="inn">
+                                        <p class="tit">습도</p>
+                                        <p class="check"><b>40</b><span>%</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 형광등 -->
+                        <div class="info">
+                            <div class="box">
+                                <div class="inner">
+                                    <div class="inn">
+                                        <div class="item">
+                                            <i class="ico lgh"></i>
+                                        </div>
+                                    </div>
+                                    <div class="inn">
+                                        <p class="tit">벽 스위치 1번</p>
+                                        <p class="check"><b>OFF</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 무드등 -->
+                        <div class="info">
+                            <div class="box">
+                                <div class="inner">
+                                    <div class="inn">
+                                        <div class="item">
+                                            <i class="ico lmp"></i>
+                                        </div>
+                                    </div>
+                                    <div class="inn">
+                                        <p class="tit">벽 스위치 2번</p>
+                                        <p class="check"><b>OFF</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 전류 -->
+                        <div class="info">
+                            <div class="box">
+                                <div class="inner">
+                                    <div class="inn">
+                                        <div class="item">
+                                            <i class="ico elc"></i>
+                                        </div>
+                                    </div>
+                                    <div class="inn">
+                                        <p class="tit">전류</p>
+                                        <p class="check error"><b></b><span>A</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 전류 -->
+                        <div class="info">
+                            <div class="box">
+                                <div class="inner">
+                                    <div class="inn">
+                                        <div class="item">
+                                            <i class="ico elc"></i>
+                                        </div>
+                                    </div>
+                                    <div class="inn">
+                                        <p class="tit">전류</p>
+                                        <p class="check"><b>0.0</b><span>W</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom button center">
+                    <button class="bt list-bt" onclick="location.href='/admin/dashboard/'">목록으로</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

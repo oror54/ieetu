@@ -1,0 +1,131 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(4)").addClass('act');
+        $(".dp1:nth-child(4) .depth2").show();
+        $(".dp1:nth-child(4) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+
+<!-- main -->
+<main id="admin">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>구장관리</h3>
+    </section>
+    <section class="contain ">
+        <div class="content short">
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w300">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>구장</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p"
+                                                placeholder="구장타이틀을 입력해주세요. (예. 수성구장, 팔현구장)" value="수성구장">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>구장명</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p"
+                                                placeholder="구장명을 자세하게 입력해주세요. (예. 수성파크골프장)" value="수성파크골프장">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="구장주소를 입력해주세요."
+                                                value="대구시 수성구 고모동 6 - 2">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>부지</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="부지 평수를 입력해주세요."
+                                                value="약 8,800평">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>주요시설</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="주요시설을 입력해주세요."
+                                                value="잔디구장, 화장실, 사무실">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>브레이크 타임</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="브레이크 타입을 입력해주세요."
+                                                value="12:30 ~ 14:00">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>문의</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p" placeholder="응대가능한 전화번호를 입력해주세요."
+                                                value="053 - 666 - 2192 ~ 2194">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>코스이미지</th>
+                                <td>
+                                    <div class="upload-wrap">
+                                        <div class="img">
+                                            <div class="upload">
+                                                <label for="upload">이미지업로드</label>
+                                                <input type="file" name="files" id="upload" class="imgupload"
+                                                    accept="image/jpeg,image/png">
+                                            </div>
+                                            <div class="course"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="button-wrap">
+                    <div class="button">
+                        <button class="bt bt-rgstr" onclick="location.href='index.html'">등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

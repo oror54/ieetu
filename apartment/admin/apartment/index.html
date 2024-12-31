@@ -1,0 +1,214 @@
+<!--#include virtual="/apartment/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(4)").addClass('act');
+        $(".dp1:nth-child(4) .depth2").show();
+        $(".dp1:nth-child(4) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>아파트 관리</h2>
+        </div>
+    </section>
+    <!-- 검색 -->
+    <section class="search">
+        <div class="title">
+            <div class="tit"> 검색</div>
+        </div>
+        <div class="table">
+            <div class="tbl">
+                <table>
+                    <colgroup>
+                        <col class="w200">
+                        <col>
+                        <col class="w100">
+                        <col class="w100">
+                        <col>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>아파트명</th>
+                            <td colspan="4">
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="아파트명을 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>주소</th>
+                            <td colspan="4">
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="주소를 입력해주세요.">
+                                        <input type="text" class="ip-txt w100p" placeholder="상세주소를 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>관리자명</th>
+                            <td colspan="2">
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="관리자명을 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                            <th>전화번호</th>
+                            <td colspan="2">
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="전화번호를 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="button-wrap">
+            <div class="button">
+                <button type="submit" class="bt bt-srh">검색</button>
+            </div>
+        </div>
+    </section>
+    <!-- 검색내역 -->
+    <section class="contain">
+        <div class="titlewrap">
+            <div class="title">
+                <h4>검색내역</h4>
+                <p>[조회수건수 : 총 <b>210</b>건]</p>
+            </div>
+            <div class="buttons">
+                <div class="button">
+                    <button type="button" class="bt bt-excell">엑셀다운</button>
+                </div>
+                <div class="button">
+                    <button type="button" class="bt bt-add"
+                        onclick="window.open('register.html', '관리등록','width=650, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">접수등록</button>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <div class="tbl">
+                <table class="col fixed">
+                    <colgroup>
+                        <col class="w80">
+                        <col>
+                        <col>
+                        <col class="w150">
+                        <col class="w200">
+                        <col class="w300">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>아파트명 </th>
+                            <th>주소</th>
+                            <th>관리자명</th>
+                            <th>전화번호</th>
+                            <th>메모</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="pointer"
+                                onclick="window.open('register.html', '관리등록','width=650, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">
+                                월드메르디앙</td>
+                            <td class="tal">대구광역시 수성구</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td class="tal">전반적으로 장비 노화로 인한 관리필요</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="pointer">월드메르디앙</td>
+                            <td class="tal">대구광역시 수성구</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td class="tal">전반적으로 장비 노화로 인한 관리필요</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="pointer">월드메르디앙</td>
+                            <td class="tal">대구광역시 수성구</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td class="tal">전반적으로 장비 노화로 인한 관리필요</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="pointer">월드메르디앙</td>
+                            <td class="tal">대구광역시 수성구</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td class="tal">전반적으로 장비 노화로 인한 관리필요</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="pointer">월드메르디앙</td>
+                            <td class="tal">대구광역시 수성구</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td class="tal">전반적으로 장비 노화로 인한 관리필요</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="pointer">월드메르디앙</td>
+                            <td class="tal">대구광역시 수성구</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td class="tal">전반적으로 장비 노화로 인한 관리필요</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="pointer">월드메르디앙</td>
+                            <td class="tal">대구광역시 수성구</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td class="tal">전반적으로 장비 노화로 인한 관리필요</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="pointer">월드메르디앙</td>
+                            <td class="tal">대구광역시 수성구</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td class="tal">전반적으로 장비 노화로 인한 관리필요</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="pointer">월드메르디앙</td>
+                            <td class="tal">대구광역시 수성구</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td class="tal">전반적으로 장비 노화로 인한 관리필요</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="pointer">월드메르디앙</td>
+                            <td class="tal">대구광역시 수성구</td>
+                            <td>홍길동</td>
+                            <td>010-1234-5678</td>
+                            <td class="tal">전반적으로 장비 노화로 인한 관리필요</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+           <!-- paging -->
+            <!--#include virtual="/apartment/admin/inc/paging.html"-->
+        </div>
+        <div class="nocontent"><i class="ico"></i><span>검색된 내용이 없습니다.</span></div>
+    </section>
+</main>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+<!-- footer -->
+<!--#include virtual="/apartment/admin/inc/f.html"-->

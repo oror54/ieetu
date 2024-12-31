@@ -1,0 +1,110 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+
+<header id="header">
+    <div class="title line">
+        <button class="prev"><span class="skip">이전페이지</span></button>
+        <h3>예약하기</h3>
+        <div class="none"></div>
+    </div>
+</header>
+<!-- 예약 신청 하기 -->
+<main>
+    <div class="wrap">
+        <div class="info">
+            <ul>
+                <!-- 날짜선택 -->
+                <li class="rsrvinf">
+                    <div class="content">
+                        <i class="icon ico-date"></i>
+                        <p>날짜</p>
+                        <div class="data"><input type="text" placeholder="날짜를 입력해주세요." class="rsrv-date">
+                        </div>
+                        <span class="icon ico-view"></span>
+                    </div>
+                    <div class="con">
+                        <div class="datepicker"></div>
+                        <div class="date-info">
+                            <div class="choice">선택</div>
+                            <div class="unable">불가</div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 구장선택 -->
+                <li class="rsrvinf">
+                    <div class="content">
+                        <i class="icon ico-course"></i>
+                        <p>구장</p>
+                        <div class="data"><input type="text" placeholder="구장을 선택해주세요." class="rsrv-course">
+                        </div>
+                        <span class="icon ico-view"></span>
+                    </div>
+                    <div class="con">
+                        <div class="select">
+                            <div class="course slct">
+                                <input type="radio" id="course1"  name="course" checked>
+                                <label for="course1">수성구장</label>
+                            </div>
+                            <div class="course slct">
+                                <input type="radio" id="course2" name="course" disabled>
+                                <label for="course2">팔현구장</label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- 시간선택 -->
+                <li class="rsrvinf">
+                    <div class="content">
+                        <i class="icon ico-time"></i>
+                        <p>시간</p>
+                        <div class="data"><input type="text" placeholder="시간을 선택해주세요." class="rsrv-time">
+                        </div>
+                        <span class="icon ico-view"></span>
+                    </div>
+                    <div class="con">
+                        <div class="select">
+                            <div class="time slct">
+                                <input type="radio" id="time1"  name="time" disabled>
+                                <label for="time1">
+                                    <div class="detail">
+                                        <div class="tit">새벽</div>
+                                        <p>(일출 ~ 08:30)</p>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="time slct">
+                                <input type="radio" id="time2" name="time">
+                                <label for="time2"> <div class="detail">
+                                    <div class="tit">오전</div>
+                                    <p>(09:00 ~ 12:30)</p>
+                                </div></label>
+                            </div>
+                            <div class="time slct">
+                                <input type="radio" id="time3" name="time" >
+                                <label for="time3"> <div class="detail">
+                                    <div class="tit">오후</div>
+                                    <p>(14:00 ~17:00)</p>
+                                </div></label>
+                            </div>
+                            <div class="time slct">
+                                <input type="radio" id="time4" name="time">
+                                <label for="time4"> <div class="detail">
+                                    <div class="tit">자유입장</div>
+                                    <p>(17:00 ~18 :00)</p>
+                                </div></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer id="footer">
+    <section class="footer">
+        <div class="button">
+            <a href="/member/reserve/" class="bt bt-next act"><span>예약하기</span></a>
+        </div>
+    </section>
+</footer>
+
+<!--#include virtual="/layout/mobile/inc/f.html"-->

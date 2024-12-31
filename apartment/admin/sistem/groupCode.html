@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그룹코드등록</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+
+<body class="mw600">
+    <main id="popup">
+        <div class="wrap">
+            <section class="top">
+                <div class="title">
+                    <h2>그룹코드등록</h2>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-save" onclick="openModal('save1')">저장</button>
+                    <button class="bt bt-close" onclick="window.close()">닫기</button>
+                </div>
+            </section>
+            <section class="contain">
+                <div class="tit">
+                    <h3>그룹코드정보</h3>
+                </div>
+                <div class="table">
+                    <div class="tbl">
+                        <table>
+                            <colgroup>
+                                <col class="w20p">
+                                <col class="w30p">
+                                <col class="w20p">
+                                <col class="w30p">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="tal"><strong class="bullet">코드</strong></th>
+                                    <td colspan="3">
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="코드를 입력해주세요.">
+                                            </div>
+                                            <button class="bt bt-check" onclick="openModal('check1')">중복체크</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal"><strong class="bullet">코드명</strong></th>
+                                    <td colspan="3">
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="코드명을 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">비고</th>
+                                    <td colspan="3">
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="내용을 입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">사용여부</th>
+                                    <td>
+                                        <div class="inner">
+                                            <select name="select" title="사용여부" class="sel">
+                                                <option>사용</option>
+                                                <option>미사용</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th class="tal">정렬</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p" placeholder="">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+</html>

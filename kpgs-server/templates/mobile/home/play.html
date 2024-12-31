@@ -1,0 +1,30 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+
+<main class="playing mainflex">
+    <section id="header">
+        <div class="title">
+            <button class="prev" onclick="location.href='/mobile/home/home.html'"><span
+                    class="skip">이전페이지</span></button>
+            <h3>게임 입장하기</h3>
+            <div class="item hidden"></div>
+        </div>
+    </section>
+    <section class="screen">
+        <div class="text">
+            <p>스크린 화면에 표시된 번호를 입력해주세요.</p>
+        </div>
+        <div class="text skip error">
+            <p class="error">잘못된 번호를 입력하셨습니다.</p>
+            <p>다시 입력해 주세요.</p>
+        </div>
+        <div class="numbers">
+            <input type="text" maxlength="1" minlength="1" class="ipt ipt-num">
+            <input type="text" maxlength="1" minlength="1" class="ipt ipt-num">
+            <input type="text" maxlength="1" minlength="1" class="ipt ipt-num">
+            <input type="text" maxlength="1" minlength="1" class="ipt ipt-num">
+            <input type="text" maxlength="1" minlength="1" class="ipt ipt-num">
+            <input type="text" maxlength="1" minlength="1" class="ipt ipt-num">
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/inc/f.html"-->

@@ -1,0 +1,32 @@
+<!--#include virtual="/layout/gate/inc/h.html"-->
+<main class="app">
+    <div class="app-wrap gray">
+        <div class="qr-code">
+            <div class="scan">
+                <canvas></canvas>
+            </div>
+            <div class="cols">
+                <div class="btns">
+                    <button class="btn w100p">
+                        <div class="inn"> <i class="icon refresh"></i>
+                            <p>화면 전환</p>
+                        </div>
+                    </button>
+                </div>
+                <div class="btns">
+                    <button class="btn" onClick="location.href='/gate/main/'">
+                        <div class="inn"> <i class="icon home"></i>
+                            <p>메인으로 가기</p>
+                        </div>
+                    </button>
+                    <button class="btn" onClick="location.href='/gate/bluetooth/'">
+                        <div class="inn"> <i class="icon blt"></i>
+                            <p>블루투스 입장</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!--#include virtual="/layout/gate/inc/f.html"-->

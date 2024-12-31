@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장비판매설치정보</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+
+<body class="mw600">
+    <main id="popup">
+        <div class="wrap">
+            <section class="top">
+                <div class="title">
+                    <h2>설치정보</h2>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-save" onclick="openModal('save1')">저장</button>
+                    <button class="bt bt-close" onclick="window.close()">닫기</button>
+                </div>
+            </section>
+            <section class="contain">
+                <div class="tit">
+                    <h3>설치정보</h3>
+                </div>
+                <div class="table">
+                    <div class="tbl">
+                        <table>
+                            <colgroup>
+                                <col class="w30p">
+                                <col class="w70p">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th class="tal">설치예정일자</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="input">
+                                                <input type="date" class="ip-dat">
+                                                <select name="select" title="선택" class="sel">
+                                                    <option>선택</option>
+                                                    <option>09:00</option>
+                                                    <option>10:00</option>
+                                                    <option>11:00</option>
+                                                    <option>12:00</option>
+                                                    <option>13:00</option>
+                                                    <option>14:00</option>
+                                                    <option>15:00</option>
+                                                    <option>16:00</option>
+                                                    <option>17:00</option>
+                                                    <option>18:00</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">설치예정자</th>
+                                    <td>
+                                        <div class="inner">
+                                            <select name="select" title="검색항목" class="sel">
+                                                <option>선택</option>
+                                                <option>이름</option>
+                                                <option>이름</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal"><strong class="bullet">상태</strong></th>
+                                    <td>
+                                        <div class="inner">
+                                            <select name="select" title="선택" class="sel">
+                                                <option>선택</option>
+                                                <option>준비중</option>
+                                                <option>홀딩</option>
+                                                <option>접수취소</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">설치취소일자</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="input">
+                                                <input type="date" class="ip-dat" value="2022-08-04">
+                                                <input type="time" class="ip-time" value="14:10">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">설치자</th>
+                                    <td>
+                                        <div class="inner">
+                                            <select name="select" title="선택" class="sel">
+                                                <option>선택</option>
+                                                <option>이름</option>
+                                                <option>이름</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="tal">비고</th>
+                                    <td>
+                                        <div class="textarea">
+                                            <textarea placeholder="내용을 입력해주세요."></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- modal -->
+    <!--#include virtual="/apartment/admin/inc/modal.html"-->
+</body>
+
+</html>

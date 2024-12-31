@@ -1,0 +1,226 @@
+<!--#include virtual="/apartment/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(3)").addClass('act');
+        $(".dp1:nth-child(3) .depth2").show();
+        $(".dp1:nth-child(3) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>코드관리</h2>
+        </div>
+    </section>
+    <div class="contain-wrap">
+        <!-- 그룹코드 -->
+        <section class="contain w100p">
+            <div class="titlewrap">
+                <div class="title">
+                    <h4>그룹코드</h4>
+                </div>
+                <div class="buttons">
+                    <div class="button">
+                        <button type="button" class="bt bt-add"
+                            onclick="window.open('groupCode.html', '코드등록','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">등록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tbl srll h620">
+                <table class="col fixed">
+                    <colgroup>
+                        <col class="w80">
+                        <col class="w150">
+                        <col class="w150">
+                        <col class="w80">
+                        <col class="w80">
+                        <col class="w100">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>번호</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>그룹코드</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>그룹코드명</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>사용</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>정렬</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>비고</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="tal blue pointer"
+                                onclick="window.open('groupCode.html', '접수등록','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">
+                                COMP</td>
+                            <td class="tal pink">회사</td>
+                            <td>사용</td>
+                            <td>1</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="tal blue pointer">CELL</td>
+                            <td class="tal pink">휴대폰</td>
+                            <td>사용</td>
+                            <td>2</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="tal blue pointer">GUBN</td>
+                            <td class="tal pink">접수구분</td>
+                            <td>사용</td>
+                            <td>3</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="tal blue pointer">APWY</td>
+                            <td class="tal pink">결재방법</td>
+                            <td>사용</td>
+                            <td>4</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="tal blue pointer">LOBR</td>
+                            <td class="tal pink">입주자구분</td>
+                            <td>사용</td>
+                            <td>5</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- 상세코드 -->
+        <section class="contain w100p">
+            <div class="titlewrap">
+                <div class="title">
+                    <h4>상세코드</h4>
+                </div>
+                <div class="buttons">
+                    <div class="button">
+                        <button type="button" class="bt bt-add"
+                            onclick="window.open('detailCode.html', '코드등록','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">등록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="select">
+                <div class="tit">그룹코드명</div>
+                <div class="slct">
+                    <div class="inner">
+                        <select name="select" title="코드명" class="sel">
+                            <option>그룹코드명</option>
+                            <option>그룹코드명</option>
+                            <option>그룹코드명 </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="tbl srll h546">
+                <table class="col fixed">
+                    <colgroup>
+                        <col class="w80">
+                        <col class="w150">
+                        <col class="w150">
+                        <col class="w80">
+                        <col class="w80">
+                        <col class="w100">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>번호</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>상세코드</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>상세코드명</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>사용</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>정렬</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                            <th>
+                                <div class="sortwrap">
+                                    <p>비고</p><i class="fa-solid fa-sort"></i>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="tal blue pointer"
+                                onclick="window.open('detailCode.html', '접수등록','width=750, height=850, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">
+                                DR</td>
+                            <td class="tal pink">DRCTS</td>
+                            <td>사용</td>
+                            <td>1</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="tal blue pointer">HN</td>
+                            <td class="tal pink">삼성하나넷</td>
+                            <td>사용</td>
+                            <td>2</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="tal blue pointer">MH</td>
+                            <td class="tal pink">minhyun</td>
+                            <td>사용</td>
+                            <td>3</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</main>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+<!-- footer -->
+<!--#include virtual="/apartment/admin/inc/f.html"-->

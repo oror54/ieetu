@@ -1,0 +1,209 @@
+<!--#include virtual="/apartment/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(3)").addClass('act');
+        $(".dp1:nth-child(3) .depth2").show();
+        $(".dp1:nth-child(3) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+    <!-- main -->
+    <main id="contain">
+        <section class="location">
+            <div class="titles">
+                <h2>사용자관리</h2>
+            </div>
+        </section>
+        <!-- 검색 -->
+        <section class="search">
+            <div class="title">
+                <div class="tit"> 검색</div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table>
+                        <colgroup>
+                            <col class="w10p">
+                            <col class="w40p">
+                            <col class="w10p">
+                            <col class="w40p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>검색조건</th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="검색항목" class="sel">
+                                            <option>전체</option>
+                                            <option>이름</option>
+                                            <option>아이디</option>
+                                        </select>
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p">
+                                        </div>
+                                    </div>
+                                </td>
+                                <th>사용구분</th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="사용구분" class="sel">
+                                            <option>전체</option>
+                                            <option>사용</option>
+                                            <option>미사용</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <div class="button">
+                    <button type="submit" class="bt bt-srh">검색</button>
+                </div>
+            </div>
+        </section>
+        <!-- 검색내역 -->
+        <section class="contain">
+            <div class="titlewrap">
+                <div class="title">
+                    <h4>검색내역</h4>
+                    <p>[조회수건수 : 총 <b>210</b>건]</p>
+                </div>
+                <div class="buttons">
+                    <div class="button">
+                        <button type="button" class="bt bt-excell">엑셀다운</button>
+                    </div>
+                    <div class="button">
+                        <button type="button" class="bt bt-add"
+                            onclick="location.href='userDetail.html'">사용자등록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col fixed elp">
+                        <colgroup>
+                            <col class="w80">
+                            <col class="w100">
+                            <col class="w200">
+                            <col class="w200">
+                            <col class="w150">
+                            <col class="w150">
+                            <col class="w100">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>이름 </th>
+                                <th>아이디</th>
+                                <th>소속</th>
+                                <th>연락처</th>
+                                <th>사용권한</th>
+                                <th>사용여부</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td onclick="window.open('register.html', '관리등록','width=650, height=700, toolbar=no, menubar=no, scrollbars=no, resizable=yes');return false;">김철수</td>
+                                <td class="pointer">acbd123</td>
+                                <td>DRCTS</td>
+                                <td>010-1234-5678</td>
+                                <td>상황</td>
+                                <td>사용</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>김철수</td>
+                                <td class="pointer">acbd123</td>
+                                <td>DRCTS</td>
+                                <td>010-1234-5678</td>
+                                <td>상황</td>
+                                <td>사용</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>김철수</td>
+                                <td class="pointer">acbd123</td>
+                                <td>DRCTS</td>
+                                <td>010-1234-5678</td>
+                                <td>상황</td>
+                                <td>사용</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>김철수</td>
+                                <td class="pointer">acbd123</td>
+                                <td>DRCTS</td>
+                                <td>010-1234-5678</td>
+                                <td>상황</td>
+                                <td>사용</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>김철수</td>
+                                <td class="pointer">acbd123</td>
+                                <td>DRCTS</td>
+                                <td>010-1234-5678</td>
+                                <td>상황</td>
+                                <td>사용</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>김철수</td>
+                                <td class="pointer">acbd123</td>
+                                <td>DRCTS</td>
+                                <td>010-1234-5678</td>
+                                <td>상황</td>
+                                <td>사용</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>김철수</td>
+                                <td class="pointer">acbd123</td>
+                                <td>DRCTS</td>
+                                <td>010-1234-5678</td>
+                                <td>상황</td>
+                                <td>사용</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>김철수</td>
+                                <td class="pointer">acbd123</td>
+                                <td>DRCTS</td>
+                                <td>010-1234-5678</td>
+                                <td>상황</td>
+                                <td>사용</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>김철수</td>
+                                <td class="pointer">acbd123</td>
+                                <td>DRCTS</td>
+                                <td>010-1234-5678</td>
+                                <td>상황</td>
+                                <td>사용</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>김철수</td>
+                                <td class="pointer">acbd123</td>
+                                <td>DRCTS</td>
+                                <td>010-1234-5678</td>
+                                <td>상황</td>
+                                <td>사용</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               <!-- paging -->
+            <!--#include virtual="/apartment/admin/inc/paging.html"-->
+            </div>
+            <div class="nocontent"><i class="ico"></i><span>검색된 내용이 없습니다.</span></div>
+        </section>
+    </main>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+<!-- footer -->
+<!--#include virtual="/apartment/admin/inc/f.html"-->

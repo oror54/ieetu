@@ -1,0 +1,40 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<header id="header">
+    <div class="title wht line">
+        <button class="prev" onclick="location.href='/mobile/user/'"><span
+                class="skip">이전페이지</span></button>
+        <h3>선호하는 코스</h3>
+        <div class="item">
+            <button class="save-btn check" data-confirm="선호하는 코스를 저장하시겠습니까?" data-title="선호하는 코스"
+            onclick="location.href='/mobile/user/'">
+            <p>저장</p>
+        </button>
+        </div>
+    </div>
+</header>
+<main class="edit-wrap mainflex">
+    <section class="edit">
+        <div class="ipt-edit">
+        <fieldset>
+            <!-- 입력내용 -->
+            <div class="wrap">
+                <div class="field">
+                    <!-- 비 거리 설정 -->
+                    <div class="box">
+                        <div class="title">
+                            <p class="titl">선호하는 코스</p>
+                        </div>
+                        <div class="inner">
+                            <div class="input">
+                                <input type="text" class="ipt" id="courseInput" placeholder="선호하는 코스를 입력해주세요." onclick="openModal('report12')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/modal/modal.html"-->
+<!--#include virtual="/layout/mobile/inc/f.html"-->

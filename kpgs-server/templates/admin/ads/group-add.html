@@ -1,0 +1,157 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(6)").addClass('act');
+        $(".dp1:nth-child(6) .depth2").show();
+        $(".dp1:nth-child(6) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>광고관리</h3>
+            <p>광고그룹추가</p>
+        </div>
+    </section>
+    <section class="contain col">
+        <div class="content">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>광고그룹추가</h4>
+                    </div>
+                    <div class="buttons">
+                        <button class="bt bt-save" onclick="location.href='/admin/ads/group.html'">저장</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>광고유형</th>
+                                <td>
+                                    <div class="inner">
+                                        <div class="inp">
+                                            <input type="text" placeholder="광고유형을 입력해주세요" class="ipt-txt">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>광고그룹명</th>
+                                <td>
+                                    <div class="inner">
+                                        <div class="inp">
+                                            <input type="text" placeholder="광고그룹명을 입력해주세요" class="ipt-txt name">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>메모</th>
+                                <td>
+                                    <div class="write">
+                                        <textarea name="comment" id="comment" placeholder="메모를 입력해주세요."></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>사용여부</th>
+                                <td>
+                                    <div class="switch">
+                                        <input id="adsUse999" type="checkbox" class="skip">
+                                        <label for="adsUse999"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- 광고 목록 파일 추가 -->
+        <div class="content adv">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>광고 목록</h4>
+                        <h5>(<b>4</b>)</h5>
+                    </div>
+                    <div class="buttons ">
+                        <button class="bt bt-del check" data-confirm="해당 광고를 광고 그룹 목록에서 삭제하시겠습니까?"
+                            data-title="광고 삭제">삭제</button>
+                        <button class="bt btn-add adv-add">광고 추가</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col fixed">
+                        <colgroup>
+                            <col class="w60">
+                            <col class="w100">
+                            <col class="w200">
+                            <col>
+                            <col class="w250">
+                            <col class="w250">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+                                        onclick="selectAll(this)"> <label for="allcheck"><span
+                                            class="skip">전체선택</span></label>
+                                </th>
+                                <th>번호</th>
+                                <th>유형</th>
+                                <th>광고이름</th>
+                                <th>이미지</th>
+                                <th>영상</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" id="check999" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check999"><span
+                                            class="skip">999</span></label>
+                                </td>
+                                <td>
+                                    <p>999</p>
+                                </td>
+                                <td>
+                                    <p>유형</p>
+                                </td>
+                                <td class="tal">
+                                    <p class="elpss name">광고이름광고이름광고이름광고이름광고이름광고이름광고이름광고이름광고이름</p>
+                                </td>
+                                <td>
+                                    <div class="image">
+                                        <div class="img">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="video">
+                                        <div class="vdo"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="non-content">
+                <i class="ico"></i>
+                <span>내용이 없습니다.</span>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/modal/modal.html"-->
+<!--#include virtual="/layout/admin/inc/f.html"-->

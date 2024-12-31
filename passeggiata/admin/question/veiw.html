@@ -1,0 +1,76 @@
+<!--#include virtual="/passeggiata/admin/inc/h.html"-->
+<script>
+    $(function(){
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+    <main id="contain">
+        <section class="location">
+            <div class="titles">
+                <h2>문의사항 보기</h2>
+            </div>
+        </section>
+        <section class="contain">
+            <article class="detail">
+                <div class="con">
+                    <div class="tbl">
+                        <table>
+                            <colgroup>
+                            <col class="w10p">
+                            <col class="w20p">
+                            <col class="w10p">
+                            <col class="w20p">
+                            <col class="w10p">
+                            <col class="w20p">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th><strong class="bullet">문의제목</strong></th>
+                                    <td colspan="5">문의드려요</td>
+                                </tr>
+                                <tr>
+                                    <th><strong class="bullet">이름</strong></th>
+                                    <td>김철수</td>
+                                    <th><strong class="bullet">번호</strong></th>
+                                    <td>010-1234-5678</td>
+                                    <th><strong class="bullet">이메일</strong></th>
+                                    <td>abcd@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <th><strong class="bullet">문의내용</strong></th>
+                                    <td colspan="5">파세지아타 문의드립니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </article>
+                <article class="detail">
+                    <div class="tit">
+                        <h3>답변하기</h3>
+                    </div>
+                    <div class="con">
+                        <div class="tbl">
+                            <table>
+                                <colgroup>
+                                <col class="w20p">
+                                <col class="w80p">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th><strong class="bullet">답변</strong></th>
+                                        <td class="h200"><textarea placeholder="답변을 입력해주세요."></textarea></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="button center">
+                        <button type="button" class="bt bt-send">보내기</button>
+                    </div>
+                </article>
+        </section>
+        </main>
+<!--#include virtual="/passeggiata/admin/inc/f.html"-->

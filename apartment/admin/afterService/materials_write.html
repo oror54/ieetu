@@ -1,0 +1,150 @@
+<!--#include virtual="/apartment/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+<!-- main -->
+<!-- main -->
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>자재관리</h2>
+            <b>자재등록</b>
+        </div>
+    </section>
+    <!-- 접수등록 -->
+    <section class="contain">
+        <div class="titlewrap">
+            <div class="title">
+                <h3>자재등록정보</h3>
+            </div>
+            <div class="buttons">
+                <div class="button">
+                    <button type="button" class="bt bt-add" onclick="openModal('save1')">저장</button>
+                </div>
+                <div class="button">
+                    <button type="button" class="bt bt-list" onclick="openModal('list')">목록</button>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <div class="tbl">
+                <table class="row">
+                    <colgroup>
+                        <col class="w15p">
+                        <col class="w35p">
+                        <col class="w15p">
+                        <col class="w35p">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="tal"><strong class="bullet">제품명</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="제품명을 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                            <th class="tal"><strong class="bullet">부품명</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="부품명을 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal"><strong class="bullet">적용모델</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="적용모델을 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                            <th class="tal"><strong class="bullet">부품코드</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="부품코드를 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal"><strong class="bullet">부품규격</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="적용부품규격을 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                            <th class="tal"><strong class="bullet">사용여부</strong></th>
+                            <td>
+                                <div class="inner">
+                                    <select name="select" title="사용여부" class="sel">
+                                        <option>선택</option>
+                                        <option>사용</option>
+                                        <option>미사용</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal"><strong class="bullet">소비자가(VAT)</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="소비자가를 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                            <th class="tal"><strong class="bullet">재고현황</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt w100p">
+                                        <input type="text" class="ip-txt w100p" placeholder="재고현황을 입력해주세요.">
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal"><strong class="bullet">부품이미지</strong></th>
+                            <td colspan="3">
+                                <div class="fileimg">
+                                    <div class="add">
+                                        <div class="additem">
+                                            <input type="file" id="upfile">
+                                            <label for="upfile"></label>
+                                        </div>
+                                        <div class="fileName">
+                                            <span>파일명 : </span>
+                                            <p id="originName" style="display : inline-block"></p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="image">
+                                            <img src="../../img/admin/part.jpg" alt="">
+                                        </div>
+                                        <button type="button" class="btn_del" onclick="openModal('del')"><span
+                                                class="skip">삭제</span></button>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+<!-- footer -->
+<!--#include virtual="/apartment/admin/inc/f.html"-->

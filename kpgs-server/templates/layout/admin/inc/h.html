@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대한파크골프시스템</title>
+    <!-- jquery  -->
+    <script src="/js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery/jquery-ui.min.js"></script>
+    <!-- datepicker -->
+    <script src="/js/datepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" href="/js/datepicker/daterangepicker.css">
+    <!-- jBox -->
+    <script src="/js/jBox/jBox.all.js"></script>
+    <link rel="stylesheet" href="/js/jBox/jBox.all.css">
+    <!-- js -->
+    <script src="/js/admin/admin.js"></script>
+    <script src="/js/admin/modal.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/admin/admin.css">
+    <link rel="stylesheet" href="/css/admin/modal.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <section class="header">
+            <h1><strong></strong> <span class="skip">대한파크골프시스템</span></h1>
+            <div class="lnb">
+                <span class="hello">
+                    <div class="ico"><a href="#"><img src="" alt=""></a></div>
+                    <div class="name"><strong>Hello,</strong> <span><b>관리자</b>님</span></div>
+                </span>
+                <span class="logout">
+                    <div class="skip"><strong>관리자님</strong> <span>접속하셨습니다.</span></div>
+                    <button class="check" data-confirm="로그아웃 하시겠습니까?" data-title="로그아웃"><i class="out-icon"></i><span
+                            class="skip">로그아웃</span></button>
+                </span>
+            </div>
+            <aside id="gnb">
+                <button class="gnb-btn"><i class="arrow"></i></button>
+                <nav class="gnb">
+                    <div class="depth1">
+                        <!-- 대시보드 -->
+                        <div class="dp1">
+                            <a href="/admin/dashboard/" class="da1">
+                                <i><img src="/img/admin/icon/dash01.svg" alt="대시보드"></i>
+                                <span>대시보드</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/dashboard/">대시보드</a></li>
+                            </ul>
+                        </div>
+                        <!-- 게시판 -->
+                        <div class="dp1">
+                            <a href="/admin/board/notice.html" class="da1">
+                                <i><img src="/img/admin/icon/dash02.svg" alt="게시판"></i>
+                                <span>게시판</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/board/notice.html">공지사항</a></li>
+                                <li><a href="/admin/board/faq.html">자주묻는질문</a></li>
+                            </ul>
+                        </div>
+                        <!-- 코스정보 -->
+                        <div class="dp1">
+                            <a href="/admin/course/" class="da1">
+                                <i><img src="/img/admin/icon/dash03.svg" alt="코스정보"></i>
+                                <span>코스정보</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/course/">코스맵정보</a></li>
+                            </ul>
+                        </div>
+                        <!-- 회원정보 -->
+                        <div class="dp1">
+                            <a href="/admin/member/" class="da1">
+                                <i><img src="/img/admin/icon/dash04.svg" alt="회원정보"></i>
+                                <span>회원정보</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/member/">회원정보</a></li>
+                            </ul>
+                        </div>
+                        <!-- 체인점관리 -->
+                        <div class="dp1">
+                            <a href="/admin/chain/" class="da1">
+                                <i><img src="/img/admin/icon/dash05.svg" alt="체인점관리"></i>
+                                <span>체인점관리</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/chain/">체인점목록</a></li>
+                                <li><a href="/admin/chain/machine.html">장비목록</a></li>
+                                <li><a href="/admin/chain/account.html">계정목록</a></li>
+                                <li><a href="/admin/chain/member-role.html">계정권한변경</a></li>
+                            </ul>
+                        </div>
+                        <!-- 광고관리 -->
+                        <div class="dp1">
+                            <a href="/admin/ads/" class="da1">
+                                <i><img src="/img/admin/icon/dash06.svg" alt="광고관리"></i>
+                                <span>광고관리</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/admin/ads/">광고목록</a></li>
+                                <li><a href="/admin/ads/group.html">광고그룹목록</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </aside>
+        </section>
+    </header>

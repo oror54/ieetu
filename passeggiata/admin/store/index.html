@@ -1,0 +1,76 @@
+<!--#include virtual="/passeggiata/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(3)").addClass('act');
+        $(".dp1:nth-child(3) .depth2").show();
+        $(".dp1:nth-child(3) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>운영현황</h2>
+        </div>
+    </section>
+    <section class="contain">
+        <div class="srch">
+            <form>
+                <fieldset>
+                    <input type="text" placeholder="매장명 또는 주소를 입력해주세요" class="ip-txt">
+                    <button type="submit" class="bt bt-srh"><i class="fas fa-search"></i> <span
+                            class="skip">검색</span></button>
+                </fieldset>
+            </form>
+            <div class="buttons">
+                <div class="button">
+                    <button type="button" class="bt bt-excell">엑셀 다운로드</button>
+                </div>
+                <div class="button">
+                    <button type="button" class="bt bt-add" onclick="openModal('store101')">추가</button>
+                </div>
+                <div class="button">
+                    <button type="button" class="bt bt-del" onclick="openModal('cal001')">삭제</button>
+                </div>
+            </div>
+        </div>
+        <div class="tbl">
+            <table class="col">
+                <colgroup>
+                    <col class="w80">
+                    <col class="w80">
+                    <col class="w200">
+                    <col>
+                    <col class="w200">
+                    <col class="w100">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+                                onclick='selectAll(this)'> <label for="allcheck"><span class="skip">전체선택</span></label>
+                        </th>
+                        <th>번호</th>
+                        <th>매장명</th>
+                        <th>주소</th>
+                        <th>등록일</th>
+                        <th>보기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" id="check1" class="checknum unitcheck" name="check"
+                                onclick='checkSelectAll()'> <label for="check1"><span class="skip">1번</span></label>
+                        </td>
+                        <td>1</td>
+                        <td>시지직영점</td>
+                        <td class="tal">대구시 수성구 고산로 123 하나타운 제 1-13동 2층 3호</td>
+                        <td>2023-11-07</td>
+                        <td><button class="bt-view">보기</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--#include virtual="/passeggiata/admin/inc/pageing.html"-->
+            <div class="nocontent"><i class="ico"></i><span>현재 내역이 없습니다.</span></div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/passeggiata/admin/inc/f.html"-->

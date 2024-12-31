@@ -1,0 +1,56 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<header id="header">
+    <div class="title wht line">
+        <button class="prev" onclick="location.href='/mobile/user/user.html'"><span class="skip">이전페이지</span></button>
+        <h3>프로필 수정</h3>
+        <div class="item">
+            <button class="save-btn check" data-confirm="프로필을 저장하시겠습니까?" data-title="프로필 저장"
+                onclick="location.href='/mobile/user/user.html'">
+                <p>저장</p>
+            </button>
+        </div>
+    </div>
+</header>
+<!-- 프로필 수정 -->
+<main class="edit-wrap mainflex">
+    <section class="edit">
+        <div class="image-edit">
+            <div class="image">
+                <div class="profile">
+                    <div class="img"></div>
+                </div>
+                <button class="upload" onclick="openModal('report11')">
+                    <i class="upload-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="ipt-edit">
+            <fieldset>
+                <!-- 입력내용 -->
+                <div class="wrap">
+                    <div class="field">
+                        <!-- 닉네임 -->
+                        <div class="box">
+                            <div class="title">
+                                <p class="titl">닉네임</p>
+                            </div>
+                            <div class="inner">
+                                <div class="input">
+                                    <input type="text" class="ipt error" placeholder="닉네임을 입력해주세요." maxlength="30">
+                                    <button class="double-check">
+                                        <p>중복확인</p>
+                                    </button>
+                                </div>
+                                <p class="ipt-error" role="alert">사용할 수 없는 닉네임입니다.</p>
+                                <p class="ipt-succes none" role="alert">사용 가능한 닉네임입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+</main>
+
+<!--#include virtual="/layout/mobile/modal/modal.html"-->
+<!--#include virtual="/layout/mobile/inc/f.html"-->

@@ -1,0 +1,78 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(6)").addClass('act');
+        $(".dp1:nth-child(6) .depth2").show();
+        $(".dp1:nth-child(6) .depth2 li:nth-child(3)").addClass('act');
+    });
+</script>
+
+
+<!-- main -->
+<main id="admin">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>시간관리</h3>
+    </section>
+    <!-- 클럽회원 스케줄 -->
+    <section class="contain">
+        <div class="content list">
+            <div class="title">
+                <div class="tit">
+                    <h4>출입시간 관리</h4>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-del modal-open" data-modal-id="delete-time">
+                        <p>삭제</p>
+                    </button>
+                    <button class="bt bt-add" onclick="location.href='time-modify.html'">
+                        <p>추가</p>
+                    </button>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col">
+                        <colgroup>
+                            <col class="w80">
+                            <col>
+                            <col class="w150">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+                                        onclick="selectAll(this)"> <label for="allcheck"><span
+                                            class="skip">전체선택</span></label>
+                                </th>
+                                <th>출입시간</th>
+                                <th>수정</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" id="check1" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check1"><span
+                                            class="skip">1</span></label>
+                                </td>
+                                <td>
+                                    <div class="time-wrap setting">
+										<span class="tit">새벽</span>
+										<p class="time">06:00 ~ 08:30</p>
+									</div>
+                                </td>
+                                <td>
+                                    <div class="button">
+                                        <button class="bt bt-view"  onclick="location.href='time-modify.html'">수정</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

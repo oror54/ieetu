@@ -1,0 +1,144 @@
+<!--#include virtual="/inc/h.html"-->
+
+<script>
+    $(function () {
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>엔진설정</h2>
+        </div>
+    </section>
+    <section class="contain">
+        <div class="title">
+            <h3>엔진 상세 설정</h3>
+        </div>
+        <div class="control">
+            <div class="table">
+                <div class="tbl">
+                    <table>
+                        <colgroup>
+                            <col class="w30p">
+                            <col class="w70p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>베이스 웨이트 파일 경로</th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="항목" class="sel">
+                                            <option>전체</option>
+                                            <option>선택</option>
+                                            <option>선택 </option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>FEET 웨이트 파일 경로</th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="항목" class="sel">
+                                            <option>전체</option>
+                                            <option>선택</option>
+                                            <option>선택 </option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>히스토리 갯수</th>
+                                <td>
+                                    <div class="inner">
+                                        <select name="select" title="항목" class="sel">
+                                            <option>전체</option>
+                                            <option>선택</option>
+                                            <option>선택 </option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>MAX NEW TOKENS</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p tar" placeholder="입력해주세요."
+                                                value="512">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>TEMPERATURE</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p tar" placeholder="입력해주세요."
+                                                value="512">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>TOP P</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p tar" placeholder="입력해주세요."
+                                                value="0.9">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>EOS_TOKEN_ID</th>
+                                <td>
+                                    <div class="form">
+                                        <div class="ipt w100p">
+                                            <input type="text" class="ip-txt w100p tar" placeholder="입력해주세요." value="2">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>DO SAMPLE</th>
+                                <td>
+                                    <div class="inner">
+                                        <div class="switch">
+                                            <input id="swtc1" type="checkbox" checked>
+                                            <label for="swtc1"></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>RETURN FULL TEXT</th>
+                                <td>
+                                    <div class="inner">
+                                        <div class="switch">
+                                            <input id="swtc2" type="checkbox">
+                                            <label for="swtc2"></label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <div class="button">
+                    <button type="submit" class="bt bt-save" onclick="openModal('save101')">저장</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--#include virtual="/inc/f.html"-->

@@ -1,0 +1,346 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<!--#include virtual="/layout/admin/inc/header.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(3)").addClass('act');
+        $(".dp1:nth-child(3) .depth2").show();
+        $(".dp1:nth-child(3) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+<main id="admin">
+    <section class="title">
+        <div class="tit">
+            <div class="txt">
+                <h3>장비이력</h3>
+            </div>
+        </div>
+    </section>
+    <section class="contain">
+        <div class="content list">
+            <div class="titles">
+                <div class="title-wrap">
+                    <fieldset>
+                        <div class="search">
+                            <div class="inn">
+                                <input type="date" class="ip-dat">
+                                <em>~</em>
+                                <input type="date" class="ip-dat">
+                            </div>
+                            <div class="inn">
+                                <select name="select" title="그룹" class="sel">
+                                    <option>전체</option>
+                                </select>
+                            </div>
+                            <div class="inn">
+                                <div class="input">
+                                    <input type="text" placeholder="검색어를 입력해주세요." class="ipt-txt w200">
+                                    <button class="bt-srch">
+                                        <i class="ico-src"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="table">
+                    <div class="tbl">
+                        <table class="col fixed">
+                            <colgroup>
+                                <col class="w80">
+                                <col class="w200">
+                                <col class="w200">
+                                <col class="w200">
+                                <col class="w80">
+                                <col>
+                                <col class="w120">
+                                <col class="w100">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>장비명</th>
+                                    <th>모델명</th>
+                                    <th>시리얼 번호</th>
+                                    <th>구분</th>
+                                    <th>사유</th>
+                                    <th>일자</th>
+                                    <th>수정</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>999</p>
+                                    </td>
+                                    <td class="tal">
+                                        <button class="device-cfrm cfrm">
+                                            <p class="elpss">웹캠</p>
+                                        </button>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">SLEH-00448</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">32b1h25273</p>
+                                    </td>
+                                    <td>
+                                        <p>등록</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss"></p>
+                                    </td>
+                                    <td>
+                                        <p class="date">2024.11.20</p>
+                                    </td>
+                                    <td><button class="bt bt-mdf device-reason">수정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>998</p>
+                                    </td>
+                                    <td class="tal">
+                                        <button class="device-cfrm cfrm">
+                                            <p class="elpss">웹캠</p>
+                                        </button>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">SLEH-00448</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">32b1h25273</p>
+                                    </td>
+                                    <td>
+                                        <p>등록</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss"></p>
+                                    </td>
+                                    <td>
+                                        <p class="date">2024.11.20</p>
+                                    </td>
+                                    <td><button class="bt bt-mdf device-reason">수정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>997</p>
+                                    </td>
+                                    <td class="tal">
+                                        <button class="device-cfrm cfrm">
+                                            <p class="elpss">웹캠</p>
+                                        </button>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">SLEH-00448</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">32b1h25273</p>
+                                    </td>
+                                    <td>
+                                        <p>등록</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss"></p>
+                                    </td>
+                                    <td>
+                                        <p class="date">2024.11.20</p>
+                                    </td>
+                                    <td><button class="bt bt-mdf device-reason">수정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>996</p>
+                                    </td>
+                                    <td class="tal">
+                                        <button class="device-cfrm cfrm">
+                                            <p class="elpss">웹캠</p>
+                                        </button>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">SLEH-00448</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">32b1h25273</p>
+                                    </td>
+                                    <td>
+                                        <p>등록</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss"></p>
+                                    </td>
+                                    <td>
+                                        <p class="date">2024.11.20</p>
+                                    </td>
+                                    <td><button class="bt bt-mdf device-reason">수정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>995</p>
+                                    </td>
+                                    <td class="tal">
+                                        <button class="device-cfrm cfrm">
+                                            <p class="elpss">웹캠</p>
+                                        </button>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">SLEH-00448</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">32b1h25273</p>
+                                    </td>
+                                    <td>
+                                        <p>등록</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss"></p>
+                                    </td>
+                                    <td>
+                                        <p class="date">2024.11.20</p>
+                                    </td>
+                                    <td><button class="bt bt-mdf device-reason">수정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>994</p>
+                                    </td>
+                                    <td class="tal">
+                                        <button class="device-cfrm cfrm">
+                                            <p class="elpss">웹캠</p>
+                                        </button>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">SLEH-00448</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">32b1h25273</p>
+                                    </td>
+                                    <td>
+                                        <p>등록</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss"></p>
+                                    </td>
+                                    <td>
+                                        <p class="date">2024.11.20</p>
+                                    </td>
+                                    <td><button class="bt bt-mdf device-reason">수정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>993</p>
+                                    </td>
+                                    <td class="tal">
+                                        <button class="device-cfrm cfrm">
+                                            <p class="elpss">웹캠</p>
+                                        </button>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">SLEH-00448</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">32b1h25273</p>
+                                    </td>
+                                    <td>
+                                        <p>등록</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss"></p>
+                                    </td>
+                                    <td>
+                                        <p class="date">2024.11.20</p>
+                                    </td>
+                                    <td><button class="bt bt-mdf device-reason">수정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>992</p>
+                                    </td>
+                                    <td class="tal">
+                                        <button class="device-cfrm cfrm">
+                                            <p class="elpss">웹캠</p>
+                                        </button>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">SLEH-00448</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">32b1h25273</p>
+                                    </td>
+                                    <td>
+                                        <p>등록</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss"></p>
+                                    </td>
+                                    <td>
+                                        <p class="date">2024.11.20</p>
+                                    </td>
+                                    <td><button class="bt bt-mdf device-reason">수정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>991</p>
+                                    </td>
+                                    <td class="tal">
+                                        <button class="device-cfrm cfrm">
+                                            <p class="elpss">웹캠</p>
+                                        </button>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">SLEH-00448</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">32b1h25273</p>
+                                    </td>
+                                    <td>
+                                        <p>등록</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss"></p>
+                                    </td>
+                                    <td>
+                                        <p class="date">2024.11.20</p>
+                                    </td>
+                                    <td><button class="bt bt-mdf device-reason">수정</button></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>990</p>
+                                    </td>
+                                    <td class="tal">
+                                        <button class="device-cfrm cfrm">
+                                            <p class="elpss">웹캠</p>
+                                        </button>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">SLEH-00448</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss">32b1h25273</p>
+                                    </td>
+                                    <td>
+                                        <p>등록</p>
+                                    </td>
+                                    <td class="tal">
+                                        <p class="elpss"></p>
+                                    </td>
+                                    <td>
+                                        <p class="date">2024.11.20</p>
+                                    </td>
+                                    <td><button class="bt bt-mdf device-reason">수정</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="non-content">
+                    <i class="ico"></i>
+                    <span>내용이 없습니다.</span>
+                </div>
+                <!--#include virtual="/layout/paging/paging.html"-->
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--#include virtual="/layout/admin/modal/modal.html"-->
+<!--#include virtual="/layout/admin/inc/f.html"-->

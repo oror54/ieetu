@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자재관리</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+
+<body class="mw700">
+    <main id="popup" class="confirm">
+        <section class="contain">
+            <div class="top">
+                <h3>자재관리</h3>
+                <div class="buttons">
+                    <button class="bt bt-slct">선택</button>
+                    <button class="bt bt-close" onclick="window.close()">닫기</button>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="fixed">
+                        <colgroup>
+                            <col class="w15p">
+                            <col class="w35p">
+                            <col class="w15p">
+                            <col class="w35p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>제품명</th>
+                                <td>SID</td>
+                                <th>부품명</th>
+                                <td>Product</td>
+                            </tr>
+                            <tr>
+                                <th>적용모델</th>
+                                <td>CSD-1300</td>
+                                <th>부품코드</th>
+                                <td>F-CSD-1300</td>
+                            </tr>
+                            <tr>
+                                <th>부품규격</th>
+                                <td colspan="3">SID1.0, 래미안향, 스필</td>
+                            </tr>
+                            <tr>
+                                <th>소비자가</th>
+                                <td class="tar">0</td>
+                                <th>재고현황</th>
+                                <td class="tac">0</td>
+                            </tr>
+                            <tr>
+                                <th>부품이미지</th>
+                                <td colspan="3">
+                                    <div class="item">
+                                        <div class="image">
+                                            <img src="../../img/admin/part.jpg" alt="부품">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+
+</html>

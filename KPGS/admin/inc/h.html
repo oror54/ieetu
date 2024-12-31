@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.webmanifest">
+    <link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#064001">
+    <meta name="msapplication-TileColor" content="#064001">
+    <meta name="theme-color" content="#ffffff">
+    <!-- 검색표준화 -->
+    <link rel="canonical" href="url" />
+    <meta property="og:title" content="대한파크골프시스템" />
+    <meta property="og:description" content="대한파크골프시스템 관리자페이지" />
+    <meta name="description" content="대한파크골프시스템 관리자페이지" />
+    <title>(주)대한파크골프시스템 관리자</title>
+    <link media="screen" rel="stylesheet" type="text/css" href="../../css/admin.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <section class="header">
+            <h1> <a href="../member/index.html"><strong>대한파크골프시스템</strong>관리자</a></h1>
+            <div class="lnb">
+                <span class="hello">
+                    <div class="ico"><a href="#"><img src="../../img/kpgs-type2.svg" alt=""></a></div>
+                    <div class="name"><strong>Hello,</strong> <span>Administator</span></div>
+                </span>
+                <span class="memb">
+                    <div class="skip"><strong>관리자님</strong> <span>접속하셨습니다.</span></div>
+                    <a href="javascript:;" onclick="openModal('lout11')"><i class="fas fa-power-off"></i><span
+                            class="skip">로그아웃</span></a>
+                </span>
+            </div>
+        </section>
+        <aside id="gnb">
+            <div class="gnb-btn"></div>
+            <nav class="gnb">
+                <div class="depth1">
+                    <div class="dp1"> <a href="../member/index.html" class="da1">
+                            <i><img src="../../img/icon/dash-ico02.svg" alt="관리자관리"></i>
+                            <span>관리자관리</span></a>
+                        <ul class="depth2">
+                            <li><a href="../member/index.html">관리자관리</a></li>
+                        </ul>
+                    </div>
+                    <div class="dp1"> <a href="../board/index.html" class="da1"><i><img
+                                    src="../../img/icon/dash-ico04.svg" alt="게시판관리"></i>
+                            <span>게시판관리</span>
+                        </a>
+                        <ul class="depth2">
+                            <li><a href="../board/index.html">공지사항</a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </aside>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function () {
+                $(".gnb .dp1").click(function () {
+                    var list = $(this).index();
+                    $(".gnb .dp1").removeClass("act");
+                    $(this).addClass("act");
+
+                    $(".depth2").hide();
+                    $(".depth2").eq(list).show();
+                });
+                $(".gnb-btn").click(function () {
+                    $("body").stop().toggleClass("min");
+                    return false;
+                });
+            });
+            //]]>
+        </script>
+    </header>

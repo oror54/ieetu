@@ -1,0 +1,104 @@
+<!--#include virtual="/inc/h.html"-->
+<script>
+    $(function () {
+        $(".header").addClass('fixed');
+        $('.nav .depth1 > li:nth-child(2) > a').addClass('on');
+        $('.nav .depth1 > li:nth-child(2) > a').addClass('active');
+        $('.nav .depth1 > li:nth-child(2) > .depth2:nth-child(2) > li:nth-child(7) > a').addClass('act');
+    });
+</script>
+<!-- 메인 -->
+<main id="page">
+    <!-- 페이지 위치 -->
+    <section id="visual" class="subVisual rnd">
+        <div class="areaBox">
+            <div class="area">
+                <div class="location">
+                    <ul>
+                        <li> <a href="/company/index.html"> <i class="home"></i></a></li>
+                        <li>사업분야</li>
+                    </ul>
+                </div>
+                <h2 class="visualTitle">R&D <small>(연구개발)</small></h2>
+            </div>
+        </div>
+    </section>
+    <!-- section01 -->
+    <!-- 연구개발 -->
+    <section id="contain1" class="contain1">
+        <div class="wrap">
+            <div class="flex">
+                <div class="subTitle">
+                    <div class="tit upper">R&D PORTFOLIO</div>
+                    <h3 class="title">R&D 포트폴리오</h3>
+                </div>
+                <div class="list-wrap">
+                    <div class="list-tit">
+                        <p>전체</p>
+                    </div>
+                    <div class="list">
+                        <div class="portfolio cusor" onclick="location.href='/business/rnd/portfolio1.html'">
+                            <div class="prtf port1">
+                                <div class="title">
+                                    <h3>서버 비용 절감을 위한 데이터베이스
+                                        및 캐시를 활용한 LLM 시스템</h3>
+                                </div>
+                                <div class="img-wrap">
+                                    <div class="img"><img src="/img/business/rnd-list-port1-1.png" alt="LLM 시스템"></div>
+                                </div>
+                                <div class="txt">
+                                    <h3>2023</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio cusor"  onclick="location.href='/business/rnd/portfolio2.html'">
+                            <div class="prtf port2">
+                                <div class="title">
+                                    <h3>대화 성능 향상을 위한 프롬프트 엔지니어링
+                                        및 RAG를 활용한 AI 대화 시스템</h3>
+                                </div>
+                                <div class="img-wrap">
+                                    <div class="img"><img src="/img/business/rnd-list-port2-1.png" alt="AI 대화 시스템">
+                                    </div>
+                                </div>
+                                <div class="txt">
+                                    <h3>2023</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio cusor"  onclick="location.href='/business/rnd/portfolio3.html'">
+                            <div class="prtf port3">
+                                <div class="title">
+                                    <h3>파크골프 출입 시스템</h3>
+                                </div>
+                                <div class="img-wrap">
+                                    <div class="img"><img src="/img/business/rnd-list-port3.png" alt="파크골프 출입 시스템">
+                                    </div>
+                                </div>
+                                <div class="txt">
+                                    <h3>2023</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio cusor"  onclick="location.href='/business/rnd/portfolio4.html'">
+                            <div class="prtf port4">
+                                <div class="title">
+                                    <h3>웨어러블 디바이스 기반 실시간
+                                        혈압측정 및 이상징후 알람 시스템</h3>
+                                </div>
+                                <div class="img-wrap">
+                                    <div class="img"><img src="/img/business/rnd-list-port4.png" alt="이상징후 알람 시스템">
+                                    </div>
+                                </div>
+                                <div class="txt">
+                                    <h3>2022</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/inc/f.html"-->

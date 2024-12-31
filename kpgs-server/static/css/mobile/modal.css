@@ -1,0 +1,33 @@
+@charset "utf-8"; .jBox-overlay { max-width: 100%; background-color: rgba(0, 0, 0, 0.70) !important; } 
+/* 모바일 모달 */
+.jBox-wrapper.modal-cofirm { display: flex !important; flex-direction: column; align-items: center; justify-content: center; width: 100%; } 
+.modal-cofirm .jBox-container { max-width: 320px; width: 100%; display: flex; flex-direction: column; align-items: center; border-radius: 20px !important; padding: 16px; } 
+.modal-cofirm .jBox-title { border-radius: 0; padding: 20px 0 0 0; background: #fff; border-bottom: none; } 
+.modal-cofirm .jBox-title > div { font-weight: 600; letter-spacing: -0.75px; color: #000; font-size: 16px; } 
+.modal-cofirm .jBox-content { padding: 10px 0 30px !important; display: flex; flex-direction: column; align-items: center; gap: 10px; font-size: 15px; font-weight: 500; letter-spacing: -0.75px; color: #000; width: 100% !important; } 
+.modal-video .jBox-title { padding: 0; text-align: left; width: 100%; } 
+.modal-video .jBox-content { padding: 10px 0 !important; } 
+.modal-cofirm .jBox-content .con { display: flex; flex-direction: column; align-items: center; gap: 10px; font-size:15px; color:#000; text-align:center; white-space:pre-line; } 
+.modal-cofirm .jBox-content .con video { width: 100%; } 
+.modal-cofirm .jBox-content .con b { font-size: 16px; letter-spacing: -0.75px; font-weight: 500; } 
+.modal-cofirm .jBox-content .con p { font-size: 14px; font-weight: 500; letter-spacing: -0.5px; color: #000; } 
+.modal-cofirm .jBox-Confirm-footer { display: flex; flex-direction: row; align-items: center; width: 100%; border-radius: 0 0 4px 4px; overflow: hidden; gap: 10px; } 
+.modal-cofirm .jBox-Confirm-footer .btn { width: 100%; font-size: 16px; font-weight: 600; display: flex; flex-direction: row; justify-content: center; align-items: center; height: 50px; border-radius: 10px; } 
+.modal-cofirm .jBox-Confirm-footer .btn + .btn { border-left: 1px solid #ddd } 
+.modal-cofirm .jBox-Confirm-footer .btn.bt-okay { color: #fff !important;; background: #178F5E !important; } 
+.modal-cofirm .jBox-Confirm-footer .btn.bt-no { color: #727272; background: #efefef } 
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1024px){
+ .jBox-overlay { display: block; opacity: 1; z-index: 9999; margin: 0 0 0 calc(50vw - 1px) !important; width: 100%; max-width: 422px !important; } 
+ .jBox-overlay-admin { display: block; opacity: 1; z-index: 9999; width: 100%; max-width: 100% !important; } 
+ .jBox-wrapper.modal-cofirm { max-width: 422px; inset: 50% 50% !important; } 
+ .jBox-wrapper-admin.modal-cofirm { max-width:100%; min-width: 1600px; inset: 50% 5% !important; } 
+ }

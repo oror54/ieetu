@@ -1,0 +1,57 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<header id="header">
+    <div class="title wht line">
+        <button class="prev" onclick="location.href='/mobile/user/account-setting/'"><span class="skip">이전페이지</span></button>
+        <h3>이메일 변경</h3>
+        <div class="item hidden"></div>
+    </div>
+</header>
+<!-- 계정설정 -->
+<main class="edit-wrap mainflex">
+    <section class="edit">
+        <div class="ipt-edit">
+            <fieldset>
+                <!-- 입력내용 -->
+                <div class="wrap">
+                    <div class="field">
+                        <!-- 이메일 -->
+                        <div class="box">
+                            <div class="tit">이메일</div>
+                            <div class="inner">
+                                <div class="input">
+                                    <input type="text" class="ipt" placeholder="이메일을 입력해주세요.">
+                                    <button class="crtfc request" data-confirm="인증번호가 발송되었습니다." data-title="인증번호발송">
+                                        <p>인증요청</p>
+                                        <p class="skip">재요청</p>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 인증번호 -->
+                        <div class="box">
+                            <div class="tit">인증번호</div>
+                            <div class="inner">
+                                <div class="input">
+                                    <input type="text" class="ipt" placeholder="인증번호를 입력해주세요.">
+                                    <em class="timer">05:00</em>
+                                </div>
+                                <button class="bt bt-confirm act request" data-confirm="인증시간이 초과되었습니다."
+                                    data-title="이메일 인증">확인</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+</main>
+<footer id="footer">
+    <section class="footer">
+        <div class="buttons col">
+            <button type="submit" class="bt bt-next act check" data-confirm="변경된 이메일을 저장하시겠습니까?"
+            data-title="이메일 변경"
+                onclick="location.href='/mobile/user/account-setting/'"><span>저장하기</span></button>
+        </div>
+    </section>
+</footer>
+<!--#include virtual="/layout/mobile/inc/f.html"-->

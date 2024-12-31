@@ -1,0 +1,108 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+
+<!-- header -->
+<header id="header">
+    <div class="title line">
+        <button class="prev"><span
+                class="skip">이전페이지</span></button>
+        <h3>회원가입</h3>
+        <div class="none"></div>
+    </div>
+</header>
+<!-- 회원가입 - 정보등록 -->
+<main class="join">
+    <section class="join-wrap">
+        <!-- 회원가입정보입력 -->
+        <section class="info">
+            <div class="wrap">
+                <fieldset>
+                    <!-- 이름 -->
+                    <div class="box">
+                        <div class="tit esnt">이름</div>
+                        <div class="inner">
+                            <div class="input w100p">
+                                <input type="text" class="ipt" placeholder="이름을 입력해주세요.">
+                            </div>
+                        </div>
+                        <div class="ipt-inform">2자 이상 10자 이하의 한글만 입력 가능합니다.</div>
+                    </div>
+                    <!-- 생년월일 -->
+                    <div class="box">
+                        <div class="tit esnt">생년월일</div>
+                        <div class="inner">
+                            <div class="input w100p">
+                                <input type="text" class="ipt" placeholder="생년월일 8자리 (YYYYMMDD)">
+                            </div>
+                        </div>
+                        <div class="ipt-inform">반드시 주민등록 생년월일 8자리를 입력해 주세요.</div>
+                    </div>
+                    <!-- 아이디 -->
+                    <div class="box">
+                        <div class="tit esnt">아이디</div>
+                        <div class="inner">
+                            <div class="input">
+                                <input type="text" class="ipt" placeholder="아이디를 입력해 주세요.">
+                            </div>
+                            <button class="bt bt-confirm request"  data-confirm="이미 가입된 아이디 입니다.">중복확인</button>
+                        </div>
+                    </div>
+                    <!-- 비밀번호 -->
+                    <div class="box">
+                        <div class="tit esnt">비밀번호</div>
+                        <div class="inner">
+                            <div class="input w100p">
+                                <input type="text" class="ipt inform" placeholder="비밀번호를 입력해 주세요.">
+                            </div>
+                        </div>
+                        <div class="ipt-inform">2자 이상 12자 이하의 영문, 숫자, 특수 기호만 입력 가능합니다.</div>
+                    </div>
+                    <!-- 비밀번호 확인 -->
+                    <div class="box">
+                        <div class="tit esnt">비밀번호 확인</div>
+                        <div class="inner">
+                            <div class="input w100p">
+                                <input type="text" class="ipt inform"
+                                    placeholder="비밀번호에 입력한 내용과 동일한 내용을 입력해주세요.">
+                            </div>
+                        </div>
+                        <div class="ipt-inform">2자 이상 12자 이하의 영문, 숫자, 특수 기호만 입력 가능합니다.</div>
+                        <div class="ipt-error">잘못된 비밀번호 입니다.</div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <!-- 약관동의 -->
+        <section class="terms">
+            <div class="wrap">
+                <div class="box">
+                    <!-- 이용약관 -->
+                    <div class="inner">
+                        <div class="input">
+                            <input type="checkbox" id="check1" name="check" class="checkbox">
+                            <label for="check1">이용약관 동의 <small>(필수)</small></label>
+                        </div>
+                        <button type="button" class="view"><span class="skip">내용보기</span></button>
+                    </div>
+                    <!-- 개인정보처리방침 -->
+                    <div class="inner">
+                        <div class="input">
+                            <input type="checkbox" id="check2" name="check" class="checkbox">
+                            <label for="check2">개인정보처리방침 동의 <small>(필수)</small></label>
+                        </div>
+                        <button type="button" class="view"><span class="skip">내용보기</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</main>
+<!-- footer -->
+<footer id="footer">
+    <section class="footer">
+        <div class="button">
+            <a href="/auth/login/" class="bt bt-next request"  data-confirm="회원가입이 완료되었습니다."><span>회원가입</span></a>
+        </div>
+    </section>
+</footer>
+
+<!--#include virtual="/layout/mobile/inc/f.html"-->

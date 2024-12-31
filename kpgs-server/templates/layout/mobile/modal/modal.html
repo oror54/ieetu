@@ -1,0 +1,104 @@
+<!-- 프로필 이미지 변경 -->
+<section class="modal-boxed flex-end" id="report11">
+    <div class="modal-message">
+        <article class="article">
+            <!-- 카메라 앨범 -->
+            <div class="button">
+                <button class="btn">
+                    <div class="inn"><i class="image-icon"></i>
+                        <p>카메라/앨범</p>
+                        <div class="upload">
+                            <input type="file" name="files" id="upload" class="imgupload" accept="image/jpeg,image/png">
+                            <label for="upload"></label>
+                        </div>
+                    </div>
+                </button>
+                <!-- 사진삭제 -->
+                <button class="btn check" data-confirm="프로필 이미지를 삭제하시겠습니까?" data-title="프로필 삭제"
+                    onclick="closeModal('report11')">
+                    <div class="inn"><i class="delete-icon"></i>
+                        <p class="red">사진삭제</p>
+                    </div>
+                </button>
+                <!-- 취소 -->
+                <!-- <button class="btn check" data-confirm="프로필 이미지 수정을 취소하시겠습니까?" data-title="프로필 수정"
+                    onclick="closeModal('report11')">
+                    <div class="inn"><i class="cancel-icon"></i>
+                        <p>취소</p>
+                    </div>
+                </button> -->
+            </div>
+        </article>
+    </div>
+    <div class="ppbg" onclick="closeModal('report11')"></div>
+</section>
+<!-- 선호하는 코스 -->
+<section class="modal-boxed flex-end" id="report12">
+    <div class="modal-message">
+        <article class="article">
+            <!-- 카메라 앨범 -->
+            <div class="button">
+                <div class="title">
+                    <h3>코스를 선택해주세요.</h3>
+                </div>
+                <div class="btn-box">
+                    <button class="btn">
+                        <div class="inn center">
+                            <p>동탄</p </div>
+                    </button>
+                    <!-- 사진삭제 -->
+                    <button class="btn">
+                        <div class="inn center">
+                            <p>서재</p>
+                        </div>
+                    </button>
+                    <!-- 취소 -->
+                    <button class="btn">
+                        <div class="inn center">
+                            <p>솔뫼</p>
+                        </div>
+                    </button>
+                    <button class="btn">
+                        <div class="inn center">
+                            <p>솔뫼</p>
+                        </div>
+                    </button>
+                    <button class="btn">
+                        <div class="inn center">
+                            <p>솔뫼</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="ppbg" onclick="closeModal('report12')"></div>
+</section>
+<script>
+    function openModal(id, opt) {
+        var $el = $('#' + id);
+        $el.addClass('act');
+        $('body').addClass('act');
+    }
+
+    function closeModal(id, opt) {
+        var $el = $('#' + id);
+        $el.removeClass('act');
+        $('body').removeClass('act');
+    }
+    $(function () {
+        $('#upload').on('change', function () {
+            if ($(this).val()) {
+                closeModal('report11');
+            }
+        });
+    });
+
+    $(function () {
+        $('.btn-box .btn').on('click', function () {
+            var course = $(this).text().trim();
+            $('#courseInput').val(course);
+            closeModal('report12');
+        });
+    })
+</script>

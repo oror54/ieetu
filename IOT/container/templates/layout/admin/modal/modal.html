@@ -1,0 +1,498 @@
+<!-- 계정 추가  -->
+<div class="modal" id="user-add">
+    <div class="table">
+        <div class="tbl">
+            <table class="row">
+                <colgroup>
+                    <col class="w200">
+                    <col class="w400">
+                    <col class="w200">
+                    <col class="w400">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>관리자 ID</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="관리자 ID를 입력해주세요" class="ipt-txt error">
+                            </div>
+                        </td>
+                        <th> 관리자 명</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="관리자명을 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비밀번호</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="비밀번호를 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                        <th>연락처</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="연락처를 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td colspan="3">
+                            <div class="inp">
+                                <input type="text" placeholder="이메일을 입력해주세요" class="ipt-txt error">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>계정용도(권한)</th>
+                        <td>
+                            <div class="select">
+                                <select name="select" title="그룹" class="sel">
+                                    <option disabled hidden selected>
+                                        선택
+                                    </option>
+                                    <option>관리자</option>
+                                    <option>컨테이너관리자</option>
+                                </select>
+                            </div>
+                        </td>
+                        <th>사용여부</th>
+                        <td>
+                            <div class="select">
+                                <select name="select" title="그룹" class="sel">
+                                    <option disabled hidden selected>
+                                        선택
+                                    </option>
+                                    <option>Y</option>
+                                    <option>N</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="alert">
+                <p class="ipt-error" role="alert"> - 이미 사용중인 아이디 입니다.</p>
+                <p class="ipt-error" role="alert"> - 이미 사용중인 이메일입니다.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 장비 등록 -->
+<div class="modal" id="device-add">
+    <div class="table">
+        <div class="tbl">
+            <table class="row">
+                <colgroup>
+                    <col class="w200">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>장비명</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="장비명을 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>모델명</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="모델명을 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>시리얼번호</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="시리얼번호를 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>브랜드</th>
+                        <td>
+                            <div class="select">
+                                <select name="select" title="그룹" class="sel">
+                                    <option disabled hidden selected>
+                                        선택
+                                    </option>
+                                    <option>브랜드</option>
+                                    <option>브랜드</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>프로토콜</th>
+                        <td>
+                            <div class="select">
+                                <select name="select" title="그룹" class="sel">
+                                    <option disabled hidden selected>
+                                        선택
+                                    </option>
+                                    <option>프로토콜</option>
+                                    <option>프로토콜</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비고</th>
+                        <td>
+                            <div class="write">
+                                <textarea name="comment" id="comment" placeholder="내용을 입력해주세요."></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 서비스 리스트 -->
+<div class="modal" id="service-list">
+    <div class="table">
+        <div class="tbl">
+            <table class="row">
+                <colgroup>
+                    <col class="w200">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>서비스</th>
+                        <td>
+                            <div class="col">
+                                <div class="service-list">
+                                    <div class="item">
+                                        <p>서비스</p>
+                                        <button class="delete"><i class="ico-delete"></i></button>
+                                    </div>
+                                    <div class="item">
+                                        <p>서비스</p>
+                                        <button class="delete"><i class="ico-delete"></i></button>
+                                    </div>
+                                    <div class="item">
+                                        <p>서비스</p>
+                                        <button class="delete"><i class="ico-delete"></i></button>
+                                    </div>
+                                    <div class="item">
+                                        <p>서비스</p>
+                                        <button class="delete"><i class="ico-delete"></i></button>
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <button class="bt add-btn inception-modal-button">서비스 추가</button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 장비 서비스 등록 -->
+<div class="modal" id="service-add">
+    <div class="table">
+        <div class="tbl">
+            <table class="row">
+                <colgroup>
+                    <col class="w200">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>서비스명</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="서비스명을 입력해주세요" class="ipt-txt service-name">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>서비스아이디</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="서비스 아이디를 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>서비스타입</th>
+                        <td>
+                            <div class="select">
+                                <select name="select" title="그룹" class="sel">
+                                    <option disabled hidden selected>
+                                        선택
+                                    </option>
+                                    <option>타입</option>
+                                    <option>타입</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- 장비 서비스 보기-->
+<div class="modal" id="service-view">
+    <div class="table">
+        <div class="tbl">
+            <table class="row">
+                <colgroup>
+                    <col class="w150">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>서비스명</th>
+                        <td>
+                            서비스명
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>서비스아이디</th>
+                        <td>
+                            abcd12345
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>서비스타입</th>
+                        <td>
+                            서비스타입
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- 컨테이너 등록 -->
+<div class="modal" id="container-add">
+    <div class="table">
+        <div class="tbl">
+            <table class="row">
+                <colgroup>
+                    <col class="w200">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>컨테이너명</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="컨테이너명을 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>주소</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="주소를 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>주소상세</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="주소상세를 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>비고</th>
+                        <td>
+                            <div class="textarea">
+                                <textarea placeholder="내용을 입력해주세요"></textarea>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 컨테이너 장비 등록 -->
+<div class="modal" id="container-device-add">
+    <div class="fieldset">
+        <fieldset>
+            <div class="search">
+                <div class="inn w200">
+                    <select name="select" title="그룹" class="sel">
+                        <option>전체</option>
+                    </select>
+                </div>
+                <div class="inn">
+                    <div class="input">
+                        <input type="text" placeholder="검색어를 입력해주세요." class="ipt-txt">
+                        <button class="bt-srch">
+                            <i class="ico-src"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <div class="table">
+        <div class="tbl">
+            <table class="col fixed">
+                <colgroup>
+                    <col class="w60">
+                    <col class="w60">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>선택</th>
+                        <th>번호</th>
+                        <th>장비명</th>
+                        <th>브랜드</th>
+                        <th>프로토콜</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="radio" id="radio999" class="checknum unitcheck" name="check"> <label
+                                for="radio999"><span class="skip">999</span></label>
+                        </td>
+                        <td>
+                            <p>999</p>
+                        </td>
+                        <td class="tal">
+                            <p class="elpss">웹캠</p>
+                        </td>
+                        <td class="tal">
+                            <p class="elpss">SONY</p>
+                        </td>
+                        <td class="tal">
+                            <p class="elpss">usb2.0</p>
+                        </td>
+                        <td class="tal">
+                            <p class="elpss">비고내용</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="non-content">
+            <i class="ico"></i>
+            <span>내용이 없습니다.</span>
+        </div>
+        <!--#include virtual="/layout/paging/paging.html"-->
+    </div>
+</div>
+
+<!-- 장비 이력 사유 -->
+<div class="modal" id="device-reason">
+    <div class="table">
+        <div class="tbl">
+            <table class="col">
+                <colgroup>
+                    <col class="w400">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>사유</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="사유를 입력해주세요." class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- 외부계정등록 -->
+<div class="modal" id="interwork-add">
+    <div class="table">
+        <div class="tbl">
+            <table class="row">
+                <colgroup>
+                    <col class="w200">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>유저 아이디</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="유저아이디를 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>패스워드</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="패스워드를 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>토큰</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="토큰을 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>URL</th>
+                        <td>
+                            <div class="inp">
+                                <input type="text" placeholder="URL을 입력해주세요" class="ipt-txt">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>PROVIDE</th>
+                        <td>
+                            <div class="select">
+                                <select name="select" title="그룹" class="sel">
+                                    <option disabled hidden selected>
+                                        선택
+                                    </option>
+                                    <option>PROVIDE</option>
+                                    <option>PROVIDE</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

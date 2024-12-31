@@ -1,0 +1,317 @@
+<!-- quick menu-->
+<div class="quick-menu">
+    <div class="menu">
+        <button class="contact-bt">
+            <div class="inn"><i class="contact-ico"></i><span>문의하기</span></div>
+        </button>
+    </div>
+</div>
+<!-- contact -->
+<div class="contact-box">
+    <div class="contact-wrap">
+        <div class="contact-header">
+            <h3>문의하기</h3>
+            <div class="button">
+                <button class="clsoe-btn"></button>
+            </div>
+        </div>
+        <div class="contact">
+            <form class="gform" id="emailForm" method="POST">
+                <div class="items">
+                    <div class="item">
+                        <div class="tit"><b>성함</b></div>
+                        <div class="input">
+                            <input class="ipt-txt" type="text" placeholder="성함을 입력해주세요." maxlength='20' id="inputName"
+                                name="name" required />
+                            <p class="error hidden" role="alert">성함을 입력해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tit"><b>연락처</b></div>
+                        <div class="input">
+                            <input class="ipt-txt" type="text" name="number"
+                                placeholder="연락처를  입력해주세요. (예. 01012345678)" id="inputNumber" maxlength='11' required />
+                            <p class="error hidden" role="alert">연락처를 입력해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tit"><b>이메일</b></div>
+                        <div class="input">
+                            <input class="ipt-txt" type="email" placeholder="이메일을 입력해주세요." id="inputEmail" name="email"
+                                required>
+                            <p class="error hidden" role="alert">이메일 주소를 정확하게 입력해주세요.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="tit"><b>문의분야</b></div>
+                        <div class="select">
+                            <select name="field" id="inputField" required>
+                                <option value="" selected="selected">선택</option>
+                                <option value="클라우드전환">클라우드전환</option>
+                                <option value="HPC구축">HPC구축</option>
+                                <option value="인프라구축">인프라구축</option>
+                                <option value="IoT서비스">IoT서비스</option>
+                                <option value="스크린파크골프">스크린파크골프</option>
+                                <option value="전기통신공사">전기통신공사</option>
+                                <option value="RND">R&D</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="titles">
+                            <div class="tit"><b>문의내용</b>
+                                <p id="textLengthCheck">(0 / 500)</p>
+                            </div>
+                        </div>
+                        <div class="textarea">
+                            <textarea name="문의내용" id="message" placeholder="문의 내용을 입력해주세요." maxlength='500'
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="checkbox">
+                            <input type="checkbox" id="agree" class="checknum" name="동의" required />
+                            <label for="agree"></label>
+                            <p><b>개인정보 수집 및 이용</b>에 동의합니다.</p>
+                            <p class="agreeError"></p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit" class="btn contactBtn">문의하기</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    // 폼 제출 시
+    $(document).ready(function () {
+        $('#emailForm').submit(function (event) {
+            event.preventDefault(); // 기본 제출 방지
+
+            const name = $('#inputName').val().trim();
+            const phone = $('#inputNumber').val().trim();
+            const email = $('#inputEmail').val().trim();
+            const field = $('#inputField').val();
+            const content = $('#message').val().trim();
+
+            openPopup('modalLoading'); // 로딩 화면 표시
+
+            axios.post('https://www.passeggiata.kr/service/sendEmail.do', {
+                name: name,
+                phone: phone,
+                email: email,
+                title: field,
+                content: content
+            })
+                .then(function (response) {
+                    closePopup('modalLoading'); // 로딩 화면 닫기
+                    openPopup('modalSuccess'); // 성공 모달 창 열기
+                    resetForm(); // 폼 초기화 함수 호출
+                })
+                .catch(function (error) {
+                    closePopup('modalLoading'); // 로딩 화면 닫기
+                    alert("메일 전송 중 오류가 발생했습니다. 다시 시도해주세요."); // 에러 메시지 표시
+                });
+        });
+
+        $(".contactBtn").click(function () {
+            if ($("#inputName").val().trim() === "") {
+                openPopup('modalName');
+                $("#inputName").focus();
+                return false;
+            }
+            if ($("#inputNumber").val().trim() === "") {
+                openPopup('modalNumber');
+                $("#inputNumber").focus();
+                return false;
+            }
+            if ($("#inputEmail").val().trim() === "") {
+                openPopup('modalEmail');
+                $("#inputEmail").focus();
+                return false;
+            }
+            if ($("#inputField").val() === "") {
+                openPopup('modalField');
+                $("#inputField").focus();
+                return false;
+            }
+            if ($("#message").val().trim() === "") {
+                openPopup('modalContent');
+                $("#message").focus();
+                return false;
+            }
+            if (!$("#agree").prop('checked')) {
+                openPopup('modalAgree');
+                $("#agree").focus();
+                return false;
+            }
+        });
+
+        function openPopup(modalId) {
+            $('#' + modalId).addClass('act');
+        }
+
+        function closePopup(modalId) {
+            $('#' + modalId).removeClass('act');
+        }
+
+        function resetForm() {
+            // 폼 요소 초기화
+            $('#inputName').val('');
+            $('#inputNumber').val('');
+            $('#inputEmail').val('');
+            $('#inputField').val('');
+            $('#message').val('');
+            $('#agree').prop('checked', false);
+        }
+
+        // Close modal when clicking on modal overlay or close button
+        $('.modal .bt_okay').click(function () {
+            $(this).closest('.modal').removeClass('act');
+        });
+    });
+</script>
+
+
+<!-- footer -->
+<footer id="footer">
+    <div class="footer">
+        <div class="wrap">
+            <div class="content">
+                <div class="logo">
+                    <img src="/img/main/logo-white.png" alt="(주)이튜">
+                    <span>(주) 이튜</span>
+                </div>
+                <div class="con">
+                    <p>(42250)대구광역시 수성구 알파시티1로 31길 12 </p>
+                    <p>사업자등록번호 : 514-81-66515 </p>
+                    <p>대표 : 김광수, 김체담</p>
+                </div>
+                <div class="con">
+                    <p>대표전화 : 053-623-1468</p>
+                    <p>팩스번호 : 053-623-1469</p>
+                </div>
+            </div>
+            <div class="copy">
+                <p>Copyright by © IEETU</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+<!-- modal -->
+<section class="modal" id="modalName">
+    <div class="modal-box">
+        <article class="article">
+            <div class="con">
+                <p>이름을 입력해주세요.</p>
+            </div>
+        </article>
+        <div class="button">
+            <button class="bt_okay" type="button" onclick="closePopup('modalName')">
+                확인
+            </button>
+        </div>
+    </div>
+</section>
+<section class="modal" id="modalNumber">
+    <div class="modal-box">
+        <article class="article">
+            <div class="con">
+                <p>연락처를 입력해주세요.</p>
+            </div>
+        </article>
+        <div class="button">
+            <button class="bt_okay" type="button" onclick="closePopup('modalNumber')">
+                확인
+            </button>
+        </div>
+    </div>
+</section>
+<section class="modal" id="modalEmail">
+    <div class="modal-box">
+        <article class="article">
+            <div class="con">
+                <p>이메일을 입력해주세요.</p>
+            </div>
+        </article>
+        <div class="button">
+            <button class="bt_okay" type="button" onclick="closePopup('modalEmail')">
+                확인
+            </button>
+        </div>
+    </div>
+</section>
+<section class="modal" id="modalField">
+    <div class="modal-box">
+        <article class="article">
+            <div class="con">
+                <p>문의분야를 선택해주세요.</p>
+            </div>
+        </article>
+        <div class="button">
+            <button class="bt_okay" type="button" onclick="closePopup('modalField')">
+                확인
+            </button>
+        </div>
+    </div>
+</section>
+<section class="modal" id="modalContent">
+    <div class="modal-box">
+        <article class="article">
+            <div class="con">
+                <p>문의 내용을 입력해주세요.</p>
+            </div>
+        </article>
+        <div class="button">
+            <button class="bt_okay" type="button" onclick="closePopup('modalContent')">
+                확인
+            </button>
+        </div>
+    </div>
+</section>
+<section class="modal" id="modalAgree">
+    <div class="modal-box">
+        <article class="article">
+            <div class="con">
+                <p>개인정보 수집 및 이용에 동의해주세요.</p>
+            </div>
+        </article>
+        <div class="button">
+            <button class="bt_okay" type="button" onclick="closePopup('modalAgree')">
+                확인
+            </button>
+        </div>
+    </div>
+</section>
+<section class="modal" id="modalLoading">
+    <div class="modal-box">
+        <article class="article">
+            <div class="con">
+                <p>메일을 전송하는 중입니다...</p>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="modal" id="modalSuccess">
+    <div class="modal-box">
+        <article class="article">
+            <div class="con">
+                <p>메일이 성공적으로 전송되었습니다!</p>
+            </div>
+        </article>
+        <div class="button">
+            <button class="bt_okay" type="button" onclick="closePopup('modalSuccess')">
+                확인
+            </button>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

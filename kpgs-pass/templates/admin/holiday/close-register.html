@@ -1,0 +1,112 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(8)").addClass('act');
+        $(".dp1:nth-child(8) .depth2").show();
+        $(".dp1:nth-child(8) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+
+<!-- main -->
+<main id="admin" class="close-register">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>휴무일 등록</h3>
+    </section>
+    <section class="contain">
+        <div class="content short">
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w300">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>구장선택</th>
+                                <td>
+                                    <div class="inner"><select name="select" title="시간" class="sel">
+                                            <option>선택</option>
+                                            <option>수성구장</option>
+                                            <option>팔현구장</option>
+                                        </select></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>구분선택</th>
+                                <td>
+                                    <div class="inner"><select name="select" title="시간" class="sel close-sel">
+                                            <option>선택</option>
+                                            <option>정기휴무일</option>
+                                            <option>임시휴무일</option>
+                                        </select></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>선택일자</th>
+                                <td>
+                                    <div class="form-wrap close-form-wrap">
+                                        <div class="form  clsoe-form act">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p datepick ipt-date"
+                                                    placeholder="날짜를 선택해주세요.">
+                                                <i class="ico-date"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form clsoe-form">
+                                            <div class="close-wrap">
+                                                <div class="repeat"><b>매주반복</b></div>
+                                                <div class="day-wrap">
+                                                    <div class="day">
+                                                        <input type="radio" id="mon" class="checkday" name="check">
+                                                        <label for="mon">월</label>
+                                                    </div>
+                                                    <div class="day">
+                                                        <input type="radio" id="tue" class="checkday" name="check">
+                                                        <label for="tue">화</label>
+                                                    </div>
+                                                    <div class="day">
+                                                        <input type="radio" id="wed" class="checkday" name="check">
+                                                        <label for="wed">수</label>
+                                                    </div>
+                                                    <div class="day">
+                                                        <input type="radio" id="thu" class="checkday" name="check">
+                                                        <label for="thu">목</label>
+                                                    </div>
+                                                    <div class="day">
+                                                        <input type="radio" id="fri" class="checkday" name="check">
+                                                        <label for="fri">금</label>
+                                                    </div>
+                                                    <div class="day">
+                                                        <input type="radio" id="sat" class="checkday" name="check">
+                                                        <label for="sat">토</label>
+                                                    </div>
+                                                    <div class="day">
+                                                        <input type="radio" id="sun" class="checkday" name="check">
+                                                        <label for="sun">일</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>비고</th>
+                                <td><textarea class="textarea" placeholder="정보를 입력해주세요."></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="button-wrap">
+                    <div class="button">
+                        <button class="bt bt-rgstr" onclick="location.href='close.html'">휴무일등록</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

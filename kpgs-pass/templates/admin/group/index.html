@@ -1,0 +1,209 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(7)").addClass('act');
+        $(".dp1:nth-child(7) .depth2").show();
+        $(".dp1:nth-child(7) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- 그룹관리 -->
+<main id="admin" class="group">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>그룹관리</h3>
+    </section>
+    <!-- 그룹생성 -->
+    <section class="contain row">
+        <!-- 그룹생성 -->
+        <div class="content col w400">
+            <p class="note">각 그룹별로 클럽을 설정할 수 있습니다.</p>
+            <div class="manager">
+                <div class="srll">
+                    <div class="inner all act">
+                        <p>전체</p>
+                    </div>
+                    <div class="inner">
+                        <input id="group1" value="홀A" class="ipt-txt" readonly></input>
+                        <div class="buttons">
+                            <button class="bt bt-mdf modal-open" data-modal-id="modify-group"><span
+                                    class="skip">수정</span></button>
+                            <button class="bt bt-del modal-open" data-modal-id="delete-group"><span
+                                    class="skip">삭제</span></button>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <input id="group2" value="홀B" class="ipt-txt" readonly></input>
+                        <div class="buttons">
+                            <button class="bt bt-mdf modal-open" data-modal-id="modify-group"><span
+                                    class="skip">수정</span></button>
+                            <button class="bt bt-del modal-open" data-modal-id="delete-group"><span
+                                    class="skip">삭제</span></button>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <input id="group3" value="짝A" class="ipt-txt" readonly></input>
+                        <div class="buttons">
+                            <button class="bt bt-mdf modal-open" data-modal-id="modify-group"><span
+                                    class="skip">수정</span></button>
+                            <button class="bt bt-del modal-open" data-modal-id="delete-group"><span
+                                    class="skip">삭제</span></button>
+                        </div>
+                    </div>
+                    <div class="inner">
+                        <input id="group4" value="짝B" class="ipt-txt" readonly></input>
+                        <div class="buttons">
+                            <button class="bt bt-mdf modal-open" data-modal-id="modify-group"><span
+                                    class="skip">수정</span></button>
+                            <button class="bt bt-del modal-open" data-modal-id="delete-group"><span
+                                    class="skip">삭제</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button class="bt bt-add  modal-open" data-modal-id="register-group">
+                    <p>그룹 생성하기</p>
+                    <i class="icon-add"></i>
+                </button>
+            </div>
+        </div>
+        <div class="content list">
+            <div class="title">
+                <div class="tit">
+                    <div class="total">
+                        <p>총<b>68</b>개</p>
+                    </div>
+                    <div class="group">전체</div>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-del modal-open" data-modal-id="delete-group-club">
+                        <p>삭제하기</p>
+                    </button>
+                    <button class="bt bt-add modal-open" data-modal-id="register-group-club">
+                        <p>클럽 추가하기</p>
+                        <i class="icon-add"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col">
+                        <colgroup>
+                            <col class="w100">
+                            <col class="w100">
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+                                        onclick="selectAll(this)"> <label for="allcheck"><span
+                                            class="skip">전체선택</span></label>
+                                </th>
+                                <th>No.</th>
+                                <th>클럽명</th>
+                                <th>그룹명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" id="check68" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check68"><span
+                                            class="skip">68</span></label>
+                                </td>
+                                <td>68</td>
+                                <td class="tal">231</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check67" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check67"><span
+                                            class="skip">67</span></label>
+                                </td>
+                                <td>67</td>
+                                <td class="tal">17그린</td>
+                                <td>짝A</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check66" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check66"><span
+                                            class="skip">66</span></label>
+                                </td>
+                                <td>66</td>
+                                <td class="tal">F4</td>
+                                <td>짝A</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check65" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check65"><span
+                                            class="skip">65</span></label>
+                                </td>
+                                <td>65</td>
+                                <td class="tal">MG(수)</td>
+                                <td>홀B</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check64" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check64"><span
+                                            class="skip">64</span></label>
+                                </td>
+                                <td>64</td>
+                                <td class="tal">MG대원</td>
+                                <td>짝A</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check63" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check63"><span
+                                            class="skip">63</span></label>
+                                </td>
+                                <td>63</td>
+                                <td class="tal">PGLA</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check62" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check62"><span
+                                            class="skip">62</span></label>
+                                </td>
+                                <td>62</td>
+                                <td class="tal">고산</td>
+                                <td>짝A</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check61" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check61"><span
+                                            class="skip">61</span></label>
+                                </td>
+                                <td>61</td>
+                                <td class="tal">고모령</td>
+                                <td>짝A</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check60" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check60"><span
+                                            class="skip">60</span></label>
+                                </td>
+                                <td>60</td>
+                                <td class="tal">골드</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="check59" class="checknum unitcheck" name="check"
+                                        onclick="checkSelectAll()"> <label for="check59"><span
+                                            class="skip">59</span></label>
+                                </td>
+                                <td>59</td>
+                                <td class="tal">군성일구회</td>
+                                <td>짝A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--#include virtual="/layout/paging/paging.html"-->
+        </div>
+    </section>
+    <!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

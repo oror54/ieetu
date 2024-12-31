@@ -1,0 +1,89 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(6)").addClass('act');
+        $(".dp1:nth-child(6) .depth2").show();
+        $(".dp1:nth-child(6) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>광고관리</h3>
+            <p>광고목록</p>
+        </div>
+    </section>
+    <section class="contain col">
+        <div class="content">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>광고상세</h4>
+                    </div>
+                    <div class="buttons">
+                        <button class="bt bt-mdf" onclick="location.href='/admin/ads/ads-add.html'">수정</button>
+                        <button class="bt bt-del check" data-confirm="삭제하시겠습니까?" data-title="삭제">삭제</button>
+                        <button class="bt bt-list" onclick="location.href='/admin/ads/'">목록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>광고유형</th>
+                                <td>
+                                    <p>광고유형</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>광고이름</th>
+                                <td>
+                                    <p class="name">광고이름</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이미지</th>
+                                <td>
+                                    <div class="image">
+                                        <div class="img">
+                                            <img src="/img/admin/img/golf-ad1.jpg" alt="광고1" class="img open-image"
+                                                data-url="/img/admin/img/golf-ad1.jpg">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>영상</th>
+                                <td>
+                                    <div class="video">
+                                        <div class="vdo">
+                                            <video controls>
+                                                <source src="/img/admin/img/ad1.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>메모</th>
+                                <td>
+                                    <div class="inn">
+                                        <textarea name="comment" id="comment" readonly>시지 직영점 입니다</textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

@@ -1,0 +1,148 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(5)").addClass('act');
+        $(".dp1:nth-child(5) .depth2").show();
+        $(".dp1:nth-child(5) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>체인점관리</h3>
+            <p>체인점목록</p>
+        </div>
+    </section>
+    <section class="contain col">
+        <div class="content">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>체인점 정보</h4>
+                    </div>
+                    <div class="buttons">
+                        <button class="bt bt-save" onclick="location.href='/admin/chain/'">저장</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <div class="chain-image">
+                    <div class="chain">
+                        <div class="img chainimg">
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="tbl">
+                        <table class="row">
+                            <colgroup>
+                                <col class="w200">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>체인점명</th>
+                                    <td>
+                                        <div class="inner">
+                                            <div class="inp">
+                                                <input type="text" placeholder="체인점 이름을 입력해주세요" class="ipt-txt">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>체인점타입</th>
+                                    <td>
+                                        <div class="inner">
+                                            <div class="inp">
+                                                <input type="text" placeholder="체인점 타입을 입력해주세요" class="ipt-txt">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>체인점코드</th>
+                                    <td>
+                                        <div class="inner">
+                                            <div class="inp">
+                                                <input type="text" placeholder="체인점 코드를 입력해주세요" class="ipt-txt">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td>
+                                        <div class="inner">
+                                            <div class="inn">
+                                                <div class="inp">
+                                                    <input type="text" placeholder="우편번호" class="ipt-txt" readonly>
+                                                </div>
+                                                <button class="bt bt-srch">주소검색</button>
+                                            </div>
+                                            <div class="inp">
+                                                <input type="text" placeholder="주소" class="ipt-txt" readonly>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>주소상세</th>
+                                    <td>
+                                        <div class="inner">
+                                            <div class="inp">
+                                                <input type="text" placeholder="상세주소를 입력해주세요." class="ipt-txt">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전화번호</th>
+                                    <td>
+                                        <div class="inner">
+                                            <div class="inp">
+                                                <input type="text" placeholder="상세주소를 입력해주세요." class="ipt-txt">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>광고그룹명</th>
+                                    <td>
+                                        <div class="inn space">
+                                            <p class="chip skip"><small class="dvs">시지점광고</small></p>
+                                            <div class="button">
+                                                <button class="bt bt-slct adv-slc">광고그룹선택</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>메모</th>
+                                    <td>
+                                        <div class="write">
+                                            <textarea name="comment" id="comment" placeholder="메모를 입력해주세요."></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>코스 이미지</th>
+                                    <td>
+                                        <div class="upload">
+                                            <input type="file" name="files" id="upload"
+                                                class="chain-upload imgupload skip" accept="image/jpeg,image/png">
+                                            <label for="upload">이미지 업로드</label>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/modal/modal.html"-->
+<!--#include virtual="/layout/admin/inc/f.html"-->

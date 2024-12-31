@@ -1,0 +1,50 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<header id="header">
+    <div class="title wht line">
+        <button class="prev" onclick="location.href='/mobile/user/account-setting/'"><span
+                class="skip">이전페이지</span></button>
+        <h3>휴대폰 번호 변경</h3>
+        <div class="item hidden"></div>
+    </div>
+</header>
+<!-- 계정설정 -->
+<main class="edit-wrap mainflex">
+    <section class="edit">
+        <div class="ipt-edit">
+            <fieldset>
+                <!-- 입력내용 -->
+                <div class="wrap">
+                    <div class="field">
+                        <div class="box">
+                            <div class="title">
+                                <p class="titl">휴대폰번호</p>
+                            </div>
+                            <div class="inner">
+                                <div class="input">
+                                    <input type="text" class="ipt error" placeholder="휴대폰번호를 입력해주세요."
+                                        value="01012345678">
+                                    <button class="double-check">
+                                        <p>중복확인</p>
+                                    </button>
+                                </div>
+                                <p class="ipt-error" role="alert">사용할 수 없는 전화번호입니다.</p>
+                                <p class="ipt-succes none" role="alert">사용 가능한 전화번호입니다. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+</main>
+<!-- footer -->
+<footer id="footer">
+    <section class="footer">
+        <div class="buttons col">
+            <button type="submit" class="bt bt-next act check" data-confirm="변경된 휴대폰 번호를 저장하시겠습니까?"
+            data-title="휴대폰번호 변경"
+                onclick="location.href='/mobile/user/account-setting.html'"><span>저장하기</span></button>
+        </div>
+    </section>
+</footer>
+<!--#include virtual="/layout/mobile/inc/f.html"-->

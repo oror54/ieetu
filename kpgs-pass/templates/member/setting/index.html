@@ -1,0 +1,96 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<!-- 설정하기 -->
+<header id="header">
+    <div class="title line">
+        <button class="back"><span class="skip">이전페이지</span></button>
+        <h3>설정하기</h3>
+        <div class="none"></div>
+    </div>
+</header>
+<main class="main">
+    <div class="gray">
+        <!-- 사용자정보 -->
+        <section class="user-info">
+            <div class="wrap">
+                <div class="user">
+                    <!-- 이미지 수정 아이콘 삭제 - 240604 -->
+                    <div class="img">
+                        <div class="profile"></div>
+                    </div>
+                    <div class="inn center">
+                        <div class="mem">
+                            <p>일반회원</p>
+                        </div>
+                        <div class="text center">
+                            <p class="id-wrap"><b class="id">abcd1234</b>님,</p>
+                            <p class="hello">안녕하세요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 설정리스트 -->
+        <section class="setting">
+            <ul class="list">
+                <!-- 프로필 이미지 변경 -->
+                <li>
+                    <a href="/member/setting/profile-change.html">
+                        <div class="set">
+                            <i class="stt1"></i>
+                            <p>프로필 변경</p>
+                            <i class="view"></i>
+                        </div>
+                    </a>
+                </li>
+                <!-- 비밀번호변경 -->
+                <li>
+                    <a href="/member/setting/password-change.html">
+                        <div class="set">
+                            <i class="stt2"></i>
+                            <p>비밀번호 변경</p>
+                            <i class="view"></i>
+                        </div>
+                    </a>
+                </li>
+                <!-- 개인정보처리방침 -->
+                <li>
+                    <a href="/member/setting/personal-policy.html">
+                        <div class="set">
+                            <i class="stt3"></i>
+                            <p>개인정보처리방침</p>
+                            <i class="view"></i>
+                        </div>
+                    </a>
+                </li>
+                <!-- 이용약관 -->
+                <li>
+                    <a href="/member/setting/utilize-terms.html">
+                        <div class="set">
+                            <i class="stt4"></i>
+                            <p>이용약관</p>
+                            <i class="view"></i>
+                        </div>
+                    </a>
+                </li>
+                <!-- 계정삭제 -->
+                <li>
+                    <a href="/auth/login/" class="delete">
+                        <div class="set">
+                            <i class="stt5"></i>
+                            <p>계정삭제</p>
+                            <i class="view"></i>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="inner">
+                <div class="app-version">
+                    <p>V1.0.0</p>
+                </div>
+                <div class="out"><a href="/auth/login/" class="logout">로그아웃</a></div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!--#include virtual="/layout/mobile/inc/f.html"-->

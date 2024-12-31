@@ -1,0 +1,160 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(1)").addClass('act');
+        $(".dp1:nth-child(1) .depth2").show();
+        $(".dp1:nth-child(1) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+
+<!-- main -->
+<main id="admin" class="dashboard">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>대시보드</h3>
+    </section>
+    <section class="dash">
+        <div class="main">
+            <div class="title">
+                <h4>일간현황</h4>
+            </div>
+            <div class="wrap">
+                <!-- 달력 -->
+                <div class="calendar">
+                    <div class="date-picker"></div>
+                </div>
+                <div class="contents">
+                    <!-- 스케줄 -->
+                    <div class="schedule">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="field">
+                                        <div class="group">
+                                            <div class="crc grp1">
+                                                <i class="ico"></i>
+                                            </div>
+                                            <h3>홀A</h3>
+                                        </div>
+                                        <p class="location">수성구장</p>
+                                        <p class="time"> 오후 14:00 ~ 16:30 </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="field">
+                                        <div class="group">
+                                            <div class="crc grp2">
+                                                <i class="ico"></i>
+                                            </div>
+                                            <h3>홀B</h3>
+                                        </div>
+                                        <p class="location">팔현구장</p>
+                                        <p class="time"> 오후 14:00 ~ 16:30 </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="field">
+                                        <div class="group">
+                                            <div class="crc grp3">
+                                                <i class="ico"></i>
+                                            </div>
+                                            <h3>짝A</h3>
+                                        </div>
+                                        <p class="location">수성구장</p>
+                                        <p class="time"> 오전 09:00 ~ 12:30 </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="field">
+                                        <div class="group">
+                                            <div class="crc grp4">
+                                                <i class="ico"></i>
+                                            </div>
+                                            <h3>짝B</h3>
+                                        </div>
+                                        <p class="location">팔현구장</p>
+                                        <p class="time"> 오전 09:00 ~ 12:30 </p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="field">
+                                        <div class="group">
+                                            <div class="crc grp1">
+                                                <i class="ico"></i>
+                                            </div>
+                                            <h3>짝C</h3>
+                                        </div>
+                                        <p class="location">수성구장</p>
+                                        <p class="time"> 오후 14:00 ~ 16:30 </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <!-- 통계 -->
+                    <div class="statistic">
+                        <!-- 예약자수 -->
+                        <div class="stts">
+                            <div class="tit">
+                                <div class="icon stt1"><i></i></div>
+                                <h3>전체 예약자 수 </h3>
+                            </div>
+                            <h2 class="number">10</h2>
+                            <div class="view">
+                                <button>
+                                    <P>예약 내역 보기</P> <i class="view-ico"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- 방문자수 -->
+                        <div class="stts">
+                            <div class="tit">
+                                <div class="icon stt2"><i></i></div>
+                                <h3>전체 방문자 수 </h3>
+                            </div>
+                            <h2 class="number">10</h2>
+                            <div class="view">
+                                <button>
+                                    <P>출입 내역 보기</P> <i class="view-ico"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chart-wrap">
+            <div class="title">
+                <h4>월간 통계</h4>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h4 class="chart-tit">- 회원별 방문자 수</h4>
+                    <div id="legend1" class="chart-legend">
+                        <ul class="info">
+                            <li class="mem1"><i></i><span>클럽회원</span></li>
+                            <li class="mem2"><i></i><span>일반회원</span></li>
+                        </ul>
+                    </div>
+                    <canvas id="myChart1" height="395"></canvas>
+                </div>
+                <div class="chart">
+                    <h4 class="chart-tit">- 구장별 방문자 수</h4>
+                    <div id="legend2" class="chart-legend">
+                        <ul class="info">
+                            <li class="fld1"><i></i><span>수성구장</span></li>
+                            <li class="fld2"><i></i><span>팔현구장</span></li>
+                        </ul>
+                    </div>
+                    <canvas id="myChart2" height="395"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

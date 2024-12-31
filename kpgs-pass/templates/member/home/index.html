@@ -1,0 +1,53 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+
+<!--홈 -일반회원 -->
+<main class="app">
+    <div class="gray">
+        <section class="user-info">
+            <div class="wrap">
+                <div class="inner">
+                    <div class="profile"></div>
+                    <div class="inn">
+                        <div class="mem">
+                            <p>일반회원</p>
+                        </div>
+                        <div class="text">
+                            <p class="id-wrap"><b class="id">abcd1234</b>님,</p>
+                            <p class="hello">안녕하세요!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-wrap">
+            <div class="wrap">
+                <div class="inner">
+                    <!-- 골프장 출입증 -->
+                    <button class="menu" onClick="location.href='/member/access/'">
+                        <div class="mn icon1"></div>
+                        <p>골프장 출입증</p>
+                    </button>
+                    <!-- 골프장 예약 -->
+                    <button class="menu" onClick="location.href='/member/reserve/'">
+                        <div class="mn icon2" ></div>
+                        <p>골프장 예약</p>
+                    </button>
+                </div>
+                <div class="inner">
+                    <!-- 골프장정보 -->
+                    <button class="menu" onClick="location.href='/member/course/'">
+                        <div class="mn icon3"></div>
+                        <p>골프장 정보</p>
+                    </button>
+                    <!-- 설정 -->
+                    <button class="menu" onClick="location.href='/member/setting/'">
+                        <div class="mn icon4"></div>
+                        <p>설정하기</p>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!--#include virtual="/layout/mobile/inc/f.html"-->

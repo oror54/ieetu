@@ -1,0 +1,126 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<script>
+    $(function () {
+        $('.bnb ul > li:nth-child(2) > a').addClass('act');
+    });
+</script>
+<main class="record-wrap mainflex">
+    <section class="header bg">
+        <h2>MY</h2>
+    </section>
+    <section class="user-info">
+        <div class="inn">
+            <div class="profile">
+                <div class="img">
+                    <img src="/img/moblie/image/profile.jpg" alt="프로필">
+                </div>
+            </div>
+            <b class="nickname">guest1</b>
+        </div>
+        <div class="box">
+            <div class="info">
+                <div class="inf">
+                    <div class="txt">
+                        <b>0</b> <span>레벨</span>
+                    </div>
+                </div>
+                <div class="inf">
+                    <div class="txt">
+                        <b>8</b> <span>게임수</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="inf">
+                    <div class="txt">
+                        <b>342.0</b> <span>최대타수</span>
+                    </div>
+                </div>
+                <div class="inf">
+                    <div class="txt">
+                        <b>235.63</b> <span>평균타수</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 통계정보 -->
+    <section class="info-wrap">
+        <div class="wrap">
+            <div class="inner">
+                <div class="title">
+                    <div class="tit"><i class="ico-stats"></i>
+                        <p>통계 정보</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="inf">
+                            <div class="txt">
+                                <b>107.75</b> <span>최대비거리</span>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="txt">
+                                <b>57.96</b> <span>평균비거리</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="inf">
+                            <div class="txt">
+                                <b>8.53</b> <span>최대퍼팅거리</span>
+                            </div>
+                        </div>
+                        <div class="inf">
+                            <div class="txt">
+                                <b>2.13</b> <span>평균퍼팅거리</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 최근경기정보 -->
+    <section class="info-wrap">
+        <div class="wrap">
+            <div class="inner">
+                <div class="title">
+                    <div class="tit"><i class="ico-recent"></i>
+                        <p>최근 경기 정보</p>
+                    </div>
+                    <button class="view" onclick="location.href='/mobile/record/match-list.html'"><span>더 보기</span> <i class="ico-arrow"></i></button>
+                </div>
+                <div class="box">
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">일시</div>
+                            <div class="txt">2024.02.08</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">가맹정</div>
+                            <div class="txt">시지</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">코스</div>
+                            <div class="txt">서재</div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="infr">
+                            <div class="tit">타수</div>
+                            <div class="txt">342</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/inc/bnb.html"-->
+<!--#include virtual="/layout/mobile/inc/f.html"-->

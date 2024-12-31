@@ -1,0 +1,392 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(4)").addClass('act');
+        $(".dp1:nth-child(4) .depth2").show();
+        $(".dp1:nth-child(4) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>코스정보</h3>
+            <p>코스맵정보</p>
+        </div>
+    </section>
+    <section class="contain col">
+        <!-- 코스기본정보 -->
+        <div class="content">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>기본정보</h4>
+                    </div>
+                    <div class="buttons">
+                        <button class="bt bt-mdf" onclick="location.href='/admin/course/course-add.html'">수정</button>
+                        <button class="bt bt-del check" data-confirm="삭제하시겠습니까?" data-title="삭제">삭제</button>
+                        <button class="bt bt-list" onclick="location.href='/admin/member/'">목록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table-wrap">
+                <div class="course-image">
+                    <div class="crs">
+                        <div class="img open-image" style="background: url(/img/admin/img/course.jpg) 50% 50% no-repeat;" data-url="/img/admin/img/course.jpg"></div>
+                    </div>
+                </div>
+                <div class="table">
+                    <div class="tbl">
+                        <table class="row">
+                            <colgroup>
+                                <col class="w200">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>코드값</th>
+                                    <td>
+                                        <p>KPGS001</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>코스명</th>
+                                    <td>
+                                        <p>서재</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전체 길이</th>
+                                    <td>
+                                        <p class="number">1105m</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>전체홀 수</th>
+                                    <td>
+                                        <p class="number">18</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>주소</th>
+                                    <td>
+                                        <p>711811 대구 달성군 다사읍 방천리 142 </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>상세주소</th>
+                                    <td>
+                                        <p>서재파크골프장</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>등록일</th>
+                                    <td>
+                                        <p class="date">24-08-29</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 멥 정보 -->
+        <div class="content">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>맵 정보</h4>
+                    </div>
+                    <div class="buttons">
+                        <button class="bt btn-add map-add">맵 유형 추가</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col map">
+                        <colgroup>
+                            <col class="w150">
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col class="w160">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>코스</th>
+                                <th>1홀</th>
+                                <th>2홀</th>
+                                <th>3홀</th>
+                                <th>4홀</th>
+                                <th>5홀</th>
+                                <th>6홀</th>
+                                <th>7홀</th>
+                                <th>8홀</th>
+                                <th>9홀</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <p>A</p>
+                                </th>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="buttons">
+                                        <button class="bt bt-mdf map-add">수정</button>
+                                        <button class="bt bt-del check" data-confirm="해당 맵 정보를 삭제하시겠습니까?"
+                                            data-title="맵 삭제">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <p>B</p>
+                                </th>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="info">
+                                        <div class="inf">
+                                            <div class="th">Par</div>
+                                            <div class="th">거리(m)</div>
+                                        </div>
+                                        <div class="inf">
+                                            <div class="td">3</div>
+                                            <div class="td">40</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="buttons">
+                                        <button class="bt bt-mdf map-add">수정</button>
+                                        <button class="bt bt-del check" data-confirm="해당 맵 정보를 삭제하시겠습니까?"
+                                            data-title="맵 삭제">삭제</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="non-content">
+                <i class="ico"></i>
+                <span>내용이 없습니다.</span>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/modal/modal.html"-->
+<!--#include virtual="/layout/admin/inc/f.html"-->

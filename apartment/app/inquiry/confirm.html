@@ -1,0 +1,204 @@
+<!--#include virtual="/apartment/app/inc/h.html"-->
+<header id="header">
+    <div class="title">
+        <button class="prev" onclick="location.href='./'"><span class="skip">이전페이지</span></button>
+        <h2 class="tit">A/S처리확인서</h2>
+        <button class="logout" onclick="openModal('logout')"><span class="skip">로그아웃</span></button>
+    </div>
+</header>
+<main id="confirm">
+    <div class="wrap">
+        <div class="contain">
+            <div class="title tac"><b>A/S처리확인서</b></div>
+            <div class="table wrll">
+                <table>
+                    <colgroup>
+                        <col class="w20p">
+                        <col class="w30p">
+                        <col class="w20p">
+                        <col class="w10p">
+                        <col class="w10p">
+                        <col class="w10p">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th class="tal"><strong class="bullet">접수번호</strong></th>
+                            <td>
+                                <div class="form">
+                                    <div class="ipt">
+                                        20231124-001
+                                    </div>
+                                </div>
+                            </td>
+                            <th class="tal"><strong class="bullet">접수일자</strong></th>
+                            <td colspan="3">
+                                <div class="form">
+                                    <div class="input">
+                                        2023-11-24
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal"><strong class="bullet">현장명</strong></th>
+                            <td>
+                                <div class="inner">
+                                    <b>우리현대아파트</b>
+                                </div>
+                            </td>
+                            <th class="tal"><strong class="bullet">방문일자</strong></th>
+                            <td colspan="3">
+                                <div class="form">
+                                    <div class="input">
+                                        2023-11-27
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">입주자</th>
+                            <td rowspan="2">
+                                <div class="form">
+                                    <div class="ipt ">
+                                        <b>101</b>
+                                        <span>동</span>
+                                    </div>
+                                    <div class="ipt ">
+                                        <b>202</b>
+                                        <span>호</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <th class="tal" rowspan="2">연락처</th>
+                            <td colspan="3">
+                                <div class="form">
+                                    <div class="ipt">
+                                        <span>자택</span>
+                                        <b>053-1234-5678</b>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <div class="form">
+                                    <div class="ipt">
+                                        <span>휴대폰</span>
+                                        <b>010-1234-5678</b>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tbltitle">
+                            <th colspan="6">처리내역</th>
+                        </tr>
+                        <tr>
+                            <th class="tal">고장원인</th>
+                            <td colspan="5">
+                                <div class="textarea">
+                                    <p>고장원인고장원인고장원인고장원인</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal">A/S내용</th>
+                            <td colspan="5">
+                                <div class="textarea">
+                                    <p>A/S내용A/S내용A/S내용A/S내용A/S내용A/S내용A/S내용A/S내용A/S내용A/S내용A/S내용A/S내용</p>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="tal">A/S유형</th>
+                            <td colspan="5">
+                                <div class="inn">
+                                    <div class="ipt">
+                                        <input type="radio" id="no" name="check" class="skip" disabled>
+                                        <label for="no"> <span>무상</span></label>
+                                    </div>
+                                    <div class="ipt">
+                                        <input type="radio" id="yes" name="check" class="skip" checked>
+                                        <label for="yes"> <span>유상</span></label>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="tbltitle">
+                            <th colspan="6">부품비 및 기술료</th>
+                        </tr>
+                        <tr>
+                            <th class="tac">번호</th>
+                            <th class="tac">항목</th>
+                            <th class="tac">수량</th>
+                            <th class="tac">단가</th>
+                            <th class="tac">기술료</th>
+                            <th class="tac">금액</th>
+                        </tr>
+                        <tr class="money">
+                            <td class="tac">1</td>
+                            <td>주요부품</td>
+                            <td class="tac">1</td>
+                            <td class="tar">200,000</td>
+                            <td class="tar">50,000</td>
+                            <td class="tar">250,000</td>
+                        </tr>
+                        <tr>
+                            <th>합계</th>
+                            <td colspan="5">
+                                <div class="total">
+                                    <small>&#8361;</small>
+                                    <b class="num">250,000</b>
+                                    <small>(VAT포함)</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <div class="text">
+                                    <div class="title">A/S부품비 및 기술료는 금액산출 후 거래명세표를 청구합니다. </div>
+                                    <div class="txt-wrap">
+                                        <div class="txt">
+                                            <span class="tit">방문일자 :</span>
+                                            <p class="date">2022년 11월 23일</p>
+                                        </div>
+                                        <div class="txt">
+                                            <span class="tit">방문기사 :</span>
+                                            <div class="name">
+                                                홍길동
+                                            </div>
+                                            <div class="sign">
+                                                <button class="bt-sign">(서명)</button>
+                                                <img src="../../img/app/signImg.png" alt="sign">
+                                            </div>
+                                        </div>
+                                        <div class="txt">
+                                            <span class="tit">고객확인 :</span>
+                                            <div class="name">
+                                                <div class="inner">
+                                                    김철수
+                                                </div>
+                                            </div>
+                                            <div class="sign">
+                                                <button class="bt-sign">(서명) </button>
+                                                <img src="" alt="sign"  onError="this.style.visibility='hidden'">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="logo">
+                    <div class="img"><img src="../../img/app/logo/2.svg" alt="ieetu"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</div>
+</div>
+<!--#include virtual="/apartment/app/inc/modal.html"-->
+</body>
+
+</html>

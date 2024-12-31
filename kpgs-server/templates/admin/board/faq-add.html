@@ -1,0 +1,105 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>게시판</h3>
+            <p>자주묻는질문</p>
+        </div>
+    </section>
+    <section class="contain col">
+        <div class="content">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>자주묻는질문</h4>
+                    </div>
+                    <div class="buttons">
+                        <button class="bt bt-save" onclick="location.href='/admin/board/faq.html'">저장</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w150">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>카테고리</th>
+                                <td>
+                                    <div class="select">
+                                        <select name="select" title="그룹" class="sel w200">
+                                            <option>전체</option>
+                                            <option>스크린이용</option>
+                                            <option>웹/앱이용</option>
+                                            <option>회원정보</option>
+                                            <option>멤버쉽</option>
+                                            <option>매장정보</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>제목</th>
+                                <td>
+                                    <div class="inp">
+                                        <input type="text" placeholder="제목을 입력해 주세요.(2자 이상 50자 이하)" class="ipt-txt">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>내용</th>
+                                <td>
+                                    <div class="write">
+                                        <textarea placeholder="내용을 입력해 주세요." class="ip-txt w100p summernote"></textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- summernote -->
+<link rel="stylesheet" href="/js/summernote/summernote-lite.css">
+<script type="text/javascript" src="/js/summernote/summernote-lite.js"></script>
+<script type="text/javascript" src="/js/summernote/summernote-ko-KR.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.summernote').summernote({
+            height: 380,
+            lang: "ko-KR",
+            focus: true,
+            inheritPlaceholder: true,
+            disableResizeEditor: true,
+            toolbar: [
+                // [groupName, [list of button]]
+                ['fontname', ['fontname']],
+                ['fontsize', ['fontsize']],
+                ['style', ['bold', 'italic', 'underline', 'strikethrough', 'clear']],
+                ['color', ['forecolor', 'color']],
+                ['table', ['table']],
+                ['para', ['ul', 'ol', 'paragraph']],
+                ['height', ['height']],
+                ['insert', ['picture', 'link', 'video']],
+                ['view', ['fullscreen']]
+            ],
+            fontNames: ['Arial', 'Arial Black', 'Comic Sans MS', 'Courier New', '맑은 고딕', '궁서', '굴림체', '굴림', '돋움체', '바탕체'],
+            fontSizes: ['8', '9', '10', '11', '12', '14', '16', '18', '20', '22', '24', '28', '30', '36', '50', '72']
+        });
+    });
+</script>
+<!--#include virtual="/layout/admin/inc/f.html"-->

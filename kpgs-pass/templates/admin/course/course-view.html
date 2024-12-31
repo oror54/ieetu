@@ -1,0 +1,455 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(4)").addClass('act');
+        $(".dp1:nth-child(4) .depth2").show();
+        $(".dp1:nth-child(4) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+
+<!-- main -->
+<main id="admin">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>코스관리</h3>
+    </section>
+    <section class="contain col">
+        <!-- 수성구장 -->
+        <div class="content short">
+            <div class="title">
+                <div class="tit">
+                    <h5>수성구장</h5>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-del modal-open" data-modal-id="delete-course">
+                        <p>코스삭제</p>
+                    </button>
+                    <button class="bt btn-mdf"  onclick="location.href='course-add.html'">
+                        <p>코스수정</p>
+                    </button>
+                    <button class="bt bt-add" onclick="location.href='course-add.html'">
+                        <p>코스추가</p>
+                    </button>
+                </div>
+            </div>
+            <div class="table course">
+                <div class="tbl">
+                    <table class="col">
+                        <tbody>
+                            <!-- A코스 -->
+                            <tr class="tit">
+                                <th rowspan="3" class="name crs1  w100">
+                                    <div class="checkbox">
+                                        <input type="radio" id="course1" class="checknum" name="check">
+                                        <label for="course1">A코스</label>
+                                    </div>
+                                </th>
+                                <th colspan="2">1홀</th>
+                                <th colspan="2">2홀</th>
+                                <th colspan="2">3홀</th>
+                                <th colspan="2">4홀</th>
+                                <th colspan="2">5홀</th>
+                                <th colspan="2">6홀</th>
+                                <th colspan="2">7홀</th>
+                                <th colspan="2">8홀</th>
+                                <th colspan="2">9홀</th>
+                                <th colspan="2" class="sum">합계</th>
+                            </tr>
+                            <tr class="inf">
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th class="sum">Par</th>
+                                <th class="sum">거리(m)</th>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>40</td>
+                                <td>3</td>
+                                <td>47</td>
+                                <td>4</td>
+                                <td>64</td>
+                                <td>4</td>
+                                <td>51</td>
+                                <td>4</td>
+                                <td>54</td>
+                                <td>5</td>
+                                <td>102</td>
+                                <td>4</td>
+                                <td>58</td>
+                                <td>3</td>
+                                <td>41</td>
+                                <td>3</td>
+                                <td>37</td>
+                                <td class="sum">33</td>
+                                <td class="sum">494</td>
+                            </tr>
+                            <!-- B코스 -->
+                            <tr class="tit">
+                                <th rowspan="3" class="name crs2  w100">
+                                    <div class="checkbox">
+                                        <input type="radio" id="course2" class="checknum" name="check">
+                                        <label for="course2">B코스</label>
+                                    </div>
+                                </th>
+                                <th colspan="2">1홀</th>
+                                <th colspan="2">2홀</th>
+                                <th colspan="2">3홀</th>
+                                <th colspan="2">4홀</th>
+                                <th colspan="2">5홀</th>
+                                <th colspan="2">6홀</th>
+                                <th colspan="2">7홀</th>
+                                <th colspan="2">8홀</th>
+                                <th colspan="2">9홀</th>
+                                <th colspan="2" class="sum">합계</th>
+                            </tr>
+                            <tr class="inf">
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th class="sum">Par</th>
+                                <th class="sum">거리(m)</th>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>40</td>
+                                <td>3</td>
+                                <td>47</td>
+                                <td>4</td>
+                                <td>64</td>
+                                <td>4</td>
+                                <td>51</td>
+                                <td>4</td>
+                                <td>54</td>
+                                <td>5</td>
+                                <td>102</td>
+                                <td>4</td>
+                                <td>58</td>
+                                <td>3</td>
+                                <td>41</td>
+                                <td>3</td>
+                                <td>37</td>
+                                <td class="sum">33</td>
+                                <td class="sum">494</td>
+                            </tr>
+                            <!-- C코스 -->
+                            <tr class="tit">
+                                <th rowspan="3" class="name crs3  w100">
+                                    <div class="checkbox">
+                                        <input type="radio" id="course3" class="checknum" name="check">
+                                        <label for="course3">C코스</label>
+                                    </div>
+                                </th>
+                                <th colspan="2">1홀</th>
+                                <th colspan="2">2홀</th>
+                                <th colspan="2">3홀</th>
+                                <th colspan="2">4홀</th>
+                                <th colspan="2">5홀</th>
+                                <th colspan="2">6홀</th>
+                                <th colspan="2">7홀</th>
+                                <th colspan="2">8홀</th>
+                                <th colspan="2">9홀</th>
+                                <th colspan="2" class="sum">합계</th>
+                            </tr>
+                            <tr class="inf">
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th class="sum">Par</th>
+                                <th class="sum">거리(m)</th>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>40</td>
+                                <td>3</td>
+                                <td>47</td>
+                                <td>4</td>
+                                <td>64</td>
+                                <td>4</td>
+                                <td>51</td>
+                                <td>4</td>
+                                <td>54</td>
+                                <td>5</td>
+                                <td>102</td>
+                                <td>4</td>
+                                <td>58</td>
+                                <td>3</td>
+                                <td>41</td>
+                                <td>3</td>
+                                <td>37</td>
+                                <td class="sum">33</td>
+                                <td class="sum">494</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- 팔현구장 -->
+        <div class="content short">
+            <div class="title">
+                <div class="tit">
+                    <h5>팔현구장</h5>
+                </div>
+                <div class="buttons">
+                    <button class="bt bt-del modal-open" data-modal-id="delete-course">
+                        <p>코스삭제</p>
+                    </button>
+                    <button class="bt btn-mdf"  onclick="location.href='course-add.html'">
+                        <p>코스수정</p>
+                    </button>
+                    <button class="bt bt-add" onclick="location.href='course-add.html'">
+                        <p>코스추가</p>
+                    </button>
+                </div>
+            </div>
+            <div class="table course">
+                <div class="tbl">
+                    <table class="col">
+                        <tbody>
+                            <!-- A코스 -->
+                            <tr class="tit">
+                                <th rowspan="3" class="name crs1  w100">
+                                    <div class="checkbox">
+                                        <input type="radio" id="course1" class="checknum" name="check">
+                                        <label for="course1">A코스</label>
+                                    </div>
+                                </th>
+                                <th colspan="2">1홀</th>
+                                <th colspan="2">2홀</th>
+                                <th colspan="2">3홀</th>
+                                <th colspan="2">4홀</th>
+                                <th colspan="2">5홀</th>
+                                <th colspan="2">6홀</th>
+                                <th colspan="2">7홀</th>
+                                <th colspan="2">8홀</th>
+                                <th colspan="2">9홀</th>
+                                <th colspan="2" class="sum">합계</th>
+                            </tr>
+                            <tr class="inf">
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th class="sum">Par</th>
+                                <th class="sum">거리(m)</th>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>40</td>
+                                <td>3</td>
+                                <td>47</td>
+                                <td>4</td>
+                                <td>64</td>
+                                <td>4</td>
+                                <td>51</td>
+                                <td>4</td>
+                                <td>54</td>
+                                <td>5</td>
+                                <td>102</td>
+                                <td>4</td>
+                                <td>58</td>
+                                <td>3</td>
+                                <td>41</td>
+                                <td>3</td>
+                                <td>37</td>
+                                <td class="sum">33</td>
+                                <td class="sum">494</td>
+                            </tr>
+                            <!-- B코스 -->
+                            <tr class="tit">
+                                <th rowspan="3" class="name crs2  w100">
+                                    <div class="checkbox">
+                                        <input type="radio" id="course2" class="checknum" name="check">
+                                        <label for="course2">B코스</label>
+                                    </div>
+                                </th>
+                                <th colspan="2">1홀</th>
+                                <th colspan="2">2홀</th>
+                                <th colspan="2">3홀</th>
+                                <th colspan="2">4홀</th>
+                                <th colspan="2">5홀</th>
+                                <th colspan="2">6홀</th>
+                                <th colspan="2">7홀</th>
+                                <th colspan="2">8홀</th>
+                                <th colspan="2">9홀</th>
+                                <th colspan="2" class="sum">합계</th>
+                            </tr>
+                            <tr class="inf">
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th class="sum">Par</th>
+                                <th class="sum">거리(m)</th>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>40</td>
+                                <td>3</td>
+                                <td>47</td>
+                                <td>4</td>
+                                <td>64</td>
+                                <td>4</td>
+                                <td>51</td>
+                                <td>4</td>
+                                <td>54</td>
+                                <td>5</td>
+                                <td>102</td>
+                                <td>4</td>
+                                <td>58</td>
+                                <td>3</td>
+                                <td>41</td>
+                                <td>3</td>
+                                <td>37</td>
+                                <td class="sum">33</td>
+                                <td class="sum">494</td>
+                            </tr>
+                            <!-- C코스 -->
+                            <tr class="tit">
+                                <th rowspan="3" class="name crs3  w100">
+                                    <div class="checkbox">
+                                        <input type="radio" id="course3" class="checknum" name="check">
+                                        <label for="course3">C코스</label>
+                                    </div>
+                                </th>
+                                <th colspan="2">1홀</th>
+                                <th colspan="2">2홀</th>
+                                <th colspan="2">3홀</th>
+                                <th colspan="2">4홀</th>
+                                <th colspan="2">5홀</th>
+                                <th colspan="2">6홀</th>
+                                <th colspan="2">7홀</th>
+                                <th colspan="2">8홀</th>
+                                <th colspan="2">9홀</th>
+                                <th colspan="2" class="sum">합계</th>
+                            </tr>
+                            <tr class="inf">
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th>Par</th>
+                                <th>거리(m)</th>
+                                <th class="sum">Par</th>
+                                <th class="sum">거리(m)</th>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>40</td>
+                                <td>3</td>
+                                <td>47</td>
+                                <td>4</td>
+                                <td>64</td>
+                                <td>4</td>
+                                <td>51</td>
+                                <td>4</td>
+                                <td>54</td>
+                                <td>5</td>
+                                <td>102</td>
+                                <td>4</td>
+                                <td>58</td>
+                                <td>3</td>
+                                <td>41</td>
+                                <td>3</td>
+                                <td>37</td>
+                                <td class="sum">33</td>
+                                <td class="sum">494</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

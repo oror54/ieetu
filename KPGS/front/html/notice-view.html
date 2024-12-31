@@ -1,0 +1,88 @@
+<!--#include virtual="/KPGS/front/inc/h.html"-->
+<script>
+    $(function () {
+        $(".header").addClass('fixed');
+        $('.nav .depth1 > li:nth-child(6) > a').addClass('on');
+        $('.nav .depth1 > li:nth-child(6) > a').addClass('active');
+        $('.nav .depth1 > li:nth-child(6) > .depth2 > li:nth-child(1) > a').addClass('act');
+    });
+</script>
+<main id="notice">
+    <!-- 위치 -->
+    <section id="visual" class="subVisual">
+        <div class="areaBox">
+            <div class="area">
+                <div class="location">
+                    <ul>
+                        <li> <a href="../index.html"> <i class="home"></i></a></li>
+                        <li>공지사항</li>
+                    </ul>
+                </div>
+                <h2 class="visualTitle">공지사항</h2>
+            </div>
+        </div>
+    </section>
+    <section id="contain1">
+        <div class="wrap">
+            <div class="flex">
+                <div class="subTitle">
+                    <div class="tit">NOTICE</div>
+                    <div class="title">공지사항</div>
+                    <span>(주)대한파크골프시스템의 소식을 전해드립니다.</span>
+                </div>
+                <div class="board">
+                    <div class="tit">(주)대한파크골프시스템에서 알려드립니다.</div>
+                    <div class="table">
+                        <table class="col">
+                            <colgroup>
+                                <col class="w100">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>작성일</td>
+                                    <td class="dat">2023-10-30</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="content">
+                                        <div class="con">
+                                            <div class="img">
+                                                <img src="../img/case01.jpg" alt="이미지">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 이전글/ 다음글-->
+                    <div class="table list">
+                        <table class="col">
+                            <colgroup>
+                                <col class="w100">
+                                <col>
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td class="title">이전글</td>
+                                    <td><a href="#">(주)대한파크골프시스템에서 알려드립니다.</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="title">다음글</td>
+                                    <td><a href="#">(주)대한파크골프시스템에서 알려드립니다.</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 목록 버튼 -->
+                    <div class="button">
+                        <div class="btn">
+                            <button class="bt-list" onclick="location.href='notice.html'">목록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/KPGS/front/inc/f.html"-->

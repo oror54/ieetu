@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VLLM 관리자</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/common.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <section class="header">
+            <h1><strong>VLLM</strong> <span>관리자</span></h1>
+            <div class="lnb">
+                <span class="hello">
+                    <div class="ico"><a href="#"><img src="" alt=""></a></div>
+                    <div class="name"><strong>Hello,</strong> <span>Administator</span></div>
+                </span>
+                <span class="memb">
+                    <div class="skip"><strong>관리자님</strong> <span>접속하셨습니다.</span></div>
+                    <a href="javascript:;" onclick="openModal('lout11')"><i class="fas fa-power-off"></i><span
+                            class="skip">로그아웃</span></a>
+                </span>
+            </div>
+            <aside id="gnb">
+                <button class="gnb-btn"></button>
+                <nav class="gnb">
+                    <div class="depth1">
+                        <div class="dp1"> <a href="/default/" class="da1">
+                                <i><img src="/img/icon/dash-icon-01.svg" alt="대시보드"></i>
+                                <span>대시보드</span></a>
+                            <ul class="depth2">
+                                <li><a href="/default/">대시보드</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/engine/" class="da1"><i><img src="/img/icon/dash-icon-02.svg"
+                                        alt="엔진설정"></i>
+                                <span>엔진설정</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/engine/">엔진설정</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/cueing/" class="da1"><i><img src="/img/icon/dash-icon-03.svg"
+                                        alt="큐잉정보"></i>
+                                <span>큐잉정보</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/cueing/">큐잉정보</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/data/" class="da1"><i><img src="/img/icon/dash-icon-04.svg"
+                                        alt="학습 데이터 관리"></i>
+                                <span>데이터관리</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/data/">학습 데이터 관리</a></li>
+                            </ul>
+                        </div>
+                        <div class="dp1"> <a href="/log/" class="da1"><i><img src="/img/icon/dash-icon-05.svg"
+                                        alt="로그 보기"></i>
+                                <span>로그보기</span>
+                            </a>
+                            <ul class="depth2">
+                                <li><a href="/log/">로그 보기</a></li>
+                            </ul>
+                        </div>
+                </nav>
+            </aside>
+        </section>
+        <script type="text/javascript">
+            //<![CDATA[
+            $(function () {
+                $(".gnb .dp1").click(function () {
+                    var list = $(this).index();
+                    $(".gnb .dp1").removeClass("act");
+                    $(this).addClass("act");
+
+                    $(".depth2").hide();
+                    $(".depth2").eq(list).show();
+                });
+                $(".gnb-btn").click(function () {
+                    $("body").stop().toggleClass("min");
+                    return false;
+                });
+            });
+            //]]>
+        </script>
+    </header>

@@ -1,0 +1,45 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<header id="header">
+    <div class="title wht line">
+        <button class="prev" onclick="location.href='/mobile/user/account-setting/'"><span
+                class="skip">이전페이지</span></button>
+        <h3>탈퇴 신청</h3>
+        <div class="item hidden"></div>
+    </div>
+</header>
+<!-- 계정설정 -->
+<main class="edit-wrap mainflex">
+    <section class="edit">
+        <div class="ipt-edit">
+            <fieldset>
+                <!-- 입력내용 -->
+                <div class="wrap">
+                    <div class="field">
+                        <div class="box">
+                            <div class="title">
+                                <p class="titl">사유</p>
+                            </div>
+                            <div class="inner">
+                               <div class="input">
+                                <textarea class="ipt error" name="" id="" maxlength="200" placeholder="200자 내 입력 가능"></textarea>
+                                <p class="ipt-error" role="alert">사유를 입력해주세요.</p>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+</main>
+<!-- footer -->
+<footer id="footer">
+    <section class="footer">
+        <div class="buttons col">
+            <button type="submit" class="bt bt-next act check" data-confirm="탈퇴 후 서비스 이용이 불가능 합니다.<br> 탈퇴하시겠습니까?"
+            data-title="탈퇴하기"
+                onclick="location.href='/auth/login/'"><span>탈퇴하기</span></button>
+        </div>
+    </section>
+</footer>
+<!--#include virtual="/layout/mobile/inc/f.html"-->

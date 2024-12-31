@@ -1,0 +1,192 @@
+<!-- 학습데이터 입력 -->
+<section class="modal-boxed" id="add101">
+    <div class="modal-alert w900">
+        <article class="article">
+            <div class="con col">
+                <h3 class="tit">학습데이터 입력</h3>
+                <div class="table">
+                    <div class="tbl">
+                        <table>
+                            <colgroup>
+                                <col class="w30p">
+                                <col class="w70p">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>대분류</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p tal" placeholder="입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>소분류</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p tal" placeholder="입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>질문</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p tal" placeholder="입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>답변</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p tal" placeholder="입력해주세요.">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-save" onclick="closeModal('add101')">저장</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('add101')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 학습데이터 수정 -->
+<section class="modal-boxed" id="mdf101">
+    <div class="modal-alert w900">
+        <article class="article">
+            <div class="con col">
+                <h3 class="tit">학습데이터 수정</h3>
+                <div class="table">
+                    <div class="tbl">
+                        <table>
+                            <colgroup>
+                                <col class="w30p">
+                                <col class="w70p">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>대분류</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p tal" placeholder="입력해주세요."
+                                                    value="식당">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>소분류</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p tal" placeholder="입력해주세요."
+                                                    value="메뉴">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>질문</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p tal" placeholder="입력해주세요."
+                                                    value="뭐 먹을까?">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>답변</th>
+                                    <td>
+                                        <div class="form">
+                                            <div class="ipt w100p">
+                                                <input type="text" class="ip-txt w100p tal" placeholder="입력해주세요."
+                                                    value="소고기">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-mdf" onclick="closeModal('mdf101')">수정</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('mdf101')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 삭제 확인 모달 -->
+<section class="modal-boxed" id="del101">
+    <div class="modal-alert w500">
+        <article class="article">
+            <div class="con col">
+                <h3 class="tit">삭제 하시겠습니까?</h3>
+                <div class="text">
+                    <p>정말로 삭제 하시겠습니까?</p>
+                    <p><small class="org">삭제하시면 복구할 수 없습니다.</small></p>
+                </div>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('del101')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('del101')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 저장 확인 모달 -->
+<section class="modal-boxed" id="save101">
+    <div class="modal-alert w500">
+        <article class="article">
+            <div class="con col">
+                <h3 class="tit">저장 하시겠습니까?</h3>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="closeModal('save101')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('save101')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>
+<!-- 관리자 로그아웃 -->
+<section class="modal-boxed" id="lout11">
+    <div class="modal-alert w400">
+        <article class="article">
+            <div class="con">
+                <p>관리자모드에서 로그아웃하시겠습니까?</p>
+            </div>
+        </article>
+        <footer class="footer">
+            <div class="buttons">
+                <button type="button" class="bt bt-okay" onclick="window.location.replace('/login/')">확인</button>
+                <button type="button" class="bt bt-no" onclick="closeModal('lout11')">취소</button>
+            </div>
+        </footer>
+    </div>
+</section>

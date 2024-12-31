@@ -1,0 +1,266 @@
+<!--#include virtual="/apartment/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(2)").addClass('act');
+        $(".dp1:nth-child(2) .depth2").show();
+        $(".dp1:nth-child(2) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="contain">
+    <section class="location">
+        <div class="titles">
+            <h2>자재관리</h2>
+        </div>
+    </section>
+    <!-- 검색 -->
+    <section class="search">
+        <div class="title">
+            <div class="tit"> 검색</div>
+        </div>
+        <div class="table">
+            <div class="tbl">
+                <table>
+                    <colgroup>
+                        <col class="w10p">
+                        <col class="w15p">
+                        <col class="w10p">
+                        <col class="w15p">
+                        <col class="w10p">
+                        <col class="w15p">
+                        <col class="w10p">
+                        <col class="w15p">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>제품명 </th>
+                            <td>
+                                <div class="inner">
+                                    <select name="select" title="검색항목" class="sel">
+                                        <option>전체</option>
+                                        <option>선택</option>
+                                        <option>선택 </option>
+                                    </select>
+                                </div>
+                            </td>
+                            <th>부품명</th>
+                            <td>
+                                <div class="inner">
+                                    <select name="select" title="검색항목" class="sel">
+                                        <option>전체</option>
+                                        <option>선택</option>
+                                        <option>선택 </option>
+                                    </select>
+                                </div>
+                            </td>
+                            <th>적용모델</th>
+                            <td>
+                                <div class="inner">
+                                    <select name="select" title="검색항목" class="sel">
+                                        <option>전체</option>
+                                        <option>선택</option>
+                                        <option>선택 </option>
+                                    </select>
+                                </div>
+                            </td>
+                            <th>부품코드</th>
+                            <td>
+                                <div class="inner">
+                                    <select name="select" title="검색항목" class="sel">
+                                        <option>전체</option>
+                                        <option>선택</option>
+                                        <option>선택 </option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="button-wrap">
+            <div class="button">
+                <button type="submit" class="bt bt-srh">검색</button>
+            </div>
+        </div>
+    </section>
+    <!-- 검색내역 -->
+    <section class="contain">
+        <div class="titlewrap">
+            <div class="title">
+                <h4>검색내역</h4>
+                <p>[조회수건수 : 총 <b>210</b>건]</p>
+            </div>
+            <div class="buttons">
+                <div class="button">
+                    <button type="button" class="bt bt-excell">엑셀다운</button>
+                </div>
+                <div class="button">
+                    <button type="button" class="bt bt-upload">엑셀업로드</button>
+                </div>
+                <div class="button">
+                    <button type="button" class="bt bt-add" onclick="location.href='materials_write.html'">등록</button>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <div class="tbl wrll">
+                <table class="col fixed elp">
+                    <colgroup>
+                        <col class="w80">
+                        <col class="w150">
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col class="w150">
+                        <col class="w100">
+                        <col class="w100">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제품명</th>
+                            <th>부품명 </th>
+                            <th>적용모델</th>
+                            <th>부품코드</th>
+                            <th>부품규격</th>
+                            <th>소비자가</th>
+                            <th>재고현황</th>
+                            <th>보기</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="tal">SID</td>
+                            <td class="tal">Product</td>
+                            <td class="tal">CSD-1300</td>
+                            <td class="tal">F-CSD-1300</td>
+                            <td class="tal">SID1.0, 래미안향, 스필</td>
+                            <td class="tar">0</td>
+                            <td>0</td>
+                            <td><button class="bt bt-cnf" onclick="location.href='materials_write.html'">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td class="tal">SID</td>
+                            <td class="tal">Product</td>
+                            <td class="tal">CSD-1300</td>
+                            <td class="tal">F-CSD-1300</td>
+                            <td class="tal">SID1.0, 래미안향, 스필</td>
+                            <td class="tar">0</td>
+                            <td>0</td>
+                            <td><button class="bt bt-cnf" onclick="location.href='materials_write.html'">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td class="tal">SID</td>
+                            <td class="tal">Product</td>
+                            <td class="tal">CSD-1300</td>
+                            <td class="tal">F-CSD-1300</td>
+                            <td class="tal">SID1.0, 래미안향, 스필</td>
+                            <td class="tar">0</td>
+                            <td>0</td>
+                            <td><button class="bt bt-cnf" onclick="location.href='materials_write.html'">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td class="tal">SID</td>
+                            <td class="tal">Product</td>
+                            <td class="tal">CSD-1300</td>
+                            <td class="tal">F-CSD-1300</td>
+                            <td class="tal">SID1.0, 래미안향, 스필</td>
+                            <td class="tar">0</td>
+                            <td>0</td>
+                            <td><button class="bt bt-cnf" onclick="location.href='materials_write.html'">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td class="tal">SID</td>
+                            <td class="tal">Product</td>
+                            <td class="tal">CSD-1300</td>
+                            <td class="tal">F-CSD-1300</td>
+                            <td class="tal">SID1.0, 래미안향, 스필</td>
+                            <td class="tar">0</td>
+                            <td>0</td>
+                            <td><button class="bt bt-cnf" onclick="location.href='materials_write.html'">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td class="tal">SID</td>
+                            <td class="tal">Product</td>
+                            <td class="tal">CSD-1300</td>
+                            <td class="tal">F-CSD-1300</td>
+                            <td class="tal">SID1.0, 래미안향, 스필</td>
+                            <td class="tar">0</td>
+                            <td>0</td>
+                            <td><button class="bt bt-cnf" onclick="location.href='materials_write.html'">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td class="tal">SID</td>
+                            <td class="tal">Product</td>
+                            <td class="tal">CSD-1300</td>
+                            <td class="tal">F-CSD-1300</td>
+                            <td class="tal">SID1.0, 래미안향, 스필</td>
+                            <td class="tar">0</td>
+                            <td>0</td>
+                            <td><button class="bt bt-cnf" onclick="location.href='materials_write.html'">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td class="tal">SID</td>
+                            <td class="tal">Product</td>
+                            <td class="tal">CSD-1300</td>
+                            <td class="tal">F-CSD-1300</td>
+                            <td class="tal">SID1.0, 래미안향, 스필</td>
+                            <td class="tar">0</td>
+                            <td>0</td>
+                            <td><button class="bt bt-cnf" onclick="location.href='materials_write.html'">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td class="tal">SID</td>
+                            <td class="tal">Product</td>
+                            <td class="tal">CSD-1300</td>
+                            <td class="tal">F-CSD-1300</td>
+                            <td class="tal">SID1.0, 래미안향, 스필</td>
+                            <td class="tar">0</td>
+                            <td>0</td>
+                            <td><button class="bt bt-cnf" onclick="location.href='materials_write.html'">보기</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td class="tal">SID</td>
+                            <td class="tal">Product</td>
+                            <td class="tal">CSD-1300</td>
+                            <td class="tal">F-CSD-1300</td>
+                            <td class="tal">SID1.0, 래미안향, 스필</td>
+                            <td class="tar">0</td>
+                            <td>0</td>
+                            <td><button class="bt bt-cnf" onclick="location.href='materials_write.html'">보기</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- paging -->
+            <!--#include virtual="/apartment/admin/inc/paging.html"-->
+        </div>
+        <div class="nocontent"><i class="ico"></i><span>검색된 내용이 없습니다.</span></div>
+    </section>
+</main>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+<!-- footer -->
+<!--#include virtual="/apartment/admin/inc/f.html"-->

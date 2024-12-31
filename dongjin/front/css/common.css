@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* 폰트 */
+/* Pretendard */
+@font-face { font-family: 'Pretendard'; font-weight: 900; font-display: swap; font-style: normal; src: local('Pretendard Black'), url('../font/Pretendard-Black.woff2') format('woff2') } 
+@font-face { font-family: 'Pretendard'; font-weight: 800; font-display: swap; font-style: normal; src: local('Pretendard ExtraBold'), url('../font/Pretendard-ExtraBold.woff2') format('woff2') } 
+@font-face { font-family: 'Pretendard'; font-weight: 700; font-display: swap; font-style: normal; src: local('Pretendard Bold'), url('../font/Pretendard-Bold.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 600; font-display: swap; font-style: normal; src: local('Pretendard SemiBold'), url('../font/Pretendard-SemiBold.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 500; font-display: swap; font-style: normal; src: local('Pretendard Medium'), url('../font/Pretendard-Medium.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 400; font-display: swap; font-style: normal; src: local('Pretendard Regular'), url('../font/Pretendard-Regular.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 300; font-display: swap; font-style: normal; src: local('Pretendard Light'), url('../font/Pretendard-Light.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 200; font-display: swap; font-style: normal; src: local('Pretendard ExtraLight'), url('../font/Pretendard-ExtraLight.woff2') format('woff2'); } 
+@font-face { font-family: 'Pretendard'; font-weight: 100; font-display: swap; font-style: normal; src: local('Pretendard Thin'), url('../font/Pretendard-Thin.woff2') format('woff2'); } 
+/* SUITE */
+@font-face { font-family: 'SUITE'; font-weight: 100; font-display: swap; font-style: normal; src: url('../font/SUIT-Thin.woff2') format('woff2'); } 
+@font-face { font-family: 'SUITE'; font-weight: 200; font-display: swap; font-style: normal; src: url('../font/SUIT-ExtraLight.woff2') format('woff2'); } 
+@font-face { font-family: 'SUITE'; font-weight: 300; font-display: swap; font-style: normal; src: url('../font/SUIT-Light.woff2') format('woff2'); } 
+@font-face { font-family: 'SUITE'; font-weight: 400; font-display: swap; font-style: normal; src: url('../font/SUIT-Regular.woff2') format('woff2'); } 
+@font-face { font-family: 'SUITE'; font-weight: 500; font-display: swap; font-style: normal; src: url('../font/SUIT-Medium.woff2') format('woff2'); } 
+@font-face { font-family: 'SUITE'; font-weight: 600; font-display: swap; font-style: normal; src: url('../font/SUIT-SemiBold.woff2') format('woff2'); } 
+@font-face { font-family: 'SUITE'; font-weight: 700; font-display: swap; font-style: normal; src: url('../font/SUIT-Bold.woff2') format('woff2'); } 
+@font-face { font-family: 'SUITE'; font-weight: 800; font-display: swap; font-style: normal; src: url('../font/SUIT-ExtraBold.woff2') format('woff2'); } 
+@font-face { font-family: 'SUITE'; font-weight: 900; font-display: swap; font-style: normal; src: url('../font/SUIT-Heavy.woff2') format('woff2'); } 
+
+
+@import url('//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');/* reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; font-family: 'Pretendard', 'SUITE', sans-serif; } 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; } 
+* { box-sizing: border-box; } 
+body { line-height: 1; margin: 0; padding: 0; font-size: 0; } 
+ol, ul { list-style: none; } 
+blockquote, q { quotes: none; } 
+blockquote:before, blockquote:after, 
+q:before, q:after { content: ''; content: none; } 
+table { border-collapse: collapse; border-spacing: 0; } 
+a { color: inherit; text-decoration: inherit; } 
+.skip { display: none; } 
+.hidden { display: none; } 
+.not_scroll { position: fixed; overflow: hidden; width: 100%; height: 100%; } 
+button { cursor: pointer; background-color: inherit; border: none; } 
+
+.clearfix::after { content: ''; display: block; clear: both; } 
+/* 스크롤바 */
+::-webkit-scrollbar { width: 10px; } 
+::-webkit-scrollbar-track { background: #f1f1f1; } 
+ ::-webkit-scrollbar-thumb { border-radius: 2px; background-color: #B4B3AF; } 
+ 
+ /* input */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ color: #8C8C8C; } 
+::-moz-placeholder { /* Firefox 19+ */
+ color: #8C8C8C; } 
+:-ms-input-placeholder { /* IE 10+ */
+ color: #8C8C8C; } 
+:-moz-placeholder { /* Firefox 18- */
+ color: #8C8C8C; } 
+input:focus { outline: none } 
+
+textarea:focus { outline: none; } 
+
+.tal { text-align: left !important; } 
+.tar { text-align: right !important; } 
+
+.grn{color: #288F4A;}
+
+
+.w10p { width: 10% !important; } 
+.w20p { width: 20% !important; } 
+.w30p { width: 30% !important; } 
+.w40p { width: 40% !important; } 
+.w50p { width: 50% !important; } 
+.w60p { width: 60% !important; } 
+.w70p { width: 70% !important; } 
+.w80p { width: 80% !important; } 
+.w90p { width: 90% !important; } 
+.w100p { width: 100% !important; } 
+
+.w10 { width: 10px !important; } 
+.w20 { width: 20px !important; } 
+.w30 { width: 30px !important; } 
+.w40 { width: 40px !important; } 
+.w50 { width: 50px !important; } 
+.w50 { width: 50px !important; } 
+.w60 { width: 60px !important; } 
+.w70 { width: 70px !important; } 
+.w80 { width: 80px !important; } 
+.w90 { width: 90px !important; } 
+.w100 { width: 100px !important; } 
+.w110 { width: 110px !important; } 
+.w120 { width: 120px !important; } 
+.w130 { width: 130px !important; } 
+.w140 { width: 140px !important; } 
+.w150 { width: 150px !important; } 
+
+
+.mw300{max-width: 300px !important;}
+.mw500{max-width: 500px !important;}
+.mw1000{max-width: 1000px !important;}
+.mw1440{max-width: 1440px !important;}
+
+.h400{height: 400px !important;}
+.h500{height: 500px !important;}
+.h900{height: 900px !important;}
+.h1000{height: 1000px !important;}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자재검색</title>
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/ui.js"></script>
+</head>
+
+<body class="mw870">
+    <main id="popup">
+        <section class="contain">
+            <div class="top">
+                <h3>자재검색</h3>
+                <div class="buttons">
+                    <button class="bt bt-close" onclick="window.close()">닫기</button>
+                </div>
+            </div>
+            <!-- 검색 -->
+            <div class="search">
+                <div class="table">
+                    <div class="tbl">
+                        <table class="fixed">
+                            <colgroup>
+                                <col class="w20p">
+                                <col class="w30p">
+                                <col class="w20p">
+                                <col class="w30p">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>제품명 </th>
+                                    <td>
+                                        <div class="inner">
+                                            <select name="select" title="검색항목" class="sel">
+                                                <option>전체</option>
+                                                <option>선택</option>
+                                                <option>선택 </option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th>부품명</th>
+                                    <td>
+                                        <div class="inner">
+                                            <select name="select" title="검색항목" class="sel">
+                                                <option>전체</option>
+                                                <option>선택</option>
+                                                <option>선택 </option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>적용모델</th>
+                                    <td>
+                                        <div class="inner">
+                                            <select name="select" title="검색항목" class="sel">
+                                                <option>전체</option>
+                                                <option>선택</option>
+                                                <option>선택 </option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <th>부품코드</th>
+                                    <td>
+                                        <div class="inner">
+                                            <select name="select" title="검색항목" class="sel">
+                                                <option>전체</option>
+                                                <option>선택</option>
+                                                <option>선택 </option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="button-wrap">
+                    <div class="button">
+                        <button type="submit" class="bt bt-srh">조회</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 조회내역 -->
+        <section class="contain">
+            <div class="top">
+                <h3>자재보기</h3>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="fixed">
+                        <colgroup>
+                            <col class="w15p">
+                            <col class="w35p">
+                            <col class="w15p">
+                            <col class="w35p">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>제품명</th>
+                                <td>SID</td>
+                                <th>부품명</th>
+                                <td>Product</td>
+                            </tr>
+                            <tr>
+                                <th>적용모델</th>
+                                <td>CSD-1300</td>
+                                <th>부품코드</th>
+                                <td>F-CSD-1300</td>
+                            </tr>
+                            <tr>
+                                <th>부품규격</th>
+                                <td colspan="3">SID1.0, 래미안향, 스필</td>
+                            </tr>
+                            <tr>
+                                <th>소비자가</th>
+                                <td class="tar">0</td>
+                                <th>재고현황</th>
+                                <td class="tac">0</td>
+                            </tr>
+                            <tr>
+                                <th>부품이미지</th>
+                                <td colspan="3">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="../../img/admin/part.jpg" alt="부품">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <button class="bt bt-slct" onclick="window.close()">선택</button>
+            </div>
+        </section>
+    </main>
+</body>
+<!-- modal -->
+<!--#include virtual="/apartment/admin/inc/modal.html"-->
+
+</html>

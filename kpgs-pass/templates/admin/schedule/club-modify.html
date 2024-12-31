@@ -1,0 +1,180 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(6)").addClass('act');
+        $(".dp1:nth-child(6) .depth2").show();
+        $(".dp1:nth-child(6) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+
+<!-- main -->
+<main id="admin" class="group">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>클럽회원 - 스케줄관리 수정</h3>
+    </section>
+    <!-- 클럽회원 스케줄관리 수정 -->
+    <section class="contain row">
+        <div class="content">
+            <!-- 스케줄 상세 -->
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>출입그룹</th>
+                                <td>
+                                    <div class="inner"><select name="select" title="그룹" class="sel">
+                                            <option>선택</option>
+                                            <option value="oddA">홀A</option>
+                                            <option value="oddB">홀B</option>
+                                            <option value="evnA">짝A</option>
+                                            <option value="evnB">짝B</option>
+                                        </select></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>출입구장</th>
+                                <td>
+                                    <div class="inner"><select name="select" title="구장" class="sel">
+                                            <option>선택</option>
+                                            <option value="field1">수성구장</option>
+                                            <option value="field2">팔현구장</option>
+                                        </select></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>출입일</th>
+                                <td>
+                                    <div class="inner"><select name="select" title="그룹" class="sel">
+                                        <option>선택</option>
+                                        <option value="odd">홀수일</option>
+                                        <option value="evn">짝수일</option>
+                                    </select></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>출입시간</th>
+                                <td>
+                                    <div class="form col">
+                                        <div class="inner w100p"><select name="select" title="그룹" class="sel">
+                                            <option>선택</option>
+                                            <option value="odd">새벽</option>
+                                            <option value="evn">오전</option>
+                                            <option value="evn">오후</option>
+                                            <option value="evn">자유입장</option>
+                                        </select></div>
+                                        <div class="time">
+                                            <div class="ipt-time">
+                                                <input class="timepicker ip-tm" value="06:00" readonly>
+                                                <i class="ico-clock"></i>
+                                            </div>
+                                            <span>~</span>
+                                            <div class="ipt-time">
+                                                <input class="timepicker ip-tm" value="08:30" readonly>
+                                                <i class="ico-clock"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <div class="button">
+                    <button class="bt bt-save" onclick="location.href='club.html'">저장</button>
+                </div>
+            </div>
+        </div>
+        <!-- 스케줄 그룹 - 클럽보기 -->
+        <div class="content list w800">
+            <div class="title">
+                <div class="tit">
+                    <div class="total">
+                        <p>총<b>68</b>개</p>
+                    </div>
+                    <div class="group">홀A</div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col fixed">
+                        <colgroup>
+                            <col class="w100">
+                            <col>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>클럽명</th>
+                                <th>그룹명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>68</td>
+                                <td class="tal">231</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td>67</td>
+                                <td class="tal">17그린</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td>66</td>
+                                <td class="tal">F4</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td>65</td>
+                                <td class="tal">MG(수)</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td>64</td>
+                                <td class="tal">MG대원</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td>63</td>
+                                <td class="tal">PGLA</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td>62</td>
+                                <td class="tal">고산</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td>61</td>
+                                <td class="tal">고모령</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td>60</td>
+                                <td class="tal">골드</td>
+                                <td>홀A</td>
+                            </tr>
+                            <tr>
+                                <td>59</td>
+                                <td class="tal">군성일구회</td>
+                                <td>홀A</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--#include virtual="/layout/paging/paging.html"-->
+        </div>
+    </section>
+</main>
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

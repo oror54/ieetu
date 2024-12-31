@@ -1,0 +1,219 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(6)").addClass('act');
+        $(".dp1:nth-child(6) .depth2").show();
+        $(".dp1:nth-child(6) .depth2 li:nth-child(2)").addClass('act');
+    });
+</script>
+<!-- main -->
+<main id="admin">
+    <section class="title">
+        <div class="titl">
+            <h3>광고관리</h3>
+            <p>광고그룹목록</p>
+        </div>
+    </section>
+    <section class="contain col">
+        <div class="content">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>광고그룹상세</h4>
+                    </div>
+                    <div class="buttons">
+                        <button class="bt bt-mdf" onclick="location.href='/admin/ads/group-add.html'">수정</button>
+                        <button class="bt bt-del check" data-confirm="해당 광고 그룹을 삭제하시겠습니까?"
+                            data-title="광고그룹삭제">삭제</button>
+                        <button class="bt bt-list" onclick="location.href='/admin/ads/group.html'">목록</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>광고유형</th>
+                                <td>
+                                    <p>광고유형</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>광고그룹명</th>
+                                <td>
+                                    <p class="name chip">광고그룹이름</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>메모</th>
+                                <td>
+                                    <div class="inn">
+                                        <textarea name="comment" id="comment" readonly>메모메모메메모메모메모메모</textarea>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>사용여부</th>
+                                <td>
+                                    <p class="chip"><small class="use on">사용중</small> <small
+                                            class="use off skip">미사용</small></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- 광고 목록 파일 추가 -->
+        <div class="content adv">
+            <div class="titles">
+                <div class="title-wrap">
+                    <div class="tit">
+                        <h4>광고 목록</h4>
+                        <h5>(<b>4</b>)</h5>
+                    </div>
+                    <div class="buttons skip">
+                        <button class="bt btn-map-add map-add">광고 추가</button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col fixed">
+                        <colgroup>
+                            <col class="w100">
+                            <col class="w200">
+                            <col>
+                            <col class="w250">
+                            <col class="w250">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>번호</th>
+                                <th>유형</th>
+                                <th>광고이름</th>
+                                <th>이미지</th>
+                                <th>영상</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>999</p>
+                                </td>
+                                <td>
+                                    <p>유형</p>
+                                </td>
+                                <td class="tal">
+                                    <p class="elpss name">광고이름광고이름광고이름광고이름광고이름광고이름광고이름광고이름광고이름</p>
+                                </td>
+                                <td>
+                                    <div class="image">
+                                        <div class="img">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="video">
+                                        <div class="vdo"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>998</p>
+                                </td>
+                                <td>
+                                    <p>유형</p>
+                                </td>
+                                <td class="tal">
+                                    <p class="elpss name">광고이름광고이름광고이름광고이름광고이름광고이름광고이름광고이름광고이름</p>
+                                </td>
+                                <td>
+                                    <div class="image">
+                                        <div class="img">
+                                            <img src="/img/admin/img/golf-ad1.jpg" alt="광고1">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="video">
+                                        <div class="vdo">
+                                            <video controls="" muted="">
+                                                <source src="/img/admin/img/ad1.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>997</p>
+                                </td>
+                                <td>
+                                    <p>유형</p>
+                                </td>
+                                <td class="tal">
+                                    <p class="elpss name">광고이름광고이름광고이름광고이름광고이름광고이름광고이름광고이름광고이름</p>
+                                </td>
+                                <td>
+                                    <div class="image">
+                                        <div class="img">
+                                            <img src="/img/admin/img/golf-ad2.jpg" alt="광고2">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="video">
+                                        <div class="vdo">
+                                            <video controls="" muted="">
+                                                <source src="/img/admin/img/ad2.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>996</p>
+                                </td>
+                                <td>
+                                    <p>유형</p>
+                                </td>
+                                <td class="tal">
+                                    <p class="elpss name">광고이름광고이름광고이름광고이름광고이름광고이름광고이름광고이름광고이름</p>
+                                </td>
+                                <td>
+                                    <div class="image">
+                                        <div class="img">
+                                            <img src="/img/admin/img/golf-ad3.jpg" alt="광고3">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="video">
+                                        <div class="vdo">
+                                            <video controls="" muted="">
+                                                <source src="/img/admin/img/ad3.mp4" type="video/mp4">
+                                            </video>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="non-content">
+                <i class="ico"></i>
+                <span>내용이 없습니다.</span>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/admin/inc/f.html"-->

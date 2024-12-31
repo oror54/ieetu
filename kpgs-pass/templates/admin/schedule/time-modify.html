@@ -1,0 +1,68 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(6)").addClass('act');
+        $(".dp1:nth-child(6) .depth2").show();
+        $(".dp1:nth-child(6) .depth2 li:nth-child(3)").addClass('act');
+    });
+</script>
+
+
+<!-- main -->
+<main id="admin">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>시간관리</h3>
+    </section>
+    <!-- 시간관리 -->
+    <section class="contain">
+        <div class="content short">
+            <!-- 시간 등록 및 수정 -->
+            <div class="table">
+                <div class="tbl">
+                    <table class="row">
+                        <colgroup>
+                            <col class="w200">
+                            <col>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>출입시간</th>
+                                <td>
+                                    <div class="form col">
+                                        <div class="inner w100p"><select name="select" title="그룹" class="sel">
+                                                <option>선택</option>
+                                                <option value="odd">새벽</option>
+                                                <option value="evn">오전</option>
+                                                <option value="evn">오후</option>
+                                                <option value="evn">자유입장</option>
+                                            </select></div>
+                                        <div class="time">
+                                            <div class="ipt-time">
+                                                <input class="timepicker ip-tm" value="06:00">
+                                                <i class="ico-clock"></i>
+                                            </div>
+                                            <span>~</span>
+                                            <div class="ipt-time">
+                                                <input class="timepicker ip-tm" value="08:30">
+                                                <i class="ico-clock"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="button-wrap">
+                <div class="button">
+                    <button class="bt bt-save" onclick="location.href='time.html'">저장</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<!--#include virtual="/layout/admin/inc/f.html"-->

@@ -1,0 +1,462 @@
+<!-- 관리자 / 관리자 삭제 -->
+<div class="boxed" id="delete-manager">
+    <div class="con"> <b>관리자 삭제</b>
+        <p>관리자에서 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+
+
+
+<!-- 그룹관리 -->
+<!-- 그룹관리 / 그룹추가 -->
+<div class="boxed" id="register-group">
+    <div class="input-wrap">
+        <div class="title">그룹명</div>
+        <div class="input"><input type="text"></div>
+    </div>
+</div>
+
+<!-- 그룹관리 / 그룹수정 -->
+<div class="boxed" id="modify-group">
+    <div class="input-wrap">
+        <div class="title">그룹명</div>
+        <div class="input"><input type="text"></div>
+    </div>
+</div>
+
+<!-- 그룹관리 / 그룹삭제 -->
+<div class="boxed" id="delete-group">
+    <div class="con"> <b>그룹삭제</b>
+        <p>정말로 그룹을 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+<!-- 그룹관리 / 클럽추가 -->
+<div class="boxed" id="register-group-club">
+    <div class="search"><label for="search">클럽검색</label>
+        <div class="ipt"><input type="text" class="ipt-txt" name="search" placeholder="클럽명을 입력해주세요."> <button
+                type="submit" class=" bt-sch"><i></i><span class="skip">검색</span></button></div>
+    </div>
+    <div class="table">
+        <div class="tbl">
+            <table class="col">
+                <colgroup>
+                    <col class="w80">
+                    <col>
+                    <col class="w200">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="allcheck1" class="checknum" name="allcheck"
+                                onclick="selectAll(this)"> <label for="allcheck1"><span class="skip">전체선택</span></label>
+                        </th>
+                        <th class="tal">클럽명</th>
+                        <th>그룹선택</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" id="check11" class="checknum unitcheck" name="check"
+                                onclick="checkSelectAll()"> <label for="check11"><span class="skip">1000번</span></label>
+                        </td>
+                        <td class="tal">231</td>
+                        <td>
+                            <div class="inner"><select name="select" title="그룹" class="sel">
+                                    <option>선택</option>
+                                    <option>홀A</option>
+                                    <option>홀B</option>
+                                    <option>짝A</option>
+                                    <option>짝B</option>
+                                </select></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="non-content">
+            <div class="img"></div>
+            <p>검색 내용을 찾을 수 없습니다.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 그룹관리 / 클럽삭제 -->
+<div class="boxed" id="delete-group-club">
+    <div class="con"> <b>클럽삭제</b>
+        <p>정말로 클럽을 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+<!-- 클럽관리 -->
+<!-- 클럽관리 / 회원 추가 -->
+<div class="boxed" id="register-club-mem">
+    <div class="search"><label for="search">회원검색</label>
+        <div class="ipt"><input type="text" class="ipt-txt" name="search" placeholder="회원명, 아이디, 핸드폰번호를 입력해주세요.">
+            <button type="submit" class=" bt-sch"><i></i><span class="skip">검색</span></button>
+        </div>
+    </div>
+    <div class="table">
+        <div class="tbl">
+            <table class="col">
+                <colgroup>
+                    <col class="w80">
+                    <col>
+                    <col class="w200">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="allcheck" class="checknum" name="allcheck"
+                                onclick="selectAll(this)"> <label for="allcheck"><span class="skip">전체선택</span></label>
+                        </th>
+                        <th>회원명</th>
+                        <th class="tal">아이디</th>
+                        <th>전화번호</th>
+                        <th>그룹선택</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" id="check1" class="checknum unitcheck" name="check"
+                                onclick="checkSelectAll()"> <label for="check1"><span class="skip">1000번</span></label>
+                        </td>
+                        <td>김고은</td>
+                        <td class="tal">abcd1234</td>
+                        <td>010-1234-5678</td>
+                        <td>
+                            <div class="inner"><select name="select" title="그룹" class="sel">
+                                    <option>선택</option>
+                                    <option>231</option>
+                                    <option>17그린</option>
+                                    <option>F4</option>
+                                    <option>MG(수)</option>
+                                </select></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check2" class="checknum unitcheck" name="check"
+                                onclick="checkSelectAll()"> <label for="check2"><span class="skip">1000번</span></label>
+                        </td>
+                        <td>김고은</td>
+                        <td class="tal">abcd1234</td>
+                        <td>010-1234-5678</td>
+                        <td>
+                            <div class="inner"><select name="select" title="그룹" class="sel">
+                                    <option>선택</option>
+                                    <option>231</option>
+                                    <option>17그린</option>
+                                    <option>F4</option>
+                                    <option>MG(수)</option>
+                                </select></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="check3" class="checknum unitcheck" name="check"
+                                onclick="checkSelectAll()"> <label for="check3"><span class="skip">1000번</span></label>
+                        </td>
+                        <td>김고은</td>
+                        <td class="tal">abcd1234</td>
+                        <td>010-1234-5678</td>
+                        <td>
+                            <div class="inner"><select name="select" title="그룹" class="sel">
+                                    <option>선택</option>
+                                    <option>231</option>
+                                    <option>17그린</option>
+                                    <option>F4</option>
+                                    <option>MG(수)</option>
+                                </select></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="non-content">
+            <div class="img"></div>
+            <p>검색 내용을 찾을 수 없습니다.</p>
+        </div>
+    </div>
+</div>
+
+<!-- 클럽관리 / 회원 수정-->
+<div class="boxed" id="modify-club-mem">
+    <div class="table">
+        <div class="tbl">
+            <table class="row">
+                <colgroup>
+                    <col class="w200">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th class="tac">회원명</th>
+                        <td class="tal">김철수</td>
+                    </tr>
+                    <tr>
+                        <th class="tac">아이디</th>
+                        <td class="tal">abcd1234</td>
+                    </tr>
+                    <tr>
+                        <th class="tac">전화번호</th>
+                        <td class="tal">010-1234-5678</td>
+                    </tr>
+                    <tr>
+                        <th class="tac">생년월일</th>
+                        <td class="tal">56.05.31</td>
+                    </tr>
+                    <tr>
+                        <th class="tac">클럽선택</th>
+                        <td>
+                            <div class="inner"><select name="select" title="그룹" class="sel">
+                                    <option>선택</option>
+                                    <option>231</option>
+                                    <option>17그린</option>
+                                    <option>F4</option>
+                                    <option>MG(수)</option>
+                                </select></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- 클럽관리 / 회원 삭제 -->
+<div class="boxed" id="delete-club-mem">
+    <div class="con"> <b>회원삭제</b>
+        <p>정말로 회원을 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+<!-- 클럽관리 / 클럽 삭제 -->
+<div class="boxed" id="delete-club">
+    <div class="con"> <b>클럽삭제</b>
+        <p>정말로 클럽을 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+<!-- 클럽관리 / 클럽 추가 -->
+<div class="boxed" id="register-club">
+    <div class="input-wrap">
+        <div class="title">클럽명</div>
+        <div class="input"><input type="text"></div>
+    </div>
+</div>
+
+<!-- 클럽관리 / 클럽 수정 -->
+<div class="boxed" id="modify-club">
+    <div class="input-wrap">
+        <div class="title">클럽명</div>
+        <div class="input"><input type="text"></div>
+    </div>
+</div>
+
+
+<!-- 예약등록 -->
+<div class="boxed" id="search">
+    <div class="search"><label for="search">회원검색</label>
+        <div class="ipt"><input type="text" class="ipt-txt" name="search" placeholder="회원명, 아이디, 핸드폰번호를 입력해주세요.">
+            <button type="submit" class=" bt-sch"><i></i><span class="skip">검색</span></button>
+        </div>
+    </div>
+    <div class="table">
+        <div class="tbl">
+            <table class="col">
+                <colgroup>
+                    <col class="w80">
+                    <col>
+                    <col class="w200">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>선택</span></label>
+                        </th>
+                        <th>회원명</th>
+                        <th class="tal">아이디</th>
+                        <th>전화번호</th>
+                        <th>생년월일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="radio" id="check31" class="checknum unitcheck" name="check"
+                                onclick="checkSelectAll()"> <label for="check31"><span class="skip">1000번</span></label>
+                        </td>
+                        <td>김고은</td>
+                        <td class="tal">abcd1234</td>
+                        <td>010-1234-5678</td>
+                        <td>19560827</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="check32" class="checknum unitcheck" name="check"
+                                onclick="checkSelectAll()"> <label for="check32"><span class="skip">1000번</span></label>
+                        </td>
+                        <td>김고은</td>
+                        <td class="tal">abcd1234</td>
+                        <td>010-1234-5678</td>
+                        <td>19560827</td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="check33" class="checknum unitcheck" name="check"
+                                onclick="checkSelectAll()"> <label for="check33"><span class="skip">1000번</span></label>
+                        </td>
+                        <td>김고은</td>
+                        <td class="tal">abcd1234</td>
+                        <td>010-1234-5678</td>
+                        <td>19560827</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="non-content">
+            <div class="img"></div>
+            <p>검색 내용을 찾을 수 없습니다.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 예약관리 / 예약 삭제 -->
+<div class="boxed" id="delete-reservation">
+    <div class="con"> <b>예약삭제</b>
+        <p>정말로 예약을 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+
+<!-- 예외출입 / 회원 추가 (전체회원) -->
+<div class="boxed" id="search-all">
+    <div class="search"><label for="search">회원검색</label>
+        <div class="ipt"><input type="text" class="ipt-txt" name="search" placeholder="회원명, 아이디, 핸드폰번호를 입력해주세요.">
+            <button type="submit" class=" bt-sch"><i></i><span class="skip">검색</span></button>
+        </div>
+    </div>
+    <div class="table">
+        <div class="tbl">
+            <table class="col">
+                <colgroup>
+                    <col class="w80">
+                    <col class="w80">
+                    <col>
+                    <col class="w150">
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>선택</span></label>
+                        </th>
+                        <th>No.</th>
+                        <th>회원명</th>
+                        <th>전화번호</th>
+                        <th>회원구분</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="radio" id="check999" class="checknum unitcheck" name="check"
+                                onclick="checkSelectAll()"> <label for="check999"><span
+                                    class="skip">999</span></label>
+                        </td>
+                        <td>999</td>
+                        <td>김고은</td>
+                        <td>010-1234-5678</td>
+                        <td>
+                            <div class="dvs">
+                                <p class="mem">클럽회원 - <b>231</b></p> <span class="grp">홀A</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="check998" class="checknum unitcheck" name="check"
+                                onclick="checkSelectAll()"> <label for="check998"><span
+                                    class="skip">998</span></label>
+                        </td>
+                        <td>998</td>
+                        <td>김고은</td>
+                        <td>010-1234-5678</td>
+                        <td>
+                            <div class="dvs">
+                                <p class="mem">일반회원</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="check997" class="checknum unitcheck" name="check"
+                                onclick="checkSelectAll()"> <label for="check997"><span
+                                    class="skip">997</span></label>
+                        </td>
+                        <td>997</td>
+                        <td>김고은</td>
+                        <td>010-1234-5678</td>
+                        <td>
+                            <div class="dvs">
+                                <p class="mem">클럽회원 - <b>골드</b></p><span class="grp">짝B</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="non-content">
+            <div class="img"></div>
+            <p>검색 내용을 찾을 수 없습니다.</p>
+        </div>
+        <!--#include virtual="/layout/paging/paging.html"-->
+    </div>
+</div>
+
+
+
+<!-- 공휴일 / 공휴일 삭제 -->
+<div class="boxed" id="delete-holiday">
+    <div class="con"> <b>공휴일 삭제</b>
+        <p>공휴일에서 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+<!-- 공휴일 / 휴무일 삭제 -->
+<div class="boxed" id="delete-close">
+    <div class="con"> <b>휴무일 삭제</b>
+        <p>휴무일에서 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+<!-- 스케줄 / 스케줄 삭제 -->
+<div class="boxed" id="delete-schedule">
+    <div class="con"> <b>스케줄 삭제</b>
+        <p>스케줄을 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+
+
+<!-- 스케줄 / 시간 삭제 -->
+<div class="boxed" id="delete-time">
+    <div class="con"> <b>출입시간 삭제</b>
+        <p>시간을 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+<!-- 일반회원 / 일반회원 삭제 -->
+<div class="boxed" id="delete-normal-mem">
+    <div class="con"> <b>일반회원 삭제</b>
+        <p>회원을 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+
+
+<!-- 구장정보 / 구장관리 - 구장 삭제 -->
+<div class="boxed" id="delete-field">
+    <div class="con"> <b>구장 삭제</b>
+        <p>선택 구장을 삭제하시겠습니까?</p>
+    </div>
+</div>
+
+<!-- 구장정보 / 코스관리 -  코스 삭제 -->
+<div class="boxed" id="delete-course">
+    <div class="con"> <b>코스 삭제</b>
+        <p>선택 구장의 코스를 삭제하시겠습니까?</p>
+    </div>
+</div>

@@ -1,0 +1,577 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<header id="header">
+    <div class="title wht line">
+        <button class="prev" onclick="location.href='/mobile/record/match-detail.html'"><span
+                class="skip">이전페이지</span></button>
+        <h3>샷 분석</h3>
+        <div class="item hidden"></div>
+    </div>
+</header>
+<main class="match-wrap mainflex">
+    <!-- 홀선택 -->
+    <section class="hole-wrap">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper hole-swiper">
+            <ul class="hole swiper-wrapper">
+                <li class="hole-btn swiper-slide"><button class="num-btn act"><span>1</span></button></li>
+                <li class="hole-btn swiper-slide"><button class="num-btn"><span>2</span></button></li>
+                <li class="hole-btn swiper-slide"><button class="num-btn"><span>3</span></button></li>
+                <li class="hole-btn swiper-slide"><button class="num-btn"><span>4</span></button></li>
+                <li class="hole-btn swiper-slide"><button class="num-btn"><span>5</span></button></li>
+                <li class="hole-btn swiper-slide"><button class="num-btn"><span>6</span></button></li>
+                <li class="hole-btn swiper-slide"><button class="num-btn"><span>7</span></button></li>
+                <li class="hole-btn swiper-slide"><button class="num-btn"><span>8</span></button></li>
+                <li class="hole-btn swiper-slide"><button class="num-btn"><span>9</span></button></li>
+            </ul>
+        </div>
+        <div class="swiper-button-next"></div>
+    </section>
+    <!-- 보기 -->
+    <section class="box-wrap">
+        <div class="box">
+            <div class="tit">
+                <h2><b>1</b> HOLE</h2>
+            </div>
+            <!-- 타수선택 / 탭메뉴 -->
+            <div class="stroke-nav swiper">
+                <nav class="nav swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="nav-item act" data-tab="tab1">1타</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="nav-item" data-tab="tab2">2타</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="nav-item" data-tab="tab3">3타</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="nav-item" data-tab="tab4">4타</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="nav-item" data-tab="tab5">5타</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="nav-item" data-tab="tab6">6타</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="nav-item" data-tab="tab7">전체</div>
+                    </div>
+                </nav>
+            </div>
+            <!-- 탭내용 -->
+            <div class="tabs-box stroke">
+                <div class="tabs-content" data-tab-act="tab1">
+                    <!--1타-->
+                    <div class="tabs-section">
+                        <div class="stroke-wrap">
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>볼 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>10.77</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>헤드 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>37.27</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>비거리</h4>
+                                </div>
+                                <div class="score">
+                                    <b>82.0</b> <small></small>m</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2타 -->
+                    <div class="tabs-section">
+                        <div class="stroke-wrap">
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>볼 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>43.05</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>헤드 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>65.59</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>비거리</h4>
+                                </div>
+                                <div class="score">
+                                    <b>91.0</b> <small></small>m</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3타 -->
+                    <div class="tabs-section">
+                        <div class="stroke-wrap">
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>볼 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>27.17</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>헤드 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>59.73</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>비거리</h4>
+                                </div>
+                                <div class="score">
+                                    <b>8.0</b> <small></small>m</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4타 -->
+                    <div class="tabs-section">
+                        <div class="stroke-wrap">
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>볼 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>31.33</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>헤드 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>56.15</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>비거리</h4>
+                                </div>
+                                <div class="score">
+                                    <b>7.0</b> <small></small>m</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5타 -->
+                    <div class="tabs-section">
+                        <div class="stroke-wrap">
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>볼 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>21.25</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>헤드 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>57.62</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>비거리</h4>
+                                </div>
+                                <div class="score">
+                                    <b>21.25</b> <small></small>m</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6타 -->
+                    <div class="tabs-section">
+                        <div class="stroke-wrap">
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>볼 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>24.88</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>헤드 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <b>60.65</b> <small></small>km</small>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>비거리</h4>
+                                </div>
+                                <div class="score">
+                                    <b>15.0</b> <small></small>m</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 전체 -->
+                    <div class="tabs-section">
+                        <div class="chart-wrap">
+                            <!-- 볼 스피드 차트 -->
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>볼 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <canvas id="myChart1"></canvas>
+                                </div>
+                            </div>
+                            <!-- 헤드 스피드 차트 -->
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>헤드 스피드</h4>
+                                </div>
+                                <div class="score">
+                                    <canvas id="myChart2"></canvas>
+                                </div>
+                            </div>
+                            <!-- 비거리 차트 -->
+                            <div class="box">
+                                <div class="tit">
+                                    <h4>비거리</h4>
+                                </div>
+                                <div class="score">
+                                    <canvas id="myChart3"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script>
+    // 홀 선택 슬라이드
+    var swiper1 = new Swiper(".hole-wrap .hole-swiper", {
+        slidesPerView: 'auto',
+        slideToClickedSlide: false,
+        centeredSlides: false,
+        autoplay: false,
+        loop: false,
+        freeMode: true,
+        watchOverflow: true,
+        allowTouchMove: false,
+        navigation: {
+            nextEl: ".hole-wrap .swiper-button-next",
+            prevEl: ".hole-wrap .swiper-button-prev",
+        },
+    });
+    // 타수선택슬라이드
+    var swiper2 = new Swiper(".stroke-nav", {
+        spaceBetween: 10,
+        slidesPerView: 'auto',
+        centeredSlides: false,
+        autoplay: false,
+        loop: false,
+        freeMode: true,
+        watchOverflow: true,
+        slideToClickedSlide: false,
+    });
+
+    //chart.js
+    $(function () {
+
+        //볼스피드
+        const ctx1 = document.getElementById('myChart1').getContext('2d');
+        const data1 = {
+            labels: ["1타", "2타", "3타", "4타", "5타", "6타"],
+            datasets: [{
+                label: "볼스피드 ",
+                data: [10.77, 40.05, 27.17, 31.33, 21.25, 24.88],
+                backgroundColor: '#DCE8E3',
+                maxBarThickness: 40,
+                borderRadius: 50,
+            }]
+        };
+        const config1 = {
+            plugins: [ChartDataLabels],
+            type: "bar",
+            data: data1,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                borderSkipped: false,
+                layout: {
+                    padding: {
+                        top: 30,
+                        left: 5,
+                        right: 5,
+                        bottom: 0
+                    },
+
+                },
+                scales: {
+                    x: {
+                        grid: {
+                            display: false,
+                        },
+                        border: {
+                            display: false,
+                        },
+                        ticks: {
+                            font: {
+                                family: 'SUITE',
+                                size: 13,
+                                weight: 700,
+                                color: '#000'
+                            },
+                        }
+                    },
+                    y: {
+                        display: false,
+                        beginAtZero: true
+                    },
+                },
+                plugins: {
+                    title: false,
+                    subtitle: false,
+                    legend: false,
+                    tooltip: false,
+                    datalabels: {
+                        color: '#555',
+                        align: 'end',
+                        anchor: 'end',
+                        font: {
+                            family: 'Pretendard',
+                        },
+                        formatter: function (value, context) {
+                            return value.toFixed(1) + "km";
+                        },
+                        borderRadius: function (context) {
+                            return context.active ? 32 : 32;
+                        },
+                        color: function (context) {
+                            return context.active ? 'black' : 'transparent';
+                        },
+                        padding: 5,
+                        font: {
+                            family: 'Pretendard',
+                            size: 12,
+                            weight: 700,
+                        }
+                    },
+                },
+                elements: {
+                    bar: {
+                        hoverBackgroundColor: '#178F5E'
+                    }
+                }
+            }
+        };
+        const myChart1 = new Chart("myChart1", config1);
+
+
+        //헤드스피드
+        const ctx2 = document.getElementById('myChart2').getContext('2d');
+        const data2 = {
+            labels: ["1타", "2타", "3타", "4타", "5타", "6타"],
+            datasets: [{
+                label: "볼스피드 ",
+                data: [37.27, 65.59, 59.73, 56.15, 57.62, 60.65],
+                backgroundColor: '#DCE8E3',
+                maxBarThickness: 40,
+                borderRadius: 50,
+            }]
+        };
+        const config2 = {
+            plugins: [ChartDataLabels],
+            type: "bar",
+            data: data2,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                borderSkipped: false,
+                layout: {
+                    padding: {
+                        top: 30,
+                        left: 5,
+                        right: 5,
+                        bottom: 0
+                    },
+
+                },
+                scales: {
+                    x: {
+                        grid: {
+                            display: false,
+                        },
+                        border: {
+                            display: false,
+                        },
+                        ticks: {
+                            font: {
+                                family: 'SUITE',
+                                size: 13,
+                                weight: 700,
+                                color: '#000'
+                            }
+                        }
+                    },
+                    y: {
+                        display: false,
+                        beginAtZero: true
+                    },
+                },
+                plugins: {
+                    title: false,
+                    subtitle: false,
+                    legend: false,
+                    tooltip: false,
+                    datalabels: {
+                        color: '#555',
+                        align: 'end',
+                        anchor: 'end',
+                        font: {
+                            family: 'Pretendard',
+                        },
+                        formatter: function (value, context) {
+                            return value.toFixed(1) + "km";
+                        },
+                        borderRadius: function (context) {
+                            return context.active ? 32 : 32;
+                        },
+                        color: function (context) {
+                            return context.active ? 'black' : 'transparent';
+                        },
+                        padding: 5,
+                        font: {
+                            family: 'Pretendard',
+                            size: 12,
+                            weight: 700,
+                        }
+                    },
+                },
+                elements: {
+                    bar: {
+                        hoverBackgroundColor: '#178F5E'
+                    }
+                }
+            }
+        };
+        const myChart2 = new Chart("myChart2", config2);
+
+
+        //비거리 
+        const ctx3 = document.getElementById('myChart3').getContext('2d');
+        const data3 = {
+            labels: ["1타", "2타", "3타", '4타', '5타', '6타'],
+            datasets: [{
+                label: "비거리 ",
+                data: [82.0, 91.0, 8.0, 7.0, 21.25, 15.0],
+                backgroundColor: '#DCE8E3',
+                maxBarThickness: 40,
+                borderRadius: 50,
+            }]
+        };
+        const config3 = {
+            plugins: [ChartDataLabels],
+            type: "bar",
+            data: data3,
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                borderSkipped: false,
+                layout: {
+                    padding: {
+                        top: 30,
+                        left: 5,
+                        right: 5,
+                        bottom: 0
+                    },
+                },
+                scales: {
+                    x: {
+                        grid: {
+                            display: false,
+                        },
+                        border: {
+                            display: false,
+                        },
+                        ticks: {
+                            font: {
+                                family: 'SUITE',
+                                size: 13,
+                                weight: 700,
+                                color: '#000'
+                            }
+                        }
+                    },
+                    y: {
+                        display: false,
+                        beginAtZero: true
+                    },
+                },
+                plugins: {
+                    title: false,
+                    subtitle: false,
+                    legend: false,
+                    tooltip: false,
+                    datalabels: {
+                        color: '#555',
+                        align: 'end',
+                        anchor: 'end',
+                        font: {
+                            family: 'Pretendard',
+                        },
+                        formatter: function (value, context) {
+                            return value.toFixed(1) + "m";
+                        },
+                        borderRadius: function (context) {
+                            return context.active ? 32 : 32;
+                        },
+                        color: function (context) {
+                            return context.active ? 'black' : 'transparent';
+                        },
+                        padding: 5,
+                        font: {
+                            family: 'Pretendard',
+                            size: 12,
+                            weight: 700,
+                        }
+                    },
+                },
+                elements: {
+                    bar: {
+                        hoverBackgroundColor: '#178F5E'
+                    }
+                }
+            }
+        };
+        const myChart3 = new Chart("myChart3", config3);
+    });
+
+</script>
+
+<!--#include virtual="/layout/mobile/inc/f.html"-->

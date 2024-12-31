@@ -1,0 +1,104 @@
+<!--#include virtual="/layout/mobile/inc/h.html"-->
+<script>
+    $(function () {
+        $('.bnb ul > li:nth-child(3) > a').addClass('act');
+    });
+</script>
+
+<main class="board-wrap mainflex">
+    <section class="header">
+        <h2>게시판</h2>
+    </section>
+    <section class="board">
+        <div class="wrap">
+            <div class="inner">
+                <div class="title">
+                    <div class="tit">
+                        <h3>공지사항</h3>
+                    </div>
+                    <button class="view" onclick="location.href='/mobile/board/notice-list.html'"><span>더 보기</span> <i
+                            class="ico-arrow"></i></button>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li><a href="/mobile/board/notice-detail.html">
+                                <div class="lst">
+                                    <div class="date">2024.06.17</div>
+                                    <p class="tit">개인정보처리방침 개정 안내</p>
+                                    <div class="icon new-icon"><i class="new">new</i></div>
+                                </div>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="lst">
+                                    <div class="date">2024.06.17</div>
+                                    <p class="tit">개인정보처리방침 개정 안내</p>
+                                    <div class="icon new-icon"><i class="new">new</i></div>
+                                </div>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="lst">
+                                    <div class="date">2024.06.17</div>
+                                    <p class="tit">개인정보처리방침 개정 안내개인정보처리방침 개정 안내</p>
+                                    <div class="icon new-icon"><i class="new">new</i></div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="divide"></div>
+    <section class="board">
+        <div class="wrap">
+            <div class="inner">
+                <div class="title">
+                    <div class="tit">
+                        <h3>자주 묻는 질문</h3>
+                    </div>
+                </div>
+                <div class="list faq-list">
+                    <ul>
+                        <li><a href="/mobile/board/faq-detail.html">
+                                <div class="lst">
+                                    <div class="icon"><i class="faq-ico"></i></div>
+                                    <p class="tit">멀리건이 사용되지 않는데, 이유가 무엇인가요?</p>
+                                    <div class="icon"><i class="right-ico"></i></div>
+                                </div>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="lst">
+                                    <div class="icon"><i class="faq-ico"></i></div>
+                                    <p class="tit">멀리건 단축키는 어떻게 되나요?</p>
+                                    <div class="icon"><i class="right-ico"></i></div>
+                                </div>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="lst">
+                                    <div class="icon"><i class="faq-ico"></i></div>
+                                    <p class="tit">로그인하고 들어갔는데 제 닉네임을 불러주지 않아요.로그인하고 들어갔는데 제 닉네임을 불러주지 않아요</p>
+                                    <div class="icon"><i class="right-ico"></i></div>
+                                </div>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="lst">
+                                    <div class="icon"><i class="faq-ico"></i></div>
+                                    <p class="tit">그린에서 안내멘트가 나오지 않아요.</p>
+                                    <div class="icon"><i class="right-ico"></i></div>
+                                </div>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="lst">
+                                    <div class="icon"><i class="faq-ico"></i></div>
+                                    <p class="tit">게임 중 사운드 볼륨을 조절하고 싶어요.</p>
+                                    <div class="icon"><i class="right-ico"></i></div>
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="button"><button class="bt more-bt" onclick="location.href='/mobile/board/faq-list.html'">다른 질문들 보러가기</button></div>
+            </div>
+        </div>
+    </section>
+</main>
+<!--#include virtual="/layout/mobile/inc/bnb.html"-->
+<!--#include virtual="/layout/mobile/inc/f.html"-->

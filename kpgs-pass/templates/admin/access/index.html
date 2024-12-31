@@ -1,0 +1,277 @@
+<!--#include virtual="/layout/admin/inc/h.html"-->
+<script>
+    $(function () {
+        $(".dp1:nth-child(5)").addClass('act');
+        $(".dp1:nth-child(5) .depth2").show();
+        $(".dp1:nth-child(5) .depth2 li:nth-child(1)").addClass('act');
+    });
+</script>
+
+<!-- main -->
+<main id="admin">
+    <!-- 페이지 위치 -->
+    <section class="title">
+        <h3>출입관리</h3>
+    </section>
+    <!-- 출입리스트 -->
+    <section class="contain">
+        <div class="content list">
+            <div class="view-buttons">
+                <button class="bt-view all act">전체</button>
+                <button class="bt-view field1">수성구장</button>
+                <button class="bt-view field2">팔현구장</button>
+            </div>
+            <div class="title">
+                <fieldset>
+                    <div class="inner">
+                        <span class="inn">
+                            <input type="date" class="ip-dat">
+                            <em>~</em>
+                            <input type="date" class="ip-dat">
+                        </span>
+                        <span class="inn">
+                            <button type="button" class="bt bt-srh"><i class="ico-srh"></i><span>기간
+                                    검색</span></button>
+                        </span>
+                    </div>
+                </fieldset>
+                <div class="search w400">
+                    <div class="input">
+                        <input type="text" placeholder="회원명, 아이디, 핸드폰번호로 검색해주세요.">
+                        <button class="bt-srch"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="table">
+                <div class="tbl">
+                    <table class="col fixed">
+                        <colgroup>
+                            <col class="w80">
+                            <col class="w130">
+                            <col>
+                            <col>
+                            <col class="w180">
+                            <col class="w130">
+                            <col class="w130">
+                            <col>
+                            <col class="w90">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>구장명</th>
+                                <th>회원명</th>
+                                <th>아이디</th>
+                                <th>핸드폰번호</th>
+                                <th>출입일</th>
+                                <th>출입시간</th>
+                                <th>회원구분</th>
+                                <th>출입구분</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>999</td>
+                                <td>수성구장</td>
+                                <td class="tal">김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>2024.04.24</td>
+                                <td>14:24:00</td>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">클럽회원 - <b>231</b></p> <span class="grp">홀A</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dvs">
+                                        <span class="acs normal"><i class="point"></i>정상</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>998</td>
+                                <td>수성구장</td>
+                                <td class="tal">김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>2024.04.24</td>
+                                <td>14:24:00</td>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">일반회원 - <b>예약</b></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dvs">
+                                        <span class="acs abnormal"><i class="point"></i>비정상</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>997</td>
+                                <td>팔현구장</td>
+                                <td class="tal">김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>2024.04.24</td>
+                                <td>14:24:00</td>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">클럽회원 - <b>골드</b></p><span class="grp">짝B</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dvs">
+                                        <span class="acs excpt"><i class="point"></i>예외</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>996</td>
+                                <td>팔현구장</td>
+                                <td class="tal">김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>2024.04.24</td>
+                                <td>14:24:00</td>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">일반회원 - <b>예약</b></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dvs">
+                                        <span class="acs excpt"><i class="point"></i>예외</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>995</td>
+                                <td>수성구장</td>
+                                <td class="tal">김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>2024.04.24</td>
+                                <td>14:24:00</td>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">클럽회원 - <b>231</b></p> <span class="grp">홀A</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dvs">
+                                        <span class="acs abnormal"><i class="point"></i>비정상</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>994</td>
+                                <td>팔현구장</td>
+                                <td class="tal">김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>2024.04.24</td>
+                                <td>14:24:00</td>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">클럽회원 - <b>골드</b></p><span class="grp">짝B</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dvs">
+                                        <span class="acs normal"><i class="point"></i>정상</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>993</td>
+                                <td>팔현구장</td>
+                                <td class="tal">김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>2024.04.24</td>
+                                <td>14:24:00</td>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">일반회원 - <b>예약</b></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dvs">
+                                        <span class="acs normal"><i class="point"></i>정상</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>992</td>
+                                <td>수성구장</td>
+                                <td class="tal">김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>2024.04.24</td>
+                                <td>14:24:00</td>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">일반회원 - <b>예약</b></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dvs">
+                                        <span class="acs abnormal"><i class="point"></i>비정상</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>991</td>
+                                <td>수성구장</td>
+                                <td class="tal">김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>2024.04.24</td>
+                                <td>14:24:00</td>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">일반회원 - <b>예약</b></p>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dvs">
+                                        <span class="acs normal"><i class="point"></i>정상</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>990</td>
+                                <td>수성구장</td>
+                                <td class="tal">김철수</td>
+                                <td class="tal">abcd1234</td>
+                                <td>010-1234-5678</td>
+                                <td>2024.04.24</td>
+                                <td>14:24:00</td>
+                                <td>
+                                    <div class="dvs">
+                                        <p class="mem">클럽회원 - <b>231</b></p> <span class="grp">홀A</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="dvs">
+                                        <span class="acs normal"><i class="point"></i>정상</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="non-content">
+                <i class="ico"></i>
+                <span>내용이 없습니다.</span>
+            </div>
+            <!--#include virtual="/layout/paging/paging.html"-->
+        </div>
+    </section>
+    <!--#include virtual="/layout/admin/inc/modal.html"-->
+</main>
+
+<!--#include virtual="/layout/admin/inc/f.html"-->
